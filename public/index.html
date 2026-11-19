@@ -200,6 +200,7 @@ textarea{resize:vertical;min-height:52px}
   .sheet{grid-template-columns:1fr;max-height:100vh;height:100vh;border-radius:0;overflow:auto;display:block}
   .stage{min-height:0;display:flex;flex-direction:column}
   .stage canvas{height:min(48vh,100vw);flex:none}
+  .close{position:fixed;top:calc(12px + env(safe-area-inset-top));right:12px;z-index:30;width:42px;height:42px;font-size:20px;background:rgba(30,35,46,.92);box-shadow:0 4px 14px rgba(0,0,0,.45)}
   .controls{position:static;transform:none;margin:4px auto 14px;max-width:calc(100% - 28px);gap:6px 8px}
   .controls button{padding:8px 13px;font-size:13px}
   .info{overflow:visible}
