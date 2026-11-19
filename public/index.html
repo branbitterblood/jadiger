@@ -859,6 +859,7 @@ const key = new THREE.DirectionalLight(0xfff4e0, 2.2); scene.add(key);
 const back = new THREE.DirectionalLight(0xbfd2ff, 0.6); back.position.set(-3, -2, -4); scene.add(back);
 const setLight = d => { const a = d * Math.PI / 180; key.position.set(Math.sin(a) * 4, 2.6, Math.cos(a) * 4); };
 setLight(+$('lt').value); $('lt').oninput = () => setLight(+$('lt').value);
+const EDGE_K = 0.065; // толщина = 6,5% диаметра (медиана по каталогу)
 const DENS = m => /au/i.test(m) ? 19.3 : /ag/i.test(m) ? 10.4 : /тантал/i.test(m) ? 16.6 : /нибрасс/i.test(m) ? 8.5 : 8.8;
 const EDGE = m => /au/i.test(m) ? 0xe6c46a : /ag/i.test(m) ? 0xdfe1e4 : /тантал/i.test(m) ? 0x8a909a : /нибрасс/i.test(m) ? 0xd8bf7a : 0xcfd0d2;
 const coinGroup = new THREE.Group(); scene.add(coinGroup);
@@ -879,7 +880,7 @@ function buildShaped(coin, sh) {
   const sf = mk(sh.f), sb = mk(sh.b);
   let area = 0; for (let k = 0, n = sh.f.length / 2; k < n; k++) { const j = (k + 1) % n; area += ((sh.f[2*k] - .5) * W) * ((.5 - sh.f[2*j+1]) * H) - ((sh.f[2*j] - .5) * W) * ((.5 - sh.f[2*k+1]) * H); }
   area = Math.abs(area) / 2;
-  const T = Math.min(0.45, Math.max(0.15, coin.weight / (DENS(coin.metal) * area)));
+  const T = EDGE_K * Math.max(W, H); // единая толщина гурта: доля от размера монеты
   const faceGeo = shape => { const g = new THREE.ShapeGeometry(shape); const p = g.attributes.position, uv = g.attributes.uv; for (let k = 0; k < p.count; k++) uv.setXY(k, p.getX(k) / W + .5, p.getY(k) / H + .5); uv.needsUpdate = true; return g; };
   const mat = side => { const t = faceTexture(coin, side); t.anisotropy = renderer.capabilities.getMaxAnisotropy(); return new THREE.MeshStandardMaterial({ map: t, bumpMap: t, bumpScale: 2.2, metalness: 0.55, roughness: 0.38, envMapIntensity: .9 }); };
   const f = new THREE.Mesh(faceGeo(sf), mat('obv')); f.position.z = T / 2 + 0.001;
@@ -891,7 +892,7 @@ function buildShaped(coin, sh) {
 function buildCoin(coin) {
   coinGroup.children.slice().forEach(ch => { dispose(ch); coinGroup.remove(ch); });
   if (SHAPES[coin.id] && coin.photo && fullCache[coin.id]) { buildShaped(coin, SHAPES[coin.id]); return; }
-  const R = coin.diam > 0 ? coin.diam / 20 : Math.sqrt(coin.weight / (DENS(coin.metal) * Math.PI * 0.25)), T = Math.max(0.12, coin.weight / (DENS(coin.metal) * Math.PI * R * R)) * 1.05;
+  const R = coin.diam > 0 ? coin.diam / 20 : Math.sqrt(coin.weight / (DENS(coin.metal) * Math.PI * 0.25)), T = EDGE_K * 2 * R; // единая толщина гурта для всех монет
   const mat = side => { const t = faceTexture(coin, side); t.anisotropy = renderer.capabilities.getMaxAnisotropy();
     return new THREE.MeshStandardMaterial({ map: t, bumpMap: t, bumpScale: coin.photo ? 2.2 : 3, metalness: 0.55, roughness: 0.38, envMapIntensity: .9 }); };
   const geo = new THREE.CircleGeometry(R * 0.995, 160);
