@@ -198,7 +198,7 @@ textarea{resize:vertical;min-height:52px}
   .grid{grid-template-columns:repeat(auto-fill,minmax(160px,1fr));gap:10px}
   .modal{padding:0}
   .sheet{grid-template-columns:1fr;max-height:100vh;height:100vh;border-radius:0;overflow:auto;display:block}
-  .stage{min-height:0;display:flex;flex-direction:column}
+  .stage{min-height:0;display:flex;flex-direction:column;padding-top:calc(58px + env(safe-area-inset-top))}
   .stage canvas{height:min(48vh,100vw);flex:none}
   .close{position:fixed;top:calc(12px + env(safe-area-inset-top));right:12px;z-index:30;width:42px;height:42px;font-size:20px;background:rgba(30,35,46,.92);box-shadow:0 4px 14px rgba(0,0,0,.45)}
   .controls{position:static;transform:none;margin:4px auto 14px;max-width:calc(100% - 28px);gap:6px 8px}
@@ -876,7 +876,7 @@ function tick(now) {
   let fx = 0, lift = 0;
   if (flip) { const p = Math.min((now - flip.t0) / flip.dur, 1); fx = ease(p) * flip.turns * Math.PI * 2; lift = Math.sin(p * Math.PI) * baseZ * .15; if (p >= 1) { flip = null; fx = 0; lift = 0; } }
   coinGroup.rotation.set(rotX + fx, rotY, 0, 'YXZ'); coinGroup.position.y = lift;
-  const w = canvas.clientWidth, h = canvas.clientHeight, fit = w < h ? 1.35 * h / w : 1;
+  const w = canvas.clientWidth, h = canvas.clientHeight, fit = (w < h ? 1.35 * h / w : 1) * (w < 700 ? 1.3 : 1);
   camera.position.z += (camZ * fit - camera.position.z) * .15; renderer.render(scene, camera); requestAnimationFrame(tick);
 }
 
