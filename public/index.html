@@ -877,15 +877,19 @@ function buildShaped(coin, sh) {
   if (coin.diam > 0) { const L = coin.diam / 10; W = sh.ar >= 1 ? L : L * sh.ar; H = sh.ar >= 1 ? L / sh.ar : L; }
   else { const target = coin.weight / (DENS(coin.metal) * 0.3); H = Math.sqrt(target / (an * sh.ar)); W = H * sh.ar; } // размер неизвестен: подбираем по массе при толщине ~3 мм
   const mk = flat => { const s = new THREE.Shape(); for (let k = 0; k < flat.length; k += 2) { const x = (flat[k] - .5) * W, y = (.5 - flat[k + 1]) * H; k ? s.lineTo(x, y) : s.moveTo(x, y); } s.closePath(); return s; };
-  const sf = mk(sh.f), sb = mk(sh.b);
+  const oval = sh.k === 'овальная';
+  const ell = () => { const s = new THREE.Shape(); s.absellipse(0, 0, W / 2, H / 2, 0, Math.PI * 2, false, 0); return s; };
+  const sf = oval ? ell() : mk(sh.f), sb = oval ? ell() : mk(sh.b);
   let area = 0; for (let k = 0, n = sh.f.length / 2; k < n; k++) { const j = (k + 1) % n; area += ((sh.f[2*k] - .5) * W) * ((.5 - sh.f[2*j+1]) * H) - ((sh.f[2*j] - .5) * W) * ((.5 - sh.f[2*k+1]) * H); }
   area = Math.abs(area) / 2;
   const T = EDGE_K * Math.max(W, H); // единая толщина гурта: доля от размера монеты
-  const faceGeo = shape => { const g = new THREE.ShapeGeometry(shape); const p = g.attributes.position, uv = g.attributes.uv; for (let k = 0; k < p.count; k++) uv.setXY(k, p.getX(k) / W + .5, p.getY(k) / H + .5); uv.needsUpdate = true; return g; };
+  const faceGeo = shape => { const g = new THREE.ShapeGeometry(shape, oval ? 96 : 12); const p = g.attributes.position, uv = g.attributes.uv; for (let k = 0; k < p.count; k++) uv.setXY(k, p.getX(k) / W + .5, p.getY(k) / H + .5); uv.needsUpdate = true; return g; };
   const mat = side => { const t = faceTexture(coin, side); t.anisotropy = renderer.capabilities.getMaxAnisotropy(); return new THREE.MeshStandardMaterial({ map: t, bumpMap: t, bumpScale: 2.2, metalness: 0.55, roughness: 0.38, envMapIntensity: .9 }); };
   const f = new THREE.Mesh(faceGeo(sf), mat('obv')); f.position.z = T / 2 + 0.001;
   const b = new THREE.Mesh(faceGeo(sb), mat('rev')); b.rotation.y = Math.PI; b.position.z = -T / 2 - 0.001;
-  const eg = new THREE.ExtrudeGeometry(sf, { depth: T, bevelEnabled: false, curveSegments: 1 }); eg.translate(0, 0, -T / 2);
+  let eg;
+  if (oval) { eg = new THREE.CylinderGeometry(1, 1, T, 256, 1, true); eg.rotateX(Math.PI / 2); eg.scale(W / 2, H / 2, 1); eg.clearGroups(); eg.addGroup(0, Infinity, 1); } // гладкий овальный гурт
+  else { eg = new THREE.ExtrudeGeometry(sf, { depth: T, bevelEnabled: false, curveSegments: 1 }); eg.translate(0, 0, -T / 2); }
   const e = new THREE.Mesh(eg, [new THREE.MeshBasicMaterial({ visible: false }), new THREE.MeshStandardMaterial({ color: EDGE(coin.metal), metalness: 1, roughness: .28 })]);
   coinGroup.add(f, b, e); baseZ = camZ = Math.max(W, H) / 2 * 4.3;
 }
