@@ -198,7 +198,10 @@ textarea{resize:vertical;min-height:52px}
   .grid{grid-template-columns:repeat(auto-fill,minmax(160px,1fr));gap:10px}
   .modal{padding:0}
   .sheet{grid-template-columns:1fr;max-height:100vh;height:100vh;border-radius:0;overflow:auto;display:block}
-  .stage{min-height:52vh}
+  .stage{min-height:0;display:flex;flex-direction:column}
+  .stage canvas{height:min(48vh,100vw);flex:none}
+  .controls{position:static;transform:none;margin:4px auto 14px;max-width:calc(100% - 28px);gap:6px 8px}
+  .controls button{padding:8px 13px;font-size:13px}
   .info{overflow:visible}
   .hint{display:none}
   .bar{flex-basis:30%}
@@ -862,7 +865,7 @@ $('bObv').onclick = () => { setAuto(false); animateTo(0); }; $('bRev').onclick =
 $('bAuto').onclick = () => setAuto(!auto);
 $('bFlip').onclick = () => { setAuto(false); flip = { t0: performance.now(), dur: 1500, turns: 4 + Math.floor(Math.random() * 3) }; animateTo(Math.random() < .5 ? 0 : Math.PI, 0, 1500); };
 const ease = t => 1 - Math.pow(1 - t, 3);
-function resize() { const w = stage.clientWidth, h = stage.clientHeight; if (!w || !h) return; renderer.setSize(w, h, false); camera.aspect = w / h; camera.updateProjectionMatrix(); }
+function resize() { const w = canvas.clientWidth, h = canvas.clientHeight; if (!w || !h) return; renderer.setSize(w, h, false); camera.aspect = w / h; camera.updateProjectionMatrix(); }
 new ResizeObserver(resize).observe(stage);
 let prev = performance.now();
 function tick(now) {
@@ -872,7 +875,7 @@ function tick(now) {
   let fx = 0, lift = 0;
   if (flip) { const p = Math.min((now - flip.t0) / flip.dur, 1); fx = ease(p) * flip.turns * Math.PI * 2; lift = Math.sin(p * Math.PI) * baseZ * .15; if (p >= 1) { flip = null; fx = 0; lift = 0; } }
   coinGroup.rotation.set(rotX + fx, rotY, 0, 'YXZ'); coinGroup.position.y = lift;
-  const w = stage.clientWidth, h = stage.clientHeight, fit = w < h ? 1.35 * h / w : 1;
+  const w = canvas.clientWidth, h = canvas.clientHeight, fit = w < h ? 1.35 * h / w : 1;
   camera.position.z += (camZ * fit - camera.position.z) * .15; renderer.render(scene, camera); requestAnimationFrame(tick);
 }
 
