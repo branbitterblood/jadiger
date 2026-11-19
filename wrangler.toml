@@ -1,0 +1,16 @@
+# Cloudflare Pages: jadiger.com
+name = "jadiger"
+compatibility_date = "2025-09-01"
+pages_build_output_dir = "public"
+
+[[d1_databases]]
+binding = "DB"
+database_name = "jadiger"
+database_id = "ВСТАВЬТЕ_ID_ИЗ_wrangler_d1_create"
+
+[vars]
+# Client ID из Google Cloud Console (OAuth 2.0 Client ID, тип Web application)
+GOOGLE_CLIENT_ID = "ВСТАВЬТЕ_CLIENT_ID.apps.googleusercontent.com"
+# Модель для распознавания монет по фото (нужен секрет ANTHROPIC_API_KEY, иначе функция просто выключена)
+ANTHROPIC_MODEL = "claude-sonnet-5-5"
+AI_DAILY_LIMIT = "30"
