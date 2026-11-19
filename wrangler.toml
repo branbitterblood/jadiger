@@ -6,11 +6,11 @@ pages_build_output_dir = "public"
 [[d1_databases]]
 binding = "DB"
 database_name = "jadiger"
-database_id = "ВСТАВЬТЕ_ID_ИЗ_wrangler_d1_create"
+database_id = "a3389d31-2435-47b6-8b49-7bb4561a5f05"
 
 [vars]
 # Client ID из Google Cloud Console (OAuth 2.0 Client ID, тип Web application)
-GOOGLE_CLIENT_ID = "ВСТАВЬТЕ_CLIENT_ID.apps.googleusercontent.com"
+GOOGLE_CLIENT_ID = "760834403293-70g5mh0lk6rshekvdnf9qf3rtveu4chd.apps.googleusercontent.com"
 # Модель для распознавания монет по фото (нужен секрет ANTHROPIC_API_KEY, иначе функция просто выключена)
 ANTHROPIC_MODEL = "claude-sonnet-5-5"
 AI_DAILY_LIMIT = "30"
