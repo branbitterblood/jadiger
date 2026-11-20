@@ -19,6 +19,7 @@ body{font-family:Inter,system-ui,sans-serif;color:var(--text);background:radial-
 a{color:var(--gold2)}
 .wrap{max-width:1360px;margin:0 auto;padding:0 24px}
 header .wrap{padding-top:22px;padding-bottom:6px;display:flex;gap:16px;align-items:center;justify-content:space-between;flex-wrap:wrap}
+.shops{display:flex;flex-wrap:wrap;gap:6px 16px;justify-content:flex-end}
 .brand{display:flex;align-items:center;gap:12px}.brandMark{flex:none;color:var(--gold2)}@media(max-width:560px){.brandMark{width:32px;height:32px}}
 .brand>div{font-family:"Cormorant Garamond",serif;font-size:26px;font-weight:600;color:var(--gold2);letter-spacing:.16em;line-height:1}
 .brand small{display:block;font-family:Inter;font-size:11px;letter-spacing:.14em;color:var(--muted);text-transform:uppercase;margin-top:4px;font-weight:500}
@@ -255,7 +256,7 @@ textarea{resize:vertical;min-height:52px}
     <div class="src" id="cSrc"></div>
     <div class="strip-head">
       <h2 class="sec">Новые выпуски</h2>
-      <a id="cShop" href="https://kazcoins.nationalbank.kz/ru/catalog">Магазин Нацбанка kazcoins →</a>
+      <span id="cShop" class="shops"></span>
     </div>
     <div class="strip" id="strip"></div>
   </div>
@@ -309,7 +310,7 @@ textarea{resize:vertical;min-height:52px}
       <div class="kpis" id="wKpis"></div>
       <div class="toolbar-lite" style="display:flex;gap:8px;margin-top:14px;flex-wrap:wrap">
         <select id="wSort"><option value="added">Недавно добавленные</option><option value="price">Дешевле в магазине НБ</option><option value="new">Сначала новые выпуски</option><option value="rare">Самый малый тираж</option></select>
-        <a href="https://kazcoins.nationalbank.kz/ru/catalog" style="align-self:center;font-size:13px">Магазин Нацбанка kazcoins →</a>
+        <span id="wShops" class="shops" style="align-self:center;font-size:13px"></span>
       </div>
       <div class="grid" id="wishGrid" style="margin-top:14px"></div>
       <div class="empty" id="wishEmpty" hidden>Вишлист пуст. Нажмите ♡ на монете в <a href="#catalog">каталоге</a> или «Недостающие в вишлист» в прогрессе серий.</div>
@@ -652,8 +653,13 @@ function renderCseg() {
   const C = COUNTRIES[curCountry];
   $('cTitle').textContent = C ? 'Коллекционные монеты ' + C.gen : 'Коллекционные монеты Центральной Азии';
   $('cSrc').innerHTML = C ? C.src : Object.values(COUNTRIES).map(x => x.src).join('<br>');
-  $('cShop').href = (C || COUNTRIES.kz).shop[0]; $('cShop').textContent = (C || COUNTRIES.kz).shop[1];
+  fillShops($('cShop'), C ? [C] : Object.values(COUNTRIES));
 }
+// ссылки на магазины/каталоги: для выбранной страны — одна, для «Все страны» — все
+function fillShops(el, list) {
+  el.replaceChildren(...list.map(x => { const a = document.createElement('a'); a.href = x.shop[0]; a.target = '_blank'; a.rel = 'noopener'; a.textContent = list.length > 1 ? x.flag + ' ' + x.shop[1] : x.shop[1]; return a; }));
+}
+fillShops($('wShops'), Object.values(COUNTRIES));
 $('cseg').addEventListener('click', e => { const b = e.target.closest('[data-cc]'); if (!b) return; curCountry = b.dataset.cc; try { localStorage.setItem('jadiger-country', curCountry); } catch (err) {} renderCseg(); renderSeg(); renderCatalog(); renderStrip(); });
 try { const sv = localStorage.getItem('jadiger-country'); if (sv === '' || COUNTRIES[sv]) curCountry = sv; } catch (err) {}
 renderCseg(); renderSeg();
