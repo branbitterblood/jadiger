@@ -256,7 +256,6 @@ textarea{resize:vertical;min-height:52px}
     <div class="src" id="cSrc"></div>
     <div class="strip-head">
       <h2 class="sec">Новые выпуски</h2>
-      <span id="cShop" class="shops"></span>
     </div>
     <div class="strip" id="strip"></div>
   </div>
@@ -653,7 +652,6 @@ function renderCseg() {
   const C = COUNTRIES[curCountry];
   $('cTitle').textContent = C ? 'Коллекционные монеты ' + C.gen : 'Коллекционные монеты Центральной Азии';
   $('cSrc').innerHTML = C ? C.src : Object.values(COUNTRIES).map(x => x.src).join('<br>');
-  fillShops($('cShop'), C ? [C] : Object.values(COUNTRIES));
 }
 // ссылки на магазины/каталоги: для выбранной страны — одна, для «Все страны» — все
 function fillShops(el, list) {
