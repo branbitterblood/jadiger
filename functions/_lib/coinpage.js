@@ -5,10 +5,33 @@ import { COINS } from './coins.js';
 const SITE = 'https://jadiger.com';
 const esc = s => String(s ?? '').replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
 
+const CTRY = {
+  kz: ['Казахстан', 'Национальный банк РК', 'тенге', '₸'], uz: ['Узбекистан', 'Центральный банк Республики Узбекистан', 'сум', 'сум'],
+  kg: ['Кыргызстан', 'Национальный банк Кыргызской Республики', 'сом', 'сом'], tj: ['Таджикистан', 'Национальный банк Таджикистана', 'сомони', 'сомони'],
+  tm: ['Туркменистан', 'Центральный банк Туркменистана', 'манат', 'манат'],
+};
+const fmtN = n => String(Math.round(+n)).replace(/\B(?=(\d{3})+(?!\d))/g, ' ');
+// новые выпуски, добавленные автоматически: public/auto/coins.js (см. tools/update.py)
+async function autoCoin(env, request, cc, slug) {
+  try {
+    const r = await env.ASSETS.fetch(new URL('/auto/coins.js', request.url)); if (!r.ok) return null;
+    const t = await r.text(); const A = JSON.parse(t.slice(t.indexOf('{'), t.lastIndexOf('}') + 1));
+    const a = (A.coins || []).find(x => x.r[10] === cc && x.slug === slug); if (!a) return null;
+    const [title, date, nomV, metal, w, d, q, mint, section, series] = a.r, [name, issuer, cur, sym] = CTRY[cc];
+    const nom = +nomV ? `${fmtN(nomV)} ${cur}` : '', year = date.slice(-4);
+    const specs = [['Страна', name], ['Эмитент', issuer], ['Раздел', section], ['Серия', series], [date.length === 4 ? 'Год выпуска' : 'Дата выпуска', date],
+      ['Номинал', nom || '—'], ['Металл', metal], ...(w ? [['Вес', w + ' г']] : []), ...(+d ? [['Диаметр', d + ' мм']] : []), ['Качество', q || '—'], ['Тираж', mint ? fmtN(mint) + ' шт.' : '—'],
+      ...(a.price ? [['Цена в магазине НБ', fmtN(a.price) + ' ' + sym]] : [])];
+    const desc = `Памятная монета «${title}» (${name}, ${year}): номинал ${nom || '—'}, ${metal}` + (w ? `, ${w} г` : '') + (+d ? `, ${d} мм` : '') +
+      (mint ? `, тираж ${fmtN(mint)} шт.` : '') + `. Серия «${series}». Смотрите монету в 3D и ведите учёт коллекции на Jadiger.`;
+    return [a.id, `${title} — ${nom}, ${metal}, ${year}`.replace(' — , ', ' — '), desc, specs, !!a.photo];
+  } catch (e) { return null; }
+}
+
 export async function coinPage(ctx, cc) {
   const { request, env, params } = ctx;
   const key = cc + '/' + String(params.slug || '').toLowerCase();
-  const c = COINS[key];
+  const c = COINS[key] || await autoCoin(env, request, cc, String(params.slug || '').toLowerCase());
   const res = await env.ASSETS.fetch(new URL('/', request.url));
   let html = await res.text();
   if (!c) {
