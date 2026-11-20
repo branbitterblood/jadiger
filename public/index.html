@@ -181,6 +181,10 @@ select{max-width:100%}
 .info{padding:22px 22px 18px;overflow:auto;display:flex;flex-direction:column;gap:16px}
 .close{position:absolute;top:12px;right:12px;width:36px;height:36px;padding:0;border-radius:50%;font-size:18px;z-index:2}
 .tag{display:inline-block;font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--gold);border:1px solid #4a4130;border-radius:999px;padding:4px 10px}
+.mhead{display:flex;align-items:flex-start;justify-content:space-between;gap:10px}
+.share{display:inline-flex;align-items:center;gap:6px;flex:none;padding:5px 11px;border-radius:999px;font-size:12.5px;color:var(--gold2);background:transparent;border:1px solid var(--line);cursor:pointer;transition:border-color .2s,background .2s}
+.share:hover{border-color:var(--gold);background:rgba(201,169,106,.08)}
+.share.done{color:var(--ok);border-color:var(--ok)}
 .info h2{font-family:"Cormorant Garamond",serif;font-weight:600;font-size:30px;line-height:1.08;margin:10px 0 0}
 .specs{width:100%;border-collapse:collapse;font-size:14px}
 .specs td{padding:7px 0;border-bottom:1px solid var(--line)}
@@ -364,7 +368,7 @@ textarea{resize:vertical;min-height:52px}
       </div>
     </section>
     <aside class="info">
-      <div><span class="tag" id="mTag"></span><h2 id="mTitle"></h2></div>
+      <div><div class="mhead"><span class="tag" id="mTag"></span><button class="share" id="bShare" title="Поделиться ссылкой на монету"><svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12"/><path d="M7 8l5-5 5 5"/><path d="M5 13v6a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-6"/></svg><span>Поделиться</span></button></div><h2 id="mTitle"></h2></div>
       <table class="specs" id="mSpecs"></table>
       <div>
         <h3>Мой экземпляр</h3>
@@ -1035,6 +1039,22 @@ function closeModal(fromHistory) {
 $('mClose').onclick = () => closeModal(); modal.addEventListener('click', e => { if (e.target === modal) closeModal(); });
 document.addEventListener('keydown', e => { if (e.key === 'Escape') { closeModal(); closeId(); closeLogin(); } if (!modal.classList.contains('open')) return; if (e.target.closest && e.target.closest('input,textarea,select')) return; if (e.key === 'ArrowRight') step(1); if (e.key === 'ArrowLeft') step(-1); });
 function step(d) { const list = window.currentView(); const i = list.indexOf(current); if (i < 0) return; window.openCoin(list[(i + d + list.length) % list.length]); }
+$('bShare').onclick = async () => {
+  if (current == null) return;
+  const c = COINS[current], url = location.origin + coinPath(current), title = c.title + ' — ' + nomStr(c);
+  if (navigator.share && matchMedia('(pointer: coarse)').matches) {
+    try { await navigator.share({ title, text: title + ' — в 3D на Jadiger', url }); } catch (e) {}
+    return;
+  }
+  let ok = false;
+  try { await navigator.clipboard.writeText(url); ok = true; } catch (e) {
+    const t = document.createElement('textarea'); t.value = url; t.style.position = 'fixed'; t.style.opacity = '0';
+    document.body.appendChild(t); t.select(); try { ok = document.execCommand('copy'); } catch (e2) {} t.remove();
+  }
+  const b = $('bShare'), lbl = b.querySelector('span');
+  if (ok) { b.classList.add('done'); lbl.textContent = 'Ссылка скопирована'; setTimeout(() => { b.classList.remove('done'); lbl.textContent = 'Поделиться'; }, 2000); }
+  else prompt('Ссылка на монету:', url);
+};
 $('mPrev').onclick = () => step(-1); $('mNext').onclick = () => step(1);
 const flash = (t) => { const el = $('saved'); el.textContent = t; el.classList.add('show'); setTimeout(() => el.classList.remove('show'), 2400); };
 $('bSave').onclick = async () => {
