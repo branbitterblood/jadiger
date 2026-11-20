@@ -886,16 +886,19 @@ function renderValue(ids) {
   const noPrice = ev.filter(e => !e.priced).length, noVal = ev.filter(e => !e.valued).length, noDate = ev.filter(e => !e.dated).length;
   // геометрия
   const W = Math.max(320, Math.round((box.clientWidth || 800) - 36)), H = W < 560 ? 220 : 280, L = W < 560 ? 54 : 70, R = W < 560 ? 70 : 92, T = 14, B = 28;
-  const t0 = Math.min(pts[0].t, now - 30 * 864e5), t1 = now, span = Math.max(t1 - t0, 864e5);
+  const first = pts[0].t, t1 = Math.max(now, pts[pts.length - 1].t) + Math.max(.4 * 864e5, (now - first) * .02), t0 = first - Math.max(5 * 864e5, (now - first) * .06), span = t1 - t0;
   const ymax = Math.max(totInv, totEst, 1) * 1.08;
   const X = t => L + (t - t0) / span * (W - L - R), Y = v => T + (1 - v / ymax) * (H - T - B);
-  const step = key => { let d = `M${X(t0)},${Y(0)}`; let y = Y(0); pts.forEach(p => { d += `H${X(p.t)}V${Y(p[key])}`; y = Y(p[key]); }); return d + `H${X(t1)}`; };
-  const area = step('est') + `V${Y(0)}H${X(t0)}Z`;
+  // линии начинаются с первой покупки (до неё обе равны нулю и сливались бы)
+  const step = key => { let d = ''; pts.forEach((p, i) => { d += i ? `H${X(p.t)}V${Y(p[key])}` : `M${X(p.t)},${Y(p[key])}`; }); return d + `H${X(t1)}`; };
+  const area = step('est') + `V${Y(0)}H${X(first)}Z`;
   const nice = v => { const p = 10 ** Math.floor(Math.log10(v)), m = v / p; return (m < 1.5 ? 1 : m < 3.5 ? 2 : m < 7.5 ? 5 : 10) * p; };
   const tick = nice(ymax / 4), yt = []; for (let v = 0; v <= ymax; v += tick) yt.push(v);
   const xt = []; const d0 = new Date(t0), months = (new Date(t1).getFullYear() - d0.getFullYear()) * 12 + new Date(t1).getMonth() - d0.getMonth();
   const every = Math.max(1, Math.ceil(months / Math.max(2, Math.floor((W - L - R) / 90))));
   for (let k = 1; k <= months; k += every) { const d = new Date(d0.getFullYear(), d0.getMonth() + k, 1); if (+d < t1) xt.push(+d); }
+  const shortSpan = span < 75 * 864e5;
+  if (shortSpan) { xt.length = 0; const dd = Math.max(1, Math.ceil(span / 864e5 / Math.max(2, Math.floor((W - L - R) / 80)))); for (let t = new Date(new Date(t0).toDateString()).getTime() + 864e5; t < t1; t += dd * 864e5) xt.push(t); }
   const lab = (v, color, txt) => `<text class="lbl" x="${X(t1) + 8}" y="${Y(v) + 4}">${txt}</text>`;
   let ly1 = Y(totEst), ly2 = Y(totInv); if (Math.abs(ly1 - ly2) < 16) { if (ly1 <= ly2) { ly1 -= 8; ly2 += 8; } else { ly1 += 8; ly2 -= 8; } }
   const diff = totEst - totInv, pct = totInv ? Math.round(diff / totInv * 100) : null;
@@ -906,18 +909,19 @@ function renderValue(ids) {
   box.innerHTML = `
     <div class="vhead">
       <div class="vlegend"><span><i style="background:${VC.est}"></i>Текущая оценка</span><span><i style="background:${VC.inv}"></i>Вложено</span></div>
-      ${curs.length > 1 ? `<div class="vcur">${curs.map(c => `<button data-vc="${c}" class="${c === cc ? 'on' : ''}">${COUNTRIES[c].flag} ${COUNTRIES[c].sym}</button>`).join('')}</div>` : ''}
+      ${curs.length > 1 ? `<div class="vcur">${curs.map(c => `<button data-vc="${c}" class="${c === cc ? 'on' : ''}">${COUNTRIES[c].sym === '₸' ? '₸ тенге' : COUNTRIES[c].cur}</button>`).join('')}</div>` : ''}
     </div>
     <div class="vchart" id="vChart">
       <svg viewBox="0 0 ${W} ${H}" role="img" aria-label="График: вложено ${fmt(totInv)} ${COUNTRIES[cc].sym}, текущая оценка ${fmt(totEst)} ${COUNTRIES[cc].sym}">
         ${yt.map(v => `<line class="grid" x1="${L}" x2="${W - R}" y1="${Y(v)}" y2="${Y(v)}"/><text class="ax" x="${L - 8}" y="${Y(v) + 4}" text-anchor="end">${v ? shortMoney(v, cc) : '0'}</text>`).join('')}
-        ${xt.map(t => `<text class="ax" x="${X(t)}" y="${H - 8}" text-anchor="middle">${MON[new Date(t).getMonth()]}${months > 10 ? ' ' + String(new Date(t).getFullYear()).slice(-2) : ''}</text>`).join('')}
+        ${xt.map(t => `<text class="ax" x="${X(t)}" y="${H - 8}" text-anchor="middle">${shortSpan ? new Date(t).getDate() + ' ' : ''}${MON[new Date(t).getMonth()]}${months > 10 ? ' ' + String(new Date(t).getFullYear()).slice(-2) : ''}</text>`).join('')}
         <path d="${area}" fill="${VC.est}" opacity=".12"/>
-        <path d="${step('inv')}" fill="none" stroke="${VC.inv}" stroke-width="2" stroke-linejoin="round"/>
         <path d="${step('est')}" fill="none" stroke="${VC.est}" stroke-width="2" stroke-linejoin="round"/>
+        <path d="${step('inv')}" fill="none" stroke="${VC.inv}" stroke-width="2" stroke-linejoin="round"/>
         ${pts.map(p => `<circle cx="${X(p.t)}" cy="${Y(p.est)}" r="4" fill="${VC.est}" stroke="#161a21" stroke-width="2"/>`).join('')}
+        ${pts.filter(p => p.inv > 0).map(p => `<circle cx="${X(p.t)}" cy="${Y(p.inv)}" r="4" fill="${VC.inv}" stroke="#161a21" stroke-width="2"/>`).join('')}
         <text class="lbl" x="${X(t1) + 8}" y="${ly1 + 4}">${shortMoney(totEst, cc)}</text>
-        <text class="lbl" x="${X(t1) + 8}" y="${ly2 + 4}" style="fill:var(--muted)">${shortMoney(totInv, cc)}</text>
+        <text class="lbl" x="${X(t1) + 8}" y="${ly2 + 4}">${shortMoney(totInv, cc)}</text>
         <line id="vCross" x1="0" x2="0" y1="${T}" y2="${H - B}" stroke="var(--muted)" stroke-dasharray="3 3" style="display:none"/>
         <rect x="${L}" y="${T}" width="${W - L - R}" height="${H - T - B}" fill="transparent" id="vHit"/>
       </svg>
@@ -947,6 +951,7 @@ function renderValue(ids) {
     let p = null; pts.forEach(q => { if (q.t <= t) p = q; });
     cross.style.display = ''; cross.setAttribute('x1', x); cross.setAttribute('x2', x);
     const vals = p || { inv: 0, est: 0, ids: [] };
+    if (!p) { tip.style.display = 'none'; cross.style.display = 'none'; return; }
     tip.innerHTML = `<em>${dstr(Math.min(t, now))}</em><br><span class="sw" style="background:${VC.est}"></span>Оценка: <b>${fmt(vals.est)} ${COUNTRIES[cc].sym}</b><br><span class="sw" style="background:${VC.inv}"></span>Вложено: <b>${fmt(vals.inv)} ${COUNTRIES[cc].sym}</b>` +
       (p && Math.abs(X(p.t) - x) < 14 ? '<br><em>' + p.ids.slice(0, 3).map(id => esc(COINS[id].title)).join(', ') + (p.ids.length > 3 ? ' и ещё ' + (p.ids.length - 3) : '') + '</em>' : '');
     tip.style.display = 'block'; tip.style.left = (x / W * r.width) + 'px'; tip.style.top = (Y(vals.est) / H * r.height - 8) + 'px'; };
