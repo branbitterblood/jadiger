@@ -168,16 +168,33 @@ export async function onRequest(ctx) {
       if (m === 'DELETE') { await env.DB.prepare('DELETE FROM wish WHERE user_id = ? AND coin_id = ?').bind(uid, id).run(); return json({ ok: true }); }
     }
 
-    if (seg[0] === 'photos' && seg.length === 2) {
+    // свои фото экземпляров: файлы в R2 (бинд PHOTOS), в D1 — только отметка с версией.
+    // Старые записи (data:URL прямо в D1) переносятся в R2 при первом чтении.
+    if (seg[0] === 'photos' && (seg.length === 2 || (seg.length === 3 && seg[2] === 'img'))) {
       const id = coinId(seg[1]); if (id === null) return err(400, 'bad_id', 'Неверный id');
-      if (m === 'GET') { const r = await env.DB.prepare('SELECT src FROM photos WHERE user_id = ? AND coin_id = ?').bind(uid, id).first(); return json({ src: r ? r.src : null }); }
+      const key = `p/${uid}/${id}`, R2 = env.PHOTOS;
+      const fromDataUrl = src => { const mt = /^data:(image\/(?:jpeg|png|webp));base64,(.+)$/.exec(src); const bin = atob(mt[2]); const u8 = new Uint8Array(bin.length); for (let i = 0; i < bin.length; i++) u8[i] = bin.charCodeAt(i); return { type: mt[1], bytes: u8 }; };
+      const save = async src => { const f = fromDataUrl(src); await R2.put(key, f.bytes, { httpMetadata: { contentType: f.type } }); const v = 'r2:' + Date.now(); await env.DB.prepare(`INSERT INTO photos (user_id, coin_id, src) VALUES (?1, ?2, ?3) ON CONFLICT(user_id, coin_id) DO UPDATE SET src = ?3`).bind(uid, id, v).run(); return v; };
+      if (seg.length === 3) {   // сам файл — только владельцу
+        if (m !== 'GET' || !R2) return err(404, 'not_found', 'Нет фото');
+        const o = await R2.get(key); if (!o) return err(404, 'not_found', 'Нет фото');
+        return new Response(o.body, { headers: { 'content-type': (o.httpMetadata && o.httpMetadata.contentType) || 'image/jpeg', 'cache-control': 'private, max-age=31536000, immutable', 'x-content-type-options': 'nosniff' } });
+      }
+      if (m === 'GET') {
+        const r = await env.DB.prepare('SELECT src FROM photos WHERE user_id = ? AND coin_id = ?').bind(uid, id).first();
+        if (!r) return json({ src: null });
+        let v = r.src;
+        if (R2 && v.startsWith('data:')) v = await save(v);          // ленивый перенос из D1 в R2
+        return json({ src: v.startsWith('r2:') ? `/api/photos/${id}/img?v=${v.slice(3)}` : v });
+      }
       if (m === 'PUT') {
         const { src } = await body(req, MAX_PHOTO + 100);
         if (typeof src !== 'string' || !/^data:image\/(jpeg|png|webp);base64,[A-Za-z0-9+/=]+$/.test(src) || src.length > MAX_PHOTO) return err(400, 'bad_photo', 'Нужна картинка JPEG/PNG/WebP до ~1 МБ');
-        await env.DB.prepare(`INSERT INTO photos (user_id, coin_id, src) VALUES (?1, ?2, ?3) ON CONFLICT(user_id, coin_id) DO UPDATE SET src = ?3`).bind(uid, id, src).run();
+        if (R2) await save(src);
+        else await env.DB.prepare(`INSERT INTO photos (user_id, coin_id, src) VALUES (?1, ?2, ?3) ON CONFLICT(user_id, coin_id) DO UPDATE SET src = ?3`).bind(uid, id, src).run();
         return json({ ok: true });
       }
-      if (m === 'DELETE') { await env.DB.prepare('DELETE FROM photos WHERE user_id = ? AND coin_id = ?').bind(uid, id).run(); return json({ ok: true }); }
+      if (m === 'DELETE') { if (R2) await R2.delete(key); await env.DB.prepare('DELETE FROM photos WHERE user_id = ? AND coin_id = ?').bind(uid, id).run(); return json({ ok: true }); }
     }
 
     if (path === 'identify' && m === 'POST') {
@@ -219,6 +236,7 @@ export async function onRequest(ctx) {
     }
 
     if (path === 'account' && m === 'DELETE') {
+      if (env.PHOTOS) { let cur; do { const l = await env.PHOTOS.list({ prefix: `p/${uid}/`, cursor: cur }); if (l.objects.length) await env.PHOTOS.delete(l.objects.map(o => o.key)); cur = l.truncated ? l.cursor : null; } while (cur); }
       await env.DB.batch(['items', 'wish', 'photos', 'ai_usage', 'sessions'].map(t => env.DB.prepare(`DELETE FROM ${t} WHERE user_id = ?`).bind(uid))
         .concat([env.DB.prepare('DELETE FROM users WHERE id = ?').bind(uid)]));
       return json({ ok: true }, 200, { 'set-cookie': sessionCookie('', 0, secure) });

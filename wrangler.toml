@@ -20,3 +20,8 @@ AI_PRICE_IN = "2"
 AI_PRICE_OUT = "10"
 AI_PRICE_CACHE_WRITE = "2.5"
 AI_PRICE_CACHE_READ = "0.2"
+
+# фото экземпляров пользователей
+[[r2_buckets]]
+binding = "PHOTOS"
+bucket_name = "jadiger-photos"
