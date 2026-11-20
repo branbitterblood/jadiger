@@ -19,6 +19,15 @@ body{font-family:Inter,system-ui,sans-serif;color:var(--text);background:radial-
 a{color:var(--gold2)}
 .wrap{max-width:1360px;margin:0 auto;padding:0 24px}
 header .wrap{padding-top:22px;padding-bottom:6px;display:flex;gap:16px;align-items:center;justify-content:space-between;flex-wrap:wrap}
+/* полосы прокрутки в цветах сайта: тонкие, тёмная дорожка, приглушённое золото */
+*{scrollbar-width:thin;scrollbar-color:rgba(201,169,106,.45) transparent}
+*::-webkit-scrollbar{width:8px;height:8px}
+*::-webkit-scrollbar-track{background:transparent}
+*::-webkit-scrollbar-thumb{background:rgba(201,169,106,.35);border-radius:8px;border:2px solid transparent;background-clip:padding-box}
+*::-webkit-scrollbar-thumb:hover{background:rgba(230,207,156,.7);background-clip:padding-box}
+*::-webkit-scrollbar-button{display:none;width:0;height:0}
+*::-webkit-scrollbar-corner{background:transparent}
+.strip{padding-bottom:10px}
 .shops{display:flex;flex-wrap:wrap;gap:6px 16px;justify-content:flex-end}
 .brand{display:flex;align-items:center;gap:12px}.brandMark{flex:none;color:var(--gold2)}@media(max-width:560px){.brandMark{width:32px;height:32px}}
 .brand>div{font-family:"Cormorant Garamond",serif;font-size:26px;font-weight:600;color:var(--gold2);letter-spacing:.16em;line-height:1}
