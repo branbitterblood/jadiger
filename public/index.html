@@ -826,7 +826,13 @@ function renderMy() {
   const diff = {}; Object.keys(investedCover).forEach(cc => { if (est[cc]) diff[cc] = est[cc] - investedCover[cc]; });
   const diffSum = Object.values(diff).reduce((a, b) => a + b, 0);
   // единая валюта (тенге или доллар) по курсу Нацбанка; пока курсы не загружены — суммы по валютам
-  const M = (m, sign) => { if (!RATES) return money(m, sign); const v = Object.entries(m).reduce((t, [c, x]) => t + conv(c, x), 0); return (sign ? (v >= 0 ? '+' : '−') : '') + fmtC(Math.abs(v)); };
+  let invC = 0, invCovC = 0, estC = 0;
+  if (RATES) ids.forEach(id => { const r = Store.items[id], q = Store.qty(id), c0 = COINS[id].country, u = unitValue(id), t = purchaseT(id);
+    const iv = +r.price > 0 ? convAt(c0, r.price * q, t) : 0; invC += iv; if (u) { estC += conv(c0, u.v * q); invCovC += iv; } });
+  const KV = { invested: invC, est: estC, diff: estC - invCovC };
+  const M = (m, sign) => { if (!RATES) return money(m, sign);
+    const key = m === invested ? 'invested' : m === est ? 'est' : m === diff ? 'diff' : null;
+    if (key) { const v = KV[key]; return (sign ? (v >= 0 ? '+' : '−') : '') + fmtC(Math.abs(v)); } const v = Object.entries(m).reduce((t, [c, x]) => t + conv(c, x), 0); return (sign ? (v >= 0 ? '+' : '−') : '') + fmtC(Math.abs(v)); };
   loadRates();
   $('kpis').innerHTML = `
     <div class="kpi"><b>${fmt(pieces)}</b><span>монет всего</span><em>${ids.length} из ${COINS.length} видов каталога</em></div>
@@ -834,7 +840,7 @@ function renderMy() {
     <div class="kpi"><b>${Object.keys(invested).length ? M(invested) : '0 ' + (RATES ? curSym() : '₸')}</b><span>вложено</span><em>по указанным ценам покупки</em></div>
     <div class="kpi"><b>${covered ? M(est) : '—'}</b><span>оценка</span><em>оценено ${covered} из ${ids.length} видов</em></div>
     <div class="kpi"><b>${Object.keys(diff).length ? M(diff, true) : '—'}</b><span>оценка минус вложения</span><em class="${diffSum > 0 ? 'up' : ''}">${Object.keys(investedCover).length ? 'по монетам с ценой и оценкой' : 'укажите цены покупки'}</em></div>`;
-  renderValue(ids);
+  renderValue(ids); loadHist();
   // series progress
   const rows = Object.entries(bySeries).map(([name, list]) => ({ name, list, have: list.filter(c => Store.owned(c.id)).length }))
     .sort((a, b) => (b.have / b.list.length) - (a.have / a.list.length) || b.have - a.have || a.name.localeCompare(b.name, 'ru'));
@@ -869,6 +875,21 @@ let valCur = (() => { try { return localStorage.getItem('jadiger-valcur') || 'kz
 let RATES = null, ratesP = null;
 function loadRates() { if (!ratesP) ratesP = fetch('/api/rates').then(r => r.json()).then(r => { RATES = r; if (!$('vMy').hidden) renderCab(); }).catch(() => { ratesP = null; }); return ratesP; }
 const conv = (cc, v) => RATES ? v * (RATES[cc] || 0) / (valCur === 'usd' ? RATES.usd : 1) : 0;
+/* курсы на даты покупок: вложения считаются по курсу дня покупки, оценка — по сегодняшнему */
+const HIST = {}, histWant = new Set(); let histP = null;
+const isoDay = t => { const d = new Date(t); return d.getFullYear() + '-' + String(d.getMonth() + 1).padStart(2, '0') + '-' + String(d.getDate()).padStart(2, '0'); };
+function convAt(cc, v, t) {
+  if (cc === 'kz' && valCur !== 'usd') return v;
+  const k = isoDay(t), h = HIST[k];
+  if (!h) { if (k !== isoDay(Date.now())) histWant.add(k); return conv(cc, v); }
+  return v * (h[cc] || 0) / (valCur === 'usd' ? h.usd : 1);
+}
+function loadHist() {
+  const need = [...histWant].filter(k => !HIST[k]); histWant.clear();
+  if (!need.length || histP) return;
+  histP = fetch('/api/rates?dates=' + need.slice(0, 80).join(',')).then(r => r.json()).then(o => { Object.entries(o).forEach(([k, v]) => { HIST[k] = v || RATES; }); histP = null; if (!$('vMy').hidden) renderCab(); }).catch(() => { need.forEach(k => { HIST[k] = RATES; }); histP = null; });
+}
+const purchaseT = id => { const r = Store.items[id]; const d = r.date && /^\d{4}-\d\d-\d\d$/.test(r.date) ? Date.parse(r.date + 'T12:00:00') : NaN; return isFinite(d) ? d : (+r.updated || Date.now()); };
 const curSym = () => valCur === 'usd' ? '$' : '₸';
 const fmtC = v => valCur === 'usd' ? '$' + Math.round(v).toLocaleString('ru-RU') : fmt(v) + ' ₸';
 const shortC = v => { const a = Math.abs(v), u = valCur === 'usd';
@@ -883,12 +904,12 @@ window.addEventListener('resize', () => { clearTimeout(window.__vrT); window.__v
 function renderValue(ids) {
   valIds = ids;
   const box = $('valBox');
-  const purchaseT = id => { const r = Store.items[id]; const d = r.date && /^\d{4}-\d\d-\d\d$/.test(r.date) ? Date.parse(r.date + 'T12:00:00') : NaN; return isFinite(d) ? d : (+r.updated || Date.now()); };
   if (!ids.length) { box.innerHTML = '<p class="vnote" style="margin:0">Добавьте монеты в коллекцию и укажите цены покупки — здесь появится график вложений и текущей оценки.</p>'; return; }
   if (!RATES) { box.innerHTML = '<p class="vnote" style="margin:0">Загружаю курсы валют Нацбанка…</p>'; loadRates(); return; }
   const list = ids;
   const ev = list.map(id => { const r = Store.items[id], q = Store.qty(id), u = unitValue(id), c0 = COINS[id].country;
-    return { id, t: purchaseT(id), inv: +r.price > 0 ? conv(c0, r.price * q) : 0, est: u ? conv(c0, u.v * q) : 0, dated: !!r.date, priced: +r.price > 0, valued: !!u }; }).sort((a, b) => a.t - b.t);
+    const t = purchaseT(id);
+    return { id, t, inv: +r.price > 0 ? convAt(c0, r.price * q, t) : 0, est: u ? conv(c0, u.v * q) : 0, dated: !!r.date, priced: +r.price > 0, valued: !!u }; }).sort((a, b) => a.t - b.t);
   const curList = [...new Set(list.map(id => COINS[id].country))];
   const pts = []; let ci = 0, ce = 0;
   ev.forEach(e => { ci += e.inv; ce += e.est; const last = pts[pts.length - 1];
@@ -949,7 +970,7 @@ function renderValue(ids) {
       </div>
       <div><h4>Самые ценные</h4><div class="vtop" id="vTop"></div></div>
     </div>
-    <div class="vnote">Суммы в сомах, сумах и других валютах пересчитаны по официальному курсу Нацбанка РК на ${esc(RATES.date)}${curList.length > 1 || valCur === 'usd' ? ` (${curList.filter(c => c !== 'kz').concat(valCur === 'usd' ? ['usd'] : []).map(c => c === 'usd' ? '1 $ = ' + RATES.usd.toLocaleString('ru-RU') + ' ₸' : '1 ' + COUNTRIES[c].sym + ' = ' + RATES[c].toLocaleString('ru-RU', { maximumFractionDigits: 3 }) + ' ₸').join(', ')})` : ''}; вложения тоже по сегодняшнему курсу. Оценка — ваша оценка монеты, иначе цена магазина Нацбанка, иначе цена покупки. Линия оценки показывает сегодняшнюю стоимость монет, купленных к каждой дате.
+    <div class="vnote">Валюты пересчитаны по официальным курсам Нацбанка РК: оценка — по курсу на ${esc(RATES.date)}${curList.length > 1 || valCur === 'usd' ? ` (${curList.filter(c => c !== 'kz').concat(valCur === 'usd' ? ['usd'] : []).map(c => c === 'usd' ? '1 $ = ' + RATES.usd.toLocaleString('ru-RU') + ' ₸' : '1 ' + COUNTRIES[c].sym + ' = ' + RATES[c].toLocaleString('ru-RU', { maximumFractionDigits: 3 }) + ' ₸').join(', ')})` : ''}; вложения — по курсу на дату покупки${histWant.size || histP ? ' (уточняю курсы…)' : ''}. Оценка — ваша оценка монеты, иначе цена магазина Нацбанка, иначе цена покупки. Линия оценки показывает сегодняшнюю стоимость монет, купленных к каждой дате.
       ${noPrice ? ` Без цены покупки: ${noPrice} ${plural(noPrice, 'монета', 'монеты', 'монет')}.` : ''}${noVal ? ` Без оценки: ${noVal}.` : ''}${noDate ? ` Без даты покупки: ${noDate} — для них взята дата добавления.` : ''}
       <details class="vtable"><summary style="cursor:pointer">Показать таблицей</summary><table><tr><th>Дата</th><th>Монета</th><th>Вложено</th><th>Оценка</th></tr>
       ${ev.map(e => `<tr><td>${dstr(e.t)}</td><td>${esc(COINS[e.id].title)}${Store.qty(e.id) > 1 ? ' ×' + Store.qty(e.id) : ''}</td><td>${e.inv ? fmtC(e.inv) : '—'}</td><td>${e.est ? fmtC(e.est) : '—'}</td></tr>`).join('')}</table></details></div>`;

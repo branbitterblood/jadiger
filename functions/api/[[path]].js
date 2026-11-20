@@ -83,6 +83,26 @@ async function body(req, limit = 2_000_000) {
   try { return t ? JSON.parse(t) : {}; } catch (e) { throw Object.assign(new Error('bad_json'), { status: 400 }); }
 }
 
+/* ---------------- курсы валют Нацбанка РК ---------------- */
+const RATES_FALLBACK = { date: '21.11.2026', kz: 1, usd: 455, uz: 0.038, kg: 5.2, tj: 49.73, tm: 130 };
+async function ratesOn(iso, ctx, noCache) {
+  const ck = new Request('https://jadiger.com/__rates/' + iso);
+  if (!noCache) { const hit = await caches.default.match(ck); if (hit) return hit.json(); }
+  for (let back = 0; back < 6; back++) {   // в выходные и праздники берём ближайший предыдущий курс
+    const d = new Date(Date.parse(iso + 'T12:00:00Z') - back * 86400e3);
+    const ds = [d.getUTCDate(), d.getUTCMonth() + 1].map(x => String(x).padStart(2, '0')).join('.') + '.' + d.getUTCFullYear();
+    try {
+      const r = await fetch('https://nationalbank.kz/rss/get_rates.cfm?fdate=' + ds, { cf: { cacheTtl: 3600 } }); if (!r.ok) continue;
+      const x = await r.text(), rate = code => { const mm = new RegExp('<title>' + code + '</title>\\s*<description>([\\d.]+)</description>\\s*<quant>(\\d+)</quant>').exec(x); return mm ? +mm[1] / +mm[2] : null; };
+      const usd = rate('USD'); if (!usd) continue;
+      const out = { date: ds, kz: 1, usd, uz: rate('UZS') || RATES_FALLBACK.uz, kg: rate('KGS') || RATES_FALLBACK.kg, tj: rate('TJS') || RATES_FALLBACK.tj, tm: rate('TMT') || usd / 3.5, src: 'Национальный банк РК' };
+      if (!noCache && ctx) ctx.waitUntil(caches.default.put(ck, new Response(JSON.stringify(out), { headers: { 'cache-control': 'public, max-age=31536000' } })));
+      return out;
+    } catch (e) {}
+  }
+  return null;
+}
+
 /* ---------------- маршруты ---------------- */
 export async function onRequest(ctx) {
   const { request: req, env } = ctx;
@@ -125,23 +145,21 @@ export async function onRequest(ctx) {
       return json({ ok: true }, 200, { 'set-cookie': sessionCookie('', 0, secure) });
     }
 
-    // официальные курсы Нацбанка РК: тенге за единицу валюты (кэш 6 часов)
+    // официальные курсы Нацбанка РК: тенге за единицу валюты.
+    // /api/rates — на сегодня (кэш 6 часов); /api/rates?dates=2025-04-02,2026-02-02 — на даты покупок (прошлое не меняется, кэш навсегда)
     if (path === 'rates' && m === 'GET') {
+      const list = (url.searchParams.get('dates') || '').split(',').filter(d => /^\d{4}-\d\d-\d\d$/.test(d)).slice(0, 80);
+      if (list.length) {
+        const out = {};
+        await Promise.all([...new Set(list)].map(async d => { out[d] = await ratesOn(d, ctx); }));
+        return json(out, 200, { 'cache-control': 'public, max-age=86400' });
+      }
       const cache = caches.default, ck = new Request(url.origin + '/api/rates?v=1');
       const hit = await cache.match(ck); if (hit) return hit;
-      const FALLBACK = { date: '21.11.2026', kz: 1, usd: 455, uz: 0.038, kg: 5.2, tj: 49.73, tm: 130 };
-      let out = null;
-      for (let back = 0; back < 4 && !out; back++) {
-        const d = new Date(Date.now() + 5 * 3600e3 - back * 86400e3), ds = [d.getUTCDate(), d.getUTCMonth() + 1].map(x => String(x).padStart(2, '0')).join('.') + '.' + d.getUTCFullYear();
-        try {
-          const r = await fetch('https://nationalbank.kz/rss/get_rates.cfm?fdate=' + ds, { cf: { cacheTtl: 3600 } }); if (!r.ok) continue;
-          const x = await r.text(), rate = code => { const mm = new RegExp('<title>' + code + '</title>\\s*<description>([\\d.]+)</description>\\s*<quant>(\\d+)</quant>').exec(x); return mm ? +mm[1] / +mm[2] : null; };
-          const usd = rate('USD'); if (!usd) continue;
-          out = { date: ds, kz: 1, usd, uz: rate('UZS') || FALLBACK.uz, kg: rate('KGS') || FALLBACK.kg, tj: rate('TJS') || FALLBACK.tj, tm: rate('TMT') || usd / 3.5, src: 'Национальный банк РК' };
-        } catch (e) {}
-      }
-      const res = json(out || { ...FALLBACK, src: 'Национальный банк РК (сохранённые курсы)' }, 200, { 'cache-control': 'public, max-age=21600' });
-      if (out) ctx.waitUntil(cache.put(ck, res.clone()));
+      const today = new Date(Date.now() + 5 * 3600e3).toISOString().slice(0, 10);
+      const r = await ratesOn(today, ctx, true);
+      const res = json(r || { ...RATES_FALLBACK, src: 'Национальный банк РК (сохранённые курсы)' }, 200, { 'cache-control': 'public, max-age=21600' });
+      if (r) ctx.waitUntil(cache.put(ck, res.clone()));
       return res;
     }
 
