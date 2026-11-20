@@ -151,6 +151,38 @@ button.danger{border-color:#6a3030;color:#f0a0a0}
 .kpi em{display:block;font-style:normal;font-size:12px;margin-top:4px;color:var(--muted)}
 .kpi em.up{color:var(--ok)}
 .series{display:flex;flex-direction:column;gap:8px}
+/* стоимость коллекции */
+.vbox{background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:16px 18px}
+.vhead{display:flex;align-items:center;gap:14px;flex-wrap:wrap}
+.vlegend{display:flex;gap:16px;flex-wrap:wrap;font-size:13px;color:var(--text)}
+.vlegend span{display:inline-flex;align-items:center;gap:7px}
+.vlegend i{width:16px;height:2px;border-radius:2px;display:inline-block}
+.vcur{margin-left:auto;display:flex;gap:6px}
+.vcur button{padding:5px 11px;font-size:12.5px}
+.vchart{position:relative;margin-top:10px}
+.vchart svg{display:block;width:100%;height:auto;overflow:visible}
+.vchart .ax{fill:var(--muted);font:11.5px Inter,sans-serif}
+.vchart .grid{stroke:var(--line);stroke-width:1}
+.vchart .lbl{fill:var(--text);font:600 12px Inter,sans-serif}
+.vtip{position:absolute;pointer-events:none;background:#0e1116;border:1px solid var(--line);border-radius:10px;padding:8px 10px;font-size:12.5px;line-height:1.5;white-space:nowrap;box-shadow:0 6px 20px rgba(0,0,0,.4);transform:translate(-50%,-100%);display:none}
+.vtip b{color:var(--text)} .vtip em{font-style:normal;color:var(--muted)}
+.vtip .sw{display:inline-block;width:10px;height:2px;margin-right:6px;vertical-align:middle}
+.vfoot{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:14px}
+@media (max-width:720px){.vfoot{grid-template-columns:1fr}}
+.vfoot h4{margin:0 0 8px;font-size:13px;color:var(--muted);font-weight:500}
+.vtop{display:flex;flex-direction:column;gap:6px}
+.vtop div{display:flex;align-items:center;gap:10px;cursor:pointer;padding:4px;border-radius:10px}
+.vtop div:hover{background:#1c212a}
+.vtop img,.vtop canvas{width:34px;height:34px;object-fit:contain;flex:none}
+.vtop span{flex:1;font-size:13.5px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.vtop b{font-size:13.5px;font-variant-numeric:tabular-nums}
+.vsec{display:flex;height:10px;border-radius:5px;overflow:hidden;gap:2px;margin:6px 0 8px}
+.vsec i{display:block;height:100%}
+.vnote{font-size:12.5px;color:var(--muted);margin-top:8px}
+.vtable{margin-top:10px;font-size:13px}
+.vtable table{width:100%;border-collapse:collapse}
+.vtable td,.vtable th{padding:5px 6px;border-bottom:1px solid var(--line);text-align:left}
+.vtable td:nth-child(n+3),.vtable th:nth-child(n+3){text-align:right;font-variant-numeric:tabular-nums}
 .srow{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:12px 14px}
 .srow .top{display:flex;align-items:center;gap:12px;cursor:pointer}
 .srow .nm{flex:1;font-weight:500;font-size:14px}
@@ -353,6 +385,8 @@ textarea{resize:vertical;min-height:52px}
       <div class="btns" style="display:flex;gap:8px;margin-top:14px"><button class="share big" id="bShareCol"><svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12"/><path d="M7 8l5-5 5 5"/><path d="M5 13v6a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-6"/></svg><span>Поделиться коллекцией</span></button></div>
       <div class="src">Оценка берётся из вашей оценки, затем из цены магазина Нацбанка (kazcoins), затем из цены покупки.</div>
       <div class="kpis" id="kpis"></div>
+      <h2 class="sec">Стоимость коллекции</h2>
+      <div class="vbox" id="valBox"></div>
       <h2 class="sec">Прогресс по сериям</h2>
       <div class="series" id="series"></div>
       <h2 class="sec">Мои монеты</h2>
@@ -797,6 +831,7 @@ function renderMy() {
     <div class="kpi"><b>${Object.keys(invested).length ? money(invested) : '0 ₸'}</b><span>вложено</span><em>по указанным ценам покупки</em></div>
     <div class="kpi"><b>${covered ? money(est) : '—'}</b><span>оценка</span><em>оценено ${covered} из ${ids.length} видов</em></div>
     <div class="kpi"><b>${Object.keys(diff).length ? money(diff, true) : '—'}</b><span>оценка минус вложения</span><em class="${diffSum > 0 ? 'up' : ''}">${Object.keys(investedCover).length ? 'по монетам с ценой и оценкой' : 'укажите цены покупки'}</em></div>`;
+  renderValue(ids);
   // series progress
   const rows = Object.entries(bySeries).map(([name, list]) => ({ name, list, have: list.filter(c => Store.owned(c.id)).length }))
     .sort((a, b) => (b.have / b.list.length) - (a.have / a.list.length) || b.have - a.have || a.name.localeCompare(b.name, 'ru'));
@@ -823,6 +858,100 @@ function renderMy() {
   const mine = ids.map(id => COINS[id]).sort((a, b) => b.dkey.localeCompare(a.dkey));
   $('myGrid').replaceChildren(...mine.map(c => { if (!myCards[c.id]) { myCards[c.id] = cardEl(c); } refreshCard(c.id); return myCards[c.id]; }));
   $('myEmpty').hidden = mine.length > 0;
+}
+/* ===== стоимость коллекции: вложено и текущая оценка по датам покупки ===== */
+const VC = { inv: '#3f8fd6', est: '#b08a2c' };   // проверено validate_palette.js на тёмной панели #161a21
+let valCur = null;
+const shortMoney = (v, cc) => { const a = Math.abs(v), s = COUNTRIES[cc].sym;
+  return (a >= 1e9 ? (v / 1e9).toLocaleString('ru-RU', { maximumFractionDigits: 1 }) + ' млрд' : a >= 1e6 ? (v / 1e6).toLocaleString('ru-RU', { maximumFractionDigits: 1 }) + ' млн' : a >= 1e4 ? Math.round(v / 1e3) + ' тыс.' : fmt(v)) + ' ' + s; };
+const MON = ['янв', 'фев', 'мар', 'апр', 'мая', 'июн', 'июл', 'авг', 'сен', 'окт', 'ноя', 'дек'];
+const dstr = t => { const d = new Date(t); return d.getDate() + ' ' + MON[d.getMonth()] + ' ' + d.getFullYear(); };
+let valIds = null;
+window.addEventListener('resize', () => { clearTimeout(window.__vrT); window.__vrT = setTimeout(() => { if (valIds && !$('vMy').hidden && !$('pMy').hidden) renderValue(valIds); }, 200); });
+function renderValue(ids) {
+  valIds = ids;
+  const box = $('valBox');
+  const purchaseT = id => { const r = Store.items[id]; const d = r.date && /^\d{4}-\d\d-\d\d$/.test(r.date) ? Date.parse(r.date + 'T12:00:00') : NaN; return isFinite(d) ? d : (+r.updated || Date.now()); };
+  const byCur = {}; ids.forEach(id => { (byCur[COINS[id].country] = byCur[COINS[id].country] || []).push(id); });
+  const curs = Object.keys(byCur).sort((a, b) => byCur[b].length - byCur[a].length);
+  if (!curs.length) { box.innerHTML = '<p class="vnote" style="margin:0">Добавьте монеты в коллекцию и укажите цены покупки — здесь появится график вложений и текущей оценки.</p>'; return; }
+  if (!curs.includes(valCur)) valCur = curs[0];
+  const cc = valCur, list = byCur[cc];
+  const ev = list.map(id => { const r = Store.items[id], q = Store.qty(id), u = unitValue(id);
+    return { id, t: purchaseT(id), inv: +r.price > 0 ? r.price * q : 0, est: u ? u.v * q : 0, dated: !!r.date, priced: +r.price > 0, valued: !!u }; }).sort((a, b) => a.t - b.t);
+  const pts = []; let ci = 0, ce = 0;
+  ev.forEach(e => { ci += e.inv; ce += e.est; const last = pts[pts.length - 1];
+    if (last && new Date(last.t).toDateString() === new Date(e.t).toDateString()) { last.inv = ci; last.est = ce; last.ids.push(e.id); } else pts.push({ t: e.t, inv: ci, est: ce, ids: [e.id] }); });
+  const now = Date.now(), totInv = ci, totEst = ce;
+  const noPrice = ev.filter(e => !e.priced).length, noVal = ev.filter(e => !e.valued).length, noDate = ev.filter(e => !e.dated).length;
+  // геометрия
+  const W = Math.max(320, Math.round((box.clientWidth || 800) - 36)), H = W < 560 ? 220 : 280, L = W < 560 ? 54 : 70, R = W < 560 ? 70 : 92, T = 14, B = 28;
+  const t0 = Math.min(pts[0].t, now - 30 * 864e5), t1 = now, span = Math.max(t1 - t0, 864e5);
+  const ymax = Math.max(totInv, totEst, 1) * 1.08;
+  const X = t => L + (t - t0) / span * (W - L - R), Y = v => T + (1 - v / ymax) * (H - T - B);
+  const step = key => { let d = `M${X(t0)},${Y(0)}`; let y = Y(0); pts.forEach(p => { d += `H${X(p.t)}V${Y(p[key])}`; y = Y(p[key]); }); return d + `H${X(t1)}`; };
+  const area = step('est') + `V${Y(0)}H${X(t0)}Z`;
+  const nice = v => { const p = 10 ** Math.floor(Math.log10(v)), m = v / p; return (m < 1.5 ? 1 : m < 3.5 ? 2 : m < 7.5 ? 5 : 10) * p; };
+  const tick = nice(ymax / 4), yt = []; for (let v = 0; v <= ymax; v += tick) yt.push(v);
+  const xt = []; const d0 = new Date(t0), months = (new Date(t1).getFullYear() - d0.getFullYear()) * 12 + new Date(t1).getMonth() - d0.getMonth();
+  const every = Math.max(1, Math.ceil(months / Math.max(2, Math.floor((W - L - R) / 90))));
+  for (let k = 1; k <= months; k += every) { const d = new Date(d0.getFullYear(), d0.getMonth() + k, 1); if (+d < t1) xt.push(+d); }
+  const lab = (v, color, txt) => `<text class="lbl" x="${X(t1) + 8}" y="${Y(v) + 4}">${txt}</text>`;
+  let ly1 = Y(totEst), ly2 = Y(totInv); if (Math.abs(ly1 - ly2) < 16) { if (ly1 <= ly2) { ly1 -= 8; ly2 += 8; } else { ly1 += 8; ly2 -= 8; } }
+  const diff = totEst - totInv, pct = totInv ? Math.round(diff / totInv * 100) : null;
+  // доли по разделам (по оценке)
+  const secs = {}; ev.forEach(e => { const s = COINS[e.id].section; secs[s] = (secs[s] || 0) + e.est; });
+  const SEC_C = { 'Золото': '#b08a2c', 'Серебро': '#8d97a6', 'Недрагоценные': '#5b6473' };
+  const top = ev.filter(e => e.est).sort((a, b) => b.est - a.est).slice(0, 5);
+  box.innerHTML = `
+    <div class="vhead">
+      <div class="vlegend"><span><i style="background:${VC.est}"></i>Текущая оценка</span><span><i style="background:${VC.inv}"></i>Вложено</span></div>
+      ${curs.length > 1 ? `<div class="vcur">${curs.map(c => `<button data-vc="${c}" class="${c === cc ? 'on' : ''}">${COUNTRIES[c].flag} ${COUNTRIES[c].sym}</button>`).join('')}</div>` : ''}
+    </div>
+    <div class="vchart" id="vChart">
+      <svg viewBox="0 0 ${W} ${H}" role="img" aria-label="График: вложено ${fmt(totInv)} ${COUNTRIES[cc].sym}, текущая оценка ${fmt(totEst)} ${COUNTRIES[cc].sym}">
+        ${yt.map(v => `<line class="grid" x1="${L}" x2="${W - R}" y1="${Y(v)}" y2="${Y(v)}"/><text class="ax" x="${L - 8}" y="${Y(v) + 4}" text-anchor="end">${v ? shortMoney(v, cc) : '0'}</text>`).join('')}
+        ${xt.map(t => `<text class="ax" x="${X(t)}" y="${H - 8}" text-anchor="middle">${MON[new Date(t).getMonth()]}${months > 10 ? ' ' + String(new Date(t).getFullYear()).slice(-2) : ''}</text>`).join('')}
+        <path d="${area}" fill="${VC.est}" opacity=".12"/>
+        <path d="${step('inv')}" fill="none" stroke="${VC.inv}" stroke-width="2" stroke-linejoin="round"/>
+        <path d="${step('est')}" fill="none" stroke="${VC.est}" stroke-width="2" stroke-linejoin="round"/>
+        ${pts.map(p => `<circle cx="${X(p.t)}" cy="${Y(p.est)}" r="4" fill="${VC.est}" stroke="#161a21" stroke-width="2"/>`).join('')}
+        <text class="lbl" x="${X(t1) + 8}" y="${ly1 + 4}">${shortMoney(totEst, cc)}</text>
+        <text class="lbl" x="${X(t1) + 8}" y="${ly2 + 4}" style="fill:var(--muted)">${shortMoney(totInv, cc)}</text>
+        <line id="vCross" x1="0" x2="0" y1="${T}" y2="${H - B}" stroke="var(--muted)" stroke-dasharray="3 3" style="display:none"/>
+        <rect x="${L}" y="${T}" width="${W - L - R}" height="${H - T - B}" fill="transparent" id="vHit"/>
+      </svg>
+      <div class="vtip" id="vTip"></div>
+    </div>
+    <div class="vfoot">
+      <div>
+        <h4>Итого в ${COUNTRIES[cc].sym === '₸' ? 'тенге' : COUNTRIES[cc].cur}</h4>
+        <div style="font-size:14px;line-height:1.7">Вложено: <b>${fmt(totInv)} ${COUNTRIES[cc].sym}</b><br>Текущая оценка: <b>${fmt(totEst)} ${COUNTRIES[cc].sym}</b>
+        ${totInv ? `<br>Разница: <b style="color:${diff >= 0 ? 'var(--ok)' : '#e88'}">${diff >= 0 ? '+' : '−'}${fmt(Math.abs(diff))} ${COUNTRIES[cc].sym} (${diff >= 0 ? '+' : '−'}${Math.abs(pct)}%)</b>` : ''}</div>
+        <h4 style="margin-top:12px">Оценка по разделам</h4>
+        <div class="vsec">${SECTIONS.filter(s => secs[s]).map(s => `<i style="width:${secs[s] / (totEst || 1) * 100}%;background:${SEC_C[s]}" title="${s}"></i>`).join('')}</div>
+        <div class="vlegend" style="font-size:12.5px">${SECTIONS.filter(s => secs[s]).map(s => `<span><i style="background:${SEC_C[s]};height:8px;width:8px;border-radius:2px"></i>${s} · ${Math.round(secs[s] / (totEst || 1) * 100)}%</span>`).join('')}</div>
+      </div>
+      <div><h4>Самые ценные</h4><div class="vtop" id="vTop"></div></div>
+    </div>
+    <div class="vnote">Оценка — ваша оценка монеты, иначе цена магазина Нацбанка, иначе цена покупки. Линия оценки показывает сегодняшнюю стоимость монет, купленных к каждой дате.
+      ${noPrice ? ` Без цены покупки: ${noPrice} ${plural(noPrice, 'монета', 'монеты', 'монет')}.` : ''}${noVal ? ` Без оценки: ${noVal}.` : ''}${noDate ? ` Без даты покупки: ${noDate} — для них взята дата добавления.` : ''}
+      <details class="vtable"><summary style="cursor:pointer">Показать таблицей</summary><table><tr><th>Дата</th><th>Монета</th><th>Вложено</th><th>Оценка</th></tr>
+      ${ev.map(e => `<tr><td>${dstr(e.t)}</td><td>${esc(COINS[e.id].title)}${Store.qty(e.id) > 1 ? ' ×' + Store.qty(e.id) : ''}</td><td>${e.inv ? fmt(e.inv) : '—'}</td><td>${e.est ? fmt(e.est) : '—'}</td></tr>`).join('')}</table></details></div>`;
+  $('vTop').replaceChildren(...top.map(e => { const d = document.createElement('div'); d.dataset.open = e.id; d.append(thumbEl(COINS[e.id], 68));
+    d.insertAdjacentHTML('beforeend', `<span>${esc(COINS[e.id].title)}</span><b>${shortMoney(e.est, cc)}</b>`); return d; }));
+  box.querySelectorAll('[data-vc]').forEach(b => b.onclick = () => { valCur = b.dataset.vc; renderValue(ids); });
+  // подсказка при наведении
+  const svg = box.querySelector('svg'), tip = $('vTip'), cross = $('vCross'), hit = $('vHit');
+  const show = ev2 => { const r = svg.getBoundingClientRect(), x = (ev2.clientX - r.left) / r.width * W, t = t0 + (x - L) / (W - L - R) * span;
+    let p = null; pts.forEach(q => { if (q.t <= t) p = q; });
+    cross.style.display = ''; cross.setAttribute('x1', x); cross.setAttribute('x2', x);
+    const vals = p || { inv: 0, est: 0, ids: [] };
+    tip.innerHTML = `<em>${dstr(Math.min(t, now))}</em><br><span class="sw" style="background:${VC.est}"></span>Оценка: <b>${fmt(vals.est)} ${COUNTRIES[cc].sym}</b><br><span class="sw" style="background:${VC.inv}"></span>Вложено: <b>${fmt(vals.inv)} ${COUNTRIES[cc].sym}</b>` +
+      (p && Math.abs(X(p.t) - x) < 14 ? '<br><em>' + p.ids.slice(0, 3).map(id => esc(COINS[id].title)).join(', ') + (p.ids.length > 3 ? ' и ещё ' + (p.ids.length - 3) : '') + '</em>' : '');
+    tip.style.display = 'block'; tip.style.left = (x / W * r.width) + 'px'; tip.style.top = (Y(vals.est) / H * r.height - 8) + 'px'; };
+  hit.addEventListener('pointermove', show); hit.addEventListener('pointerdown', show);
+  hit.addEventListener('pointerleave', () => { tip.style.display = 'none'; cross.style.display = 'none'; });
 }
 function fillChips(el, r) {
   const box = el.querySelector('.chips'); if (box.childElementCount) return;
