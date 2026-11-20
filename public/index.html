@@ -991,7 +991,7 @@ function showPhoto(src) {
   photoSrc = src; $('phBox').innerHTML = src ? `<img src="${src}" alt="">` : 'нет фото'; $('phDel').hidden = !src;
 }
 /* ===== адрес страницы монеты: /kz|uz|kg/<slug>, назад/вперёд браузера ===== */
-const BASE_TITLE = document.title;
+const BASE_TITLE = 'Jadiger — коллекционные монеты Центральной Азии в 3D';
 const coinPath = id => '/' + COINS[id].country + '/' + SLUGS[id];
 const PATH2ID = {}; COINS.forEach(c => { PATH2ID[coinPath(c.id)] = c.id; });
 function syncUrl(id) {
