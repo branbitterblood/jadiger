@@ -2,6 +2,8 @@
 // Вход только через Google: браузер получает ID-токен (Google Identity Services),
 // сервер проверяет подпись по ключам Google и выдаёт свою сессию в HttpOnly-cookie.
 
+import { RESERVED, HANDLE_RE, ensureProfiles, publicCollection } from '../_lib/profiles.js';
+
 const COOKIE = 'jd_sess';
 const SESSION_DAYS = 90;
 const MAX_COIN_ID = 100000;
@@ -123,6 +125,12 @@ export async function onRequest(ctx) {
       return json({ ok: true }, 200, { 'set-cookie': sessionCookie('', 0, secure) });
     }
 
+    if (seg[0] === 'u' && seg.length === 2 && m === 'GET') {
+      const pc = await publicCollection(env.DB, seg[1]);
+      if (!pc) return err(404, 'not_found', 'Коллекция не найдена или скрыта владельцем');
+      return json(pc, 200, { 'cache-control': 'public, max-age=60' });
+    }
+
     const user = await currentUser(req, env);
     if (path === 'me' && m === 'GET') return json({ user: publicUser(user) || null });
     if (!user) return err(401, 'login_required', 'Войдите через Google');
@@ -235,9 +243,34 @@ export async function onRequest(ctx) {
       return json(parsed);
     }
 
+    if (path === 'profile') {
+      await ensureProfiles(env.DB);
+      if (m === 'GET') {
+        const p = await env.DB.prepare('SELECT handle, public, show_wish, title FROM profiles WHERE user_id = ?').bind(uid).first();
+        let suggest = String(user.email || '').split('@')[0].toLowerCase().replace(/[^a-z0-9_-]/g, '').replace(/^[_-]+/, '').slice(0, 30);
+        if (suggest.length < 3 || RESERVED.has(suggest)) suggest = '';
+        if (suggest && await env.DB.prepare('SELECT 1 FROM profiles WHERE handle = ? AND user_id != ?').bind(suggest, uid).first()) suggest = '';
+        return json(p ? { handle: p.handle, public: !!p.public, showWish: !!p.show_wish, title: p.title, suggest } : { handle: '', public: false, showWish: true, title: '', suggest });
+      }
+      if (m === 'PUT') {
+        const b = await body(req, 4000);
+        const handle = String(b.handle || '').trim().toLowerCase();
+        if (!HANDLE_RE.test(handle)) return err(400, 'bad_handle', 'Адрес: 3–30 символов, латиница, цифры, «-» и «_», начинается с буквы или цифры');
+        if (RESERVED.has(handle)) return err(400, 'reserved', 'Этот адрес занят системой, выберите другой');
+        const title = String(b.title || '').replace(/\s+/g, ' ').trim().slice(0, 60);
+        const taken = await env.DB.prepare('SELECT 1 FROM profiles WHERE handle = ? AND user_id != ?').bind(handle, uid).first();
+        if (taken) return err(409, 'taken', 'Адрес jadiger.com/u/' + handle + ' уже занят');
+        await env.DB.prepare(`INSERT INTO profiles (user_id, handle, public, show_wish, title, updated_at) VALUES (?1, ?2, ?3, ?4, ?5, ?6)
+          ON CONFLICT(user_id) DO UPDATE SET handle = ?2, public = ?3, show_wish = ?4, title = ?5, updated_at = ?6`)
+          .bind(uid, handle, b.public ? 1 : 0, b.showWish === false ? 0 : 1, title, now()).run();
+        return json({ ok: true, handle });
+      }
+    }
+
     if (path === 'account' && m === 'DELETE') {
+      await ensureProfiles(env.DB);
       if (env.PHOTOS) { let cur; do { const l = await env.PHOTOS.list({ prefix: `p/${uid}/`, cursor: cur }); if (l.objects.length) await env.PHOTOS.delete(l.objects.map(o => o.key)); cur = l.truncated ? l.cursor : null; } while (cur); }
-      await env.DB.batch(['items', 'wish', 'photos', 'ai_usage', 'sessions'].map(t => env.DB.prepare(`DELETE FROM ${t} WHERE user_id = ?`).bind(uid))
+      await env.DB.batch(['items', 'wish', 'photos', 'ai_usage', 'sessions', 'profiles'].map(t => env.DB.prepare(`DELETE FROM ${t} WHERE user_id = ?`).bind(uid))
         .concat([env.DB.prepare('DELETE FROM users WHERE id = ?').bind(uid)]));
       return json({ ok: true }, 200, { 'set-cookie': sessionCookie('', 0, secure) });
     }

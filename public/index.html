@@ -51,6 +51,8 @@ button{font:500 13px Inter,sans-serif;color:var(--text);background:var(--accent)
 button:hover{border-color:var(--gold);color:var(--gold2)}
 button.on,button.primary{background:#3a3326;border-color:var(--gold);color:var(--gold2)}
 button:disabled{opacity:.5;cursor:default}
+a.btnlink{display:inline-block;font:500 13.5px Inter,sans-serif;text-decoration:none;background:#3a3326;border:1px solid var(--gold);color:var(--gold2);border-radius:10px;padding:10px 15px}
+a.btnlink:hover{background:#4a412f}
 /* new releases */
 .strip{display:flex;gap:12px;overflow-x:auto;padding:4px 2px 10px;scroll-snap-type:x mandatory}
 .rel{flex:0 0 150px;scroll-snap-align:start;background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:10px;cursor:pointer;position:relative}
@@ -185,6 +187,26 @@ select{max-width:100%}
 .share{display:inline-flex;align-items:center;gap:6px;flex:none;padding:5px 11px;border-radius:999px;font-size:12.5px;color:var(--gold2);background:transparent;border:1px solid var(--line);cursor:pointer;transition:border-color .2s,background .2s}
 .share:hover{border-color:var(--gold);background:rgba(201,169,106,.08)}
 .share.done{color:var(--ok);border-color:var(--ok)}
+.share.big{padding:8px 14px;font-size:13.5px}
+.pubHead{display:flex;align-items:center;gap:16px;margin-top:18px;flex-wrap:wrap}
+.pubHead .mono{width:56px;height:56px;border-radius:50%;border:1px solid var(--gold);display:grid;place-items:center;font-family:"Cormorant Garamond",serif;font-size:28px;color:var(--gold2);flex:none}
+.pubHead h1{margin:0;font-family:"Cormorant Garamond",serif;font-size:32px;font-weight:600;line-height:1.1}
+.pubHead .st{color:var(--muted);font-size:13.5px;margin-top:4px}
+.pubHead .share{margin-left:auto}
+.subtabs a{cursor:pointer}
+.card .pq{position:absolute;left:8px;top:8px;font-size:11.5px;background:rgba(14,17,22,.82);border:1px solid var(--line);color:var(--gold2);border-radius:999px;padding:2px 8px}
+.pubCta{display:flex;align-items:center;gap:14px;flex-wrap:wrap;margin-top:28px}
+.pubCta p{flex:1;min-width:240px;margin:0}
+.pform{display:grid;gap:10px;margin-top:10px;max-width:560px}
+.pform label{display:flex;align-items:center;gap:8px;color:var(--text);cursor:pointer}
+.pform .hrow{display:flex;align-items:stretch;border:1px solid var(--line);border-radius:10px;overflow:hidden;background:#0f1218}
+.pform .hrow span{padding:9px 0 9px 12px;color:var(--muted);white-space:nowrap}
+.pform .hrow input{border:0;background:transparent;flex:1;min-width:0;padding:9px 12px 9px 1px;color:var(--text);font:inherit}
+.pform input[type=text]{padding:9px 12px}
+.pform .hint{font-size:12.5px;color:var(--muted)}
+.pform .perr{color:#e88;font-size:13px;min-height:1em}
+.plink{display:flex;gap:8px;align-items:center;flex-wrap:wrap;margin-top:12px;padding:10px 12px;border:1px dashed var(--gold);border-radius:10px}
+.plink a{color:var(--gold2);font-weight:600;word-break:break-all}
 .info h2{font-family:"Cormorant Garamond",serif;font-weight:600;font-size:30px;line-height:1.08;margin:10px 0 0}
 .specs{width:100%;border-collapse:collapse;font-size:14px}
 .specs td{padding:7px 0;border-bottom:1px solid var(--line)}
@@ -292,6 +314,24 @@ textarea{resize:vertical;min-height:52px}
   </div></main>
 </section>
 
+<!-- ============ PUBLIC COLLECTION /u/<handle> ============ -->
+<section id="vPub" hidden>
+  <div class="wrap" style="padding-bottom:60px">
+    <div class="pubHead"><div class="mono" id="pubMono">J</div><div><h1 id="pubTitle">Коллекция</h1><div class="st" id="pubSt"></div></div>
+      <button class="share big" id="pubShare"><svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12"/><path d="M7 8l5-5 5 5"/><path d="M5 13v6a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-6"/></svg><span>Поделиться</span></button></div>
+    <div class="kpis" id="pubKpis"></div>
+    <nav class="subtabs" id="pubTabs">
+      <a data-pt="items" class="on">Коллекция<span class="n" id="pubN">0</span></a>
+      <a data-pt="wish" id="pubWT">Вишлист<span class="n" id="pubWN">0</span></a>
+    </nav>
+    <div class="grid" id="pubGrid" style="margin-top:14px"></div>
+    <div class="empty" id="pubEmpty" hidden></div>
+    <div class="pbox pubCta"><p>Это публичная коллекция на Jadiger, электронном журнале коллекции монет Центральной Азии. Отмечайте свои монеты, ведите вишлист и делитесь коллекцией по ссылке.</p>
+      <a class="primary btnlink" href="/#my" id="pubCta">Вести свою коллекцию →</a></div>
+    <div class="empty" id="pubMissing" hidden>Коллекция не найдена или владелец её скрыл. <a href="/">Перейти в каталог</a></div>
+  </div>
+</section>
+
 <!-- ============ MY COLLECTION ============ -->
 <section id="vMy" hidden>
   <div class="wrap" style="padding-bottom:60px">
@@ -310,6 +350,7 @@ textarea{resize:vertical;min-height:52px}
     </nav>
 
     <div id="pMy">
+      <div class="btns" style="display:flex;gap:8px;margin-top:14px"><button class="share big" id="bShareCol"><svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12"/><path d="M7 8l5-5 5 5"/><path d="M5 13v6a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-6"/></svg><span>Поделиться коллекцией</span></button></div>
       <div class="src">Оценка берётся из вашей оценки, затем из цены магазина Нацбанка (kazcoins), затем из цены покупки.</div>
       <div class="kpis" id="kpis"></div>
       <h2 class="sec">Прогресс по сериям</h2>
@@ -332,6 +373,7 @@ textarea{resize:vertical;min-height:52px}
 
     <div id="pProf" hidden>
       <div class="pbox" id="acct"></div>
+      <div class="pbox" id="pubBox"></div>
       <div class="pbox">
         <h3>Экспорт</h3>
         <p>Таблица коллекции и вишлиста (CSV, разделитель «;»), открывается в Excel и Google Таблицах.</p>
@@ -545,7 +587,7 @@ const Store = {
   async signOut() {
     try { await api('auth/logout', { method: 'POST', body: {} }); } catch (e) {}
     try { google.accounts.id.disableAutoSelect(); } catch (e) {}
-    this.me = null; this.items = {}; this.wish = {}; this.emit(); location.hash = '#catalog';
+    this.me = null; this.profile = null; this.items = {}; this.wish = {}; this.emit(); location.hash = '#catalog';
   },
   async deleteAccount() {
     await api('account', { method: 'DELETE' });
@@ -650,10 +692,10 @@ function cardEl(coin) {
   io.observe(d);
   return d;
 }
-const cards = {}, myCards = {}, wishCards = {};
+const cards = {}, myCards = {}, wishCards = {}, pubCards = {};
 COINS.forEach(c => { cards[c.id] = cardEl(c); });
 function refreshCard(id) {
-  [cards[id], myCards[id], wishCards[id]].forEach(el => { if (!el) return; el.querySelector('[data-q]').outerHTML = qtyHTML(id); el.querySelector('[data-wish]').outerHTML = wishHTML(id); el.classList.toggle('mine', Store.owned(id)); });
+  [cards[id], myCards[id], wishCards[id], pubCards[id]].forEach(el => { if (!el) return; el.querySelector('[data-q]').outerHTML = qtyHTML(id); el.querySelector('[data-wish]').outerHTML = wishHTML(id); el.classList.toggle('mine', Store.owned(id)); });
 }
 
 const uniq = a => [...new Set(a)];
@@ -782,10 +824,15 @@ function renderCab() {
 }
 function route() {
   const h = location.hash, cab = !!CAB[h];
+  if (PUB.handle && location.pathname.startsWith('/u/') && (cab || h === '#catalog')) { history.replaceState(null, '', '/' + h); PUB.handle = null; }
+  const pub = !!PUB.handle && location.pathname.startsWith('/u/');
+  $('vPub').hidden = !pub;
+  if (pub) { $('vCatalog').hidden = $('vMy').hidden = true; $('tCat').classList.remove('on'); $('tMy').classList.remove('on'); return; }
   $('vCatalog').hidden = cab; $('vMy').hidden = !cab;
   $('tCat').classList.toggle('on', !cab); $('tMy').classList.toggle('on', cab);
   Object.entries(CAB).forEach(([k, pid]) => { $(pid).hidden = k !== h; });
   $('stMy').classList.toggle('on', h === '#my'); $('stWish').classList.toggle('on', h === '#wish'); $('stProf').classList.toggle('on', h === '#profile');
+  if (h === '#profile') $('pubBox').dataset.k = '';
   if (cab) renderCab(); window.scrollTo(0, 0);
 }
 const wishIds = () => Object.keys(Store.wish).map(Number).filter(id => COINS[id] && Store.wished(id));
@@ -837,14 +884,117 @@ function renderProfile() {
   $('acct').innerHTML = `<h3>Аккаунт</h3>
     <div class="acct">${me.picture ? `<img src="${esc(me.picture)}" alt="" referrerpolicy="no-referrer">` : ''}<div><b>${esc(me.name)}</b><br><span style="color:var(--muted)">${esc(me.email)}</span></div></div>
     <p>Вход только через Google. Пароль Jadiger не хранит, от Google приходят имя, email и аватар.</p>
-    <p>Коллекция, вишлист и фото ваших экземпляров хранятся в базе Jadiger и видны только вам. Сейчас сохранено ${nOwn} видов монет в коллекции и ${nW} в вишлисте.</p>
+    <p>Коллекция, вишлист и фото ваших экземпляров хранятся в базе Jadiger. Фото экземпляров, цены, места покупки и заметки видны только вам; список монет можно открыть по ссылке ниже. Сейчас сохранено ${nOwn} видов монет в коллекции и ${nW} в вишлисте.</p>
     <div class="btns"><button id="bLogout">Выйти</button><button id="bDelAcc" class="danger">Удалить аккаунт и все данные</button></div>`;
+  if ($('pubBox').dataset.k !== me.email) { $('pubBox').dataset.k = me.email; renderPubBox(); }
   $('bLogout').onclick = () => Store.signOut();
   $('bDelAcc').onclick = async () => {
     if (!confirm('Удалить аккаунт Jadiger, коллекцию, вишлист и фото? Это нельзя отменить.')) return;
     try { await Store.deleteAccount(); toastMsg('Аккаунт удалён'); } catch (e) { toastMsg('Не удалось удалить: ' + e.message); }
   };
 }
+/* ================= публичная коллекция /u/<handle> ================= */
+const PUB = { handle: null, data: null, tab: 'items' };
+const pubMatch = () => { const m = /^\/u\/([A-Za-z0-9_-]{3,30})\/?$/.exec(location.pathname); return m ? m[1].toLowerCase() : null; };
+const plural = (n, a, b, c) => { const m = n % 10, h = n % 100; return m === 1 && h !== 11 ? a : m >= 2 && m <= 4 && (h < 12 || h > 14) ? b : c; };
+const pubUrl = h => location.origin + '/u/' + h;
+async function shareLink(btn, url, title, text) {
+  if (navigator.share && matchMedia('(pointer: coarse)').matches) { try { await navigator.share({ title, text, url }); } catch (e) {} return; }
+  let ok = false;
+  try { await navigator.clipboard.writeText(url); ok = true; } catch (e) {
+    const t = document.createElement('textarea'); t.value = url; t.style.position = 'fixed'; t.style.opacity = '0'; document.body.appendChild(t); t.select();
+    try { ok = document.execCommand('copy'); } catch (e2) {} t.remove();
+  }
+  const lbl = btn && btn.querySelector('span');
+  if (ok && lbl) { const old = lbl.textContent; btn.classList.add('done'); lbl.textContent = 'Ссылка скопирована'; setTimeout(() => { btn.classList.remove('done'); lbl.textContent = old; }, 2000); }
+  else if (!ok) prompt('Ссылка:', url);
+}
+window.shareLink = shareLink;
+const pubIds = () => {
+  const d = PUB.data; if (!d) return [];
+  const ids = PUB.tab === 'wish' ? (d.wish || []) : Object.keys(d.items).map(Number);
+  return ids.filter(id => COINS[id]).sort((a, b) => COINS[b].dkey.localeCompare(COINS[a].dkey));
+};
+function renderPub() {
+  const d = PUB.data; if (!d) return;
+  const own = Object.keys(d.items).map(Number).filter(id => COINS[id]), wish = (d.wish || []).filter(id => COINS[id]);
+  const pieces = own.reduce((s, id) => s + (d.items[id].qty || 1), 0);
+  $('pubTitle').textContent = d.title; $('pubMono').textContent = (d.title.replace(/^Коллекция\s+/, '')[0] || 'J').toUpperCase();
+  $('pubSt').textContent = 'jadiger.com/u/' + d.handle + (d.since ? ' · на Jadiger с ' + new Date(d.since * 1000).toLocaleDateString('ru-RU', { month: 'long', year: 'numeric' }) : '');
+  const byC = {}; own.forEach(id => { const c = COINS[id].country; byC[c] = (byC[c] || 0) + 1; });
+  const gold = own.filter(id => COINS[id].section === 'Золото').length, silver = own.filter(id => COINS[id].section === 'Серебро').length;
+  const sers = {}; own.forEach(id => { const s = COINS[id].country + '|' + COINS[id].series; sers[s] = (sers[s] || 0) + 1; });
+  const full = Object.entries(sers).filter(([k, n]) => n === COINS.filter(c => c.country + '|' + c.series === k).length && n > 1).length;
+  $('pubKpis').innerHTML = `
+    <div class="kpi"><b>${own.length}</b><span>${plural(own.length, 'вид', 'вида', 'видов')} монет</span><em>${pieces} ${plural(pieces, 'экземпляр', 'экземпляра', 'экземпляров')}</em></div>
+    <div class="kpi"><b>${Object.keys(byC).length || '—'}</b><span>${plural(Object.keys(byC).length, 'страна', 'страны', 'стран')}</span><em>${Object.entries(byC).map(([c, n]) => COUNTRIES[c].flag + ' ' + n).join(' · ') || 'пока пусто'}</em></div>
+    <div class="kpi"><b>${gold} / ${silver}</b><span>золото / серебро</span><em>остальные — недрагоценные</em></div>
+    <div class="kpi"><b>${full}</b><span>${plural(full, 'серия собрана', 'серии собраны', 'серий собрано')} целиком</span><em>${wish.length ? 'в вишлисте ' + wish.length : 'вишлист скрыт или пуст'}</em></div>`;
+  $('pubN').textContent = own.length; $('pubWN').textContent = wish.length; $('pubWT').hidden = !d.wish;
+  document.querySelectorAll('#pubTabs [data-pt]').forEach(a => a.classList.toggle('on', a.dataset.pt === PUB.tab));
+  const ids = pubIds();
+  $('pubGrid').replaceChildren(...ids.map(id => {
+    if (!pubCards[id]) pubCards[id] = cardEl(COINS[id]);
+    const el = pubCards[id], r = d.items[id]; el.querySelector('.pq')?.remove();
+    if (PUB.tab === 'items' && r && (r.qty > 1 || r.cond)) el.querySelector('.thumb').insertAdjacentHTML('beforeend', `<span class="pq">${r.qty > 1 ? '×' + r.qty : ''}${r.qty > 1 && r.cond ? ' · ' : ''}${r.cond ? esc(r.cond) : ''}</span>`);
+    refreshCard(id); return el;
+  }));
+  $('pubEmpty').hidden = ids.length > 0; $('pubEmpty').textContent = PUB.tab === 'wish' ? 'Вишлист пуст.' : 'В коллекции пока нет монет.';
+}
+async function enterPub(handle) {
+  PUB.handle = handle; PUB.data = null; PUB.tab = 'items'; route();
+  $('pubMissing').hidden = true; $('pubTitle').textContent = 'Загружаю коллекцию…'; $('pubSt').textContent = ''; $('pubKpis').innerHTML = ''; $('pubGrid').replaceChildren();
+  try {
+    const r = await fetch('/api/u/' + encodeURIComponent(handle)); if (!r.ok) throw new Error(r.status);
+    PUB.data = await r.json(); if (PUB.handle !== handle) return; renderPub();
+  } catch (e) {
+    $('pubTitle').textContent = 'Коллекция не найдена'; $('pubMissing').hidden = false; $('pubTabs').hidden = true;
+  }
+}
+$('pubTabs').addEventListener('click', e => { const a = e.target.closest('[data-pt]'); if (!a) return; e.preventDefault(); PUB.tab = a.dataset.pt; renderPub(); });
+$('pubShare').onclick = () => PUB.data && shareLink($('pubShare'), pubUrl(PUB.data.handle), PUB.data.title, PUB.data.title + ' — монеты в 3D на Jadiger');
+window.addEventListener('popstate', () => { const h = pubMatch(); if (h && h !== PUB.handle) enterPub(h); else if (!h && PUB.handle && !/^\/(kz|uz|kg|tj|tm)\//.test(location.pathname)) { PUB.handle = null; route(); } });
+
+/* настройки публичной ссылки в профиле */
+async function renderPubBox() {
+  const box = $('pubBox'); box.innerHTML = '<h3>Публичная коллекция</h3><p>Загрузка…</p>';
+  let p; try { p = await api('profile'); } catch (e) { box.innerHTML = '<h3>Публичная коллекция</h3><p>Не удалось загрузить настройки: ' + esc(e.message) + '</p>'; return; }
+  Store.profile = p;
+  const first = ((Store.me && Store.me.name) || '').split(' ')[0];
+  box.innerHTML = `<h3>Публичная коллекция</h3>
+    <p>Откройте коллекцию по ссылке, чтобы показать её другим коллекционерам. По ссылке видны только монеты, количество и состояние, а также вишлист (если включён). Цены, места покупки, заметки и фото экземпляров остаются скрытыми.</p>
+    <div class="pform">
+      <label><input type="checkbox" id="ppOn" ${p.public ? 'checked' : ''}> Открыть коллекцию по ссылке</label>
+      <div class="hrow"><span>jadiger.com/u/</span><input id="ppHandle" maxlength="30" autocomplete="off" spellcheck="false" placeholder="ваш-адрес" value="${esc(p.handle || p.suggest || '')}"></div>
+      <div class="hint">3–30 символов: латиница, цифры, «-» и «_».</div>
+      <input type="text" id="ppTitle" maxlength="60" placeholder="${esc(first ? 'Коллекция — ' + first : 'Название коллекции')}" value="${esc(p.title || '')}">
+      <label><input type="checkbox" id="ppWish" ${p.showWish !== false ? 'checked' : ''}> Показывать вишлист (поможет друзьям с подарком)</label>
+      <div class="btns"><button class="primary" id="ppSave">Сохранить</button></div>
+      <div class="perr" id="ppErr"></div>
+    </div>
+    <div id="ppLink"></div>`;
+  const showLink = () => {
+    const pr = Store.profile;
+    $('ppLink').innerHTML = pr && pr.public && pr.handle ? `<div class="plink">Ваша коллекция открыта: <a href="/u/${esc(pr.handle)}" target="_blank" rel="noopener">jadiger.com/u/${esc(pr.handle)}</a>
+      <button class="share" id="ppShare"><span>Скопировать ссылку</span></button></div>` : pr && pr.handle ? '<p class="hint" style="margin-top:10px">Ссылка выключена: по адресу jadiger.com/u/' + esc(pr.handle) + ' сейчас ничего не открывается.</p>' : '';
+    const b = $('ppShare'); if (b) b.onclick = () => shareLink(b, pubUrl(pr.handle), pr.title || 'Моя коллекция монет', 'Моя коллекция монет на Jadiger');
+  };
+  showLink();
+  $('ppHandle').addEventListener('input', e => { e.target.value = e.target.value.toLowerCase().replace(/[^a-z0-9_-]/g, ''); });
+  $('ppSave').onclick = async () => {
+    const body = { public: $('ppOn').checked, handle: $('ppHandle').value.trim(), title: $('ppTitle').value.trim(), showWish: $('ppWish').checked };
+    $('ppErr').textContent = ''; $('ppSave').disabled = true;
+    try { await api('profile', { method: 'PUT', body }); Store.profile = Object.assign({}, Store.profile, body); showLink(); toastMsg(body.public ? 'Коллекция открыта по ссылке' : 'Сохранено, ссылка выключена'); }
+    catch (e) { $('ppErr').textContent = e.message; }
+    finally { $('ppSave').disabled = false; }
+  };
+}
+$('bShareCol').onclick = async () => {
+  let p = Store.profile; if (!p) { try { p = Store.profile = await api('profile'); } catch (e) { toastMsg('Не удалось: ' + e.message); return; } }
+  if (p.public && p.handle) shareLink($('bShareCol'), pubUrl(p.handle), p.title || 'Моя коллекция монет', 'Моя коллекция монет на Jadiger');
+  else { location.hash = '#profile'; setTimeout(() => { const el = $('pubBox'); if (el) el.scrollIntoView({ behavior: 'smooth', block: 'center' }); }, 300); toastMsg('Сначала откройте коллекцию по ссылке'); }
+};
+
 const csvCell = v => { v = String(v ?? ''); return /[;"\n]/.test(v) ? '"' + v.replace(/"/g, '""') + '"' : v; };
 function toCsv(rows) { return rows.map(r => r.map(csvCell).join(';')).join('\n'); }
 async function copyCsv(text) {
@@ -873,9 +1023,9 @@ Store.on(() => {
   renderStrip();
   if (window.onStoreChange) window.onStoreChange();
 });
-renderCatalog(); route();
+renderCatalog(); { const ph = pubMatch(); if (ph) enterPub(ph); else route(); }
 Store.init();
-window.currentView = () => (location.hash === '#my' ? Object.keys(Store.items).map(Number).filter(id => Store.owned(id)).sort((a, b) => COINS[b].dkey.localeCompare(COINS[a].dkey)) : location.hash === '#wish' ? wishSorted() : view.map(c => c.id));
+window.currentView = () => (!$('vPub').hidden ? pubIds() : location.hash === '#my' ? Object.keys(Store.items).map(Number).filter(id => Store.owned(id)).sort((a, b) => COINS[b].dkey.localeCompare(COINS[a].dkey)) : location.hash === '#wish' ? wishSorted() : view.map(c => c.id));
 </script>
 
 <script type="module">
@@ -1009,8 +1159,8 @@ const PATH2ID = {}; COINS.forEach(c => { PATH2ID[coinPath(c.id)] = c.id; });
 function syncUrl(id) {
   const p = coinPath(id) + location.hash;
   if (location.pathname === coinPath(id)) return;
-  if (location.pathname === '/') history.pushState({ coin: id, pushed: true }, '', p);
-  else history.replaceState({ coin: id, pushed: !!(history.state && history.state.pushed) }, '', p);
+  if (PATH2ID[location.pathname] == null) history.pushState({ coin: id, pushed: true, base: location.pathname }, '', p);
+  else { const st = history.state || {}; history.replaceState({ coin: id, pushed: !!st.pushed, base: st.base || '/' }, '', p); }
 }
 window.addEventListener('popstate', () => {
   const id = PATH2ID[location.pathname];
@@ -1041,8 +1191,9 @@ window.onStoreChange = () => { if (current != null && modal.classList.contains('
 function closeModal(fromHistory) {
   if (!modal.classList.contains('open') && current == null) return;
   modal.classList.remove('open'); document.body.style.overflow = ''; running = false; current = null; document.title = BASE_TITLE;
-  if (fromHistory === true || location.pathname === '/') return;
-  if (history.state && history.state.pushed) history.back(); else history.replaceState(null, '', '/' + location.hash);
+  if (fromHistory === true || PATH2ID[location.pathname] == null) return;
+  const st = history.state || {};
+  if (st.pushed) history.back(); else history.replaceState(null, '', (st.base || '/') + location.hash);
 }
 $('mClose').onclick = () => closeModal(); modal.addEventListener('click', e => { if (e.target === modal) closeModal(); });
 document.addEventListener('keydown', e => { if (e.key === 'Escape') { closeModal(); closeId(); closeLogin(); } if (!modal.classList.contains('open')) return; if (e.target.closest && e.target.closest('input,textarea,select')) return; if (e.key === 'ArrowRight') step(1); if (e.key === 'ArrowLeft') step(-1); });
@@ -1132,7 +1283,7 @@ $('idRes').addEventListener('click', e => {
 /* прямой заход на страницу монеты */
 { const id0 = PATH2ID[location.pathname];
   if (id0 != null) window.openCoin(id0, true);
-  else if (location.pathname !== '/' && location.pathname !== '/index.html') history.replaceState(null, '', '/' + location.hash); }
+  else if (location.pathname !== '/' && !/^\/u\/[A-Za-z0-9_-]+\/?$/.test(location.pathname)) history.replaceState(null, '', '/' + location.hash); }
 </script>
 </body>
 </html>

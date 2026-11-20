@@ -27,5 +27,10 @@ CREATE TABLE IF NOT EXISTS ai_usage (
   PRIMARY KEY (user_id, day)
 );
 
+CREATE TABLE IF NOT EXISTS profiles (  -- публичная ссылка jadiger.com/u/<handle>
+  user_id TEXT PRIMARY KEY, handle TEXT UNIQUE COLLATE NOCASE, public INTEGER NOT NULL DEFAULT 0,
+  show_wish INTEGER NOT NULL DEFAULT 1, title TEXT NOT NULL DEFAULT '', updated_at INTEGER NOT NULL
+);
+
 -- общий дневной бюджет распознавания (создаётся и автоматически при первом запросе)
 CREATE TABLE IF NOT EXISTS ai_budget (day TEXT PRIMARY KEY, usd REAL NOT NULL DEFAULT 0, calls INTEGER NOT NULL DEFAULT 0);
