@@ -934,7 +934,7 @@ function renderPub() {
   const own = Object.keys(d.items).map(Number).filter(id => COINS[id]), wish = (d.wish || []).filter(id => COINS[id]);
   const pieces = own.reduce((s, id) => s + (d.items[id].qty || 1), 0);
   $('pubTitle').textContent = d.title; $('pubMono').textContent = (d.title.replace(/^Коллекция\s+/, '')[0] || 'J').toUpperCase();
-  $('pubSt').textContent = 'jadiger.com/u/' + d.handle + (d.since ? ' · на Jadiger с ' + new Date(d.since * 1000).toLocaleDateString('ru-RU', { month: 'long', year: 'numeric' }) : '');
+  $('pubSt').textContent = 'jadiger.com/u/' + d.handle + (d.since ? ' · на Jadiger с ' + ['января', 'февраля', 'марта', 'апреля', 'мая', 'июня', 'июля', 'августа', 'сентября', 'октября', 'ноября', 'декабря'][new Date(d.since * 1000).getMonth()] + ' ' + new Date(d.since * 1000).getFullYear() + ' г.' : '');
   const byC = {}; own.forEach(id => { const c = COINS[id].country; byC[c] = (byC[c] || 0) + 1; });
   const gold = own.filter(id => COINS[id].section === 'Золото').length, silver = own.filter(id => COINS[id].section === 'Серебро').length;
   const sers = {}; own.forEach(id => { const s = COINS[id].country + '|' + COINS[id].series; sers[s] = (sers[s] || 0) + 1; });

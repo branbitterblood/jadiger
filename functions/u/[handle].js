@@ -23,7 +23,7 @@ export async function onRequestGet(ctx) {
   const n = ids.length, w = pc.wish ? pc.wish.filter(id => B[id]).length : 0;
   const cover = ids.find(id => B[id].photo);
   const url = `${SITE}/u/${pc.handle}`;
-  const title = `${pc.title} — ${n} ${plural(n, 'монета', 'монеты', 'монет')}`;
+  const title = `${pc.title}: ${n} ${plural(n, 'монета', 'монеты', 'монет')}`;
   const desc = `Коллекция памятных монет на Jadiger: ${n} ${plural(n, 'монета', 'монеты', 'монет')}` + (w ? `, ещё ${w} в вишлисте` : '') +
     (ids.length ? '. Среди них: ' + ids.slice(0, 3).map(id => '«' + B[id].title + '»').join(', ') : '') + '. Смотрите каждую монету в 3D.';
   const img = cover != null ? `${SITE}/og/${cover}.jpg` : `${SITE}/icon-512.png`;
