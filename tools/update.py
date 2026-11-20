@@ -398,11 +398,11 @@ def main():
     new = len(auto['coins']) - n0
     log(f'итого новых монет: {new}; всего автодобавленных: {len(auto["coins"])}')
     if DRY: return
+    with open(os.path.join(ROOT, 'tools', 'last_update.log'), 'w') as f: f.write(auto['checked'] + '\n' + '\n'.join(LOG) + '\n')
     old = load_auto(); old.pop('checked', None); cur = dict(auto); cur.pop('checked', None)
     if json.dumps(old, sort_keys=True, ensure_ascii=False) == json.dumps(cur, sort_keys=True, ensure_ascii=False) and new == 0:
         log('изменений нет'); return
     save_auto(auto); write_sitemap(slugs, raw, auto)
-    with open(os.path.join(ROOT, 'tools', 'last_update.log'), 'w') as f: f.write('\n'.join(LOG) + '\n')
     if os.environ.get('GITHUB_OUTPUT'):
         with open(os.environ['GITHUB_OUTPUT'], 'a') as f: f.write(f'new={new}\n')
 
