@@ -1,0 +1,29 @@
+# Ежедневная проверка новых выпусков Нацбанков (Казахстан, Узбекистан, Кыргызстан).
+# Если найдены новые монеты или изменились цены — коммит в main, Cloudflare Pages сам опубликует сайт.
+name: Обновление каталога
+on:
+  schedule:
+    - cron: '17 1 * * *'   # 06:17 по Кызылорде
+  workflow_dispatch: {}
+permissions:
+  contents: write
+concurrency: { group: catalog-update, cancel-in-progress: false }
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: '3.12' }
+      - run: pip install requests beautifulsoup4 pillow numpy scipy opencv-python-headless
+      - id: run
+        run: python tools/update.py
+      - name: Коммит изменений
+        run: |
+          git config user.name "jadiger-bot"
+          git config user.email "jadiger-bot@users.noreply.github.com"
+          git add public/auto public/og public/sitemap.xml tools/last_update.log
+          if git diff --cached --quiet; then echo "Изменений нет"; exit 0; fi
+          git commit -m "Каталог: новые выпуски ($(date -u +%F))" -m "$(cat tools/last_update.log)"
+          git push
