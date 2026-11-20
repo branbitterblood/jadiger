@@ -825,12 +825,15 @@ function renderMy() {
   const complete = Object.values(bySeries).filter(l => l.every(c => Store.owned(c.id))).length;
   const diff = {}; Object.keys(investedCover).forEach(cc => { if (est[cc]) diff[cc] = est[cc] - investedCover[cc]; });
   const diffSum = Object.values(diff).reduce((a, b) => a + b, 0);
+  // единая валюта (тенге или доллар) по курсу Нацбанка; пока курсы не загружены — суммы по валютам
+  const M = (m, sign) => { if (!RATES) return money(m, sign); const v = Object.entries(m).reduce((t, [c, x]) => t + conv(c, x), 0); return (sign ? (v >= 0 ? '+' : '−') : '') + fmtC(Math.abs(v)); };
+  loadRates();
   $('kpis').innerHTML = `
     <div class="kpi"><b>${fmt(pieces)}</b><span>монет всего</span><em>${ids.length} из ${COINS.length} видов каталога</em></div>
     <div class="kpi"><b>${started}</b><span>серий начато</span><em>${complete} собрано полностью</em></div>
-    <div class="kpi"><b>${Object.keys(invested).length ? money(invested) : '0 ₸'}</b><span>вложено</span><em>по указанным ценам покупки</em></div>
-    <div class="kpi"><b>${covered ? money(est) : '—'}</b><span>оценка</span><em>оценено ${covered} из ${ids.length} видов</em></div>
-    <div class="kpi"><b>${Object.keys(diff).length ? money(diff, true) : '—'}</b><span>оценка минус вложения</span><em class="${diffSum > 0 ? 'up' : ''}">${Object.keys(investedCover).length ? 'по монетам с ценой и оценкой' : 'укажите цены покупки'}</em></div>`;
+    <div class="kpi"><b>${Object.keys(invested).length ? M(invested) : '0 ' + (RATES ? curSym() : '₸')}</b><span>вложено</span><em>по указанным ценам покупки</em></div>
+    <div class="kpi"><b>${covered ? M(est) : '—'}</b><span>оценка</span><em>оценено ${covered} из ${ids.length} видов</em></div>
+    <div class="kpi"><b>${Object.keys(diff).length ? M(diff, true) : '—'}</b><span>оценка минус вложения</span><em class="${diffSum > 0 ? 'up' : ''}">${Object.keys(investedCover).length ? 'по монетам с ценой и оценкой' : 'укажите цены покупки'}</em></div>`;
   renderValue(ids);
   // series progress
   const rows = Object.entries(bySeries).map(([name, list]) => ({ name, list, have: list.filter(c => Store.owned(c.id)).length }))
@@ -861,7 +864,16 @@ function renderMy() {
 }
 /* ===== стоимость коллекции: вложено и текущая оценка по датам покупки ===== */
 const VC = { inv: '#3f8fd6', est: '#b08a2c' };   // проверено validate_palette.js на тёмной панели #161a21
-let valCur = null;
+let valCur = (() => { try { return localStorage.getItem('jadiger-valcur') || 'kzt'; } catch (e) { return 'kzt'; } })();
+/* курсы Нацбанка РК (тенге за единицу): /api/rates; всё переводится в тенге, затем при выборе — в доллары */
+let RATES = null, ratesP = null;
+function loadRates() { if (!ratesP) ratesP = fetch('/api/rates').then(r => r.json()).then(r => { RATES = r; if (!$('vMy').hidden) renderCab(); }).catch(() => { ratesP = null; }); return ratesP; }
+const conv = (cc, v) => RATES ? v * (RATES[cc] || 0) / (valCur === 'usd' ? RATES.usd : 1) : 0;
+const curSym = () => valCur === 'usd' ? '$' : '₸';
+const fmtC = v => valCur === 'usd' ? '$' + Math.round(v).toLocaleString('ru-RU') : fmt(v) + ' ₸';
+const shortC = v => { const a = Math.abs(v), u = valCur === 'usd';
+  const n = a >= 1e9 ? (v / 1e9).toLocaleString('ru-RU', { maximumFractionDigits: 1 }) + ' млрд' : a >= 1e6 ? (v / 1e6).toLocaleString('ru-RU', { maximumFractionDigits: 1 }) + ' млн' : a >= 1e4 ? Math.round(v / 1e3) + ' тыс.' : fmt(v);
+  return u ? '$' + n : n + ' ₸'; };
 const shortMoney = (v, cc) => { const a = Math.abs(v), s = COUNTRIES[cc].sym;
   return (a >= 1e9 ? (v / 1e9).toLocaleString('ru-RU', { maximumFractionDigits: 1 }) + ' млрд' : a >= 1e6 ? (v / 1e6).toLocaleString('ru-RU', { maximumFractionDigits: 1 }) + ' млн' : a >= 1e4 ? Math.round(v / 1e3) + ' тыс.' : fmt(v)) + ' ' + s; };
 const MON = ['янв', 'фев', 'мар', 'апр', 'мая', 'июн', 'июл', 'авг', 'сен', 'окт', 'ноя', 'дек'];
@@ -872,13 +884,12 @@ function renderValue(ids) {
   valIds = ids;
   const box = $('valBox');
   const purchaseT = id => { const r = Store.items[id]; const d = r.date && /^\d{4}-\d\d-\d\d$/.test(r.date) ? Date.parse(r.date + 'T12:00:00') : NaN; return isFinite(d) ? d : (+r.updated || Date.now()); };
-  const byCur = {}; ids.forEach(id => { (byCur[COINS[id].country] = byCur[COINS[id].country] || []).push(id); });
-  const curs = Object.keys(byCur).sort((a, b) => byCur[b].length - byCur[a].length);
-  if (!curs.length) { box.innerHTML = '<p class="vnote" style="margin:0">Добавьте монеты в коллекцию и укажите цены покупки — здесь появится график вложений и текущей оценки.</p>'; return; }
-  if (!curs.includes(valCur)) valCur = curs[0];
-  const cc = valCur, list = byCur[cc];
-  const ev = list.map(id => { const r = Store.items[id], q = Store.qty(id), u = unitValue(id);
-    return { id, t: purchaseT(id), inv: +r.price > 0 ? r.price * q : 0, est: u ? u.v * q : 0, dated: !!r.date, priced: +r.price > 0, valued: !!u }; }).sort((a, b) => a.t - b.t);
+  if (!ids.length) { box.innerHTML = '<p class="vnote" style="margin:0">Добавьте монеты в коллекцию и укажите цены покупки — здесь появится график вложений и текущей оценки.</p>'; return; }
+  if (!RATES) { box.innerHTML = '<p class="vnote" style="margin:0">Загружаю курсы валют Нацбанка…</p>'; loadRates(); return; }
+  const list = ids;
+  const ev = list.map(id => { const r = Store.items[id], q = Store.qty(id), u = unitValue(id), c0 = COINS[id].country;
+    return { id, t: purchaseT(id), inv: +r.price > 0 ? conv(c0, r.price * q) : 0, est: u ? conv(c0, u.v * q) : 0, dated: !!r.date, priced: +r.price > 0, valued: !!u }; }).sort((a, b) => a.t - b.t);
+  const curList = [...new Set(list.map(id => COINS[id].country))];
   const pts = []; let ci = 0, ce = 0;
   ev.forEach(e => { ci += e.inv; ce += e.est; const last = pts[pts.length - 1];
     if (last && new Date(last.t).toDateString() === new Date(e.t).toDateString()) { last.inv = ci; last.est = ce; last.ids.push(e.id); } else pts.push({ t: e.t, inv: ci, est: ce, ids: [e.id] }); });
@@ -909,19 +920,19 @@ function renderValue(ids) {
   box.innerHTML = `
     <div class="vhead">
       <div class="vlegend"><span><i style="background:${VC.est}"></i>Текущая оценка</span><span><i style="background:${VC.inv}"></i>Вложено</span></div>
-      ${curs.length > 1 ? `<div class="vcur">${curs.map(c => `<button data-vc="${c}" class="${c === cc ? 'on' : ''}">${COUNTRIES[c].sym === '₸' ? '₸ тенге' : COUNTRIES[c].cur}</button>`).join('')}</div>` : ''}
+      <div class="vcur"><button data-vc="kzt" class="${valCur === 'kzt' ? 'on' : ''}">₸ тенге</button><button data-vc="usd" class="${valCur === 'usd' ? 'on' : ''}">$ доллар</button></div>
     </div>
     <div class="vchart" id="vChart">
-      <svg viewBox="0 0 ${W} ${H}" role="img" aria-label="График: вложено ${fmt(totInv)} ${COUNTRIES[cc].sym}, текущая оценка ${fmt(totEst)} ${COUNTRIES[cc].sym}">
-        ${yt.map(v => `<line class="grid" x1="${L}" x2="${W - R}" y1="${Y(v)}" y2="${Y(v)}"/><text class="ax" x="${L - 8}" y="${Y(v) + 4}" text-anchor="end">${v ? shortMoney(v, cc) : '0'}</text>`).join('')}
+      <svg viewBox="0 0 ${W} ${H}" role="img" aria-label="График: вложено ${fmtC(totInv)}, текущая оценка ${fmtC(totEst)}">
+        ${yt.map(v => `<line class="grid" x1="${L}" x2="${W - R}" y1="${Y(v)}" y2="${Y(v)}"/><text class="ax" x="${L - 8}" y="${Y(v) + 4}" text-anchor="end">${v ? shortC(v) : '0'}</text>`).join('')}
         ${xt.map(t => `<text class="ax" x="${X(t)}" y="${H - 8}" text-anchor="middle">${shortSpan ? new Date(t).getDate() + ' ' : ''}${MON[new Date(t).getMonth()]}${months > 10 ? ' ' + String(new Date(t).getFullYear()).slice(-2) : ''}</text>`).join('')}
         <path d="${area}" fill="${VC.est}" opacity=".12"/>
         <path d="${step('est')}" fill="none" stroke="${VC.est}" stroke-width="2" stroke-linejoin="round"/>
         <path d="${step('inv')}" fill="none" stroke="${VC.inv}" stroke-width="2" stroke-linejoin="round"/>
         ${pts.map(p => `<circle cx="${X(p.t)}" cy="${Y(p.est)}" r="4" fill="${VC.est}" stroke="#161a21" stroke-width="2"/>`).join('')}
         ${pts.filter(p => p.inv > 0).map(p => `<circle cx="${X(p.t)}" cy="${Y(p.inv)}" r="4" fill="${VC.inv}" stroke="#161a21" stroke-width="2"/>`).join('')}
-        <text class="lbl" x="${X(t1) + 8}" y="${ly1 + 4}">${shortMoney(totEst, cc)}</text>
-        <text class="lbl" x="${X(t1) + 8}" y="${ly2 + 4}">${shortMoney(totInv, cc)}</text>
+        <text class="lbl" x="${X(t1) + 8}" y="${ly1 + 4}">${shortC(totEst)}</text>
+        <text class="lbl" x="${X(t1) + 8}" y="${ly2 + 4}">${shortC(totInv)}</text>
         <line id="vCross" x1="0" x2="0" y1="${T}" y2="${H - B}" stroke="var(--muted)" stroke-dasharray="3 3" style="display:none"/>
         <rect x="${L}" y="${T}" width="${W - L - R}" height="${H - T - B}" fill="transparent" id="vHit"/>
       </svg>
@@ -929,22 +940,22 @@ function renderValue(ids) {
     </div>
     <div class="vfoot">
       <div>
-        <h4>Итого в ${COUNTRIES[cc].sym === '₸' ? 'тенге' : COUNTRIES[cc].cur}</h4>
-        <div style="font-size:14px;line-height:1.7">Вложено: <b>${fmt(totInv)} ${COUNTRIES[cc].sym}</b><br>Текущая оценка: <b>${fmt(totEst)} ${COUNTRIES[cc].sym}</b>
-        ${totInv ? `<br>Разница: <b style="color:${diff >= 0 ? 'var(--ok)' : '#e88'}">${diff >= 0 ? '+' : '−'}${fmt(Math.abs(diff))} ${COUNTRIES[cc].sym} (${diff >= 0 ? '+' : '−'}${Math.abs(pct)}%)</b>` : ''}</div>
+        <h4>Итого в ${valCur === 'usd' ? 'долларах' : 'тенге'}</h4>
+        <div style="font-size:14px;line-height:1.7">Вложено: <b>${fmtC(totInv)}</b><br>Текущая оценка: <b>${fmtC(totEst)}</b>
+        ${totInv ? `<br>Разница: <b style="color:${diff >= 0 ? 'var(--ok)' : '#e88'}">${diff >= 0 ? '+' : '−'}${fmtC(Math.abs(diff))} (${diff >= 0 ? '+' : '−'}${Math.abs(pct)}%)</b>` : ''}</div>
         <h4 style="margin-top:12px">Оценка по разделам</h4>
         <div class="vsec">${SECTIONS.filter(s => secs[s]).map(s => `<i style="width:${secs[s] / (totEst || 1) * 100}%;background:${SEC_C[s]}" title="${s}"></i>`).join('')}</div>
         <div class="vlegend" style="font-size:12.5px">${SECTIONS.filter(s => secs[s]).map(s => `<span><i style="background:${SEC_C[s]};height:8px;width:8px;border-radius:2px"></i>${s} · ${Math.round(secs[s] / (totEst || 1) * 100)}%</span>`).join('')}</div>
       </div>
       <div><h4>Самые ценные</h4><div class="vtop" id="vTop"></div></div>
     </div>
-    <div class="vnote">Оценка — ваша оценка монеты, иначе цена магазина Нацбанка, иначе цена покупки. Линия оценки показывает сегодняшнюю стоимость монет, купленных к каждой дате.
+    <div class="vnote">Суммы в сомах, сумах и других валютах пересчитаны по официальному курсу Нацбанка РК на ${esc(RATES.date)}${curList.length > 1 || valCur === 'usd' ? ` (${curList.filter(c => c !== 'kz').concat(valCur === 'usd' ? ['usd'] : []).map(c => c === 'usd' ? '1 $ = ' + RATES.usd.toLocaleString('ru-RU') + ' ₸' : '1 ' + COUNTRIES[c].sym + ' = ' + RATES[c].toLocaleString('ru-RU', { maximumFractionDigits: 3 }) + ' ₸').join(', ')})` : ''}; вложения тоже по сегодняшнему курсу. Оценка — ваша оценка монеты, иначе цена магазина Нацбанка, иначе цена покупки. Линия оценки показывает сегодняшнюю стоимость монет, купленных к каждой дате.
       ${noPrice ? ` Без цены покупки: ${noPrice} ${plural(noPrice, 'монета', 'монеты', 'монет')}.` : ''}${noVal ? ` Без оценки: ${noVal}.` : ''}${noDate ? ` Без даты покупки: ${noDate} — для них взята дата добавления.` : ''}
       <details class="vtable"><summary style="cursor:pointer">Показать таблицей</summary><table><tr><th>Дата</th><th>Монета</th><th>Вложено</th><th>Оценка</th></tr>
-      ${ev.map(e => `<tr><td>${dstr(e.t)}</td><td>${esc(COINS[e.id].title)}${Store.qty(e.id) > 1 ? ' ×' + Store.qty(e.id) : ''}</td><td>${e.inv ? fmt(e.inv) : '—'}</td><td>${e.est ? fmt(e.est) : '—'}</td></tr>`).join('')}</table></details></div>`;
+      ${ev.map(e => `<tr><td>${dstr(e.t)}</td><td>${esc(COINS[e.id].title)}${Store.qty(e.id) > 1 ? ' ×' + Store.qty(e.id) : ''}</td><td>${e.inv ? fmtC(e.inv) : '—'}</td><td>${e.est ? fmtC(e.est) : '—'}</td></tr>`).join('')}</table></details></div>`;
   $('vTop').replaceChildren(...top.map(e => { const d = document.createElement('div'); d.dataset.open = e.id; d.append(thumbEl(COINS[e.id], 68));
-    d.insertAdjacentHTML('beforeend', `<span>${esc(COINS[e.id].title)}</span><b>${shortMoney(e.est, cc)}</b>`); return d; }));
-  box.querySelectorAll('[data-vc]').forEach(b => b.onclick = () => { valCur = b.dataset.vc; renderValue(ids); });
+    d.insertAdjacentHTML('beforeend', `<span>${esc(COINS[e.id].title)}</span><b>${shortC(e.est)}</b>`); return d; }));
+  box.querySelectorAll('[data-vc]').forEach(b => b.onclick = () => { valCur = b.dataset.vc; try { localStorage.setItem('jadiger-valcur', valCur); } catch (e) {} renderMy(); });
   // подсказка при наведении
   const svg = box.querySelector('svg'), tip = $('vTip'), cross = $('vCross'), hit = $('vHit');
   const show = ev2 => { const r = svg.getBoundingClientRect(), x = (ev2.clientX - r.left) / r.width * W, t = t0 + (x - L) / (W - L - R) * span;
@@ -952,7 +963,7 @@ function renderValue(ids) {
     cross.style.display = ''; cross.setAttribute('x1', x); cross.setAttribute('x2', x);
     const vals = p || { inv: 0, est: 0, ids: [] };
     if (!p) { tip.style.display = 'none'; cross.style.display = 'none'; return; }
-    tip.innerHTML = `<em>${dstr(Math.min(t, now))}</em><br><span class="sw" style="background:${VC.est}"></span>Оценка: <b>${fmt(vals.est)} ${COUNTRIES[cc].sym}</b><br><span class="sw" style="background:${VC.inv}"></span>Вложено: <b>${fmt(vals.inv)} ${COUNTRIES[cc].sym}</b>` +
+    tip.innerHTML = `<em>${dstr(Math.min(t, now))}</em><br><span class="sw" style="background:${VC.est}"></span>Оценка: <b>${fmtC(vals.est)}</b><br><span class="sw" style="background:${VC.inv}"></span>Вложено: <b>${fmtC(vals.inv)}</b>` +
       (p && Math.abs(X(p.t) - x) < 14 ? '<br><em>' + p.ids.slice(0, 3).map(id => esc(COINS[id].title)).join(', ') + (p.ids.length > 3 ? ' и ещё ' + (p.ids.length - 3) : '') + '</em>' : '');
     tip.style.display = 'block'; tip.style.left = (x / W * r.width) + 'px'; tip.style.top = (Y(vals.est) / H * r.height - 8) + 'px'; };
   hit.addEventListener('pointermove', show); hit.addEventListener('pointerdown', show);

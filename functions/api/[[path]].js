@@ -125,6 +125,26 @@ export async function onRequest(ctx) {
       return json({ ok: true }, 200, { 'set-cookie': sessionCookie('', 0, secure) });
     }
 
+    // официальные курсы Нацбанка РК: тенге за единицу валюты (кэш 6 часов)
+    if (path === 'rates' && m === 'GET') {
+      const cache = caches.default, ck = new Request(url.origin + '/api/rates?v=1');
+      const hit = await cache.match(ck); if (hit) return hit;
+      const FALLBACK = { date: '21.11.2026', kz: 1, usd: 455, uz: 0.038, kg: 5.2, tj: 49.73, tm: 130 };
+      let out = null;
+      for (let back = 0; back < 4 && !out; back++) {
+        const d = new Date(Date.now() + 5 * 3600e3 - back * 86400e3), ds = [d.getUTCDate(), d.getUTCMonth() + 1].map(x => String(x).padStart(2, '0')).join('.') + '.' + d.getUTCFullYear();
+        try {
+          const r = await fetch('https://nationalbank.kz/rss/get_rates.cfm?fdate=' + ds, { cf: { cacheTtl: 3600 } }); if (!r.ok) continue;
+          const x = await r.text(), rate = code => { const mm = new RegExp('<title>' + code + '</title>\\s*<description>([\\d.]+)</description>\\s*<quant>(\\d+)</quant>').exec(x); return mm ? +mm[1] / +mm[2] : null; };
+          const usd = rate('USD'); if (!usd) continue;
+          out = { date: ds, kz: 1, usd, uz: rate('UZS') || FALLBACK.uz, kg: rate('KGS') || FALLBACK.kg, tj: rate('TJS') || FALLBACK.tj, tm: rate('TMT') || usd / 3.5, src: 'Национальный банк РК' };
+        } catch (e) {}
+      }
+      const res = json(out || { ...FALLBACK, src: 'Национальный банк РК (сохранённые курсы)' }, 200, { 'cache-control': 'public, max-age=21600' });
+      if (out) ctx.waitUntil(cache.put(ck, res.clone()));
+      return res;
+    }
+
     if (seg[0] === 'u' && seg.length === 2 && m === 'GET') {
       const pc = await publicCollection(env.DB, seg[1]);
       if (!pc) return err(404, 'not_found', 'Коллекция не найдена или скрыта владельцем');
