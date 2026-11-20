@@ -13,4 +13,10 @@ database_id = "a3389d31-2435-47b6-8b49-7bb4561a5f05"
 GOOGLE_CLIENT_ID = "760834403293-70g5mh0lk6rshekvdnf9qf3rtveu4chd.apps.googleusercontent.com"
 # Модель для распознавания монет по фото (нужен секрет ANTHROPIC_API_KEY, иначе функция просто выключена)
 ANTHROPIC_MODEL = "claude-sonnet-5-5"
-AI_DAILY_LIMIT = "30"
+AI_DAILY_LIMIT = "10"
+AI_DAILY_BUDGET_USD = "3"
+# цены модели, $ за 1 млн токенов (Sonnet 5.5): для учёта дневного бюджета
+AI_PRICE_IN = "2"
+AI_PRICE_OUT = "10"
+AI_PRICE_CACHE_WRITE = "2.5"
+AI_PRICE_CACHE_READ = "0.2"

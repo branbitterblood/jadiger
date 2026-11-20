@@ -182,7 +182,11 @@ export async function onRequest(ctx) {
 
     if (path === 'identify' && m === 'POST') {
       if (!env.ANTHROPIC_API_KEY) return err(503, 'not_configured', 'Распознавание не настроено');
-      const day = new Date().toISOString().slice(0, 10), lim = +(env.AI_DAILY_LIMIT || 30);
+      const day = new Date().toISOString().slice(0, 10), lim = +(env.AI_DAILY_LIMIT || 10);
+      const budget = +(env.AI_DAILY_BUDGET_USD || 3);   // общий потолок расходов на весь сайт в сутки (UTC)
+      await env.DB.prepare('CREATE TABLE IF NOT EXISTS ai_budget (day TEXT PRIMARY KEY, usd REAL NOT NULL DEFAULT 0, calls INTEGER NOT NULL DEFAULT 0)').run();
+      const spent = await env.DB.prepare('SELECT usd FROM ai_budget WHERE day = ?').bind(day).first();
+      if (spent && spent.usd >= budget) return err(429, 'budget', 'Дневной лимит распознаваний на сайте исчерпан — попробуйте завтра');
       const used = await env.DB.prepare('SELECT n FROM ai_usage WHERE user_id = ? AND day = ?').bind(uid, day).first();
       if (used && used.n >= lim) return err(429, 'rate_limited', `Лимит ${lim} распознаваний в день`);
       const { prompt, image } = await body(req, 3_000_000);
@@ -194,14 +198,21 @@ export async function onRequest(ctx) {
         headers: { 'content-type': 'application/json', 'x-api-key': env.ANTHROPIC_API_KEY, 'anthropic-version': '2023-06-01' },
         body: JSON.stringify({
           model: env.ANTHROPIC_MODEL || 'claude-sonnet-5-5', max_tokens: 800,
+          // инструкция + каталог одинаковы для всех запросов → кэшируются, повторные чтения в ~10 раз дешевле
+          system: [{ type: 'text', text: prompt, cache_control: { type: 'ephemeral' } }],
           messages: [{ role: 'user', content: [
             { type: 'image', source: { type: 'base64', media_type: mt[1], data: mt[2] } },
-            { type: 'text', text: prompt },
+            { type: 'text', text: 'Определи монету на этом фото по каталогу из инструкции. Ответь только JSON.' },
           ] }],
         }),
       });
       if (!r.ok) return err(502, 'ai_failed', 'Сервис распознавания ответил ' + r.status);
       const out = await r.json();
+      // учёт расходов по фактическим токенам (цены $ за 1 млн токенов задаются в wrangler.toml)
+      const u = out.usage || {}, P = k => +(env[k] || 0) / 1e6;
+      const usd = (u.input_tokens || 0) * P('AI_PRICE_IN') + (u.output_tokens || 0) * P('AI_PRICE_OUT')
+        + (u.cache_creation_input_tokens || 0) * P('AI_PRICE_CACHE_WRITE') + (u.cache_read_input_tokens || 0) * P('AI_PRICE_CACHE_READ');
+      await env.DB.prepare('INSERT INTO ai_budget (day, usd, calls) VALUES (?, ?, 1) ON CONFLICT(day) DO UPDATE SET usd = usd + excluded.usd, calls = calls + 1').bind(day, usd).run();
       const text = (out.content || []).filter(c => c.type === 'text').map(c => c.text).join('');
       let parsed = {}; try { parsed = JSON.parse((text.match(/\{[\s\S]*\}/) || ['{}'])[0]); } catch (e) {}
       return json(parsed);
