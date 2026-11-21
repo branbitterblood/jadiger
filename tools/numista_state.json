@@ -514,10 +514,279 @@
 "title": "200 Som (Aikol Manas)",
 "upd": "2026-11-21",
 "issue": 1069609
+},
+"570": {
+"status": "ok",
+"type": 63730,
+"title": "10 Soʻm",
+"upd": "2026-11-21",
+"issue": 240187
+},
+"216": {
+"status": "ok",
+"type": 3107,
+"title": "20 Tenge (United Nations)",
+"upd": "2026-11-21",
+"issue": 15220
+},
+"512": {
+"status": "none",
+"why": "неоднозначно: 100 Tenge (Abai Kunanbaev - Mother) | 100 Tenge (Abai Kunanbaev - Falconer) | 100 Tenge (Abai Kunanbaev - Love) | 100 Tenge (Abai Kunanbaev - Madrasa)",
+"upd": "2026-11-21"
+},
+"513": {
+"status": "none",
+"why": "неоднозначно: 100 Tenge (Abai Kunanbaev - Mother) | 100 Tenge (Abai Kunanbaev - Falconer) | 100 Tenge (Abai Kunanbaev - Love) | 100 Tenge (Abai Kunanbaev - Madrasa)",
+"upd": "2026-11-21"
+},
+"514": {
+"status": "none",
+"why": "неоднозначно: 100 Tenge (Abai Kunanbaev - Mother) | 100 Tenge (Abai Kunanbaev - Falconer) | 100 Tenge (Abai Kunanbaev - Love) | 100 Tenge (Abai Kunanbaev - Madrasa)",
+"upd": "2026-11-21"
+},
+"515": {
+"status": "none",
+"why": "неоднозначно: 100 Tenge (Abai Kunanbaev - Mother) | 100 Tenge (Abai Kunanbaev - Falconer) | 100 Tenge (Abai Kunanbaev - Love) | 100 Tenge (Abai Kunanbaev - Madrasa)",
+"upd": "2026-11-21"
+},
+"516": {
+"status": "none",
+"why": "неоднозначно: 100 Tenge (Abai Kunanbaev - Mother) | 100 Tenge (Abai Kunanbaev - Falconer) | 100 Tenge (Abai Kunanbaev - Love) | 100 Tenge (Abai Kunanbaev - Madrasa)",
+"upd": "2026-11-21"
+},
+"704": {
+"status": "ok",
+"type": 30620,
+"title": "10 Som (Manas)",
+"upd": "2026-11-21",
+"issue": 150603
+},
+"705": {
+"status": "ok",
+"type": 44694,
+"title": "100 Som (Manas)",
+"upd": "2026-11-21",
+"issue": 191089
+},
+"215": {
+"status": "ok",
+"type": 9640,
+"title": "20 Tenge (Zhambyl Zhabayev)",
+"upd": "2026-11-21",
+"issue": 51349
+},
+"213": {
+"status": "none",
+"why": "неоднозначно: 20 Tenge (Muchtar Auesov) | 20 Tenge (Year of Accordance and Commemoration)",
+"upd": "2026-11-21"
+},
+"214": {
+"status": "none",
+"why": "неоднозначно: 20 Tenge (Muchtar Auesov) | 20 Tenge (Year of Accordance and Commemoration)",
+"upd": "2026-11-21"
+},
+"571": {
+"status": "none",
+"why": "нет кандидатов (6 в поиске)",
+"upd": "2026-11-21"
+},
+"211": {
+"status": "ok",
+"type": 12698,
+"title": "50 Tenge (Millennium)",
+"upd": "2026-11-21",
+"issue": 67418
+},
+"212": {
+"status": "none",
+"why": "нет кандидатов (1 в поиске)",
+"upd": "2026-11-21"
+},
+"511": {
+"status": "ok",
+"type": 138908,
+"title": "100 Tenge (Abroad of The Millennium)",
+"upd": "2026-11-21",
+"issue": 392812
+},
+"208": {
+"status": "ok",
+"type": 23809,
+"title": "50 Tenge (Mausoleum of Akhmet Yasawi)",
+"upd": "2026-11-21",
+"issue": 125062
+},
+"209": {
+"status": "ok",
+"type": 12701,
+"title": "50 Tenge (Sabit Mukanov)",
+"upd": "2026-11-21",
+"issue": 67421
+},
+"210": {
+"status": "none",
+"why": "неоднозначно: 50 Tenge (Sabit Mukanov) | 50 Tenge (Mausoleum of Akhmet Yasawi)",
+"upd": "2026-11-21"
+},
+"508": {
+"status": "ok",
+"type": 38607,
+"title": "500 Tenge (Sun God)",
+"upd": "2026-11-21",
+"issue": 174122
+},
+"509": {
+"status": "ok",
+"type": 16780,
+"title": "100 Tenge (Turkestan)",
+"upd": "2026-11-21",
+"issue": 85488
+},
+"510": {
+"status": "none",
+"why": "неоднозначно: 500 Tenge (Uncia Uncia) | 500 Tenge (Sun God)",
+"upd": "2026-11-21"
+},
+"569": {
+"status": "ok",
+"type": 139030,
+"title": "500 Tenge (1500 years of Turkestan)",
+"upd": "2026-11-21",
+"issue": 393020
+},
+"703": {
+"status": "ok",
+"type": 44700,
+"title": "100 Som (Osh)",
+"upd": "2026-11-21",
+"issue": 191100
+},
+"503": {
+"status": "ok",
+"type": 16666,
+"title": "500 Tenge (Umai. Mountain Altai)",
+"upd": "2026-11-21",
+"issue": 85312
+},
+"504": {
+"status": "ok",
+"type": 16680,
+"title": "500 Tenge (Saiga)",
+"upd": "2026-11-21",
+"issue": 85339
+},
+"505": {
+"status": "ok",
+"type": 16695,
+"title": "500 Tenge (Narkobyz)",
+"upd": "2026-11-21",
+"issue": 85358
+},
+"506": {
+"status": "ok",
+"type": 204936,
+"title": "100 Tenge",
+"upd": "2026-11-21",
+"issue": 505533
+},
+"507": {
+"status": "none",
+"why": "неоднозначно: 500 Tenge (Saiga) | 500 tenge (10 Years of Independence) | 500 Tenge (Umai. Mountain Altai) | 500 Tenge (Narkobyz)",
+"upd": "2026-11-21"
+},
+"568": {
+"status": "ok",
+"type": 139032,
+"title": "1000 Tenge (Golden man)",
+"upd": "2026-11-21",
+"issue": 393022
+},
+"572": {
+"status": "ok",
+"type": 100301,
+"title": "100 Soʻm (Tennis player)",
+"upd": "2026-11-21",
+"issue": 320863
+},
+"573": {
+"status": "ok",
+"type": 100296,
+"title": "100 Soʻm (Football player)",
+"upd": "2026-11-21",
+"issue": 320858
+},
+"574": {
+"status": "ok",
+"type": 100293,
+"title": "100 Soʻm (Amir-Timur Museum)",
+"upd": "2026-11-21",
+"issue": 320855
+},
+"575": {
+"status": "none",
+"why": "неоднозначно: 100 Soʻm (Alisher Novoiy) | 100 Soʻm (Parliament) | 100 Soʻm (Amir-Timur Museum) | 100 Soʻm (Toskent town hall)",
+"upd": "2026-11-21"
+},
+"576": {
+"status": "none",
+"why": "неоднозначно: 100 Soʻm (Alisher Novoiy) | 100 Soʻm (Parliament) | 100 Soʻm (Amir-Timur Museum) | 100 Soʻm (Toskent town hall)",
+"upd": "2026-11-21"
+},
+"577": {
+"status": "ok",
+"type": 100300,
+"title": "100 Soʻm (Registan in Samarkand)",
+"upd": "2026-11-21",
+"issue": 320862
+},
+"578": {
+"status": "none",
+"why": "неоднозначно: 100 Soʻm (Amir-Timur Museum) | 100 Soʻm (Lenk monument in Timur) | 100 Soʻm (Aliser Navoi monument) | 100 Soʻm (Alisher Novoiy)",
+"upd": "2026-11-21"
+},
+"579": {
+"status": "none",
+"why": "неоднозначно: 100 Soʻm (Alisher Novoiy) | 100 Soʻm (Parliament) | 100 Soʻm (Amir-Timur Museum) | 100 Soʻm (Toskent town hall)",
+"upd": "2026-11-21"
+},
+"580": {
+"status": "none",
+"why": "неоднозначно: 100 Soʻm (Alisher Novoiy) | 100 Soʻm (Lenk monument in Timur) | 100 Soʻm (Aliser Navoi monument) | 100 Soʻm (Parliament)",
+"upd": "2026-11-21"
+},
+"581": {
+"status": "ok",
+"type": 100293,
+"title": "100 Soʻm (Amir-Timur Museum)",
+"upd": "2026-11-21",
+"issue": 320855
+},
+"582": {
+"status": "none",
+"why": "неоднозначно: 100 Soʻm (Lenk monument in Timur) | 100 Soʻm (Aliser Navoi monument) | 100 Soʻm (Alisher Novoiy) | 100 Soʻm (Parliament)",
+"upd": "2026-11-21"
+},
+"583": {
+"status": "none",
+"why": "неоднозначно: 100 Soʻm (Alisher Novoiy) | 100 Soʻm (Parliament) | 100 Soʻm (Amir-Timur Museum) | 100 Soʻm (Toskent town hall)",
+"upd": "2026-11-21"
+},
+"702": {
+"status": "ok",
+"type": 30619,
+"title": "10 Som (Republic)",
+"upd": "2026-11-21"
 }
 },
 "usage": {
-"2026-11": 240
+"2026-11": 360
 },
-"issuers": {}
+"issuers": {
+"kz": "kazakhstan",
+"kg": "kirghizistan",
+"mn": "mongolie",
+"tj": "tadjikistan",
+"tm": "turkmenistan",
+"uz": "uzbekistan_section"
+}
 }

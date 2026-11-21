@@ -1,2 +1,3 @@
-2026-11-21 01:28 UTC
+2026-11-21 05:29 UTC
+MN: ошибка AttributeError: 'str' object has no attribute 'get'
 итого новых монет: 0; всего автодобавленных: 0
