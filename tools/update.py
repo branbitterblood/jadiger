@@ -391,7 +391,8 @@ def mn_update(main, auto, taken):
     B = 'https://www.erdenesiinsan.mn'
     t = get(B + '/api/coins')
     if not t: log('MN: каталог erdenesiinsan.mn не открылся'); return 0
-    data = json.loads(t); items = data if isinstance(data, list) else data.get('data') or data.get('coins') or []
+    items = json.loads(t)
+    while isinstance(items, dict): items = items.get('data', items.get('coins', []))   # ответ вида {data:{data:[...]}}
     seen = set(auto.setdefault('mn_seen', []))
     num = lambda s: [float(x.replace(',', '.')) for x in re.findall(r'\d+(?:[.,]\d+)?', s or '')]
     added = 0
