@@ -36,7 +36,9 @@ async function autoCoin(env, request, cc, slug) {
 // общий кусок <head> для трёх языков: canonical + hreflang
 export const altLinks = (path) => `<link rel="alternate" hreflang="ru" href="${SITE}${path}">\n<link rel="alternate" hreflang="kk" href="${SITE}/kk${path}">\n<link rel="alternate" hreflang="en" href="${SITE}/en${path}">\n<link rel="alternate" hreflang="x-default" href="${SITE}${path}">`;
 export function setLang(html, lang) {
-  return lang === 'ru' ? html : html.replace('<html lang="ru">', `<html lang="${lang}">`);
+  // переводы названий монет подключаются только на /en и /kk (в русской версии они не нужны)
+  return lang === 'ru' ? html : html.replace('<html lang="ru">', `<html lang="${lang}">`)
+    .replace(/<!--i18n:(\w+)-->/, (m, v) => `<script src="/i18n/${lang}.js?v=${v}"></script>`);
 }
 export const PFX = { ru: '', en: '/en', kk: '/kk' };
 const TXT = {
