@@ -237,10 +237,287 @@
 "title": "200 Tenge (Kazakhstan Football Federation)",
 "upd": "2026-11-21",
 "issue": 944307
+},
+"218": {
+"status": "none",
+"why": "неоднозначно: 1000 Tenge (Burabay) | 1000 Tenge (35 years of the CIS) | 1000 Tenge (SYǴANAQ) | 1000 Tenge (Constitution of the Republic of Kazakhstan)",
+"upd": "2026-11-21"
+},
+"224": {
+"status": "none",
+"why": "нет кандидатов (1 в поиске)",
+"upd": "2026-11-21"
+},
+"621": {
+"status": "none",
+"why": "неоднозначно: 100 000 Som (FIFA World Cup 2026) | 100 000 Som (FIFA World Cup 2026)",
+"upd": "2026-11-21"
+},
+"622": {
+"status": "none",
+"why": "неоднозначно: 100 000 Som (FIFA World Cup 2026) | 100 000 Som (FIFA World Cup 2026)",
+"upd": "2026-11-21"
+},
+"625": {
+"status": "none",
+"why": "неоднозначно: 100 000 Som (FIFA World Cup 2026) | 100 000 Som (Independence Monument) | 100 000 Som (35th Anniversary of Independence) | 100 000 Som (Center of Islamic Civilization)",
+"upd": "2026-11-21"
+},
+"626": {
+"status": "none",
+"why": "неоднозначно: 100 000 Som (FIFA World Cup 2026) | 100 000 Som (Independence Monument) | 100 000 Som (35th Anniversary of Independence) | 100 000 Som (Center of Islamic Civilization)",
+"upd": "2026-11-21"
+},
+"6": {
+"status": "ok",
+"type": 489703,
+"title": "200 Tenge (E. Boketov)",
+"upd": "2026-11-21",
+"issue": 982767
+},
+"236": {
+"status": "ok",
+"type": 518193,
+"title": "1000 Tenge (Argymaq)",
+"upd": "2026-11-21",
+"issue": 1014160
+},
+"238": {
+"status": "ok",
+"type": 518188,
+"title": "200 Tenge (Argymaq)",
+"upd": "2026-11-21",
+"issue": 1014155
+},
+"615": {
+"status": "none",
+"why": "нет кандидатов (0 в поиске)",
+"upd": "2026-11-21"
+},
+"616": {
+"status": "none",
+"why": "нет кандидатов (0 в поиске)",
+"upd": "2026-11-21"
+},
+"10": {
+"status": "none",
+"why": "неоднозначно: 200 Tenge (Kemel Aqyshev) | 200 Tenge (Raqymjan Qoshqarbaev) | 200 Tenge (Qanysh Satbaev) | 200 Tenge (World Painting)",
+"upd": "2026-11-21"
+},
+"12": {
+"status": "none",
+"why": "неоднозначно: 200 Tenge (Kemel Aqyshev) | 200 Tenge (Raqymjan Qoshqarbaev) | 200 Tenge (Qanysh Satbaev) | 200 Tenge (World Painting)",
+"upd": "2026-11-21"
+},
+"17": {
+"status": "none",
+"why": "неоднозначно: 200 Tenge (Kemel Aqyshev) | 200 Tenge (Raqymjan Qoshqarbaev) | 200 Tenge (Qanysh Satbaev) | 200 Tenge (World Painting)",
+"upd": "2026-11-21"
+},
+"21": {
+"status": "ok",
+"type": 461890,
+"title": "200 Tenge (S. Nurmagambetov)",
+"upd": "2026-11-21",
+"issue": 938946
+},
+"22": {
+"status": "ok",
+"type": 461892,
+"title": "200 Tenge (ERÝLIK)",
+"upd": "2026-11-21",
+"issue": 938948
+},
+"23": {
+"status": "ok",
+"type": 461893,
+"title": "200 Tenge (ERÝLIK)",
+"upd": "2026-11-21",
+"issue": 938949
+},
+"24": {
+"status": "ok",
+"type": 465188,
+"title": "500 Tenge (Nymphaea alba)",
+"upd": "2026-11-21",
+"issue": 944453
+},
+"25": {
+"status": "ok",
+"type": 447267,
+"title": "500 Tenge (Aiy)",
+"upd": "2026-11-21",
+"issue": 915787
+},
+"26": {
+"status": "ok",
+"type": 447269,
+"title": "200 Tenge (Aiy)",
+"upd": "2026-11-21",
+"issue": 915789
+},
+"27": {
+"status": "ok",
+"type": 465171,
+"title": "200 Tenge (JOSHY ULYSY. 800 JYL)",
+"upd": "2026-11-21",
+"issue": 944435
+},
+"28": {
+"status": "ok",
+"type": 432685,
+"title": "200 Tenge (Kemel Aqyshev)",
+"upd": "2026-11-21",
+"issue": 892833
+},
+"29": {
+"status": "ok",
+"type": 432689,
+"title": "200 Tenge (Raqymjan Qoshqarbaev)",
+"upd": "2026-11-21",
+"issue": 892837
+},
+"30": {
+"status": "none",
+"why": "неоднозначно: 200 Tenge (Kemel Aqyshev) | 200 Tenge (Raqymjan Qoshqarbaev) | 200 Tenge (Qanysh Satbaev) | 200 Tenge (World Painting)",
+"upd": "2026-11-21"
+},
+"31": {
+"status": "ok",
+"type": 419265,
+"title": "200 Tenge (World Painting)",
+"upd": "2026-11-21",
+"issue": 869750
+},
+"241": {
+"status": "ok",
+"type": 485411,
+"title": "1000 Tenge (Alexander The Great)",
+"upd": "2026-11-21",
+"issue": 977659
+},
+"243": {
+"status": "ok",
+"type": 461895,
+"title": "1000 Tenge (ERÝLIK)",
+"upd": "2026-11-21",
+"issue": 938952
+},
+"244": {
+"status": "ok",
+"type": 465191,
+"title": "1000 Tenge (Nymphaea alba)",
+"upd": "2026-11-21",
+"issue": 944463
+},
+"245": {
+"status": "ok",
+"type": 447265,
+"title": "5000 Tenge (Aiy)",
+"upd": "2026-11-21",
+"issue": 915785
+},
+"246": {
+"status": "ok",
+"type": 447266,
+"title": "1000 Tenge (Aiy)",
+"upd": "2026-11-21",
+"issue": 915786
+},
+"247": {
+"status": "ok",
+"type": 447370,
+"title": "1000 Tenge (Tulpar)",
+"upd": "2026-11-21",
+"issue": 915908
+},
+"248": {
+"status": "ok",
+"type": 447369,
+"title": "1000 Tenge (Shymbulak)",
+"upd": "2026-11-21",
+"issue": 915907
+},
+"249": {
+"status": "ok",
+"type": 446465,
+"title": "1000 Tenge (Cu (copper))",
+"upd": "2026-11-21",
+"issue": 914581
+},
+"250": {
+"status": "ok",
+"type": 444455,
+"title": "1000 Tenge (Hand of Fatima)",
+"upd": "2026-11-21",
+"issue": 911553
+},
+"251": {
+"status": "ok",
+"type": 444445,
+"title": "1000 Tenge (Central Mosque of Astana)",
+"upd": "2026-11-21",
+"issue": 911542
+},
+"252": {
+"status": "ok",
+"type": 436251,
+"title": "1000 Tenge (Peace to your home)",
+"upd": "2026-11-21",
+"issue": 898420
+},
+"253": {
+"status": "ok",
+"type": 465183,
+"title": "5000 Tenge (JOSHY ULYSY. 800 JYL)",
+"upd": "2026-11-21",
+"issue": 944448
+},
+"254": {
+"status": "ok",
+"type": 465182,
+"title": "2000 Tenge (JOSHY ULYSY. 800 JYL)",
+"upd": "2026-11-21",
+"issue": 944447
+},
+"255": {
+"status": "ok",
+"type": 465175,
+"title": "1000 Tenge (JOSHY ULYSY. 800 JYL)",
+"upd": "2026-11-21",
+"issue": 944439
+},
+"256": {
+"status": "ok",
+"type": 427014,
+"title": "2000 Tenge (Qanysh Satbaev)",
+"upd": "2026-11-21",
+"issue": 883659
+},
+"257": {
+"status": "ok",
+"type": 419256,
+"title": "2000 Tenge (World Painting)",
+"upd": "2026-11-21",
+"issue": 869741
+},
+"258": {
+"status": "ok",
+"type": 413248,
+"title": "100 Tenge (UEFA EURO 2024)",
+"upd": "2026-11-21",
+"issue": 860171
+},
+"634": {
+"status": "ok",
+"type": 561797,
+"title": "200 Som (Aikol Manas)",
+"upd": "2026-11-21",
+"issue": 1069609
 }
 },
 "usage": {
-"2026-11": 120
+"2026-11": 240
 },
 "issuers": {
 "kz": "kazakhstan",
