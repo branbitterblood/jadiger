@@ -1,0 +1,826 @@
+{
+"types": {
+"46289": {
+"title": "1 Diram",
+"min_year": 2011,
+"max_year": 2011,
+"object_type": {
+"id": 1,
+"name": "Standard circulation coins"
+}
+},
+"180581": {
+"title": "1 Diram",
+"min_year": 2019,
+"max_year": 2019,
+"object_type": {
+"id": 1,
+"name": "Standard circulation coins"
+}
+},
+"46290": {
+"title": "2 Diram",
+"min_year": 2011,
+"max_year": 2011,
+"object_type": {
+"id": 1,
+"name": "Standard circulation coins"
+}
+},
+"180583": {
+"title": "2 Diram",
+"min_year": 2019,
+"max_year": 2019,
+"object_type": {
+"id": 1,
+"name": "Standard circulation coins"
+}
+},
+"9984": {
+"title": "5 Diram",
+"min_year": 2001,
+"max_year": 2006,
+"object_type": {
+"id": 1,
+"name": "Standard circulation coins"
+}
+},
+"37461": {
+"title": "5 Diram",
+"min_year": 2011,
+"max_year": 2017,
+"object_type": {
+"id": 1,
+"name": "Standard circulation coins"
+}
+},
+"177436": {
+"title": "5 Diram",
+"min_year": 2019,
+"max_year": 2019,
+"object_type": {
+"id": 1,
+"name": "Standard circulation coins"
+}
+},
+"9985": {
+"title": "10 Diram",
+"min_year": 2001,
+"max_year": 2006,
+"object_type": {
+"id": 1,
+"name": "Standard circulation coins"
+}
+},
+"37462": {
+"title": "10 Diram",
+"min_year": 2011,
+"max_year": 2018,
+"object_type": {
+"id": 1,
+"name": "Standard circulation coins"
+}
+},
+"177437": {
+"title": "10 Diram",
+"min_year": 2019,
+"max_year": 2020,
+"object_type": {
+"id": 1,
+"name": "Standard circulation coins"
+}
+},
+"6671": {
+"title": "20 Diram",
+"min_year": 2001,
+"max_year": 2006,
+"object_type": {
+"id": 1,
+"name": "Standard circulation coins"
+}
+},
+"37463": {
+"title": "20 Diram",
+"min_year": 2011,
+"max_year": 2018,
+"object_type": {
+"id": 1,
+"name": "Standard circulation coins"
+}
+},
+"166125": {
+"title": "20 Diram",
+"min_year": 2019,
+"max_year": 2025,
+"object_type": {
+"id": 1,
+"name": "Standard circulation coins"
+}
+},
+"4320": {
+"title": "25 Diram (non-magnetic)",
+"min_year": 2001,
+"max_year": 2006,
+"object_type": {
+"id": 1,
+"name": "Standard circulation coins"
+}
+},
+"78492": {
+"title": "25 Diram (magnetic)",
+"min_year": 2006,
+"max_year": 2006,
+"object_type": {
+"id": 1,
+"name": "Standard circulation coins"
+}
+},
+"6672": {
+"title": "50 Diram (non-magnetic)",
+"min_year": 2001,
+"max_year": 2006,
+"object_type": {
+"id": 1,
+"name": "Standard circulation coins"
+}
+},
+"78493": {
+"title": "50 Diram (magnetic)",
+"min_year": 2006,
+"max_year": 2006,
+"object_type": {
+"id": 1,
+"name": "Standard circulation coins"
+}
+},
+"37464": {
+"title": "50 Diram",
+"min_year": 2011,
+"max_year": 2018,
+"object_type": {
+"id": 1,
+"name": "Standard circulation coins"
+}
+},
+"170216": {
+"title": "50 Diram",
+"min_year": 2019,
+"max_year": 2025,
+"object_type": {
+"id": 1,
+"name": "Standard circulation coins"
+}
+},
+"8845": {
+"title": "1 Somoni",
+"min_year": 2001,
+"max_year": 2001,
+"object_type": {
+"id": 1,
+"name": "Standard circulation coins"
+}
+},
+"17500": {
+"title": "1 Somoni (Archer)",
+"min_year": 2006,
+"max_year": 2006,
+"object_type": {
+"id": 2,
+"name": "Circulating commemorative coins"
+}
+},
+"8846": {
+"title": "1 Somoni (Aryens)",
+"min_year": 2006,
+"max_year": 2006,
+"object_type": {
+"id": 2,
+"name": "Circulating commemorative coins"
+}
+},
+"30413": {
+"title": "1 Somoni (Aryens)",
+"min_year": 2006,
+"max_year": 2006,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"30412": {
+"title": "1 Somoni (Archer)",
+"min_year": 2006,
+"max_year": 2006,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"8847": {
+"title": "1 Somoni (Jaloliddini Rumi)",
+"min_year": 2007,
+"max_year": 2007,
+"object_type": {
+"id": 2,
+"name": "Circulating commemorative coins"
+}
+},
+"30417": {
+"title": "1 Somoni (Jaloliddini Rumi)",
+"min_year": 2007,
+"max_year": 2007,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"36789": {
+"title": "1 Somoni",
+"min_year": 2011,
+"max_year": 2017,
+"object_type": {
+"id": 1,
+"name": "Standard circulation coins"
+}
+},
+"146377": {
+"title": "1 Somoni",
+"min_year": 2018,
+"max_year": 2018,
+"object_type": {
+"id": 1,
+"name": "Standard circulation coins"
+}
+},
+"167208": {
+"title": "1 Somoni",
+"min_year": 2019,
+"max_year": 2025,
+"object_type": {
+"id": 1,
+"name": "Standard circulation coins"
+}
+},
+"9986": {
+"title": "3 Somoni",
+"min_year": 2001,
+"max_year": 2001,
+"object_type": {
+"id": 1,
+"name": "Standard circulation coins"
+}
+},
+"11736": {
+"title": "3 Somoni (Dushanbe City)",
+"min_year": 2004,
+"max_year": 2004,
+"object_type": {
+"id": 2,
+"name": "Circulating commemorative coins"
+}
+},
+"106571": {
+"title": "3 Somoni (Dushanbe City)",
+"min_year": 2004,
+"max_year": 2004,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"15171": {
+"title": "3 Somoni (Anniversary of Kulob)",
+"min_year": 2006,
+"max_year": 2006,
+"object_type": {
+"id": 2,
+"name": "Circulating commemorative coins"
+}
+},
+"30406": {
+"title": "3 Somoni (Anniversary of Kulob)",
+"min_year": 2006,
+"max_year": 2006,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"146378": {
+"title": "3 Somoni",
+"min_year": 2018,
+"max_year": 2018,
+"object_type": {
+"id": 1,
+"name": "Standard circulation coins"
+}
+},
+"166126": {
+"title": "3 Somoni",
+"min_year": 2019,
+"max_year": 2025,
+"object_type": {
+"id": 1,
+"name": "Standard circulation coins"
+}
+},
+"9987": {
+"title": "5 Somoni",
+"min_year": 2001,
+"max_year": 2001,
+"object_type": {
+"id": 1,
+"name": "Standard circulation coins"
+}
+},
+"11737": {
+"title": "5 Somoni (Constitution)",
+"min_year": 2004,
+"max_year": 2004,
+"object_type": {
+"id": 2,
+"name": "Circulating commemorative coins"
+}
+},
+"106572": {
+"title": "5 Somoni (Constitution)",
+"min_year": 2004,
+"max_year": 2004,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"15172": {
+"title": "5 Somoni (Independence)",
+"min_year": 2006,
+"max_year": 2006,
+"object_type": {
+"id": 2,
+"name": "Circulating commemorative coins"
+}
+},
+"30415": {
+"title": "5 Somoni (Independence)",
+"min_year": 2006,
+"max_year": 2006,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"22206": {
+"title": "5 Somoni (Rudaki 1150th Birthday)",
+"min_year": 2008,
+"max_year": 2008,
+"object_type": {
+"id": 2,
+"name": "Circulating commemorative coins"
+}
+},
+"30419": {
+"title": "5 Somoni (Abuabdullo Rudaki)",
+"min_year": 2008,
+"max_year": 2008,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"30420": {
+"title": "5 Somoni (Eurasec Anniversary)",
+"min_year": 2010,
+"max_year": 2010,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"146379": {
+"title": "5 Somoni",
+"min_year": 2018,
+"max_year": 2018,
+"object_type": {
+"id": 1,
+"name": "Standard circulation coins"
+}
+},
+"177438": {
+"title": "5 Somoni",
+"min_year": 2019,
+"max_year": 2025,
+"object_type": {
+"id": 1,
+"name": "Standard circulation coins"
+}
+},
+"481884": {
+"title": "10 Somoni (Independence)",
+"min_year": 2011,
+"max_year": 2011,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"481891": {
+"title": "10 Somoni (Independence)",
+"min_year": 2021,
+"max_year": 2021,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"481729": {
+"title": "10 Somoni (Shanghai Pact)",
+"min_year": 2021,
+"max_year": 2021,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"481885": {
+"title": "20 Somoni (Independence)",
+"min_year": 2011,
+"max_year": 2011,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"481733": {
+"title": "20 Somoni (Shanghai Pact)",
+"min_year": 2021,
+"max_year": 2021,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"481892": {
+"title": "20 Somoni (Independence)",
+"min_year": 2021,
+"max_year": 2021,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"100869": {
+"title": "50 Somoni (Parliament)",
+"min_year": 2006,
+"max_year": 2006,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"30459": {
+"title": "50 Somoni (Independence)",
+"min_year": 2011,
+"max_year": 2011,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"481886": {
+"title": "50 Somoni (Independence)",
+"min_year": 2011,
+"max_year": 2011,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"65131": {
+"title": "50 Somoni (Biathlon)",
+"min_year": 2014,
+"max_year": 2014,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"65129": {
+"title": "50 Somoni (Ski Jumping)",
+"min_year": 2014,
+"max_year": 2014,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"65130": {
+"title": "50 Somoni (Slalom)",
+"min_year": 2014,
+"max_year": 2014,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"481893": {
+"title": "50 Somoni (Independence)",
+"min_year": 2021,
+"max_year": 2021,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"100870": {
+"title": "100 Somoni (Parliament)",
+"min_year": 2006,
+"max_year": 2006,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"30421": {
+"title": "100 Somoni (CIS Anniversary)",
+"min_year": 2011,
+"max_year": 2011,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"69726": {
+"title": "100 Somoni (Sarazm)",
+"min_year": 2013,
+"max_year": 2013,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"69727": {
+"title": "100 Somoni (Hisor)",
+"min_year": 2015,
+"max_year": 2015,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"191954": {
+"title": "100 Somoni (Rogun Dam)",
+"min_year": 2018,
+"max_year": 2018,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"481889": {
+"title": "100 Somoni (Rogun Dam)",
+"min_year": 2018,
+"max_year": 2018,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"481887": {
+"title": "100 Somoni (Rogun Dam)",
+"min_year": 2018,
+"max_year": 2018,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"481894": {
+"title": "100 Somoni (Independence)",
+"min_year": 2021,
+"max_year": 2021,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"481725": {
+"title": "100 Somoni (Aquila Chrysaetos)",
+"min_year": 2021,
+"max_year": 2021,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"481723": {
+"title": "100 Somoni (Cervus Elaphus Bactrianus)",
+"min_year": 2021,
+"max_year": 2021,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"481724": {
+"title": "100 Somoni (Otis Tarda Tarda)",
+"min_year": 2021,
+"max_year": 2021,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"481721": {
+"title": "100 Somoni (Pseudoscaphirhynchus)",
+"min_year": 2021,
+"max_year": 2021,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"481720": {
+"title": "100 Somoni (Ovis Ammon Polii)",
+"min_year": 2021,
+"max_year": 2021,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"481722": {
+"title": "100 Somoni (Panthera Uncia)",
+"min_year": 2021,
+"max_year": 2021,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"481727": {
+"title": "100 Somoni (Alectoris Chukar)",
+"min_year": 2021,
+"max_year": 2021,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"481716": {
+"title": "100 Somoni (Panthera Tigris Virgata)",
+"min_year": 2021,
+"max_year": 2021,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"481726": {
+"title": "100 Somoni (Phasianus Colchicus Bianchi)",
+"min_year": 2021,
+"max_year": 2021,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"481736": {
+"title": "100 Somoni (Shanghai Pact)",
+"min_year": 2021,
+"max_year": 2021,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"481718": {
+"title": "100 Somoni (Falco Cherrug Coatsi)",
+"min_year": 2021,
+"max_year": 2021,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"481728": {
+"title": "100 Somoni (Gazella Subgutturosa)",
+"min_year": 2021,
+"max_year": 2021,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"481719": {
+"title": "100 Somoni (Capra Falconeri)",
+"min_year": 2021,
+"max_year": 2021,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"100871": {
+"title": "200 Somoni (Parliament)",
+"min_year": 2006,
+"max_year": 2006,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"481735": {
+"title": "200 Somoni (Shanghai Pact)",
+"min_year": 2021,
+"max_year": 2021,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"481895": {
+"title": "200 Somoni (Independence)",
+"min_year": 2021,
+"max_year": 2021,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"124344": {
+"title": "500 Somoni (Ali Hamadoni)",
+"min_year": 2014,
+"max_year": 2014,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"69729": {
+"title": "500 Somoni (National Library)",
+"min_year": 2014,
+"max_year": 2014,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"69730": {
+"title": "500 Somoni (National Museum)",
+"min_year": 2014,
+"max_year": 2014,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"69728": {
+"title": "500 Somoni (Opera)",
+"min_year": 2014,
+"max_year": 2014,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"481881": {
+"title": "500 Somoni (Constitution)",
+"min_year": 2014,
+"max_year": 2014,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"481883": {
+"title": "500 Somoni (Abdurahman Jami)",
+"min_year": 2014,
+"max_year": 2014,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"481737": {
+"title": "500 Somoni (Shanghai Pact)",
+"min_year": 2021,
+"max_year": 2021,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"481896": {
+"title": "500 Somoni (Independence)",
+"min_year": 2021,
+"max_year": 2021,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+}
+},
+"pages": 2,
+"total": 91,
+"details": {}
+}

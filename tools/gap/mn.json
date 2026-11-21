@@ -1,0 +1,5614 @@
+{
+"types": {
+"32265": {
+"title": "1 Möngö",
+"min_year": 1925,
+"max_year": 1925,
+"object_type": {
+"id": 1,
+"name": "Standard circulation coins"
+}
+},
+"33346": {
+"title": "1 Möngö",
+"min_year": 1937,
+"max_year": 1937,
+"object_type": {
+"id": 1,
+"name": "Standard circulation coins"
+}
+},
+"11427": {
+"title": "1 Möngö",
+"min_year": 1945,
+"max_year": 1945,
+"object_type": {
+"id": 1,
+"name": "Standard circulation coins"
+}
+},
+"9676": {
+"title": "1 Möngö",
+"min_year": 1959,
+"max_year": 1959,
+"object_type": {
+"id": 1,
+"name": "Standard circulation coins"
+}
+},
+"5870": {
+"title": "1 Möngö",
+"min_year": 1970,
+"max_year": 1981,
+"object_type": {
+"id": 1,
+"name": "Standard circulation coins"
+}
+},
+"12528": {
+"title": "2 Möngö",
+"min_year": 1925,
+"max_year": 1925,
+"object_type": {
+"id": 1,
+"name": "Standard circulation coins"
+}
+},
+"11516": {
+"title": "2 Möngö",
+"min_year": 1937,
+"max_year": 1937,
+"object_type": {
+"id": 1,
+"name": "Standard circulation coins"
+}
+},
+"11428": {
+"title": "2 Möngö",
+"min_year": 1945,
+"max_year": 1945,
+"object_type": {
+"id": 1,
+"name": "Standard circulation coins"
+}
+},
+"12534": {
+"title": "2 Möngö",
+"min_year": 1959,
+"max_year": 1959,
+"object_type": {
+"id": 1,
+"name": "Standard circulation coins"
+}
+},
+"5869": {
+"title": "2 Möngö",
+"min_year": 1970,
+"max_year": 1981,
+"object_type": {
+"id": 1,
+"name": "Standard circulation coins"
+}
+},
+"11517": {
+"title": "5 Möngö",
+"min_year": 1925,
+"max_year": 1925,
+"object_type": {
+"id": 1,
+"name": "Standard circulation coins"
+}
+},
+"4499": {
+"title": "5 Möngö",
+"min_year": 1937,
+"max_year": 1937,
+"object_type": {
+"id": 1,
+"name": "Standard circulation coins"
+}
+},
+"6068": {
+"title": "5 Möngö",
+"min_year": 1945,
+"max_year": 1945,
+"object_type": {
+"id": 1,
+"name": "Standard circulation coins"
+}
+},
+"12535": {
+"title": "5 Möngö",
+"min_year": 1959,
+"max_year": 1959,
+"object_type": {
+"id": 1,
+"name": "Standard circulation coins"
+}
+},
+"5868": {
+"title": "5 Möngö",
+"min_year": 1970,
+"max_year": 1981,
+"object_type": {
+"id": 1,
+"name": "Standard circulation coins"
+}
+},
+"32267": {
+"title": "10 Möngö",
+"min_year": 1925,
+"max_year": 1925,
+"object_type": {
+"id": 1,
+"name": "Standard circulation coins"
+}
+},
+"27080": {
+"title": "10 Möngö",
+"min_year": 1937,
+"max_year": 1937,
+"object_type": {
+"id": 1,
+"name": "Standard circulation coins"
+}
+},
+"33059": {
+"title": "10 Möngö",
+"min_year": 1945,
+"max_year": 1945,
+"object_type": {
+"id": 1,
+"name": "Standard circulation coins"
+}
+},
+"8261": {
+"title": "10 Möngö",
+"min_year": 1959,
+"max_year": 1959,
+"object_type": {
+"id": 1,
+"name": "Standard circulation coins"
+}
+},
+"5858": {
+"title": "10 Möngö",
+"min_year": 1970,
+"max_year": 1981,
+"object_type": {
+"id": 1,
+"name": "Standard circulation coins"
+}
+},
+"22099": {
+"title": "15 Möngö",
+"min_year": 1925,
+"max_year": 1925,
+"object_type": {
+"id": 1,
+"name": "Standard circulation coins"
+}
+},
+"27081": {
+"title": "15 Möngö",
+"min_year": 1937,
+"max_year": 1937,
+"object_type": {
+"id": 1,
+"name": "Standard circulation coins"
+}
+},
+"22511": {
+"title": "15 Möngö",
+"min_year": 1945,
+"max_year": 1945,
+"object_type": {
+"id": 1,
+"name": "Standard circulation coins"
+}
+},
+"9677": {
+"title": "15 Möngö",
+"min_year": 1959,
+"max_year": 1959,
+"object_type": {
+"id": 1,
+"name": "Standard circulation coins"
+}
+},
+"4318": {
+"title": "15 Möngö",
+"min_year": 1970,
+"max_year": 1981,
+"object_type": {
+"id": 1,
+"name": "Standard circulation coins"
+}
+},
+"32268": {
+"title": "20 Möngö",
+"min_year": 1925,
+"max_year": 1925,
+"object_type": {
+"id": 1,
+"name": "Standard circulation coins"
+}
+},
+"12536": {
+"title": "20 Möngö",
+"min_year": 1937,
+"max_year": 1937,
+"object_type": {
+"id": 1,
+"name": "Standard circulation coins"
+}
+},
+"11429": {
+"title": "20 Möngö",
+"min_year": 1945,
+"max_year": 1945,
+"object_type": {
+"id": 1,
+"name": "Standard circulation coins"
+}
+},
+"9236": {
+"title": "20 Möngö",
+"min_year": 1959,
+"max_year": 1959,
+"object_type": {
+"id": 1,
+"name": "Standard circulation coins"
+}
+},
+"5857": {
+"title": "20 Möngö",
+"min_year": 1970,
+"max_year": 1981,
+"object_type": {
+"id": 1,
+"name": "Standard circulation coins"
+}
+},
+"18975": {
+"title": "50 Möngö",
+"min_year": 1925,
+"max_year": 1925,
+"object_type": {
+"id": 1,
+"name": "Standard circulation coins"
+}
+},
+"5890": {
+"title": "50 Möngö",
+"min_year": 1970,
+"max_year": 1981,
+"object_type": {
+"id": 1,
+"name": "Standard circulation coins"
+}
+},
+"6496": {
+"title": "1 Tögrög",
+"min_year": 1925,
+"max_year": 1925,
+"object_type": {
+"id": 1,
+"name": "Standard circulation coins"
+}
+},
+"10114": {
+"title": "1 Tögrög (Mongolian Revolution)",
+"min_year": 1971,
+"max_year": 1971,
+"object_type": {
+"id": 2,
+"name": "Circulating commemorative coins"
+}
+},
+"77130": {
+"title": "1 Tögrög (Mongolian Revolution)",
+"min_year": 1971,
+"max_year": 1971,
+"object_type": {
+"id": 2,
+"name": "Circulating commemorative coins"
+}
+},
+"114624": {
+"title": "1 Tögrög (Mongolian Revolution)",
+"min_year": 1971,
+"max_year": 1971,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"114625": {
+"title": "1 Tögrög (Mongolian Revolution)",
+"min_year": 1971,
+"max_year": 1971,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"5892": {
+"title": "1 Tögrög (Mongolian Revolution)",
+"min_year": 1981,
+"max_year": 1981,
+"object_type": {
+"id": 2,
+"name": "Circulating commemorative coins"
+}
+},
+"12529": {
+"title": "1 Tögrög (Soviet-Mongolian Space Flight)",
+"min_year": 1981,
+"max_year": 1981,
+"object_type": {
+"id": 2,
+"name": "Circulating commemorative coins"
+}
+},
+"12530": {
+"title": "1 Tögrög (State Bank)",
+"min_year": 1984,
+"max_year": 1984,
+"object_type": {
+"id": 2,
+"name": "Circulating commemorative coins"
+}
+},
+"12531": {
+"title": "1 Tögrög (People's Republic)",
+"min_year": 1984,
+"max_year": 1984,
+"object_type": {
+"id": 2,
+"name": "Circulating commemorative coins"
+}
+},
+"12532": {
+"title": "1 Tögrög (International Year of Peace)",
+"min_year": 1986,
+"max_year": 1986,
+"object_type": {
+"id": 2,
+"name": "Circulating commemorative coins"
+}
+},
+"9678": {
+"title": "1 Tögrög (Revolution)",
+"min_year": 1986,
+"max_year": 1986,
+"object_type": {
+"id": 2,
+"name": "Circulating commemorative coins"
+}
+},
+"12533": {
+"title": "1 Tögrög (Karl Marx)",
+"min_year": 1988,
+"max_year": 1988,
+"object_type": {
+"id": 2,
+"name": "Circulating commemorative coins"
+}
+},
+"79995": {
+"title": "10 Tögrög (State Bank of Mongolia)",
+"min_year": 1974,
+"max_year": 1974,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"10680": {
+"title": "20 Tögrög",
+"min_year": 1994,
+"max_year": 1994,
+"object_type": {
+"id": 1,
+"name": "Standard circulation coins"
+}
+},
+"5270": {
+"title": "25 Tögrög (Argali Sheep)",
+"min_year": 1976,
+"max_year": 1976,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"43152": {
+"title": "25 Tögrög (International Year of the Child)",
+"min_year": 1980,
+"max_year": 1980,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"113961": {
+"title": "25 Tögrög (International Year of the Child; Piedfort)",
+"min_year": 1980,
+"max_year": 1980,
+"object_type": {
+"id": 6,
+"name": "Patterns"
+}
+},
+"113965": {
+"title": "25 Tögrög (Decade for Women)",
+"min_year": 1984,
+"max_year": 1984,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"24950": {
+"title": "25 Tögrög (WWF - Snow Leopard)",
+"min_year": 1987,
+"max_year": 1987,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"86776": {
+"title": "25 Tögrög (Save the Children Fund)",
+"min_year": 1989,
+"max_year": 1989,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"37546": {
+"title": "50 Tögrög (Conservation)",
+"min_year": 1976,
+"max_year": 1976,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"113973": {
+"title": "50 Tögrög (Discovery of America - Columbus)",
+"min_year": 1992,
+"max_year": 1992,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"113975": {
+"title": "50 Tögrög (Year of the Monkey)",
+"min_year": 1992,
+"max_year": 1992,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"114303": {
+"title": "50 Tögrög (Ugedei Khan)",
+"min_year": 1992,
+"max_year": 1992,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"113976": {
+"title": "50 Tögrög (Year of the Monkey)",
+"min_year": 1992,
+"max_year": 1992,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"113974": {
+"title": "50 Tögrög (Discovery of America - Columbus)",
+"min_year": 1992,
+"max_year": 1992,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"114304": {
+"title": "50 Tögrög (Khubilai Khan)",
+"min_year": 1992,
+"max_year": 1992,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"114626": {
+"title": "50 Tögrög (Year of the Rooster)",
+"min_year": 1993,
+"max_year": 1993,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"114627": {
+"title": "50 Tögrög - Japanese Royal Wedding",
+"min_year": 1993,
+"max_year": 1993,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"114630": {
+"title": "50 Tögrög (Year of the Dog)",
+"min_year": 1994,
+"max_year": 1994,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"10682": {
+"title": "50 Tögrög",
+"min_year": 1994,
+"max_year": 1994,
+"object_type": {
+"id": 1,
+"name": "Standard circulation coins"
+}
+},
+"114632": {
+"title": "50 Tögrög (Year of the Pig)",
+"min_year": 1995,
+"max_year": 1995,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"114633": {
+"title": "50 Tögrög (Year of the Rat)",
+"min_year": 1996,
+"max_year": 1996,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"114635": {
+"title": "50 Tögrög (Year of the Rat; gilt)",
+"min_year": 1996,
+"max_year": 1996,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"114637": {
+"title": "50 Tögrög (Year of the Ox)",
+"min_year": 1997,
+"max_year": 1997,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"114645": {
+"title": "50 Tögrög (Year of the Tiger)",
+"min_year": 1998,
+"max_year": 1998,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"114638": {
+"title": "50 Tögrög (Year of the Rabbit)",
+"min_year": 1999,
+"max_year": 1999,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"114644": {
+"title": "50 Tögrög (Year of the Dragon)",
+"min_year": 2000,
+"max_year": 2000,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"225226": {
+"title": "50 Tögrög (Year of the Dragon)",
+"min_year": 2000,
+"max_year": 2000,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"113971": {
+"title": "100 Tögrög (Dinosaurs Nemegtosaurus)",
+"min_year": 1987,
+"max_year": 1989,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"113972": {
+"title": "100 Tögrög (Chinggis Khan)",
+"min_year": 1990,
+"max_year": 1990,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"114318": {
+"title": "100 Tögrög (Discovery of America - Columbus)",
+"min_year": 1992,
+"max_year": 1992,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"114313": {
+"title": "100 Tögrög (Year of the Monkey)",
+"min_year": 1992,
+"max_year": 1992,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"114315": {
+"title": "100 Tögrög (Year of the Monkey)",
+"min_year": 1992,
+"max_year": 1992,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"114320": {
+"title": "100 Tögrög (Discovery of America - Columbus)",
+"min_year": 1992,
+"max_year": 1992,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"104808": {
+"title": "100 Tögrög (Year of the Rooster)",
+"min_year": 1993,
+"max_year": 1993,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"114316": {
+"title": "100 Tögrög - Japanese Royal Wedding",
+"min_year": 1993,
+"max_year": 1993,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"10683": {
+"title": "100 Tögrög",
+"min_year": 1994,
+"max_year": 1994,
+"object_type": {
+"id": 1,
+"name": "Standard circulation coins"
+}
+},
+"115353": {
+"title": "100 Tögrög (Full Solar Eclipse)",
+"min_year": 1997,
+"max_year": 1997,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"113969": {
+"title": "100 Tögrög (XXVI Summer Olympics, Atlanta)",
+"min_year": 2002,
+"max_year": 2002,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"37132": {
+"title": "100 Tögrög (Year of the Horse)",
+"min_year": 2002,
+"max_year": 2002,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"264794": {
+"title": "100 Tögrög (XXVI Summer Olympics, Atlanta)",
+"min_year": 2002,
+"max_year": 2002,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"113967": {
+"title": "100 Tögrög (2006 World Championship)",
+"min_year": 2003,
+"max_year": 2003,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"25722": {
+"title": "100 Tögrög (Year of the Goat)",
+"min_year": 2003,
+"max_year": 2003,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"394010": {
+"title": "100 Tögrög (Bubo Bubo)",
+"min_year": 2005,
+"max_year": 2005,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"394014": {
+"title": "100 Tögrög (Swan)",
+"min_year": 2006,
+"max_year": 2006,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"42870": {
+"title": "100 Tögrög (Yin-Yang)",
+"min_year": 2007,
+"max_year": 2007,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"113955": {
+"title": "100 Tögrög (Yin-Yang; gilt)",
+"min_year": 2007,
+"max_year": 2007,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"113945": {
+"title": "100 Tögrög (Colosseum)",
+"min_year": 2008,
+"max_year": 2008,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"113936": {
+"title": "100 Tögrög (Colosseum; colorized)",
+"min_year": 2008,
+"max_year": 2008,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"113947": {
+"title": "100 Tögrög (Chichen Itza)",
+"min_year": 2008,
+"max_year": 2008,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"113937": {
+"title": "100 Tögrög (Chichen Itza; colorized)",
+"min_year": 2008,
+"max_year": 2008,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"113948": {
+"title": "100 Tögrög (Petra)",
+"min_year": 2008,
+"max_year": 2008,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"113938": {
+"title": "100 Tögrög (Petra; colorized)",
+"min_year": 2008,
+"max_year": 2008,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"113934": {
+"title": "100 Tögrög (Machu Picchu)",
+"min_year": 2008,
+"max_year": 2008,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"109336": {
+"title": "100 Tögrög (Machu Picchu; colorized)",
+"min_year": 2008,
+"max_year": 2008,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"113949": {
+"title": "100 Tögrög (Taj Mahal)",
+"min_year": 2008,
+"max_year": 2008,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"113939": {
+"title": "100 Tögrög (Taj Mahal; colorized)",
+"min_year": 2008,
+"max_year": 2008,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"113950": {
+"title": "100 Tögrög (Christ Redeemer)",
+"min_year": 2008,
+"max_year": 2008,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"113940": {
+"title": "100 Tögrög (Christ Redeemer; colorized)",
+"min_year": 2008,
+"max_year": 2008,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"113953": {
+"title": "100 Tögrög (Great Wall)",
+"min_year": 2008,
+"max_year": 2008,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"113954": {
+"title": "100 Tögrög (Great Wall; colorized)",
+"min_year": 2008,
+"max_year": 2008,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"562868": {
+"title": "100 Tögrög (People's Revolution; silver)",
+"min_year": 2021,
+"max_year": 2021,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"562867": {
+"title": "100 Tögrög (People's Revolution)",
+"min_year": 2021,
+"max_year": 2021,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"344403": {
+"title": "100 Tögrög (Year of the Rabbit)",
+"min_year": 2023,
+"max_year": 2023,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"114300": {
+"title": "200 Tögrög (Discovery of America - Columbus)",
+"min_year": 1992,
+"max_year": 1992,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"114646": {
+"title": "200 Tögrög (Year of the Monkey)",
+"min_year": 1992,
+"max_year": 1992,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"114648": {
+"title": "200 Tögrög (Discovery of America - Columbus)",
+"min_year": 1992,
+"max_year": 1992,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"114649": {
+"title": "200 Tögrög (Year of the Rooster)",
+"min_year": 1993,
+"max_year": 1993,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"114650": {
+"title": "200 Tögrög - Japanese Royal Wedding",
+"min_year": 1993,
+"max_year": 1993,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"114651": {
+"title": "200 Tögrög (Year of the Dog)",
+"min_year": 1994,
+"max_year": 1994,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"10684": {
+"title": "200 Tögrög",
+"min_year": 1994,
+"max_year": 1994,
+"object_type": {
+"id": 1,
+"name": "Standard circulation coins"
+}
+},
+"114302": {
+"title": "250 Tögrög (Decade for Women)",
+"min_year": 1984,
+"max_year": 1984,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"86945": {
+"title": "250 Tögrög (Przewalski's Horses)",
+"min_year": 1992,
+"max_year": 1992,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"86944": {
+"title": "250 Tögrög (Wolves)",
+"min_year": 1992,
+"max_year": 1993,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"114629": {
+"title": "250 Tögrög (Year of the Rooster)",
+"min_year": 1993,
+"max_year": 1993,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"114628": {
+"title": "250 Tögrög (Saiga Antelope)",
+"min_year": 1993,
+"max_year": 1993,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"114755": {
+"title": "250 Tögrög (Year of the Dog)",
+"min_year": 1994,
+"max_year": 1994,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"39507": {
+"title": "250 Tögrög (World Cup)",
+"min_year": 1994,
+"max_year": 1994,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"114756": {
+"title": "250 Tögrög (Boxing)",
+"min_year": 1994,
+"max_year": 1994,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"114759": {
+"title": "250 Tögrög (Soyuz 39 - Saljut 6)",
+"min_year": 1994,
+"max_year": 1994,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"68947": {
+"title": "250 Tögrög (1996 Olympics - Archery)",
+"min_year": 1994,
+"max_year": 1995,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"115566": {
+"title": "250 Tögrög (Capricorn)",
+"min_year": 2007,
+"max_year": 2007,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"96457": {
+"title": "250 Tögrög (Aquarius)",
+"min_year": 2007,
+"max_year": 2007,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"115567": {
+"title": "250 Tögrög (Pisces)",
+"min_year": 2007,
+"max_year": 2007,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"115568": {
+"title": "250 Tögrög (Aries)",
+"min_year": 2007,
+"max_year": 2007,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"115569": {
+"title": "250 Tögrög (Taurus)",
+"min_year": 2007,
+"max_year": 2007,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"115570": {
+"title": "250 Tögrög (Gemini)",
+"min_year": 2007,
+"max_year": 2007,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"115571": {
+"title": "250 Tögrög (Cancer)",
+"min_year": 2007,
+"max_year": 2007,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"115572": {
+"title": "250 Tögrög (Leo)",
+"min_year": 2007,
+"max_year": 2007,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"115573": {
+"title": "250 Tögrög (Virgo)",
+"min_year": 2007,
+"max_year": 2007,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"115574": {
+"title": "250 Tögrög (Libra)",
+"min_year": 2007,
+"max_year": 2007,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"115575": {
+"title": "250 Tögrög (Scorpio)",
+"min_year": 2007,
+"max_year": 2007,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"115576": {
+"title": "250 Tögrög (Sagittarius)",
+"min_year": 2007,
+"max_year": 2007,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"115577": {
+"title": "250 Tögrög (Moscow Water supply)",
+"min_year": 2007,
+"max_year": 2007,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"115578": {
+"title": "250 Tögrög (Moscow Metro)",
+"min_year": 2007,
+"max_year": 2007,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"115579": {
+"title": "250 Tögrög (Baby Boy)",
+"min_year": 2008,
+"max_year": 2008,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"115580": {
+"title": "250 Tögrög (Baby Girl)",
+"min_year": 2008,
+"max_year": 2008,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"116185": {
+"title": "250 Tögrög (Saker falcon)",
+"min_year": 2015,
+"max_year": 2015,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"187961": {
+"title": "250 Tögrög (Hidden Tiger)",
+"min_year": 2019,
+"max_year": 2019,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"210576": {
+"title": "250 Tögrög (Majestic Eagle)",
+"min_year": 2020,
+"max_year": 2020,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"270745": {
+"title": "250 Tögrög (Mystic Wolf)",
+"min_year": 2021,
+"max_year": 2021,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"365832": {
+"title": "250 Tögrög (Magnificent Argali)",
+"min_year": 2022,
+"max_year": 2022,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"365816": {
+"title": "250 Tögrög (Saker Falcon)",
+"min_year": 2023,
+"max_year": 2023,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"549690": {
+"title": "250 Tögrög (Bison)",
+"min_year": 2025,
+"max_year": 2025,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"114305": {
+"title": "300 Tögrög - Japanese Royal Wedding",
+"min_year": 1993,
+"max_year": 1993,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"114306": {
+"title": "500 Tögrög - Japanese Royal Wedding",
+"min_year": 1993,
+"max_year": 1993,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"114760": {
+"title": "500 Tögrög (Year of the Pig)",
+"min_year": 1995,
+"max_year": 1995,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"114782": {
+"title": "500 Tögrög (Moscow-Ulaanbaatar-Beijing Railroad)",
+"min_year": 1995,
+"max_year": 1995,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"114781": {
+"title": "500 Tögrög (Moscow-Ulaanbaatar-Beijing Railroad)",
+"min_year": 1995,
+"max_year": 1995,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"114762": {
+"title": "500 Tögrög (The Straits Times)",
+"min_year": 1995,
+"max_year": 1995,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"114784": {
+"title": "500 Tögrög (Year of the Rat)",
+"min_year": 1996,
+"max_year": 1996,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"114789": {
+"title": "500 Tögrög (Steppe Eagle)",
+"min_year": 1996,
+"max_year": 1996,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"114788": {
+"title": "500 Tögrög (Wild horse)",
+"min_year": 1996,
+"max_year": 1996,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"58901": {
+"title": "500 Tögrög (Camel)",
+"min_year": 1996,
+"max_year": 1996,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"114790": {
+"title": "500 Tögrög (Tiger)",
+"min_year": 1996,
+"max_year": 1996,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"86946": {
+"title": "500 Tögrög (Pelican)",
+"min_year": 1996,
+"max_year": 1996,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"114791": {
+"title": "500 Tögrög (1996 Summer Olympics - Archer)",
+"min_year": 1996,
+"max_year": 1996,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"114636": {
+"title": "500 Tögrög (Year of the Ox)",
+"min_year": 1997,
+"max_year": 1997,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"44634": {
+"title": "500 Tögrög (UNICEF)",
+"min_year": 1997,
+"max_year": 1997,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"113931": {
+"title": "500 Tögrög (Olympic Games - Judo)",
+"min_year": 1997,
+"max_year": 1997,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"39210": {
+"title": "500 Tögrög (World Cup)",
+"min_year": 1997,
+"max_year": 1997,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"69453": {
+"title": "500 Tögrög (1998 Winter Olympics - Skier)",
+"min_year": 1998,
+"max_year": 1998,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"86977": {
+"title": "500 Tögrög (Olympic Games 2000 - Wrestlers)",
+"min_year": 1998,
+"max_year": 1998,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"114794": {
+"title": "500 Tögrög (Tiger)",
+"min_year": 1998,
+"max_year": 1998,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"114793": {
+"title": "500 Tögrög (Buddhist Deity Maitreya)",
+"min_year": 1998,
+"max_year": 1998,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"114796": {
+"title": "500 Tögrög (Year of the Tiger)",
+"min_year": 1998,
+"max_year": 1998,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"114797": {
+"title": "500 Tögrög (Year of the Tiger; gilt)",
+"min_year": 1998,
+"max_year": 1998,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"114798": {
+"title": "500 Tögrög (Year of the Tiger)",
+"min_year": 1998,
+"max_year": 1998,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"84413": {
+"title": "500 Tögrög (Millennium)",
+"min_year": 1998,
+"max_year": 1998,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"114804": {
+"title": "500 Tögrög (Olympic Games 2000 - Tae Kwon Do)",
+"min_year": 1998,
+"max_year": 1998,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"114805": {
+"title": "500 Tögrög (Sumo)",
+"min_year": 1998,
+"max_year": 1998,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"114639": {
+"title": "500 Tögrög (Year of the Rabbit)",
+"min_year": 1999,
+"max_year": 1999,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"114640": {
+"title": "500 Tögrög (Year of the Rabbit; gilt)",
+"min_year": 1999,
+"max_year": 1999,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"114643": {
+"title": "500 Tögrög (Year of the Rabbit)",
+"min_year": 1999,
+"max_year": 1999,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"115112": {
+"title": "500 Tögrög (Undur Geghen Zanabazar)",
+"min_year": 1999,
+"max_year": 1999,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"114996": {
+"title": "500 Tögrög (Johannes Gutenberg)",
+"min_year": 1999,
+"max_year": 1999,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"115002": {
+"title": "500 Tögrög (Leonardo Da Vinci)",
+"min_year": 1999,
+"max_year": 1999,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"115111": {
+"title": "500 Tögrög (Leonardo Da Vinci)",
+"min_year": 1999,
+"max_year": 1999,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"115006": {
+"title": "500 Tögrög (Isaac Newton)",
+"min_year": 1999,
+"max_year": 1999,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"115007": {
+"title": "500 Tögrög (Johann Wolfgang von Goethe)",
+"min_year": 1999,
+"max_year": 1999,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"115008": {
+"title": "500 Tögrög (Thomas Alva Edison)",
+"min_year": 1999,
+"max_year": 1999,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"65264": {
+"title": "500 Tögrög (Wild Bactrian Carmel)",
+"min_year": 1999,
+"max_year": 1999,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"115114": {
+"title": "500 Tögrög (Princess Diana)",
+"min_year": 1999,
+"max_year": 1999,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"115113": {
+"title": "500 Tögrög (Undur Geghen Zanabazar; gilt)",
+"min_year": 1999,
+"max_year": 1999,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"115115": {
+"title": "500 Tögrög (Troops of Chinggis Khan)",
+"min_year": 2000,
+"max_year": 2000,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"115548": {
+"title": "500 Tögrög (Year of the Dragon)",
+"min_year": 2000,
+"max_year": 2000,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"115528": {
+"title": "500 Tögrög (Year of the Dragon; with crystal)",
+"min_year": 2000,
+"max_year": 2000,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"115526": {
+"title": "500 Tögrög (Year of the Dragon)",
+"min_year": 2000,
+"max_year": 2000,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"115581": {
+"title": "500 Tögrög (Protoceratops Andrewsi)",
+"min_year": 2001,
+"max_year": 2001,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"115582": {
+"title": "500 Tögrög (Velociraptor Mongoliensis)",
+"min_year": 2001,
+"max_year": 2001,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"93966": {
+"title": "500 Tögrög (XIX Olympic Winter Games - Speed skating)",
+"min_year": 2001,
+"max_year": 2001,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"115617": {
+"title": "500 Tögrög (XIX Olympic Winter Games - Skiers)",
+"min_year": 2001,
+"max_year": 2001,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"11519": {
+"title": "500 Tögrög (80 years of Revolution)",
+"min_year": 2001,
+"max_year": 2001,
+"object_type": {
+"id": 2,
+"name": "Circulating commemorative coins"
+}
+},
+"115634": {
+"title": "500 Tögrög (Tibetan blue bear)",
+"min_year": 2001,
+"max_year": 2001,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"115635": {
+"title": "500 Tögrög (Year of the Snake)",
+"min_year": 2001,
+"max_year": 2001,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"115636": {
+"title": "500 Tögrög (Year of the Snake; gilt)",
+"min_year": 2001,
+"max_year": 2001,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"115638": {
+"title": "500 Tögrög (Year of the Horse)",
+"min_year": 2002,
+"max_year": 2002,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"115639": {
+"title": "500 Tögrög (Year of the Horse)",
+"min_year": 2002,
+"max_year": 2002,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"115645": {
+"title": "500 Tögrög (Camel)",
+"min_year": 2002,
+"max_year": 2002,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"115646": {
+"title": "500 Tögrög (World Championship of Football 2002)",
+"min_year": 2002,
+"max_year": 2002,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"115656": {
+"title": "500 Tögrög (Marco Polo - Homeward)",
+"min_year": 2003,
+"max_year": 2003,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"115648": {
+"title": "500 Tögrög (Wolf)",
+"min_year": 2003,
+"max_year": 2003,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"115657": {
+"title": "500 Tögrög (Khubilai Khan and Marco Polo)",
+"min_year": 2003,
+"max_year": 2003,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"115655": {
+"title": "500 Tögrög (Marco Polo - Homeward)",
+"min_year": 2003,
+"max_year": 2003,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"70242": {
+"title": "500 Tögrög (Khubilai Khan and Marco Polo)",
+"min_year": 2003,
+"max_year": 2003,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"36055": {
+"title": "500 Tögrög (Year of the Goat)",
+"min_year": 2003,
+"max_year": 2003,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"115524": {
+"title": "500 Tögrög (Year of the Goat; gilt)",
+"min_year": 2003,
+"max_year": 2003,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"115663": {
+"title": "500 Tögrög (First Olympic Winter Games)",
+"min_year": 2003,
+"max_year": 2003,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"115662": {
+"title": "500 Tögrög (2006 World Championship)",
+"min_year": 2003,
+"max_year": 2003,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"115649": {
+"title": "500 Tögrög (Year of the Goat)",
+"min_year": 2003,
+"max_year": 2003,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"113968": {
+"title": "500 Tögrög (2006 World Championship)",
+"min_year": 2003,
+"max_year": 2003,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"115651": {
+"title": "500 Tögrög (Chinggis Khaan)",
+"min_year": 2003,
+"max_year": 2003,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"116038": {
+"title": "500 Tögrög (Osprey)",
+"min_year": 2004,
+"max_year": 2004,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"116036": {
+"title": "500 Tögrög (Year of the Monkey; gilt)",
+"min_year": 2004,
+"max_year": 2004,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"116039": {
+"title": "500 Tögrög (Year of the Monkey)",
+"min_year": 2004,
+"max_year": 2004,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"116035": {
+"title": "500 Tögrög (Year of the Monkey)",
+"min_year": 2004,
+"max_year": 2004,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"116032": {
+"title": "500 Tögrög (Osprey)",
+"min_year": 2004,
+"max_year": 2004,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"116049": {
+"title": "500 Tögrög (World Championship of Football - Spain 1982)",
+"min_year": 2004,
+"max_year": 2004,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"116050": {
+"title": "500 Tögrög (Olympic Games of Grenoble 1968)",
+"min_year": 2004,
+"max_year": 2004,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"116047": {
+"title": "500 Tögrög (80 Years of Mongol Bank)",
+"min_year": 2004,
+"max_year": 2004,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"21184": {
+"title": "500 Tögrög (Snow Leopard)",
+"min_year": 2005,
+"max_year": 2005,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"114448": {
+"title": "500 Tögrög (Da Vinci Equestrian)",
+"min_year": 2005,
+"max_year": 2005,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"25599": {
+"title": "500 Tögrög (Da Vinci equestrian)",
+"min_year": 2005,
+"max_year": 2005,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"116133": {
+"title": "500 Tögrög (Year of the Rooster)",
+"min_year": 2005,
+"max_year": 2005,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"604607": {
+"title": "500 Tögrög (Year of the Rooster)",
+"min_year": 2005,
+"max_year": 2005,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"116134": {
+"title": "500 Tögrög (Year of the Rooster; gilt)",
+"min_year": 2005,
+"max_year": 2005,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"25600": {
+"title": "500 Tögrög (Scorpion)",
+"min_year": 2005,
+"max_year": 2005,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"116142": {
+"title": "500 Tögrög (Yokozuna Shiranui)",
+"min_year": 2005,
+"max_year": 2005,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"116143": {
+"title": "500 Tögrög (Yokozuna Tanikaze)",
+"min_year": 2005,
+"max_year": 2005,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"116144": {
+"title": "500 Tögrög (Yokozuna Ounomatsu)",
+"min_year": 2005,
+"max_year": 2005,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"604726": {
+"title": "500 Tögrög (Olympic Games - Albertville 1992)",
+"min_year": 2005,
+"max_year": 2005,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"116140": {
+"title": "500 Tögrög (Olympic Games 2004 - Table tennis)",
+"min_year": 2005,
+"max_year": 2005,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"116141": {
+"title": "500 Tögrög (Olympic Games - Vancouver 2010)",
+"min_year": 2005,
+"max_year": 2005,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"604727": {
+"title": "500 Tögrög (Football Championship 1990)",
+"min_year": 2005,
+"max_year": 2005,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"36956": {
+"title": "500 Tögrög (Eurasian Eagle Owl)",
+"min_year": 2005,
+"max_year": 2005,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"25602": {
+"title": "500 Tögrög (Swan)",
+"min_year": 2006,
+"max_year": 2006,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"25601": {
+"title": "500 Tögrög (Gobi Bear)",
+"min_year": 2006,
+"max_year": 2006,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"604790": {
+"title": "500 Tögrög (Year of the Dog)",
+"min_year": 2006,
+"max_year": 2006,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"32937": {
+"title": "500 Tögrög (Long-eared Jerboa)",
+"min_year": 2006,
+"max_year": 2006,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"113957": {
+"title": "500 Tögrög (Year of the Dog)",
+"min_year": 2006,
+"max_year": 2006,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"113958": {
+"title": "500 Tögrög (Year of the Dog; gilt)",
+"min_year": 2006,
+"max_year": 2006,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"114449": {
+"title": "500 Tögrög (800th Anniversary of the Great Mongol Empire)",
+"min_year": 2006,
+"max_year": 2006,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"114450": {
+"title": "500 Tögrög (800th Anniversary of the Great Mongol Empire)",
+"min_year": 2006,
+"max_year": 2006,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"75543": {
+"title": "500 Tögrög (Dancing Queen; with diamond)",
+"min_year": 2006,
+"max_year": 2006,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"93967": {
+"title": "500 Tögrög (2006 FIFA World Cup)",
+"min_year": 2006,
+"max_year": 2006,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"116431": {
+"title": "500 Tögrög (Leonardo Da Vinci)",
+"min_year": 2006,
+"max_year": 2006,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"50666": {
+"title": "500 Tögrög (Wolfgang Amadeus Mozart)",
+"min_year": 2006,
+"max_year": 2006,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"113956": {
+"title": "500 Tögrög (Year of the Dog)",
+"min_year": 2006,
+"max_year": 2006,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"39506": {
+"title": "500 Tögrög (Winter Olympics 2006)",
+"min_year": 2006,
+"max_year": 2006,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"113001": {
+"title": "500 Tögrög (Olympic Games 2008)",
+"min_year": 2006,
+"max_year": 2006,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"608922": {
+"title": "500 Tögrög (Lake Placid 1932)",
+"min_year": 2006,
+"max_year": 2006,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"20912": {
+"title": "500 Tögrög (Gulo Gulo Wolverine)",
+"min_year": 2007,
+"max_year": 2007,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"116146": {
+"title": "500 Tögrög (50 years of space exploration)",
+"min_year": 2007,
+"max_year": 2007,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"37924": {
+"title": "500 Tögrög (Sputnik-2)",
+"min_year": 2007,
+"max_year": 2007,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"116147": {
+"title": "500 Tögrög (Sputnik-1)",
+"min_year": 2007,
+"max_year": 2007,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"116148": {
+"title": "500 Tögrög (Vostok-1)",
+"min_year": 2007,
+"max_year": 2007,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"116149": {
+"title": "500 Tögrög (Mir)",
+"min_year": 2007,
+"max_year": 2007,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"114458": {
+"title": "500 Tögrög (Year of the Pig)",
+"min_year": 2007,
+"max_year": 2007,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"114459": {
+"title": "500 Tögrög (Year of the Pig; gilt)",
+"min_year": 2007,
+"max_year": 2007,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"116150": {
+"title": "500 Tögrög (John F. Kennedy)",
+"min_year": 2007,
+"max_year": 2007,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"114471": {
+"title": "500 Tögrög (Siberian musk deer)",
+"min_year": 2007,
+"max_year": 2007,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"456787": {
+"title": "500 Tögrög (Tiger)",
+"min_year": 2007,
+"max_year": 2007,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"114470": {
+"title": "500 Tögrög (Wild horse)",
+"min_year": 2007,
+"max_year": 2007,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"114475": {
+"title": "500 Tögrög (Gotthard railway)",
+"min_year": 2007,
+"max_year": 2007,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"360142": {
+"title": "500 Tögrög (Olympic Games 2008 - Taekwondo)",
+"min_year": 2007,
+"max_year": 2007,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"38600": {
+"title": "500 Tögrög (Alfred Nobel)",
+"min_year": 2007,
+"max_year": 2007,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"386632": {
+"title": "500 Tögrög (Sputnik)",
+"min_year": 2007,
+"max_year": 2007,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"114585": {
+"title": "500 Tögrög (Year of the Rat; gilt)",
+"min_year": 2007,
+"max_year": 2007,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"59450": {
+"title": "500 Tögrög (Year of the Rat)",
+"min_year": 2008,
+"max_year": 2008,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"114464": {
+"title": "500 Tögrög (Year of the Rat; gilt)",
+"min_year": 2008,
+"max_year": 2008,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"114607": {
+"title": "500 Tögrög (Chichen Itza)",
+"min_year": 2008,
+"max_year": 2008,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"114604": {
+"title": "500 Tögrög (Petra)",
+"min_year": 2008,
+"max_year": 2008,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"102286": {
+"title": "500 Tögrög (Taj Mahal)",
+"min_year": 2008,
+"max_year": 2008,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"114609": {
+"title": "500 Tögrög (Machu Picchu)",
+"min_year": 2008,
+"max_year": 2008,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"114611": {
+"title": "500 Tögrög (Great Wall)",
+"min_year": 2008,
+"max_year": 2008,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"114600": {
+"title": "500 Tögrög (Colosseum)",
+"min_year": 2008,
+"max_year": 2008,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"89338": {
+"title": "500 Tögrög (Christ Redeemer)",
+"min_year": 2008,
+"max_year": 2008,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"114592": {
+"title": "500 Tögrög (Frederic Chopin)",
+"min_year": 2008,
+"max_year": 2008,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"97983": {
+"title": "500 Tögrög (Dambadondog Baatarjav)",
+"min_year": 2008,
+"max_year": 2008,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"116163": {
+"title": "500 Tögrög (Badar-Uugan)",
+"min_year": 2008,
+"max_year": 2008,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"116164": {
+"title": "500 Tögrög (Serdamba)",
+"min_year": 2008,
+"max_year": 2008,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"116165": {
+"title": "500 Tögrög (Tuvshinbayar)",
+"min_year": 2008,
+"max_year": 2008,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"116166": {
+"title": "500 Tögrög (Gundegmaa)",
+"min_year": 2008,
+"max_year": 2008,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"116160": {
+"title": "500 Tögrög (Archery)",
+"min_year": 2008,
+"max_year": 2008,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"98053": {
+"title": "500 Tögrög (Snow Leopards)",
+"min_year": 2008,
+"max_year": 2008,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"114589": {
+"title": "500 Tögrög (Almas)",
+"min_year": 2008,
+"max_year": 2008,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"116155": {
+"title": "500 Tögrög (Year of the Rat; colorized)",
+"min_year": 2008,
+"max_year": 2008,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"93968": {
+"title": "500 Tögrög (2010 Winter Olympics - Luge)",
+"min_year": 2008,
+"max_year": 2008,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"116367": {
+"title": "500 Tögrög (Pythagoras)",
+"min_year": 2008,
+"max_year": 2008,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"116162": {
+"title": "500 Tögrög (Year of the Ox; colorized)",
+"min_year": 2009,
+"max_year": 2009,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"116161": {
+"title": "500 Tögrög (Year of the Ox; gilt)",
+"min_year": 2009,
+"max_year": 2009,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"31503": {
+"title": "500 Tögrög (Owl)",
+"min_year": 2011,
+"max_year": 2011,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"32252": {
+"title": "500 Tögrög (Owl)",
+"min_year": 2011,
+"max_year": 2011,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"97849": {
+"title": "500 Tögrög (Joint Flight in Space)",
+"min_year": 2011,
+"max_year": 2011,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"97850": {
+"title": "500 Tögrög (Saiga Tatarica Mongolica)",
+"min_year": 2011,
+"max_year": 2011,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"97851": {
+"title": "500 Tögrög (Saiga Tatarica Mongolica)",
+"min_year": 2011,
+"max_year": 2011,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"38626": {
+"title": "500 Tögrög (Long-eared Hedgehog)",
+"min_year": 2012,
+"max_year": 2012,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"55608": {
+"title": "500 Tögrög (Argali Ovis Ammon)",
+"min_year": 2013,
+"max_year": 2013,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"62273": {
+"title": "500 Tögrög (Mongolian Wolf)",
+"min_year": 2013,
+"max_year": 2013,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"97793": {
+"title": "500 Tögrög (Mongolian wolf)",
+"min_year": 2013,
+"max_year": 2013,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"62211": {
+"title": "500 Tögrög (Argali)",
+"min_year": 2013,
+"max_year": 2013,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"97787": {
+"title": "500 Tögrög (Golden eagle)",
+"min_year": 2013,
+"max_year": 2013,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"97786": {
+"title": "500 Tögrög (Golden eagle)",
+"min_year": 2013,
+"max_year": 2013,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"257655": {
+"title": "500 Tögrög (Death of Kennedy)",
+"min_year": 2013,
+"max_year": 2013,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"62274": {
+"title": "500 Tögrög (Horse)",
+"min_year": 2014,
+"max_year": 2014,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"97783": {
+"title": "500 Tögrög (Wild horse)",
+"min_year": 2014,
+"max_year": 2014,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"67999": {
+"title": "500 Tögrög (Otocolobus Manul)",
+"min_year": 2014,
+"max_year": 2014,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"97784": {
+"title": "500 Tögrög (Manul)",
+"min_year": 2014,
+"max_year": 2014,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"74932": {
+"title": "500 Tögrög (Campbell's Hamster)",
+"min_year": 2015,
+"max_year": 2015,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"97778": {
+"title": "500 Tögrög (Campbell's Hamster)",
+"min_year": 2015,
+"max_year": 2015,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"97776": {
+"title": "500 Tögrög (Saker falcon)",
+"min_year": 2015,
+"max_year": 2015,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"97775": {
+"title": "500 Tögrög (Ammonite)",
+"min_year": 2015,
+"max_year": 2015,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"97777": {
+"title": "500 Tögrög (Saker falcon)",
+"min_year": 2015,
+"max_year": 2015,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"482453": {
+"title": "500 Tögrög (WWII Victory)",
+"min_year": 2015,
+"max_year": 2015,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"97790": {
+"title": "500 Tögrög (Trilobite)",
+"min_year": 2016,
+"max_year": 2016,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"85437": {
+"title": "500 Tögrög (Saker falcon)",
+"min_year": 2016,
+"max_year": 2016,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"97792": {
+"title": "500 Tögrög (Year of the Monkey)",
+"min_year": 2016,
+"max_year": 2016,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"97773": {
+"title": "500 Tögrög (Owl)",
+"min_year": 2016,
+"max_year": 2016,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"118485": {
+"title": "500 Tögrög (Aporia Crataegi)",
+"min_year": 2017,
+"max_year": 2017,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"120123": {
+"title": "500 Tögrög (Ichthyosaur)",
+"min_year": 2017,
+"max_year": 2017,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"116046": {
+"title": "500 Tögrög (Sable)",
+"min_year": 2017,
+"max_year": 2017,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"97788": {
+"title": "500 Tögrög (Year of the Rooster)",
+"min_year": 2017,
+"max_year": 2017,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"115298": {
+"title": "500 Tögrög (Roaring deer)",
+"min_year": 2017,
+"max_year": 2017,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"144118": {
+"title": "500 Tögrög (Snow Leopard)",
+"min_year": 2017,
+"max_year": 2017,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"584623": {
+"title": "500 Tögrög (Gobi Bear)",
+"min_year": 2017,
+"max_year": 2017,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"148275": {
+"title": "500 Tögrög (Pterosaur)",
+"min_year": 2018,
+"max_year": 2018,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"144110": {
+"title": "500 Tögrög (Wild Boar – Sus scrofa)",
+"min_year": 2018,
+"max_year": 2018,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"144117": {
+"title": "500 Tögrög (Woodland Spirits Fox)",
+"min_year": 2018,
+"max_year": 2018,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"159880": {
+"title": "500 Tögrög (Mongolian Gobi Bear)",
+"min_year": 2019,
+"max_year": 2019,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"159879": {
+"title": "500 Tögrög (Woodland Spirits Rabbit)",
+"min_year": 2019,
+"max_year": 2019,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"184028": {
+"title": "500 Tögrög (Sinraptor)",
+"min_year": 2019,
+"max_year": 2019,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"187963": {
+"title": "500 Tögrög (Edelweiss - Mountain Star)",
+"min_year": 2019,
+"max_year": 2019,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"257507": {
+"title": "500 Tögrög (Diplocaulus)",
+"min_year": 2020,
+"max_year": 2020,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"194673": {
+"title": "500 Tögrög (Raccoon Dog)",
+"min_year": 2020,
+"max_year": 2020,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"194663": {
+"title": "500 Tögrög (Majestic Eagle)",
+"min_year": 2020,
+"max_year": 2020,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"479266": {
+"title": "500 Tögrög (Marco Polo)",
+"min_year": 2020,
+"max_year": 2020,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"292331": {
+"title": "500 Tögrög (Mystic Wolf)",
+"min_year": 2021,
+"max_year": 2021,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"270752": {
+"title": "500 Tögrög (Hedgehog)",
+"min_year": 2021,
+"max_year": 2021,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"365845": {
+"title": "500 Tögrög (Hominidae)",
+"min_year": 2021,
+"max_year": 2021,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"365833": {
+"title": "500 Tögrög (Magnificent Argali)",
+"min_year": 2022,
+"max_year": 2022,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"344731": {
+"title": "500 Tögrög (Deer)",
+"min_year": 2022,
+"max_year": 2022,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"365842": {
+"title": "500 Tögrög (Synapsida)",
+"min_year": 2022,
+"max_year": 2022,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"363182": {
+"title": "500 Tögrög (Saker Falcon)",
+"min_year": 2023,
+"max_year": 2023,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"370951": {
+"title": "500 Tögrög (Chipmunk)",
+"min_year": 2023,
+"max_year": 2023,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"549682": {
+"title": "500 Tögrög (Nimravidae)",
+"min_year": 2023,
+"max_year": 2023,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"481197": {
+"title": "500 Tögrög (Brown bear)",
+"min_year": 2024,
+"max_year": 2024,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"476591": {
+"title": "500 Tögrög (Bison)",
+"min_year": 2025,
+"max_year": 2025,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"550126": {
+"title": "500 Tögrög (Otter)",
+"min_year": 2025,
+"max_year": 2025,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"581162": {
+"title": "500 Tögrög (Chinggis Khaan)",
+"min_year": 2026,
+"max_year": 2026,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"89345": {
+"title": "600 Tögrög (Year of the Rooster)",
+"min_year": 1993,
+"max_year": 1993,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"24499": {
+"title": "750 Tögrög (Przewalski Horses)",
+"min_year": 1976,
+"max_year": 1976,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"60107": {
+"title": "750 Tögrög (International Year of the Child)",
+"min_year": 1980,
+"max_year": 1980,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"115523": {
+"title": "750 Tögrög (International Year of the Child; Piedfort)",
+"min_year": 1980,
+"max_year": 1980,
+"object_type": {
+"id": 6,
+"name": "Patterns"
+}
+},
+"115547": {
+"title": "800 Tögrög (Olympic Games 2000 - Shooter)",
+"min_year": 1998,
+"max_year": 1998,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"114309": {
+"title": "1000 Tögrög (Chinggis Khan)",
+"min_year": 1990,
+"max_year": 1990,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"114311": {
+"title": "1000 Tögrög (Discovery of America - Columbus)",
+"min_year": 1992,
+"max_year": 1992,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"114312": {
+"title": "1000 Tögrög (Year of the Monkey)",
+"min_year": 1992,
+"max_year": 1992,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"90121": {
+"title": "1000 Tögrög (Ugedei Khan)",
+"min_year": 1992,
+"max_year": 1992,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"114322": {
+"title": "1000 Tögrög (Year of the Monkey)",
+"min_year": 1992,
+"max_year": 1992,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"114323": {
+"title": "1000 Tögrög (Discovery of America - Columbus)",
+"min_year": 1992,
+"max_year": 1992,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"114325": {
+"title": "1000 Tögrög (Khubilai Khan)",
+"min_year": 1992,
+"max_year": 1992,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"115116": {
+"title": "1000 Tögrög (Year of the Rooster)",
+"min_year": 1993,
+"max_year": 1993,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"89279": {
+"title": "1000 Tögrög - Japanese Royal Wedding",
+"min_year": 1993,
+"max_year": 1993,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"89335": {
+"title": "1000 Tögrög (Year of the Dog)",
+"min_year": 1994,
+"max_year": 1994,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"115117": {
+"title": "1000 Tögrög (Year of the Pig)",
+"min_year": 1995,
+"max_year": 1995,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"115250": {
+"title": "1000 Tögrög (Moscow - Ulaanbaatar - Beijing Railroad)",
+"min_year": 1995,
+"max_year": 1995,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"114787": {
+"title": "1000 Tögrög (50th anniversary of the United Nations)",
+"min_year": 1995,
+"max_year": 1995,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"114786": {
+"title": "1000 Tögrög (Mongolian National Olympic Committee)",
+"min_year": 1995,
+"max_year": 1995,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"115252": {
+"title": "1000 Tögrög (Year of the Rat)",
+"min_year": 1996,
+"max_year": 1996,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"115254": {
+"title": "1000 Tögrög (Ancient Runners)",
+"min_year": 1996,
+"max_year": 1996,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"115352": {
+"title": "1000 Tögrög (Chinggis Khan)",
+"min_year": 1996,
+"max_year": 1996,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"115351": {
+"title": "1000 Tögrög (Olympic Games - Atlanta 1996)",
+"min_year": 1996,
+"max_year": 1996,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"115541": {
+"title": "1000 Tögrög (Olympic Games - Atlanta 1996)",
+"min_year": 1996,
+"max_year": 1996,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"115257": {
+"title": "1000 Tögrög (Year of the Ox)",
+"min_year": 1997,
+"max_year": 1997,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"115354": {
+"title": "1000 Tögrög (Full Solar Eclipse)",
+"min_year": 1997,
+"max_year": 1997,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"114800": {
+"title": "1000 Tögrög (Year of the Tiger)",
+"min_year": 1998,
+"max_year": 1998,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"115259": {
+"title": "1000 Tögrög (Leonardo Da Vinci)",
+"min_year": 1999,
+"max_year": 1999,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"115260": {
+"title": "1000 Tögrög (Tiger)",
+"min_year": 1999,
+"max_year": 1999,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"115263": {
+"title": "1000 Tögrög (Cat)",
+"min_year": 1999,
+"max_year": 1999,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"115267": {
+"title": "1000 Tögrög (Panthera)",
+"min_year": 2000,
+"max_year": 2000,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"25303": {
+"title": "1000 Tögrög (Chinggis Khan)",
+"min_year": 2002,
+"max_year": 2002,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"115654": {
+"title": "1000 Tögrög (Asian Winter Games)",
+"min_year": 2003,
+"max_year": 2003,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"115659": {
+"title": "1000 Tögrög (Attila the Hun)",
+"min_year": 2003,
+"max_year": 2003,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"115660": {
+"title": "1000 Tögrög (Conficius)",
+"min_year": 2003,
+"max_year": 2003,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"455850": {
+"title": "1000 Tögrög (Genghis Khan)",
+"min_year": 2003,
+"max_year": 2003,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"366260": {
+"title": "1000 Tögrög (Taj Mahal)",
+"min_year": 2003,
+"max_year": 2003,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"417550": {
+"title": "1000 Tögrög (Buddha)",
+"min_year": 2003,
+"max_year": 2003,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"115661": {
+"title": "1000 Tögrög (Hillary)",
+"min_year": 2003,
+"max_year": 2003,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"115564": {
+"title": "1000 Tögrög (Snow Leopard)",
+"min_year": 2005,
+"max_year": 2005,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"115675": {
+"title": "1000 Tögrög (Scorpion)",
+"min_year": 2005,
+"max_year": 2005,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"115674": {
+"title": "1000 Tögrög (Eurasian Eagle Owl)",
+"min_year": 2005,
+"max_year": 2005,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"70281": {
+"title": "1000 Tögrög (Wolfgang Amadeus Mozart)",
+"min_year": 2006,
+"max_year": 2006,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"115676": {
+"title": "1000 Tögrög (Long-eared Jerboa)",
+"min_year": 2006,
+"max_year": 2006,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"115677": {
+"title": "1000 Tögrög (Gobi Bear)",
+"min_year": 2006,
+"max_year": 2006,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"116137": {
+"title": "1000 Tögrög (Dancing Queen)",
+"min_year": 2006,
+"max_year": 2006,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"116138": {
+"title": "1000 Tögrög (Dancing Queen; with diamond)",
+"min_year": 2006,
+"max_year": 2006,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"116135": {
+"title": "1000 Tögrög (Swan)",
+"min_year": 2006,
+"max_year": 2006,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"116167": {
+"title": "1000 Tögrög (Catherine II)",
+"min_year": 2007,
+"max_year": 2007,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"116168": {
+"title": "1000 Tögrög (Nicholas I)",
+"min_year": 2007,
+"max_year": 2007,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"116169": {
+"title": "1000 Tögrög (Nicholas II)",
+"min_year": 2007,
+"max_year": 2007,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"116170": {
+"title": "1000 Tögrög (Ivan IV)",
+"min_year": 2007,
+"max_year": 2007,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"116171": {
+"title": "1000 Tögrög (Peter I)",
+"min_year": 2007,
+"max_year": 2007,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"116172": {
+"title": "1000 Tögrög (Yuri Dolgorukiy)",
+"min_year": 2007,
+"max_year": 2007,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"327542": {
+"title": "1000 Tögrög (Year of the Pig)",
+"min_year": 2007,
+"max_year": 2007,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"13263": {
+"title": "1000 Tögrög (Colosseum)",
+"min_year": 2007,
+"max_year": 2008,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"116153": {
+"title": "1000 Tögrög (Year of the Rat)",
+"min_year": 2008,
+"max_year": 2008,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"116158": {
+"title": "1000 Tögrög (Boxing)",
+"min_year": 2008,
+"max_year": 2008,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"116159": {
+"title": "1000 Tögrög (Judo)",
+"min_year": 2008,
+"max_year": 2008,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"115664": {
+"title": "1000 Tögrög (Chichen Itza)",
+"min_year": 2008,
+"max_year": 2008,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"115665": {
+"title": "1000 Tögrög (Petra)",
+"min_year": 2008,
+"max_year": 2008,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"115666": {
+"title": "1000 Tögrög (Machu Picchu)",
+"min_year": 2008,
+"max_year": 2008,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"115667": {
+"title": "1000 Tögrög (Taj Mahal)",
+"min_year": 2008,
+"max_year": 2008,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"115668": {
+"title": "1000 Tögrög (Christ Redeemer)",
+"min_year": 2008,
+"max_year": 2008,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"115669": {
+"title": "1000 Tögrög (Great Wall)",
+"min_year": 2008,
+"max_year": 2008,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"115671": {
+"title": "1000 Tögrög (Frederic Chopin)",
+"min_year": 2011,
+"max_year": 2011,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"97785": {
+"title": "1000 Tögrög (Chinggis Khaan)",
+"min_year": 2014,
+"max_year": 2014,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"97771": {
+"title": "1000 Tögrög (Chinggis Khaan; colored)",
+"min_year": 2014,
+"max_year": 2016,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"57981": {
+"title": "1000 Tögrög (Chinggis Khaan)",
+"min_year": 2014,
+"max_year": 2016,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"97774": {
+"title": "1000 Tögrög (Ammonite)",
+"min_year": 2015,
+"max_year": 2015,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"194019": {
+"title": "1000 Tögrög (Abraham Lincoln)",
+"min_year": 2015,
+"max_year": 2015,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"97772": {
+"title": "1000 Tögrög (Saker Falcon)",
+"min_year": 2016,
+"max_year": 2016,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"94094": {
+"title": "1000 Tögrög (Trilobite)",
+"min_year": 2016,
+"max_year": 2016,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"97791": {
+"title": "1000 Tögrög (Year of the Monkey)",
+"min_year": 2016,
+"max_year": 2016,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"118482": {
+"title": "1000 Tögrög (Fidel Castro)",
+"min_year": 2017,
+"max_year": 2017,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"116173": {
+"title": "1000 Tögrög (Fidel Castro)",
+"min_year": 2017,
+"max_year": 2017,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"120125": {
+"title": "1000 Tögrög (Ichthyosaur Gold)",
+"min_year": 2017,
+"max_year": 2017,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"116175": {
+"title": "1000 Tögrög (Red deer)",
+"min_year": 2017,
+"max_year": 2017,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"116178": {
+"title": "1000 Tögrög (Sable)",
+"min_year": 2017,
+"max_year": 2017,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"97789": {
+"title": "1000 Tögrög (Year of the Rooster)",
+"min_year": 2017,
+"max_year": 2017,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"144107": {
+"title": "1000 Tögrög (Che Guevara)",
+"min_year": 2018,
+"max_year": 2018,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"144108": {
+"title": "1000 Tögrög (Che Guevara)",
+"min_year": 2018,
+"max_year": 2018,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"148274": {
+"title": "1000 Tögrög (Pterosaur Gold)",
+"min_year": 2018,
+"max_year": 2018,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"144113": {
+"title": "1000 Tögrög (Wild Boar)",
+"min_year": 2018,
+"max_year": 2018,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"125783": {
+"title": "1000 Tögrög (Year of the Dog)",
+"min_year": 2018,
+"max_year": 2018,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"159883": {
+"title": "1000 Tögrög (Karl Marx)",
+"min_year": 2019,
+"max_year": 2019,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"159882": {
+"title": "1000 Tögrög (Karl Marx)",
+"min_year": 2019,
+"max_year": 2019,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"148281": {
+"title": "1000 Tögrög (Jolly Pig, Silver)",
+"min_year": 2019,
+"max_year": 2019,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"153053": {
+"title": "1000 Tögrög (Jolly Pig, Gilded)",
+"min_year": 2019,
+"max_year": 2019,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"193090": {
+"title": "1000 Tögrög (Ural Owl)",
+"min_year": 2019,
+"max_year": 2019,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"148273": {
+"title": "1000 Tögrög (Year of the Pig)",
+"min_year": 2019,
+"max_year": 2019,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"187973": {
+"title": "1000 Tögrög (Golden Edelweiss)",
+"min_year": 2019,
+"max_year": 2019,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"159881": {
+"title": "1000 Tögrög (Golden Gobi Bear)",
+"min_year": 2019,
+"max_year": 2019,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"184120": {
+"title": "1000 Tögrög (Golden Sinraptor)",
+"min_year": 2019,
+"max_year": 2019,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"187969": {
+"title": "1000 Tögrög (Golden Ammonite)",
+"min_year": 2019,
+"max_year": 2019,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"194671": {
+"title": "1000 Tögrög (Mahatma Gandhi)",
+"min_year": 2020,
+"max_year": 2020,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"194672": {
+"title": "1000 Tögrög (Mahatma Gandhi)",
+"min_year": 2020,
+"max_year": 2020,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"184022": {
+"title": "1000 Tögrög (Witty Silver Mouse)",
+"min_year": 2020,
+"max_year": 2020,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"187965": {
+"title": "1000 Tögrög (Peter Carl Fabergé – 100th Anniversary)",
+"min_year": 2020,
+"max_year": 2020,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"257504": {
+"title": "1000 Tögrög (Majestic Eagle)",
+"min_year": 2020,
+"max_year": 2020,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"194669": {
+"title": "1000 Tögrög (Majestic Eagle)",
+"min_year": 2020,
+"max_year": 2020,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"184023": {
+"title": "1000 Tögrög (Year of the Mouse - Gold)",
+"min_year": 2020,
+"max_year": 2020,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"257508": {
+"title": "1000 Tögrög (Golden Diplocaulus)",
+"min_year": 2020,
+"max_year": 2020,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"403434": {
+"title": "1000 Tögrög (Gulo Gulo)",
+"min_year": 2020,
+"max_year": 2020,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"270758": {
+"title": "1000 Tögrög (Napoleon Bonaparte)",
+"min_year": 2021,
+"max_year": 2021,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"270759": {
+"title": "1000 Tögrög (Napoleon Bonaparte)",
+"min_year": 2021,
+"max_year": 2021,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"215152": {
+"title": "1000 Tögrög (Mighty Silver Ox)",
+"min_year": 2021,
+"max_year": 2021,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"294254": {
+"title": "1000 Tögrög (Mystic Wolf)",
+"min_year": 2021,
+"max_year": 2021,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"270746": {
+"title": "1000 Tögrög (Mystic Wolf)",
+"min_year": 2021,
+"max_year": 2021,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"303110": {
+"title": "1000 Tögrög (Peter Carl Fabergé – Rose Trellis)",
+"min_year": 2021,
+"max_year": 2021,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"403436": {
+"title": "1000 Tögrög (Bear)",
+"min_year": 2021,
+"max_year": 2021,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"215158": {
+"title": "1000 Tögrög (Year of the Ox; Gold)",
+"min_year": 2021,
+"max_year": 2021,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"365846": {
+"title": "1000 Tögrög (Golden Paranthropus)",
+"min_year": 2021,
+"max_year": 2021,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"371329": {
+"title": "1000 Tögrög (Mother Teresa)",
+"min_year": 2022,
+"max_year": 2022,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"333310": {
+"title": "1000 Togrog (Mother Teresa)",
+"min_year": 2022,
+"max_year": 2022,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"403476": {
+"title": "1000 Tögrög (Tiger)",
+"min_year": 2022,
+"max_year": 2022,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"403517": {
+"title": "1000 Tögrög (Charming Silver Tiger)",
+"min_year": 2022,
+"max_year": 2022,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"365836": {
+"title": "1000 Tögrög (Magnificent Argali)",
+"min_year": 2022,
+"max_year": 2022,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"365840": {
+"title": "1000 Tögrög (Magnificent Argali)",
+"min_year": 2022,
+"max_year": 2022,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"597881": {
+"title": "1000 Tögrög (Peter Carl Fabergé - Rosebud Egg)",
+"min_year": 2022,
+"max_year": 2022,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"403543": {
+"title": "1000 Tögrög (Lion)",
+"min_year": 2022,
+"max_year": 2022,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"365843": {
+"title": "1000 Tögrög (Golden Edaphosaurus)",
+"min_year": 2022,
+"max_year": 2022,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"403634": {
+"title": "1000 Tögrög (Sweet Silver Rabbit)",
+"min_year": 2023,
+"max_year": 2023,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"403641": {
+"title": "1000 Tögrög (Sweet Silver Rabbit)",
+"min_year": 2023,
+"max_year": 2023,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"403685": {
+"title": "1000 Tögrög (Peter Carl Faberge - Tsarevich Egg)",
+"min_year": 2023,
+"max_year": 2023,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"365822": {
+"title": "1000 Tögrög (Saker Falcon)",
+"min_year": 2023,
+"max_year": 2023,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"403713": {
+"title": "1000 Tögrög (Bison)",
+"min_year": 2023,
+"max_year": 2023,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"426611": {
+"title": "1000 Tögrög (Brown Bear)",
+"min_year": 2023,
+"max_year": 2023,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"462952": {
+"title": "1000 Tögrög (Golden Nimravidae)",
+"min_year": 2023,
+"max_year": 2023,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"365820": {
+"title": "1000 Tögrög (Saker Falcon)",
+"min_year": 2023,
+"max_year": 2023,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"611092": {
+"title": "1000 Tögrög (Golden Nimravidae)",
+"min_year": 2023,
+"max_year": 2023,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"403763": {
+"title": "1000 Tögrög (Great Silver Dragon)",
+"min_year": 2024,
+"max_year": 2024,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"403779": {
+"title": "1000 Tögrög (Great Silver Dragon)",
+"min_year": 2024,
+"max_year": 2024,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"420783": {
+"title": "1000 Tögrög (Year of the Dragon)",
+"min_year": 2024,
+"max_year": 2024,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"554469": {
+"title": "1000 Tögrög (Snow Leopard)",
+"min_year": 2024,
+"max_year": 2024,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"462957": {
+"title": "1000 Tögrög (Golden Phorusrhacidae)",
+"min_year": 2024,
+"max_year": 2024,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"597883": {
+"title": "1000 Tögrög (Coronation Egg)",
+"min_year": 2024,
+"max_year": 2024,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"550128": {
+"title": "1000 Tögrög (Lilies of the Valley Egg)",
+"min_year": 2025,
+"max_year": 2025,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"483775": {
+"title": "1000 Tögrög (Year of the Snake)",
+"min_year": 2025,
+"max_year": 2025,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"550112": {
+"title": "1000 Tögrög (Bison)",
+"min_year": 2025,
+"max_year": 2025,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"483767": {
+"title": "1000 Tögrög (Caesar vs. Brutus)",
+"min_year": 2025,
+"max_year": 2025,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"550121": {
+"title": "1000 Tögrög (Bison)",
+"min_year": 2025,
+"max_year": 2025,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"581330": {
+"title": "1000 Tögrög (Peter The Great Faberge Egg)",
+"min_year": 2026,
+"max_year": 2026,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"581329": {
+"title": "1000 Tögrög (Chinggis Khaan)",
+"min_year": 2026,
+"max_year": 2026,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"578670": {
+"title": "1000 Tögrög (Year of the Horse)",
+"min_year": 2026,
+"max_year": 2026,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"612216": {
+"title": "1000 Tögrög (Year of the Sheep)",
+"min_year": 2027,
+"max_year": 2027,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"115332": {
+"title": "1200 Tögrög (Chinggis Khan)",
+"min_year": 1996,
+"max_year": 1996,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"115341": {
+"title": "1200 Tögrög (Ugedei Khan)",
+"min_year": 1997,
+"max_year": 1997,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"115344": {
+"title": "2000 Tögrög (Snow leopard)",
+"min_year": 1994,
+"max_year": 1994,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"115342": {
+"title": "2000 Tögrög (Boxing)",
+"min_year": 1994,
+"max_year": 1994,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"115345": {
+"title": "2000 Tögrög (Year of the Tiger)",
+"min_year": 1998,
+"max_year": 1998,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"116044": {
+"title": "2000 Tögrög (Year of the Monkey)",
+"min_year": 2004,
+"max_year": 2004,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"116043": {
+"title": "2000 Tögrög (Year of the Monkey)",
+"min_year": 2004,
+"max_year": 2004,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"116045": {
+"title": "2000 Tögrög (Year of the Monkey)",
+"min_year": 2004,
+"max_year": 2004,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"148276": {
+"title": "2000 Tögrög (Shakyamuni Buddha)",
+"min_year": 2018,
+"max_year": 2018,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"144115": {
+"title": "2000 Tögrög (Velociraptor)",
+"min_year": 2018,
+"max_year": 2018,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"193066": {
+"title": "2000 Tögrög (Kalachakra Mandala)",
+"min_year": 2019,
+"max_year": 2019,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"159884": {
+"title": "2000 Tögrög (Protoceratops Andrewsi)",
+"min_year": 2019,
+"max_year": 2019,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"334201": {
+"title": "2000 Tögrög (Kalachakra Mandala)",
+"min_year": 2019,
+"max_year": 2019,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"266953": {
+"title": "2000 Tögrög (Mechanical Bee)",
+"min_year": 2020,
+"max_year": 2020,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"194662": {
+"title": "2000 Tögrög (Plesiosauria)",
+"min_year": 2020,
+"max_year": 2020,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"194665": {
+"title": "2000 Tögrög (Majestic Eagle)",
+"min_year": 2020,
+"max_year": 2020,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"334202": {
+"title": "2000 Tögrög (Vasudhara Mandala)",
+"min_year": 2020,
+"max_year": 2020,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"270749": {
+"title": "2000 Tögrög (Mystic Wolf)",
+"min_year": 2021,
+"max_year": 2021,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"403452": {
+"title": "2000 Tögrög (Mechanical Ladybug)",
+"min_year": 2021,
+"max_year": 2021,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"365834": {
+"title": "2000 Tögrög (Magnificent Argali)",
+"min_year": 2022,
+"max_year": 2022,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"365817": {
+"title": "2000 Tögrög (Saker Falcon)",
+"min_year": 2023,
+"max_year": 2023,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"550116": {
+"title": "2000 Tögrög (Bison)",
+"min_year": 2025,
+"max_year": 2025,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"115346": {
+"title": "2500 Tögrög (Year of the Pig)",
+"min_year": 1995,
+"max_year": 1995,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"114783": {
+"title": "2500 Tögrög (Moscow - Ulaanbaatar - Beijing Railroad)",
+"min_year": 1995,
+"max_year": 1995,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"115347": {
+"title": "2500 Tögrög (Year of the Rat)",
+"min_year": 1996,
+"max_year": 1996,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"115336": {
+"title": "2500 Tögrög (Chinggis Khan)",
+"min_year": 1996,
+"max_year": 1996,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"115348": {
+"title": "2500 Tögrög (Year of the Ox)",
+"min_year": 1997,
+"max_year": 1997,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"115349": {
+"title": "2500 Tögrög (Ugedei Khan)",
+"min_year": 1997,
+"max_year": 1997,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"114801": {
+"title": "2500 Tögrög (Year of the Tiger)",
+"min_year": 1998,
+"max_year": 1998,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"114641": {
+"title": "2500 Tögrög (Year of the Rabbit)",
+"min_year": 1999,
+"max_year": 1999,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"114642": {
+"title": "2500 Tögrög (Year of the Rabbit)",
+"min_year": 1999,
+"max_year": 1999,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"89341": {
+"title": "2500 Tögrög (Year of the Dragon)",
+"min_year": 2000,
+"max_year": 2000,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"115525": {
+"title": "2500 Tögrög (Year of the Dragon)",
+"min_year": 2000,
+"max_year": 2000,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"89281": {
+"title": "2500 Tögrög (Year of the Snake)",
+"min_year": 2001,
+"max_year": 2001,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"115563": {
+"title": "2500 Tögrög (Year of the Snake)",
+"min_year": 2001,
+"max_year": 2001,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"115640": {
+"title": "2500 Tögrög (Year of the Horse)",
+"min_year": 2002,
+"max_year": 2002,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"115644": {
+"title": "2500 Tögrög (Year of the Horse)",
+"min_year": 2002,
+"max_year": 2002,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"115650": {
+"title": "2500 Tögrög (Year of the Goat)",
+"min_year": 2003,
+"max_year": 2003,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"115652": {
+"title": "2500 Tögrög (Year of the Sheep)",
+"min_year": 2003,
+"max_year": 2003,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"116040": {
+"title": "2500 Tögrög (Year of the Monkey)",
+"min_year": 2004,
+"max_year": 2004,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"116037": {
+"title": "2500 Tögrög (Year of the Monkey)",
+"min_year": 2004,
+"max_year": 2004,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"116041": {
+"title": "2500 Tögrög (Year of the Monkey)",
+"min_year": 2004,
+"max_year": 2004,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"116132": {
+"title": "2500 Tögrög (Year of the Rooster)",
+"min_year": 2005,
+"max_year": 2005,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"116131": {
+"title": "2500 Tögrög (Year of the Rooster)",
+"min_year": 2005,
+"max_year": 2005,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"116156": {
+"title": "2500 Tögrög (Year of the Dog)",
+"min_year": 2006,
+"max_year": 2006,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"604793": {
+"title": "2500 Tögrög (Year of the Dog)",
+"min_year": 2006,
+"max_year": 2006,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"116154": {
+"title": "2500 Tögrög (Year of the Rat)",
+"min_year": 2008,
+"max_year": 2008,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"116157": {
+"title": "2500 Tögrög (Year of the Ox)",
+"min_year": 2009,
+"max_year": 2009,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"115545": {
+"title": "3000 Tögrög (Year of the Dragon)",
+"min_year": 2000,
+"max_year": 2000,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"115641": {
+"title": "3000 Tögrög (Year of the Horse)",
+"min_year": 2002,
+"max_year": 2002,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"114324": {
+"title": "4000 Tögrög (Chinggis Khan)",
+"min_year": 1992,
+"max_year": 1992,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"115356": {
+"title": "5000 Tögrög (Year of the Rooster)",
+"min_year": 1993,
+"max_year": 1993,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"115358": {
+"title": "5000 Tögrög (Year of the Dog)",
+"min_year": 1994,
+"max_year": 1994,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"115338": {
+"title": "5000 Tögrög (Chinggis Khan)",
+"min_year": 1996,
+"max_year": 1996,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"115255": {
+"title": "5000 Tögrög (Steppe Eagle)",
+"min_year": 1996,
+"max_year": 1996,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"114785": {
+"title": "5000 Tögrög (Camel)",
+"min_year": 1996,
+"max_year": 1996,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"115362": {
+"title": "5000 Tögrög (Tiger)",
+"min_year": 1996,
+"max_year": 1996,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"115360": {
+"title": "5000 Tögrög (Wild horse)",
+"min_year": 1997,
+"max_year": 1997,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"115364": {
+"title": "5000 Tögrög (Ugedei Khan)",
+"min_year": 1997,
+"max_year": 1997,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"115365": {
+"title": "5000 Tögrög (UNICEF)",
+"min_year": 1997,
+"max_year": 1997,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"115642": {
+"title": "5000 Tögrög (Year of the Horse)",
+"min_year": 2002,
+"max_year": 2002,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"115653": {
+"title": "5000 Tögrög (Year of the Sheep)",
+"min_year": 2003,
+"max_year": 2003,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"116042": {
+"title": "5000 Tögrög (Year of the Monkey)",
+"min_year": 2004,
+"max_year": 2004,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"115670": {
+"title": "5000 Tögrög (Japanese Sumo Wrestling)",
+"min_year": 2005,
+"max_year": 2005,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"604606": {
+"title": "5000 Tögrög (Year of the Rooster)",
+"min_year": 2005,
+"max_year": 2005,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"604792": {
+"title": "5000 Tögrög (Year of the Dog)",
+"min_year": 2006,
+"max_year": 2006,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"97746": {
+"title": "5000 Tögrög (The third millionth citizen of Mongolia)",
+"min_year": 2015,
+"max_year": 2015,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"97744": {
+"title": "5000 Tögrög (Undur Gegeen G. Zanabazar)",
+"min_year": 2015,
+"max_year": 2015,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"257505": {
+"title": "5000 Tögrög (Karakorum)",
+"min_year": 2020,
+"max_year": 2020,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"115366": {
+"title": "8000 Tögrög (Chinggis Khan)",
+"min_year": 1992,
+"max_year": 1992,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"89275": {
+"title": "10 000 Tögrög (Year of the Pig)",
+"min_year": 1995,
+"max_year": 1995,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"115530": {
+"title": "10 000 Tögrög (Mongolian National Olympic Committee)",
+"min_year": 1995,
+"max_year": 1995,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"89274": {
+"title": "10 000 Tögrög (Year of the Rat)",
+"min_year": 1996,
+"max_year": 1996,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"115368": {
+"title": "10 000 Tögrög (Steppe Eagle)",
+"min_year": 1996,
+"max_year": 1996,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"115369": {
+"title": "10 000 Tögrög (Wild horse)",
+"min_year": 1996,
+"max_year": 1996,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"115370": {
+"title": "10 000 Tögrög (Camel)",
+"min_year": 1996,
+"max_year": 1996,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"115371": {
+"title": "10 000 Tögrög (Tiger)",
+"min_year": 1996,
+"max_year": 1996,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"115535": {
+"title": "10 000 Tögrög (Chinggis Khan)",
+"min_year": 1996,
+"max_year": 1996,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"115542": {
+"title": "10 000 Tögrög (Olympic Games - Atlanta 1996)",
+"min_year": 1996,
+"max_year": 1996,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"89277": {
+"title": "10 000 Tögrög (Year of the Ox)",
+"min_year": 1997,
+"max_year": 1997,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"89273": {
+"title": "10 000 Tögrög (Year of the Tiger)",
+"min_year": 1998,
+"max_year": 1998,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"89188": {
+"title": "10 000 Tögrög (Year of the Rabbit)",
+"min_year": 1999,
+"max_year": 1999,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"89162": {
+"title": "10 000 Tögrög (Chinggis Khaan)",
+"min_year": 2002,
+"max_year": 2003,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"194733": {
+"title": "10 000 Tögrög (Two Ringers)",
+"min_year": 2005,
+"max_year": 2005,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"97769": {
+"title": "10 000 Tögrög (90 Years of Mongol Bank)",
+"min_year": 2014,
+"max_year": 2014,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"97745": {
+"title": "10 000 Tögrög (Khubilai Khaan)",
+"min_year": 2015,
+"max_year": 2015,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"97743": {
+"title": "10 000 Tögrög (Ugedei Khan)",
+"min_year": 2016,
+"max_year": 2016,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"115372": {
+"title": "12 000 Tögrög (Year of the Rooster)",
+"min_year": 1993,
+"max_year": 1993,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"115374": {
+"title": "12 000 Tögrög (Chinggis Khan)",
+"min_year": 1996,
+"max_year": 1996,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"115375": {
+"title": "12 000 Tögrög (Chinggis Khan)",
+"min_year": 1996,
+"max_year": 1996,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"115508": {
+"title": "12 000 Tögrög (Ugedei Khan)",
+"min_year": 1997,
+"max_year": 1997,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"97770": {
+"title": "20 000 Tögrög (90 Years of Mongol Bank)",
+"min_year": 2014,
+"max_year": 2014,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"334207": {
+"title": "20 000 Tögrög (Ammonite)",
+"min_year": 2018,
+"max_year": 2018,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"334206": {
+"title": "20 000 Tögrög (Mongolian Gulo Gulo)",
+"min_year": 2020,
+"max_year": 2020,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"115512": {
+"title": "25 000 Tögrög (Chinggis Khan)",
+"min_year": 1996,
+"max_year": 1996,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"115513": {
+"title": "25 000 Tögrög (Chinggis Khan)",
+"min_year": 1996,
+"max_year": 1996,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"115514": {
+"title": "25 000 Tögrög (Steppe Eagle)",
+"min_year": 1996,
+"max_year": 1996,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"115515": {
+"title": "25 000 Tögrög (Wild horse)",
+"min_year": 1996,
+"max_year": 1996,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"115516": {
+"title": "25 000 Tögrög (Camel)",
+"min_year": 1996,
+"max_year": 1996,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"115517": {
+"title": "25 000 Tögrög (Tiger)",
+"min_year": 1996,
+"max_year": 1996,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"115511": {
+"title": "25 000 Tögrög (Ugedei Khan)",
+"min_year": 1997,
+"max_year": 1997,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"194670": {
+"title": "25 000 Tögrög (Majestic Eagle)",
+"min_year": 2020,
+"max_year": 2020,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"270747": {
+"title": "25 000 Tögrög (Mystic Wolf)",
+"min_year": 2021,
+"max_year": 2021,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"270748": {
+"title": "25 000 Tögrög (Mystic Wolf)",
+"min_year": 2021,
+"max_year": 2021,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"365838": {
+"title": "25 000 Tögrög (Magnificent Argali)",
+"min_year": 2022,
+"max_year": 2022,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"354097": {
+"title": "25 000 Togrog (Argali)",
+"min_year": 2022,
+"max_year": 2022,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"365818": {
+"title": "25 000 Tögrög (Saker Falcon)",
+"min_year": 2023,
+"max_year": 2023,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"365819": {
+"title": "25 000 Tögrög (Saker Falcon)",
+"min_year": 2023,
+"max_year": 2023,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"550118": {
+"title": "25 000 Tögrög (Bison)",
+"min_year": 2025,
+"max_year": 2025,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"581333": {
+"title": "25 000 Tögrög (Chinggis Khaan)",
+"min_year": 2026,
+"max_year": 2026,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"115518": {
+"title": "50 000 Tögrög (Year of the Pig)",
+"min_year": 1995,
+"max_year": 1995,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"115519": {
+"title": "50 000 Tögrög (Year of the Rat)",
+"min_year": 1996,
+"max_year": 1996,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"115376": {
+"title": "50 000 Tögrög (Chinggis Khan)",
+"min_year": 1996,
+"max_year": 1996,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"115377": {
+"title": "50 000 Tögrög (Chinggis Khan)",
+"min_year": 1996,
+"max_year": 1996,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"24500": {
+"title": "50 000 Tögrög (Year of the Ox)",
+"min_year": 1997,
+"max_year": 1997,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"115510": {
+"title": "50 000 Tögrög (Ugedei Khan)",
+"min_year": 1997,
+"max_year": 1997,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"115520": {
+"title": "50 000 Tögrög (Year of the Tiger)",
+"min_year": 1998,
+"max_year": 1998,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"115521": {
+"title": "50 000 Tögrög (Year of the Rabbit)",
+"min_year": 1999,
+"max_year": 1999,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"115643": {
+"title": "100 000 Tögrög (Year of the Horse)",
+"min_year": 2002,
+"max_year": 2002,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"115647": {
+"title": "100 000 Tögrög (Year of the Goat)",
+"min_year": 2003,
+"max_year": 2003,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"115673": {
+"title": "100 000 Tögrög (Year of the Monkey)",
+"min_year": 2004,
+"max_year": 2004,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"604608": {
+"title": "100 000 Tögrög (Year of the Rooster)",
+"min_year": 2005,
+"max_year": 2005,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"604791": {
+"title": "100 000 Tögrög (Year of the Dog)",
+"min_year": 2006,
+"max_year": 2006,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"115672": {
+"title": "100 000 Tögrög (Year of the Rat)",
+"min_year": 2008,
+"max_year": 2008,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"115522": {
+"title": "250 000 Tögrög (Chinggis Khan)",
+"min_year": 1992,
+"max_year": 1992,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+}
+},
+"pages": 13,
+"total": 623,
+"details": {}
+}

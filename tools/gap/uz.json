@@ -1,0 +1,502 @@
+{
+"types": {
+"379072": {
+"title": "1 Soʻm (600th Anniversary of Ulugʻbek)",
+"min_year": 1994,
+"max_year": 1994,
+"object_type": {
+"id": 6,
+"name": "Patterns"
+}
+},
+"1471": {
+"title": "1 Tiyin",
+"min_year": 1994,
+"max_year": 1994,
+"object_type": {
+"id": 1,
+"name": "Standard circulation coins"
+}
+},
+"1472": {
+"title": "3 Tiyin",
+"min_year": 1994,
+"max_year": 1994,
+"object_type": {
+"id": 1,
+"name": "Standard circulation coins"
+}
+},
+"1473": {
+"title": "5 Tiyin",
+"min_year": 1994,
+"max_year": 1994,
+"object_type": {
+"id": 1,
+"name": "Standard circulation coins"
+}
+},
+"1474": {
+"title": "10 Tiyin",
+"min_year": 1994,
+"max_year": 1994,
+"object_type": {
+"id": 1,
+"name": "Standard circulation coins"
+}
+},
+"1475": {
+"title": "20 Tiyin",
+"min_year": 1994,
+"max_year": 1994,
+"object_type": {
+"id": 1,
+"name": "Standard circulation coins"
+}
+},
+"1476": {
+"title": "50 Tiyin",
+"min_year": 1994,
+"max_year": 1994,
+"object_type": {
+"id": 1,
+"name": "Standard circulation coins"
+}
+},
+"3872": {
+"title": "1 Soʻm",
+"min_year": 1997,
+"max_year": 2000,
+"object_type": {
+"id": 1,
+"name": "Standard circulation coins"
+}
+},
+"10044": {
+"title": "1 Soʻm",
+"min_year": 2000,
+"max_year": 2000,
+"object_type": {
+"id": 1,
+"name": "Standard circulation coins"
+}
+},
+"3905": {
+"title": "5 Soʻm",
+"min_year": 1997,
+"max_year": 1999,
+"object_type": {
+"id": 1,
+"name": "Standard circulation coins"
+}
+},
+"13454": {
+"title": "5 Soʻm",
+"min_year": 2001,
+"max_year": 2001,
+"object_type": {
+"id": 1,
+"name": "Standard circulation coins"
+}
+},
+"63730": {
+"title": "10 Soʻm",
+"min_year": 1994,
+"max_year": 1994,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"401858": {
+"title": "10 Soʻm Amir Temur (Tamerlane)",
+"min_year": 1996,
+"max_year": 1996,
+"object_type": {
+"id": 6,
+"name": "Patterns"
+}
+},
+"401856": {
+"title": "10 Soʻm Amir Temur (Tamerlane)",
+"min_year": 1997,
+"max_year": 1997,
+"object_type": {
+"id": 6,
+"name": "Patterns"
+}
+},
+"3267": {
+"title": "10 Soʻm",
+"min_year": 1997,
+"max_year": 2000,
+"object_type": {
+"id": 1,
+"name": "Standard circulation coins"
+}
+},
+"5555": {
+"title": "10 Soʻm",
+"min_year": 2001,
+"max_year": 2001,
+"object_type": {
+"id": 1,
+"name": "Standard circulation coins"
+}
+},
+"3097": {
+"title": "25 Soʻm (Jaloliddin Manguberdi)",
+"min_year": 1999,
+"max_year": 1999,
+"object_type": {
+"id": 2,
+"name": "Circulating commemorative coins"
+}
+},
+"5885": {
+"title": "50 Soʻm (Independence)",
+"min_year": 2001,
+"max_year": 2001,
+"object_type": {
+"id": 2,
+"name": "Circulating commemorative coins"
+}
+},
+"77676": {
+"title": "50 Soʻm (Independence; light type)",
+"min_year": 2001,
+"max_year": 2001,
+"object_type": {
+"id": 2,
+"name": "Circulating commemorative coins"
+}
+},
+"3901": {
+"title": "50 Soʻm (Shahrisabz)",
+"min_year": 2002,
+"max_year": 2002,
+"object_type": {
+"id": 2,
+"name": "Circulating commemorative coins"
+}
+},
+"144055": {
+"title": "50 Soʻm",
+"min_year": 2018,
+"max_year": 2018,
+"object_type": {
+"id": 1,
+"name": "Standard circulation coins"
+}
+},
+"401859": {
+"title": "100 Soʻm Amir Temur (Tamerlane)",
+"min_year": 1994,
+"max_year": 1994,
+"object_type": {
+"id": 6,
+"name": "Patterns"
+}
+},
+"458717": {
+"title": "100 S'om (Gur-e-Amir mausoleum; Pattern)",
+"min_year": 1995,
+"max_year": 1995,
+"object_type": {
+"id": 6,
+"name": "Patterns"
+}
+},
+"379075": {
+"title": "100 Soʻm (Ulugʻbek)",
+"min_year": 1999,
+"max_year": 1999,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"100291": {
+"title": "100 Soʻm (Alisher Novoiy)",
+"min_year": 2001,
+"max_year": 2001,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"100292": {
+"title": "100 Soʻm (Parliament)",
+"min_year": 2001,
+"max_year": 2001,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"100293": {
+"title": "100 Soʻm (Amir-Timur Museum)",
+"min_year": 2001,
+"max_year": 2001,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"100294": {
+"title": "100 Soʻm (Toskent town hall)",
+"min_year": 2001,
+"max_year": 2001,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"100295": {
+"title": "100 Soʻm (World)",
+"min_year": 2001,
+"max_year": 2001,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"100296": {
+"title": "100 Soʻm (Football player)",
+"min_year": 2001,
+"max_year": 2001,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"100297": {
+"title": "100 Soʻm (Track runner)",
+"min_year": 2001,
+"max_year": 2001,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"100298": {
+"title": "100 Soʻm (Judo expert)",
+"min_year": 2001,
+"max_year": 2001,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"100301": {
+"title": "100 Soʻm (Tennis player)",
+"min_year": 2001,
+"max_year": 2001,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"100299": {
+"title": "100 Soʻm (Lenk monument in Timur)",
+"min_year": 2001,
+"max_year": 2001,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"100302": {
+"title": "100 Soʻm (Aliser Navoi monument)",
+"min_year": 2001,
+"max_year": 2001,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"100300": {
+"title": "100 Soʻm (Registan in Samarkand)",
+"min_year": 2001,
+"max_year": 2001,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"100303": {
+"title": "100 Soʻm (Bell tower in Toskent)",
+"min_year": 2001,
+"max_year": 2001,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"5884": {
+"title": "100 Soʻm (Anniversary of State Currency)",
+"min_year": 2004,
+"max_year": 2004,
+"object_type": {
+"id": 2,
+"name": "Circulating commemorative coins"
+}
+},
+"10745": {
+"title": "100 Soʻm (Arch of Independence)",
+"min_year": 2009,
+"max_year": 2009,
+"object_type": {
+"id": 2,
+"name": "Circulating commemorative coins"
+}
+},
+"10746": {
+"title": "100 Soʻm (Independence and Goodness Monument)",
+"min_year": 2009,
+"max_year": 2009,
+"object_type": {
+"id": 2,
+"name": "Circulating commemorative coins"
+}
+},
+"144052": {
+"title": "100 Soʻm",
+"min_year": 2018,
+"max_year": 2018,
+"object_type": {
+"id": 1,
+"name": "Standard circulation coins"
+}
+},
+"144053": {
+"title": "200 Soʻm",
+"min_year": 2018,
+"max_year": 2018,
+"object_type": {
+"id": 1,
+"name": "Standard circulation coins"
+}
+},
+"26626": {
+"title": "500 Soʻm (Independence)",
+"min_year": 2011,
+"max_year": 2011,
+"object_type": {
+"id": 2,
+"name": "Circulating commemorative coins"
+}
+},
+"144054": {
+"title": "500 Soʻm",
+"min_year": 2018,
+"max_year": 2018,
+"object_type": {
+"id": 1,
+"name": "Standard circulation coins"
+}
+},
+"191148": {
+"title": "1000 Soʻm (Tashkent)",
+"min_year": 2009,
+"max_year": 2009,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"272121": {
+"title": "1000 Soʻm (Tashkent)",
+"min_year": 2009,
+"max_year": 2009,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"350296": {
+"title": "1000 Soʻm",
+"min_year": 2022,
+"max_year": 2022,
+"object_type": {
+"id": 1,
+"name": "Standard circulation coins"
+}
+},
+"380237": {
+"title": "50 000 Soʻm (Jaloliddin Manguberdi)",
+"min_year": 2023,
+"max_year": 2023,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"353212": {
+"title": "100 000 Soʻm (Navruz)",
+"min_year": 2022,
+"max_year": 2022,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"593492": {
+"title": "100 000 Som (FIFA World Cup 2026)",
+"min_year": 2026,
+"max_year": 2026,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"602652": {
+"title": "100 000 Som (Independence Monument)",
+"min_year": 2026,
+"max_year": 2026,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"602647": {
+"title": "100 000 Som (35th Anniversary of Independence)",
+"min_year": 2026,
+"max_year": 2026,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"602656": {
+"title": "100 000 Som (Center of Islamic Civilization)",
+"min_year": 2026,
+"max_year": 2026,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"602372": {
+"title": "100 000 So'm (I International Forum of Islamic Civilization)",
+"min_year": 2026,
+"max_year": 2026,
+"object_type": {
+"id": 147,
+"name": "Coins"
+}
+},
+"593486": {
+"title": "100 000 Som (FIFA World Cup 2026)",
+"min_year": 2026,
+"max_year": 2026,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+}
+},
+"pages": 2,
+"total": 55,
+"details": {}
+}

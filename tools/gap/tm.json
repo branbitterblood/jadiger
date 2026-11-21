@@ -1,0 +1,1726 @@
+{
+"types": {
+"4232": {
+"title": "1 Teňňe",
+"min_year": 1993,
+"max_year": 1993,
+"object_type": {
+"id": 1,
+"name": "Standard circulation coins"
+}
+},
+"4233": {
+"title": "5 Teňňe",
+"min_year": 1993,
+"max_year": 1993,
+"object_type": {
+"id": 1,
+"name": "Standard circulation coins"
+}
+},
+"4234": {
+"title": "10 Teňňe",
+"min_year": 1993,
+"max_year": 1993,
+"object_type": {
+"id": 1,
+"name": "Standard circulation coins"
+}
+},
+"3060": {
+"title": "20 Teňňe",
+"min_year": 1993,
+"max_year": 1993,
+"object_type": {
+"id": 1,
+"name": "Standard circulation coins"
+}
+},
+"4235": {
+"title": "50 Teňňe",
+"min_year": 1993,
+"max_year": 1993,
+"object_type": {
+"id": 1,
+"name": "Standard circulation coins"
+}
+},
+"16788": {
+"title": "500 Manat (Gazelle)",
+"min_year": 1996,
+"max_year": 1996,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"16789": {
+"title": "500 Manat (Purple Swamphen)",
+"min_year": 1996,
+"max_year": 1996,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"16790": {
+"title": "500 Manat (Caspian Snowcock)",
+"min_year": 1996,
+"max_year": 1996,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"16791": {
+"title": "500 Manat (Pallas Cat)",
+"min_year": 1996,
+"max_year": 1996,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"16792": {
+"title": "500 Manat (Onager)",
+"min_year": 1996,
+"max_year": 1996,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"16793": {
+"title": "500 Manat (Turkmen Gecko)",
+"min_year": 1996,
+"max_year": 1996,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"10035": {
+"title": "500 Manat",
+"min_year": 1999,
+"max_year": 1999,
+"object_type": {
+"id": 1,
+"name": "Standard circulation coins"
+}
+},
+"31575": {
+"title": "500 Manat (Turkmenic Jerboa)",
+"min_year": 1999,
+"max_year": 1999,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"31570": {
+"title": "500 Manat (Houbara Bustards)",
+"min_year": 1999,
+"max_year": 1999,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"101223": {
+"title": "500 Manat (Houbara Bustards)",
+"min_year": 1999,
+"max_year": 1999,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"31574": {
+"title": "500 Manat (Saker Falcon)",
+"min_year": 1999,
+"max_year": 1999,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"101224": {
+"title": "500 Manat (Saker Falcon)",
+"min_year": 1999,
+"max_year": 1999,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"31573": {
+"title": "500 Manat (Cobra)",
+"min_year": 1999,
+"max_year": 1999,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"31571": {
+"title": "500 Manat (Caracal)",
+"min_year": 1999,
+"max_year": 1999,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"31576": {
+"title": "500 Manat (Tiger)",
+"min_year": 1999,
+"max_year": 1999,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"100812": {
+"title": "500 Manat (5th Anniversary of Neutrality)",
+"min_year": 2000,
+"max_year": 2000,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"16794": {
+"title": "500 Manat (Astanababa Mausoleum)",
+"min_year": 2000,
+"max_year": 2000,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"100814": {
+"title": "500 Manat (Soltan Sanjar Mausoleum)",
+"min_year": 2000,
+"max_year": 2000,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"100815": {
+"title": "500 Manat (Shirkebir Mausoleum)",
+"min_year": 2000,
+"max_year": 2000,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"100816": {
+"title": "500 Manat (Nisa Fortress)",
+"min_year": 2000,
+"max_year": 2000,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"100819": {
+"title": "500 Manat (Akhal Mosque)",
+"min_year": 2000,
+"max_year": 2000,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"100820": {
+"title": "500 Manat (Dasoguz)",
+"min_year": 2000,
+"max_year": 2000,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"53599": {
+"title": "500 Manat (10th Anniversary of Independence)",
+"min_year": 2001,
+"max_year": 2001,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"101233": {
+"title": "500 Manat (National Flag)",
+"min_year": 2001,
+"max_year": 2001,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"101234": {
+"title": "500 Manat (Emblem of Turkmenistan)",
+"min_year": 2001,
+"max_year": 2001,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"16795": {
+"title": "500 Manat (Artogrul Gazy)",
+"min_year": 2001,
+"max_year": 2001,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"16796": {
+"title": "500 Manat (Oguz Khan)",
+"min_year": 2001,
+"max_year": 2001,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"16797": {
+"title": "500 Manat (Gara Yusup Beg)",
+"min_year": 2001,
+"max_year": 2001,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"16798": {
+"title": "500 Manat (Keymir Kor)",
+"min_year": 2001,
+"max_year": 2001,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"16799": {
+"title": "500 Manat (Uzun Khasan Beg)",
+"min_year": 2001,
+"max_year": 2001,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"16800": {
+"title": "500 Manat (Gorogly Beg)",
+"min_year": 2001,
+"max_year": 2001,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"16801": {
+"title": "500 Manat (Gorkut Ata)",
+"min_year": 2001,
+"max_year": 2001,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"16802": {
+"title": "500 Manat (Muhammet Togrul Beg)",
+"min_year": 2001,
+"max_year": 2001,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"16803": {
+"title": "500 Manat (Muhammet Bayram Khan)",
+"min_year": 2001,
+"max_year": 2001,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"16804": {
+"title": "500 Manat (Soltan Sanjar)",
+"min_year": 2001,
+"max_year": 2001,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"101235": {
+"title": "500 Manat (Father - Atamurat Niyazov)",
+"min_year": 2002,
+"max_year": 2002,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"101236": {
+"title": "500 Manat (Mother - Gurbansoltan eje)",
+"min_year": 2002,
+"max_year": 2002,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"101077": {
+"title": "500 Manat (Seyitnazar Seydi)",
+"min_year": 2003,
+"max_year": 2003,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"101079": {
+"title": "500 Manat (Mammetweli Kemine)",
+"min_year": 2003,
+"max_year": 2003,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"16805": {
+"title": "500 Manat (Mollanepes)",
+"min_year": 2003,
+"max_year": 2003,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"101080": {
+"title": "500 Manat (Annagylyc Mataji)",
+"min_year": 2003,
+"max_year": 2003,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"101239": {
+"title": "500 Manat (Flag Day and the birthday of the President)",
+"min_year": 2003,
+"max_year": 2003,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"101078": {
+"title": "500 Manat (Makhtumkuli Fragi)",
+"min_year": 2003,
+"max_year": 2003,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"30405": {
+"title": "500 Manat (Gurbandurdy Zelili)",
+"min_year": 2003,
+"max_year": 2003,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"16806": {
+"title": "500 Manat (Ak Bugdai; round)",
+"min_year": 2004,
+"max_year": 2004,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"16807": {
+"title": "500 Manat (Ak Bugdai; octagonal)",
+"min_year": 2004,
+"max_year": 2004,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"101245": {
+"title": "500 Manat (60th Anniversary of WWII)",
+"min_year": 2005,
+"max_year": 2005,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"101241": {
+"title": "500 Manat (President's Genealogy family tree)",
+"min_year": 2005,
+"max_year": 2005,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"101243": {
+"title": "500 Manat (14th anniversary of independence)",
+"min_year": 2005,
+"max_year": 2005,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"101246": {
+"title": "500 Manat (10 years of neutrality)",
+"min_year": 2005,
+"max_year": 2005,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"100856": {
+"title": "1000 Manat (54th Birthday of President)",
+"min_year": 1994,
+"max_year": 1994,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"100857": {
+"title": "1000 Manat (Independence)",
+"min_year": 1994,
+"max_year": 1994,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"100858": {
+"title": "1000 Manat (5th anniversary of independence)",
+"min_year": 1996,
+"max_year": 1996,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"100859": {
+"title": "1000 Manat (Ashgabat earthquake)",
+"min_year": 1998,
+"max_year": 1998,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"5552": {
+"title": "1000 Manat",
+"min_year": 1999,
+"max_year": 1999,
+"object_type": {
+"id": 1,
+"name": "Standard circulation coins"
+}
+},
+"100850": {
+"title": "1000 Manat (60th Birthday of President - Father)",
+"min_year": 2000,
+"max_year": 2000,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"100853": {
+"title": "1000 Manat (60th Birthday of President - Mother)",
+"min_year": 2000,
+"max_year": 2000,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"100851": {
+"title": "1000 Manat (60th Birthday of President - Elder brother Niyazmurat)",
+"min_year": 2000,
+"max_year": 2000,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"100854": {
+"title": "1000 Manat (60th Birthday of President - Younger brother Muhammetmutat)",
+"min_year": 2000,
+"max_year": 2000,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"100852": {
+"title": "1000 Manat (60th Birthday of President - Young Saparmurat Niyazov)",
+"min_year": 2000,
+"max_year": 2000,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"100855": {
+"title": "1000 Manat (60th Birthday of President - Niyazov's family)",
+"min_year": 2000,
+"max_year": 2000,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"43818": {
+"title": "1000 Manat (5th anniversary of neutrality of Turkmenistan)",
+"min_year": 2000,
+"max_year": 2000,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"101218": {
+"title": "1000 Manat (10th Anniversary of Independence)",
+"min_year": 2001,
+"max_year": 2001,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"101238": {
+"title": "1000 Manat (Mother - Gurbansoltan eje)",
+"min_year": 2002,
+"max_year": 2002,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"101237": {
+"title": "1000 Manat (Father - Atamurat Niyazov)",
+"min_year": 2002,
+"max_year": 2002,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"101202": {
+"title": "1000 Manat (Seyitnazar Seydi)",
+"min_year": 2003,
+"max_year": 2003,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"101204": {
+"title": "1000 Manat (Mammetweli Kemine)",
+"min_year": 2003,
+"max_year": 2003,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"101205": {
+"title": "1000 Manat (Mollanepes)",
+"min_year": 2003,
+"max_year": 2003,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"101206": {
+"title": "1000 Manat (Annagylyc Mataji)",
+"min_year": 2003,
+"max_year": 2003,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"101214": {
+"title": "1000 Manat (10 years of the Turkmen manat)",
+"min_year": 2003,
+"max_year": 2003,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"101240": {
+"title": "1000 Manat (Flag Day and the birthday of the President)",
+"min_year": 2003,
+"max_year": 2003,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"101201": {
+"title": "1000 Manat (Gurbandurdy Zelili)",
+"min_year": 2003,
+"max_year": 2003,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"101203": {
+"title": "1000 Manat (Makhtumkuli Fragi)",
+"min_year": 2003,
+"max_year": 2003,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"101217": {
+"title": "1000 Manat (Ak Bugdai; round)",
+"min_year": 2004,
+"max_year": 2004,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"101216": {
+"title": "1000 Manat (Ak Bugdai; octagonal)",
+"min_year": 2004,
+"max_year": 2004,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"101251": {
+"title": "1000 Manat (60th Anniversary of WWII)",
+"min_year": 2005,
+"max_year": 2005,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"101252": {
+"title": "1000 Manat (President's Genealogy family tree)",
+"min_year": 2005,
+"max_year": 2005,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"101253": {
+"title": "1000 Manat (10 years of neutrality)",
+"min_year": 2005,
+"max_year": 2005,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"101250": {
+"title": "1000 Manat (14th anniversary of independence)",
+"min_year": 2005,
+"max_year": 2005,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"16808": {
+"title": "1000 Manat (Ruhnama - My dear)",
+"min_year": 2006,
+"max_year": 2006,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"16809": {
+"title": "1000 Manat (Ruhnama - My spring inspiration)",
+"min_year": 2006,
+"max_year": 2006,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"16811": {
+"title": "1000 Manat (Ruhnama - The second book)",
+"min_year": 2006,
+"max_year": 2006,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"16815": {
+"title": "1000 Manat (Ruhnama - Five epochs of spiritual development of the Turkmen)",
+"min_year": 2006,
+"max_year": 2006,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"16816": {
+"title": "1000 Manat (Ruhnama - Prosperity of the Turkmen people)",
+"min_year": 2006,
+"max_year": 2006,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"16817": {
+"title": "1000 Manat (Ruhnama)",
+"min_year": 2006,
+"max_year": 2006,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"101143": {
+"title": "1000 Manat (Saparmurat Türkmenbaşy)",
+"min_year": 2006,
+"max_year": 2006,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"101153": {
+"title": "1000 Manat (Markhor)",
+"min_year": 2006,
+"max_year": 2006,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"101152": {
+"title": "1000 Manat (Markhor)",
+"min_year": 2006,
+"max_year": 2006,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"101137": {
+"title": "1000 Manat (Gorkut Ata Turkmen)",
+"min_year": 2006,
+"max_year": 2006,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"101157": {
+"title": "1000 Manat (Amu Darya sturgeon)",
+"min_year": 2006,
+"max_year": 2006,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"101147": {
+"title": "1000 Manat (Gray monitor lizard)",
+"min_year": 2006,
+"max_year": 2006,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"101138": {
+"title": "1000 Manat (Gorogly Beg Turkmen)",
+"min_year": 2006,
+"max_year": 2006,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"101148": {
+"title": "1000 Manat (Great Bustard)",
+"min_year": 2006,
+"max_year": 2006,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"101139": {
+"title": "1000 Manat (Gorogly Beg Turkmen)",
+"min_year": 2006,
+"max_year": 2006,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"101149": {
+"title": "1000 Manat (Great Bustard)",
+"min_year": 2006,
+"max_year": 2006,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"101134": {
+"title": "1000 Manat (Oguz Khan Turkmen)",
+"min_year": 2006,
+"max_year": 2006,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"101144": {
+"title": "1000 Manat (Saparmurat Türkmenbaşy)",
+"min_year": 2006,
+"max_year": 2006,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"101154": {
+"title": "1000 Manat (Snow leopard)",
+"min_year": 2006,
+"max_year": 2006,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"101135": {
+"title": "1000 Manat (Oguz Khan Turkmen)",
+"min_year": 2006,
+"max_year": 2006,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"101155": {
+"title": "1000 Manat (Snow leopard)",
+"min_year": 2006,
+"max_year": 2006,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"101141": {
+"title": "1000 Manat (Makhtumkuli)",
+"min_year": 2006,
+"max_year": 2006,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"101151": {
+"title": "1000 Manat (Indian crested porcupine)",
+"min_year": 2006,
+"max_year": 2006,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"101140": {
+"title": "1000 Manat (Makhtumkuli)",
+"min_year": 2006,
+"max_year": 2006,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"101150": {
+"title": "1000 Manat (Indian crested porcupine)",
+"min_year": 2006,
+"max_year": 2006,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"101208": {
+"title": "1000 Manat (Ruhnama - My spring inspiration)",
+"min_year": 2006,
+"max_year": 2006,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"101212": {
+"title": "1000 Manat (Ruhnama)",
+"min_year": 2006,
+"max_year": 2006,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"101211": {
+"title": "1000 Manat (Ruhnama - Prosperity of the Turkmen people)",
+"min_year": 2006,
+"max_year": 2006,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"101209": {
+"title": "1000 Manat (Ruhnama - The second book)",
+"min_year": 2006,
+"max_year": 2006,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"101136": {
+"title": "1000 Manat (Gorkut Ata Turkmen)",
+"min_year": 2006,
+"max_year": 2006,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"101156": {
+"title": "1000 Manat (Amu Darya sturgeon)",
+"min_year": 2006,
+"max_year": 2006,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"101146": {
+"title": "1000 Manat (Gray monitor lizard)",
+"min_year": 2006,
+"max_year": 2006,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"101207": {
+"title": "1000 Manat (Ruhnama - My dear)",
+"min_year": 2006,
+"max_year": 2006,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"101210": {
+"title": "1000 Manat (Ruhnama - Five epochs of spiritual development of the Turkmen)",
+"min_year": 2006,
+"max_year": 2006,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"16822": {
+"title": "1000 Manat (The national emblem of Turkmenistan)",
+"min_year": 2007,
+"max_year": 2007,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"16818": {
+"title": "1000 Manat (Saparmyrat Niyazov)",
+"min_year": 2007,
+"max_year": 2007,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"16819": {
+"title": "1000 Manat (15 years of the Turkmenistan Flag)",
+"min_year": 2007,
+"max_year": 2007,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"101593": {
+"title": "1000 Manat (The national emblem of Turkmenistan; colorized)",
+"min_year": 2007,
+"max_year": 2007,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"101594": {
+"title": "1000 Manat (Turkmenistan Flag; colorized)",
+"min_year": 2007,
+"max_year": 2007,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"101604": {
+"title": "1000 Manat (Presidency of ONU - Gurbanguly Berdimuhamedov and Ban Ki-moon)",
+"min_year": 2007,
+"max_year": 2007,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"101595": {
+"title": "1000 Manat (Presidency of ONU - Gurbanguly Berdimuhamedov and Ban Ki-moon)",
+"min_year": 2007,
+"max_year": 2007,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"101605": {
+"title": "1000 Manat (Presidency of ONU - Gurbanguly Berdimuhamedow)",
+"min_year": 2007,
+"max_year": 2007,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"101597": {
+"title": "1000 Manat (Saparmyrat Niyazov)",
+"min_year": 2007,
+"max_year": 2007,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"101598": {
+"title": "1000 Manat (15 years of the Turkmenistan Flag)",
+"min_year": 2007,
+"max_year": 2007,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"30466": {
+"title": "1000 Manat (16 Years of Independence)",
+"min_year": 2007,
+"max_year": 2007,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"30467": {
+"title": "1000 Manat (50 Years of President)",
+"min_year": 2007,
+"max_year": 2007,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"101599": {
+"title": "1000 Manat (The national emblem of Turkmenistan)",
+"min_year": 2007,
+"max_year": 2007,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"101600": {
+"title": "1000 Manat (50 Years of President)",
+"min_year": 2007,
+"max_year": 2007,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"30464": {
+"title": "1000 Manat (Presidency of ONU - Gurbanguly Berdimuhamedow)",
+"min_year": 2007,
+"max_year": 2007,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"101602": {
+"title": "1000 Manat (16 Years of Independence)",
+"min_year": 2007,
+"max_year": 2007,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"7446": {
+"title": "1 Teňňe",
+"min_year": 2009,
+"max_year": 2009,
+"object_type": {
+"id": 1,
+"name": "Standard circulation coins"
+}
+},
+"7447": {
+"title": "2 Teňňe",
+"min_year": 2009,
+"max_year": 2009,
+"object_type": {
+"id": 1,
+"name": "Standard circulation coins"
+}
+},
+"7448": {
+"title": "5 Teňňe",
+"min_year": 2009,
+"max_year": 2009,
+"object_type": {
+"id": 1,
+"name": "Standard circulation coins"
+}
+},
+"7449": {
+"title": "10 Teňňe",
+"min_year": 2009,
+"max_year": 2009,
+"object_type": {
+"id": 1,
+"name": "Standard circulation coins"
+}
+},
+"7450": {
+"title": "20 Teňňe",
+"min_year": 2009,
+"max_year": 2009,
+"object_type": {
+"id": 1,
+"name": "Standard circulation coins"
+}
+},
+"7451": {
+"title": "50 Teňňe",
+"min_year": 2009,
+"max_year": 2009,
+"object_type": {
+"id": 1,
+"name": "Standard circulation coins"
+}
+},
+"10688": {
+"title": "1 Manat",
+"min_year": 2010,
+"max_year": 2010,
+"object_type": {
+"id": 1,
+"name": "Standard circulation coins"
+}
+},
+"30463": {
+"title": "1 Manat (15th Anniversary of Neutrality)",
+"min_year": 2010,
+"max_year": 2010,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"10689": {
+"title": "2 Manat",
+"min_year": 2010,
+"max_year": 2010,
+"object_type": {
+"id": 1,
+"name": "Standard circulation coins"
+}
+},
+"101607": {
+"title": "2 Manat (15th Anniversary of Neutrality)",
+"min_year": 2010,
+"max_year": 2010,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"101608": {
+"title": "2 Manat (15th Anniversary of Neutrality)",
+"min_year": 2010,
+"max_year": 2010,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"101610": {
+"title": "10 Manat (Monument of the Constitution)",
+"min_year": 2011,
+"max_year": 2011,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"30461": {
+"title": "10 Manat (Monument of the Constitution)",
+"min_year": 2011,
+"max_year": 2011,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"101615": {
+"title": "10 Manat (Monument of the Constitution)",
+"min_year": 2011,
+"max_year": 2011,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"101614": {
+"title": "10 Manat (Monument of the Constitution)",
+"min_year": 2011,
+"max_year": 2011,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"101611": {
+"title": "20 Manat (Oguzkhan)",
+"min_year": 2011,
+"max_year": 2011,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"30462": {
+"title": "20 Manat (Oguzkhan)",
+"min_year": 2011,
+"max_year": 2011,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"101617": {
+"title": "20 Manat (Oguzkhan)",
+"min_year": 2011,
+"max_year": 2011,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"101616": {
+"title": "20 Manat (Oguzkhan)",
+"min_year": 2011,
+"max_year": 2011,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"59005": {
+"title": "20 Manat (Census)",
+"min_year": 2012,
+"max_year": 2012,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"101633": {
+"title": "20 Manat (20 years of the Constitution)",
+"min_year": 2012,
+"max_year": 2012,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"101634": {
+"title": "20 Manat (The chairmanship in the CIS)",
+"min_year": 2012,
+"max_year": 2012,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"101612": {
+"title": "50 Manat (Ashgabat)",
+"min_year": 2011,
+"max_year": 2011,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"30460": {
+"title": "50 Manat (Ashgabat)",
+"min_year": 2011,
+"max_year": 2011,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"101626": {
+"title": "50 Manat (Ashgabat)",
+"min_year": 2011,
+"max_year": 2011,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"101625": {
+"title": "50 Manat (Ashgabat)",
+"min_year": 2011,
+"max_year": 2011,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"59006": {
+"title": "50 Manat (Census)",
+"min_year": 2012,
+"max_year": 2012,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"101638": {
+"title": "50 Manat (20 years of the Constitution)",
+"min_year": 2012,
+"max_year": 2012,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"101639": {
+"title": "50 Manat (The chairmanship in the CIS)",
+"min_year": 2012,
+"max_year": 2012,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"101643": {
+"title": "50 Manat (Akhal-Teke horse)",
+"min_year": 2013,
+"max_year": 2013,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"101646": {
+"title": "50 Manat (The 20th anniversary of national currency)",
+"min_year": 2013,
+"max_year": 2013,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"101644": {
+"title": "50 Manat (Akhal-Teke horse)",
+"min_year": 2013,
+"max_year": 2013,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"101645": {
+"title": "50 Manat (The 20th anniversary of national currency)",
+"min_year": 2013,
+"max_year": 2013,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"101647": {
+"title": "50 Manat (290th birthday of Makhtumkuli Pyragy)",
+"min_year": 2014,
+"max_year": 2014,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"101651": {
+"title": "50 Manat (Railway Kazakhstan - Turkmenistan - Iran)",
+"min_year": 2014,
+"max_year": 2014,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"101652": {
+"title": "50 Manat (290th birthday of Makhtumkuli Pyragy)",
+"min_year": 2014,
+"max_year": 2014,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"101653": {
+"title": "50 Manat (Railway Kazakhstan - Turkmenistan - Iran)",
+"min_year": 2014,
+"max_year": 2014,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"101666": {
+"title": "50 Manat (20 years of neutrality)",
+"min_year": 2015,
+"max_year": 2015,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"101664": {
+"title": "50 Manat (20 years of the state program \"Health\")",
+"min_year": 2015,
+"max_year": 2015,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"101659": {
+"title": "50 Manat (TurkmenAlem 52°E Satellite)",
+"min_year": 2015,
+"max_year": 2015,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"101679": {
+"title": "50 Manat (20 years of neutrality)",
+"min_year": 2015,
+"max_year": 2015,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"101678": {
+"title": "50 Manat (20 years of the state program \"Health\")",
+"min_year": 2015,
+"max_year": 2015,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"101658": {
+"title": "50 Manat (TurkmenAlem 52°E Satellite)",
+"min_year": 2015,
+"max_year": 2015,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"101676": {
+"title": "100 Manat (25th Anniversary of Independence)",
+"min_year": 2016,
+"max_year": 2016,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"194525": {
+"title": "100 Manat (First Global Conference on Sustainable Transport System)",
+"min_year": 2016,
+"max_year": 2016,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"194524": {
+"title": "100 Manat (First Global Conference on Sustainable Transport System)",
+"min_year": 2016,
+"max_year": 2016,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"101677": {
+"title": "100 Manat (25th Anniversary of Independence)",
+"min_year": 2016,
+"max_year": 2016,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"194529": {
+"title": "100 Manat (2017 Asian Indoor and Martial Arts Games)",
+"min_year": 2017,
+"max_year": 2017,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"194527": {
+"title": "100 Manat (Olympic stadium of Ashgabat)",
+"min_year": 2017,
+"max_year": 2017,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"194528": {
+"title": "100 Manat (2017 Asian Indoor and Martial Arts Games)",
+"min_year": 2017,
+"max_year": 2017,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"194526": {
+"title": "100 Manat (Olympic stadium of Ashgabat)",
+"min_year": 2017,
+"max_year": 2017,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"194531": {
+"title": "100 Manat (TAPI)",
+"min_year": 2018,
+"max_year": 2018,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"194530": {
+"title": "100 Manat (TAPI)",
+"min_year": 2018,
+"max_year": 2018,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"336629": {
+"title": "100 Manat (Neutrality)",
+"min_year": 2020,
+"max_year": 2020,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"336630": {
+"title": "100 Manat (Neutrality)",
+"min_year": 2020,
+"max_year": 2020,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"339752": {
+"title": "100 Manat (Independence)",
+"min_year": 2021,
+"max_year": 2021,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+},
+"339754": {
+"title": "100 Manat (Independence)",
+"min_year": 2021,
+"max_year": 2021,
+"object_type": {
+"id": 3,
+"name": "Non-circulating coins"
+}
+}
+},
+"pages": 4,
+"total": 191,
+"details": {}
+}
