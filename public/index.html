@@ -6777,8 +6777,18 @@ function smoothFlat(flat, iters = 2) {
     Q.push([a[0] * .75 + c[0] * .25, a[1] * .75 + c[1] * .25], [a[0] * .25 + c[0] * .75, a[1] * .25 + c[1] * .75]); } P = Q; }
   return P.flat();
 }
+// прямоугольник со скруглёнными углами вместо ступенчатого контура из маски: радиус — по тому, насколько срезаны углы на фото
+function roundRectFlat(flat, ar) {
+  const sx = Math.max(ar, 1), sy = Math.max(1 / ar, 1); let d = 1;   // единицы: доля меньшей стороны
+  for (const [cx, cy] of [[0, 0], [1, 0], [1, 1], [0, 1]]) { let m = 9; for (let k = 0; k < flat.length; k += 2) m = Math.min(m, Math.hypot((flat[k] - cx) * sx, (flat[k + 1] - cy) * sy)); d = Math.min(d, m); }
+  const r = Math.min(.22, Math.max(.035, d / .414)), P = [], N = 12;
+  for (const [cx, cy, a0] of [[1 - r / sx, 1 - r / sy, 0], [r / sx, 1 - r / sy, 90], [r / sx, r / sy, 180], [1 - r / sx, r / sy, 270]])
+    for (let i = 0; i <= N; i++) { const a = (a0 + 90 * i / N) * Math.PI / 180; P.push(cx + Math.cos(a) * r / sx, cy + Math.sin(a) * r / sy); }
+  return P;
+}
 function buildShaped(coin, sh) {
-  if (!sh._sm && !/квадрат|прямоуг/.test(sh.k)) { sh = Object.assign({}, sh, { f: smoothFlat(sh.f), b: smoothFlat(sh.b), _sm: 1 }); SHAPES[coin.id] = sh; }
+  if (!sh._sm && (sh.k === 'прямоугольная' || sh.k === 'квадратная')) { sh = Object.assign({}, sh, { f: roundRectFlat(sh.f, sh.ar), b: roundRectFlat(sh.b, sh.ar), _sm: 1 }); SHAPES[coin.id] = sh; }
+  else if (!sh._sm && !/квадрат|прямоуг/.test(sh.k)) { sh = Object.assign({}, sh, { f: smoothFlat(sh.f), b: smoothFlat(sh.b), _sm: 1 }); SHAPES[coin.id] = sh; }
   // нормированная площадь контура (доля от W×H)
   let an = 0; for (let k = 0, n = sh.f.length / 2; k < n; k++) { const j = (k + 1) % n; an += sh.f[2*k] * sh.f[2*j+1] - sh.f[2*j] * sh.f[2*k+1]; } an = Math.abs(an) / 2 || .8;
   let W, H;
