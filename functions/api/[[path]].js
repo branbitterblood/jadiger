@@ -103,6 +103,7 @@ async function ratesOn(iso, ctx, noCache) {
   return null;
 }
 
+const EVENTS = new Set(['visit', 'open3d', 'flip', 'add', 'wish', 'share', 'photo_id', 'lang_en', 'lang_kk', 'buy', 'lead']);
 /* ---------------- маршруты ---------------- */
 export async function onRequest(ctx) {
   const { request: req, env } = ctx;
@@ -119,6 +120,15 @@ export async function onRequest(ctx) {
   }
 
   try {
+    // анонимная статистика действий: счётчики по дням, без привязки к людям и устройствам
+    if (path === 'ev' && m === 'POST') {
+      let e = ''; try { e = String((await req.json()).e || ''); } catch (x) {}
+      if (!EVENTS.has(e)) return json({ ok: false });
+      const day = new Date().toISOString().slice(0, 10);
+      const up = () => env.DB.prepare('INSERT INTO ev (day, name, n) VALUES (?1, ?2, 1) ON CONFLICT(day, name) DO UPDATE SET n = n + 1').bind(day, e).run();
+      try { await up(); } catch (x) { await env.DB.prepare('CREATE TABLE IF NOT EXISTS ev (day TEXT NOT NULL, name TEXT NOT NULL, n INTEGER NOT NULL DEFAULT 0, PRIMARY KEY (day, name))').run(); await up(); }
+      return json({ ok: true });
+    }
     if (path === 'config' && m === 'GET')
       return json({ googleClientId: env.GOOGLE_CLIENT_ID || '', identify: !!env.ANTHROPIC_API_KEY });
 
@@ -173,6 +183,26 @@ export async function onRequest(ctx) {
     if (path === 'me' && m === 'GET') return json({ user: publicUser(user) || null });
     if (!user) return err(401, 'login_required', 'Войдите через Google');
     const uid = user.id;
+
+    // сводка для владельца сайта (/stats.html)
+    if (path === 'stats' && m === 'GET') {
+      await env.DB.prepare('CREATE TABLE IF NOT EXISTS meta (k TEXT PRIMARY KEY, v TEXT)').run();
+      await env.DB.prepare('CREATE TABLE IF NOT EXISTS ev (day TEXT NOT NULL, name TEXT NOT NULL, n INTEGER NOT NULL DEFAULT 0, PRIMARY KEY (day, name))').run();
+      // владелец = самый первый зарегистрированный аккаунт (если в meta не задан явно)
+      const first = await env.DB.prepare('SELECT id FROM users ORDER BY created_at, rowid LIMIT 1').first();
+      if (first) await env.DB.prepare("INSERT OR IGNORE INTO meta (k, v) VALUES ('admin', ?1)").bind(String(first.id)).run();
+      const adm = await env.DB.prepare("SELECT v FROM meta WHERE k = 'admin'").first();
+      if (!adm || adm.v !== String(uid)) return err(403, 'forbidden', 'Только для владельца сайта');
+      const since = new Date(Date.now() - 60 * 864e5).toISOString().slice(0, 10);
+      const [ev, us, it, wi, pr] = await env.DB.batch([
+        env.DB.prepare('SELECT day, name, n FROM ev WHERE day >= ?1 ORDER BY day').bind(since),
+        env.DB.prepare('SELECT COUNT(*) AS n, SUM(created_at >= ?1) AS d7, SUM(last_login >= ?1) AS a7 FROM users').bind(Math.floor(Date.now() / 1000) - 7 * 86400),
+        env.DB.prepare('SELECT COUNT(DISTINCT user_id) AS u, COUNT(*) AS n FROM items'),
+        env.DB.prepare('SELECT COUNT(DISTINCT user_id) AS u, COUNT(*) AS n FROM wish'),
+        env.DB.prepare('SELECT COUNT(*) AS n FROM profiles'),
+      ]);
+      return json({ events: ev.results, users: us.results[0], items: it.results[0], wish: wi.results[0], profiles: pr.results[0] });
+    }
 
     if (path === 'state' && m === 'GET') {
       const [it, wi] = await env.DB.batch([

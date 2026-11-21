@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Статистика · Jadiger</title>
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<style>
+  :root { --bg:#fbfaf7; --card:#fff; --ink:#1f1d1a; --mut:#6d675e; --line:#e7e2d9; --bar:#2f6f8f; --bar2:#a9c6d6; }
+  @media (prefers-color-scheme: dark) { :root { --bg:#151412; --card:#1e1c19; --ink:#efe9df; --mut:#a59d90; --line:#34302a; --bar:#6fb0cf; --bar2:#35576a; } }
+  * { box-sizing:border-box } body { margin:0; font:15px/1.45 system-ui,-apple-system,Segoe UI,Roboto,sans-serif; background:var(--bg); color:var(--ink) }
+  main { max-width:960px; margin:0 auto; padding:24px 16px 48px }
+  h1 { font-size:22px; margin:0 0 4px } .sub { color:var(--mut); margin:0 0 20px } a { color:var(--bar) }
+  .kpis { display:grid; grid-template-columns:repeat(auto-fit,minmax(150px,1fr)); gap:10px; margin-bottom:22px }
+  .kpi { background:var(--card); border:1px solid var(--line); border-radius:12px; padding:12px 14px }
+  .kpi b { display:block; font-size:26px; font-variant-numeric:tabular-nums } .kpi span { color:var(--mut); font-size:13px }
+  section { background:var(--card); border:1px solid var(--line); border-radius:12px; padding:14px; margin-bottom:16px }
+  h2 { font-size:15px; margin:0 0 10px } .row { display:flex; gap:8px; flex-wrap:wrap; margin-bottom:10px }
+  button { font:inherit; font-size:13px; border:1px solid var(--line); background:transparent; color:var(--ink); border-radius:999px; padding:4px 12px; cursor:pointer }
+  button[aria-pressed=true] { background:var(--ink); color:var(--bg); border-color:var(--ink) }
+  .chart { display:flex; align-items:flex-end; gap:2px; height:160px; border-bottom:1px solid var(--line); position:relative }
+  .chart div { flex:1; background:var(--bar); border-radius:4px 4px 0 0; min-height:1px; position:relative }
+  .chart div.z { background:var(--bar2) } .chart div:hover { outline:2px solid var(--ink) }
+  .ax { display:flex; justify-content:space-between; color:var(--mut); font-size:12px; margin-top:4px }
+  #tip { position:fixed; pointer-events:none; background:var(--ink); color:var(--bg); font-size:12px; padding:4px 8px; border-radius:6px; display:none; white-space:nowrap }
+  table { width:100%; border-collapse:collapse; font-variant-numeric:tabular-nums; font-size:13px } th,td { padding:5px 6px; border-bottom:1px solid var(--line); text-align:right } th:first-child,td:first-child { text-align:left } th { color:var(--mut); font-weight:500 }
+  .wrap { overflow-x:auto } .msg { padding:30px; text-align:center; color:var(--mut) }
+</style>
+</head>
+<body>
+<main>
+  <h1>Статистика Jadiger</h1>
+  <p class="sub">Анонимные счётчики действий по дням (UTC). Посетители и источники — в Cloudflare → Web Analytics. <a href="/">← на сайт</a></p>
+  <div id="out"><div class="msg">Загрузка…</div></div>
+</main>
+<div id="tip"></div>
+<script>
+const NAMES = { visit:'Визиты (сеансы)', open3d:'Открытия в 3D', add:'Добавления в коллекцию', wish:'В «Хочу»', share:'Поделились', photo_id:'Поиск по фото', lang_en:'Визиты EN', lang_kk:'Визиты KK', buy:'Клики «Купить»', lead:'Заявки' };
+const ORDER = Object.keys(NAMES), out = document.getElementById('out'), tip = document.getElementById('tip');
+const esc = s => String(s).replace(/[&<>"]/g, c => ({ '&':'&amp;', '<':'&lt;', '>':'&gt;', '"':'&quot;' }[c]));
+const fmt = n => (+n || 0).toLocaleString('ru-RU');
+(async () => {
+  let r; try { r = await fetch('/api/stats', { credentials:'same-origin' }); } catch (e) { out.innerHTML = '<div class="msg">Нет связи.</div>'; return; }
+  if (r.status === 401) { out.innerHTML = '<div class="msg">Войдите на сайте через Google, затем откройте эту страницу снова. <a href="/">Войти</a></div>'; return; }
+  if (r.status === 403) { out.innerHTML = '<div class="msg">Эта страница доступна только владельцу сайта.</div>'; return; }
+  if (!r.ok) { out.innerHTML = '<div class="msg">Ошибка ' + r.status + '.</div>'; return; }
+  const d = await r.json();
+  const days = []; for (let i = 29; i >= 0; i--) days.push(new Date(Date.now() - i * 864e5).toISOString().slice(0, 10));
+  const m = {}; d.events.forEach(x => { (m[x.name] = m[x.name] || {})[x.day] = x.n; });
+  const sum = (e, n) => days.slice(-n).reduce((a, k) => a + ((m[e] || {})[k] || 0), 0);
+  const kpi = (v, t) => '<div class="kpi"><b>' + fmt(v) + '</b><span>' + esc(t) + '</span></div>';
+  let h = '<div class="kpis">' +
+    kpi(sum('visit', 7), 'визитов за 7 дней') + kpi(sum('open3d', 7), 'открытий 3D за 7 дней') +
+    kpi(d.users.n, 'аккаунтов (+' + fmt(d.users.d7) + ' за 7 дн.)') + kpi(d.users.a7, 'входили за 7 дней') +
+    kpi(d.items.u, 'с коллекцией (' + fmt(d.items.n) + ' монет)') + kpi(d.wish.u, 'со списком «Хочу»') + kpi(d.profiles.n, 'публичных профилей') + '</div>';
+  h += '<section><h2>По дням, последние 30</h2><div class="row" id="pick"></div><div class="chart" id="ch"></div><div class="ax"><span>' + days[0].slice(5) + '</span><span>' + days[29].slice(5) + '</span></div></section>';
+  const used = ORDER.filter(e => m[e]).concat(Object.keys(m).filter(e => !NAMES[e]));
+  h += '<section><h2>Таблица</h2><div class="wrap"><table><thead><tr><th>Событие</th><th>Сегодня</th><th>7 дней</th><th>30 дней</th><th>60 дней</th></tr></thead><tbody>' +
+    (used.length ? used.map(e => '<tr><td>' + esc(NAMES[e] || e) + '</td><td>' + fmt(sum(e, 1)) + '</td><td>' + fmt(sum(e, 7)) + '</td><td>' + fmt(sum(e, 30)) + '</td><td>' + fmt(Object.values(m[e]).reduce((a, b) => a + b, 0)) + '</td></tr>').join('') : '<tr><td colspan="5">Пока нет событий — они начнут появляться после первых посещений.</td></tr>') +
+    '</tbody></table></div></section>';
+  out.innerHTML = h;
+  const pick = document.getElementById('pick'), ch = document.getElementById('ch');
+  const show = e => {
+    pick.querySelectorAll('button').forEach(b => b.setAttribute('aria-pressed', b.dataset.e === e));
+    const v = days.map(k => (m[e] || {})[k] || 0), mx = Math.max(1, ...v);
+    ch.innerHTML = v.map((n, i) => '<div class="' + (n ? '' : 'z') + '" style="height:' + (n ? Math.max(2, n / mx * 100) : 1) + '%" data-t="' + days[i] + ': ' + fmt(n) + '"></div>').join('');
+  };
+  (used.length ? used : ['visit']).forEach(e => { const b = document.createElement('button'); b.dataset.e = e; b.textContent = NAMES[e] || e; b.onclick = () => show(e); pick.appendChild(b); });
+  show(used.includes('open3d') ? 'open3d' : (used[0] || 'visit'));
+  ch.addEventListener('mousemove', ev => { const t = ev.target.dataset && ev.target.dataset.t; if (!t) { tip.style.display = 'none'; return; } tip.textContent = t; tip.style.display = 'block'; tip.style.left = ev.clientX + 12 + 'px'; tip.style.top = ev.clientY - 28 + 'px'; });
+  ch.addEventListener('mouseleave', () => tip.style.display = 'none');
+})();
+</script>
+</body>
+</html>

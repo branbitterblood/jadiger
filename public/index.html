@@ -856,6 +856,14 @@ function fillImgs(id, imgs) { getThumbs(id).then(p => { if (!p) return; imgs.for
 const esc = s => String(s ?? '').replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
 
 /* ================= STORE: аккаунт Google + API Cloudflare ================= */
+// анонимный счётчик действий (без cookie и id): один запрос на событие, ошибки игнорируются
+const _evSent = {};
+function ev(e, once) {
+  if (once) { if (_evSent[e]) return; _evSent[e] = 1; }
+  try { fetch('/api/ev', { method: 'POST', keepalive: true, headers: { 'content-type': 'application/json' }, body: JSON.stringify({ e }) }).catch(() => {}); } catch (x) {}
+}
+window.jdEv = ev;
+try { if (!sessionStorage.getItem('jd_v')) { sessionStorage.setItem('jd_v', '1'); ev('visit'); if (LANG !== 'ru') ev('lang_' + LANG); } } catch (x) {}
 async function api(path, opts = {}) {
   const hasBody = opts.body !== undefined;
   const r = await fetch('/api/' + path, { method: opts.method || 'GET', credentials: 'same-origin',
@@ -889,7 +897,7 @@ const Store = {
     if (rec && rec.have) { this.items[id] = rec; delete this.wish[id]; } else delete this.items[id];
     this.emit();
     try {
-      if (rec && rec.have) await api('items/' + id, { method: 'PUT', body: rec }); else await api('items/' + id, { method: 'DELETE' });
+      if (rec && rec.have) { await api('items/' + id, { method: 'PUT', body: rec }); if (!prev) ev('add'); } else await api('items/' + id, { method: 'DELETE' });
       setSync('cloud', 'Сохранено'); return true;
     } catch (e) {
       if (prev) this.items[id] = prev; else delete this.items[id]; if (prevW) this.wish[id] = prevW;
@@ -901,7 +909,7 @@ const Store = {
     const prev = this.wish[id];
     if (on) this.wish[id] = { added: Date.now() }; else delete this.wish[id];
     this.emit();
-    try { await api('wish/' + id, { method: on ? 'PUT' : 'DELETE' }); setSync('cloud', 'Сохранено'); return true; }
+    try { await api('wish/' + id, { method: on ? 'PUT' : 'DELETE' }); if (on) ev('wish'); setSync('cloud', 'Сохранено'); return true; }
     catch (e) { if (prev) this.wish[id] = prev; else delete this.wish[id]; this.emit(); this.fail(e); return false; }
   },
   async wishMany(ids) {
@@ -1751,7 +1759,7 @@ window.openCoin = async (id, fromHistory) => {
   $('mNote').textContent = PHOTO_NOTE[id] ? PHOTO_NOTE[id] : coin.photo && PHOTO_CREDIT[id] ? `3D собрано из фотографий коллекционеров с сайта Numista (фото: ${PHOTO_CREDIT[id]}); рельеф имитируется по яркости изображения.` : coin.photo ? `3D собрано из официальных фотографий аверса и реверса (${C.short}); рельеф имитируется по яркости изображения.`
     : (NO_PHOTO_NOTE[id] || 'На сайте Нацбанка нет фото этой монеты: показан условный макет с реальным номиналом, диаметром и металлом.');
   // карточку открываем сразу, а 3D собираем, когда догрузятся текстуры (обычно доли секунды)
-  modal.classList.add('open'); document.body.style.overflow = 'hidden';
+  modal.classList.add('open'); document.body.style.overflow = 'hidden'; ev('open3d');
   if (SHAPES[id] && !SHAPES[id].f) { await loadShapes(); if (current !== id) return; }
   if (coin.photo && !fullCache[id]) { coinGroup.children.slice().forEach(ch => { dispose(ch); coinGroup.remove(ch); }); renderer.render(scene, camera); try { fullCache[id] = await getFull(id); } catch (e) {} if (current !== id) return; }
   ensureEnv(); buildCoin(coin); rotY = -.5; rotX = .12; setAuto(true); anim = null; flip = null;
@@ -1773,7 +1781,7 @@ $('mClose').onclick = () => closeModal(); modal.addEventListener('click', e => {
 document.addEventListener('keydown', e => { if (e.key === 'Escape') { closeModal(); closeId(); closeLogin(); } if (!modal.classList.contains('open')) return; if (e.target.closest && e.target.closest('input,textarea,select')) return; if (e.key === 'ArrowRight') step(1); if (e.key === 'ArrowLeft') step(-1); });
 function step(d) { const list = window.currentView(); const i = list.indexOf(current); if (i < 0) return; window.openCoin(list[(i + d + list.length) % list.length]); }
 $('bShare').onclick = async () => {
-  if (current == null) return;
+  if (current == null) return; ev('share');
   const c = COINS[current], url = location.origin + coinPath(current), title = c.title + (c.nom ? ' — ' + nomStr(c) : '');
   if (navigator.share && matchMedia('(pointer: coarse)').matches) {
     try { await navigator.share({ title, text: title + ' — в 3D на Jadiger', url }); } catch (e) {}
@@ -1813,7 +1821,7 @@ $('phDel').onclick = () => { showPhoto(null); photoDirty = true; flash('Нажм
 /* ================= photo identification (Claude) ================= */
 const idModal = $('idModal'); let idBlob = null;
 function closeId() { idModal.classList.remove('open'); document.body.style.overflow = modal.classList.contains('open') ? 'hidden' : ''; }
-$('bPhotoId').onclick = () => { idModal.classList.add('open'); document.body.style.overflow = 'hidden'; };
+$('bPhotoId').onclick = () => { ev('photo_id'); idModal.classList.add('open'); document.body.style.overflow = 'hidden'; };
 $('idClose').onclick = closeId; idModal.addEventListener('click', e => { if (e.target === idModal) closeId(); });
 const drop = $('drop');
 ['dragover', 'dragenter'].forEach(t => drop.addEventListener(t, e => { e.preventDefault(); drop.classList.add('over'); }));
