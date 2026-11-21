@@ -22,7 +22,8 @@ jobs:
       - name: Рыночные цены (Numista)
         env:
           NUMISTA_API_KEY: ${{ secrets.NUMISTA_API_KEY }}
-        run: python tools/numista.py || echo "Numista: ошибка, каталог обновлён без рыночных цен"
+        run: |
+          python tools/numista.py || echo "Numista - ошибка, каталог обновлён без рыночных цен"
       - name: Коммит изменений
         run: |
           git config user.name "jadiger-bot"
