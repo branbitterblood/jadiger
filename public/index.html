@@ -453,7 +453,6 @@ textarea{resize:vertical;min-height:52px}
       <div class="controls">
         <button id="bObv">Аверс</button><button id="bRev">Реверс</button>
         <button id="bFlip">Подбросить</button><button id="bAuto" class="on">Авто</button>
-        <span class="light">Свет <input id="lt" type="range" min="-180" max="180" value="-40"></span>
       </div>
     </section>
     <aside class="info">
@@ -6737,7 +6736,7 @@ scene.add(new THREE.AmbientLight(0xffffff, 0.35));
 const key = new THREE.DirectionalLight(0xfff4e0, 2.2); scene.add(key);
 const back = new THREE.DirectionalLight(0xbfd2ff, 0.6); back.position.set(-3, -2, -4); scene.add(back);
 const setLight = d => { const a = d * Math.PI / 180; key.position.set(Math.sin(a) * 4, 2.6, Math.cos(a) * 4); };
-setLight(+$('lt').value); $('lt').oninput = () => setLight(+$('lt').value);
+setLight(-40);   // свет фиксированный, ползунок убран
 const EDGE_K = 0.065; // толщина = 6,5% диаметра (медиана по каталогу)
 const DENS = m => /au/i.test(m) ? 19.3 : /ag/i.test(m) ? 10.4 : /тантал/i.test(m) ? 16.6 : /нибрасс/i.test(m) ? 8.5 : 8.8;
 const EDGE = m => /au/i.test(m) ? 0xe6c46a : /ag/i.test(m) ? 0xdfe1e4 : /тантал/i.test(m) ? 0x8a909a : /нибрасс/i.test(m) ? 0xd8bf7a : 0xcfd0d2;
