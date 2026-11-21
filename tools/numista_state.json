@@ -519,11 +519,5 @@
 "usage": {
 "2026-11": 240
 },
-"issuers": {
-"kz": "kazakhstan",
-"kg": "kirghizistan",
-"tj": "tadjikistan",
-"tm": "turkmenistan",
-"uz": "uzbekistan_section"
-}
+"issuers": {}
 }

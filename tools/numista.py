@@ -19,8 +19,8 @@ OUT_P = os.path.join(ROOT, 'public', 'auto', 'market.json')
 MONTHLY = int(os.environ.get('NUMISTA_MONTHLY', '1900'))   # запас до лимита 2000
 DAILY = int(os.environ.get('NUMISTA_DAILY', '120'))
 REFRESH_DAYS = 60
-CUR = {'kz': 'KZT', 'uz': 'UZS', 'kg': 'KGS', 'tj': 'TJS', 'tm': 'TMT'}
-ISSUER_HINT = {'kz': 'kazakhstan', 'uz': 'uzbekistan', 'kg': 'kyrgyzstan', 'tj': 'tajikistan', 'tm': 'turkmenistan'}
+CUR = {'kz': 'KZT', 'uz': 'UZS', 'kg': 'KGS', 'tj': 'TJS', 'tm': 'TMT', 'mn': 'MNT'}
+ISSUER_HINT = {'kz': 'kazakhstan', 'uz': 'uzbekistan', 'kg': 'kyrgyzstan', 'tj': 'tajikistan', 'tm': 'turkmenistan', 'mn': 'mongolia'}
 LOG = []
 
 
@@ -110,7 +110,7 @@ def norm(s):
     return re.sub(r'[^a-z0-9а-яёәіңғүұқөһ]+', ' ', s).strip()
 
 
-STOP = {'the', 'of', 'and', 'years', 'year', 'anniversary', 'th', 'tenge', 'som', 'sum', 'somoni', 'manat', 'a', 'in', 'to', 'jyl'}
+STOP = {'the', 'of', 'and', 'years', 'year', 'anniversary', 'th', 'tenge', 'som', 'sum', 'somoni', 'manat', 'togrog', 'oz', 'gold', 'silver', 'copper', 'gilded', 'shaped', 'style', 'mongolian', 'a', 'in', 'to', 'jyl'}
 
 
 def match(c, issuer, get):

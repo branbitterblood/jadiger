@@ -84,7 +84,7 @@ async function body(req, limit = 2_000_000) {
 }
 
 /* ---------------- курсы валют Нацбанка РК ---------------- */
-const RATES_FALLBACK = { date: '21.11.2026', kz: 1, usd: 455, uz: 0.038, kg: 5.2, tj: 49.73, tm: 130 };
+const RATES_FALLBACK = { date: '21.11.2026', kz: 1, usd: 455, uz: 0.038, kg: 5.2, tj: 49.73, tm: 130, mn: 0.13 };
 async function ratesOn(iso, ctx, noCache) {
   const ck = new Request('https://jadiger.com/__rates/' + iso);
   if (!noCache) { const hit = await caches.default.match(ck); if (hit) return hit.json(); }
@@ -95,7 +95,7 @@ async function ratesOn(iso, ctx, noCache) {
       const r = await fetch('https://nationalbank.kz/rss/get_rates.cfm?fdate=' + ds, { cf: { cacheTtl: 3600 } }); if (!r.ok) continue;
       const x = await r.text(), rate = code => { const mm = new RegExp('<title>' + code + '</title>\\s*<description>([\\d.]+)</description>\\s*<quant>(\\d+)</quant>').exec(x); return mm ? +mm[1] / +mm[2] : null; };
       const usd = rate('USD'); if (!usd) continue;
-      const out = { date: ds, kz: 1, usd, uz: rate('UZS') || RATES_FALLBACK.uz, kg: rate('KGS') || RATES_FALLBACK.kg, tj: rate('TJS') || RATES_FALLBACK.tj, tm: rate('TMT') || usd / 3.5, src: 'Национальный банк РК' };
+      const out = { date: ds, kz: 1, usd, uz: rate('UZS') || RATES_FALLBACK.uz, kg: rate('KGS') || RATES_FALLBACK.kg, tj: rate('TJS') || RATES_FALLBACK.tj, tm: rate('TMT') || usd / 3.5, mn: rate('MNT') || usd / 3500, src: 'Национальный банк РК' };
       if (!noCache && ctx) ctx.waitUntil(caches.default.put(ck, new Response(JSON.stringify(out), { headers: { 'cache-control': 'public, max-age=31536000' } })));
       return out;
     } catch (e) {}
