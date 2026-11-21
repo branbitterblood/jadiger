@@ -1,4 +1,4 @@
-"""Автообновление каталога Jadiger: новые выпуски Нацбанков Казахстана, Узбекистана и Кыргызстана.
+"""Автообновление каталога Jadiger: новые выпуски Нацбанков Казахстана, Узбекистана, Кыргызстана и Банка Монголии.
 
 Запуск: python tools/update.py [--dry]   (из корня репозитория; GitHub Actions — раз в сутки)
 
@@ -368,6 +368,60 @@ def kg_update(main, auto, taken):
     return added
 
 
+# ---------------- Монголия: магазин Банка Монголии erdenesiinsan.mn ----------------
+MN_SERIES = {'Ховордож буй амьтад, Монгол орны байгаль': 'Редкие животные и природа Монголии', 'Монголын хаад': 'Ханы Монголии',
+             'Урлаг, Спорт': 'Искусство и спорт', 'Монголбанкны ойн баяр': 'Юбилеи Банка Монголии', 'Тэмдэглэлт ойн баяр': 'Памятные даты Монголии',
+             'Бурхан шашин': 'Буддийское наследие', 'Хүүхдийн сэдэвт': 'Детская тема', 'Төрийн тэргүүн': 'Главы государства',
+             'Гадаад харилцаа, хамтын ажиллагаа': 'Внешние связи и сотрудничество', '12 жил': 'Восточный календарь', 'Wild Mongolia': 'Дикая Монголия',
+             'Woodland spirits': 'Лесные духи', 'Into the Wild': 'В дикой природе', 'Faberge eggs': 'Яйца Фаберже', 'Evolution of Life': 'Эволюция жизни',
+             'Түүхэн хүмүүс': 'Исторические личности'}
+MN_SKIP = re.compile(r'гулдмай|үрэл|хайрцаг|дэвсгэрт', re.I)   # слитки, гранулы, футляры, «фольговые банкноты»
+
+
+def mn_metal(tname, q):
+    t = (tname or '').lower(); d = re.sub(r'\D', '', q or '').lstrip('0')
+    fine = '999,9' if d.startswith('9999') else '999' if d.startswith('999') else d[:3]
+    if t.startswith('алт'): return ('Au ' + (fine or '999,9')).strip(), 'Золото'
+    if t.startswith('мөнгө'): return ('Ag ' + (fine or '999')).strip() + (' · позолота' if 'алтад' in t else ''), 'Серебро'
+    if t.startswith('зэс'): return 'медь' + (', посеребрение' if 'мөнгө' in t else ', позолота' if 'алт' in t else ''), 'Недрагоценные'
+    return '', 'Недрагоценные'
+
+
+def mn_update(main, auto, taken):
+    B = 'https://www.erdenesiinsan.mn'
+    t = get(B + '/api/coins')
+    if not t: log('MN: каталог erdenesiinsan.mn не открылся'); return 0
+    data = json.loads(t); items = data if isinstance(data, list) else data.get('data') or data.get('coins') or []
+    seen = set(auto.setdefault('mn_seen', []))
+    num = lambda s: [float(x.replace(',', '.')) for x in re.findall(r'\d+(?:[.,]\d+)?', s or '')]
+    added = 0
+    for c in items:
+        code = c.get('COIN_NUMBER')
+        if not code or code in seen: continue
+        seen.add(code); auto['mn_seen'] = sorted(seen)
+        name = (c.get('NAME') or '').strip(); coll = (c.get('COLLECNAME') or '').strip()
+        if coll in ('Бусад', 'Үнэт металл', '-', '') or MN_SKIP.search(name + ' ' + (c.get('TNAME') or '')):
+            log(f'MN {code}: «{name}» пропущено ({coll or "без раздела"})'); continue
+        metal, section = mn_metal(c.get('TNAME'), c.get('QUALITY'))
+        w = num(c.get('WEIGHT')); sz = num(c.get('COIN_SIZE'))
+        if w and re.search(r'кг', c.get('WEIGHT') or '', re.I): w = [w[0] * 1000]
+        row = [name, str(c.get('COIN_YEAR') or ''), '', metal, f'{w[0]:.2f}' if w else '', f'{max(sz):.2f}' if sz else '', '', '',
+               section, MN_SERIES.get(coll, 'Без серии'), 'mn']
+        cid = auto['base'] + len(auto['coins'])
+        entry = dict(id=cid, r=row, src=f'{B}/mn/coins/{c.get("ID")}', added=today(), photo=False)
+        if c.get('PRICE'): entry['price'] = int(c['PRICE'])
+        if len(sz) == 2: entry['size'] = f'{sz[0]:g} × {sz[1]:g} мм'
+        try:   # _f — обычно сюжет, _b — герб Банка Монголии
+            img = lambda side: fetch_image(f'{B}/api/cdr?folder={code}&filename={code}_lg_{side}.png')
+            entry['shape'] = build_images(cid, img('f'), img('b')); entry['photo'] = True
+            if not entry['shape']: del entry['shape']
+        except Exception as e: log(f'  ! MN {code}: фото не обработано ({e})')
+        entry['slug'] = make_slug(row, 'mn', taken); taken.add(('mn', entry['slug']))
+        auto['coins'].append(entry); added += 1
+        log(f'MN + {cid} «{name}» {row[1]} {metal} → /mn/{entry["slug"]} (название на монгольском — перевести вручную)')
+    return added
+
+
 def today(): return datetime.now(timezone.utc).strftime('%Y-%m-%d')
 def days_ago(n): return datetime.fromtimestamp(time.time() - n * 86400, timezone.utc).strftime('%Y-%m-%d')
 
@@ -391,7 +445,7 @@ def main():
     auto.setdefault('coins', [])
     taken = {((r[10:] or ['kz'])[0], s) for r, s in zip(raw, slugs)} | {(c['r'][10], c['slug']) for c in auto['coins']}
     n0 = len(auto['coins'])
-    for name, fn in (('KZ', lambda: kz_update(raw, auto, taken)), ('UZ', lambda: uz_update(raw, auto, src_url, taken)), ('KG', lambda: kg_update(raw, auto, taken))):
+    for name, fn in (('KZ', lambda: kz_update(raw, auto, taken)), ('UZ', lambda: uz_update(raw, auto, src_url, taken)), ('KG', lambda: kg_update(raw, auto, taken)), ('MN', lambda: mn_update(raw, auto, taken))):
         try: fn()
         except Exception as e: log(f'{name}: ошибка {type(e).__name__}: {e}')
     auto['checked'] = datetime.now(timezone.utc).strftime('%Y-%m-%d %H:%M UTC')
