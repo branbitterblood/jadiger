@@ -822,5 +822,3044 @@
 },
 "pages": 2,
 "total": 91,
-"details": {}
+"details": {
+"11736": {
+"title": "3 Somoni (Dushanbe City)",
+"type": "Circulating commemorative coins",
+"min_year": 2004,
+"max_year": 2004,
+"value": {
+"text": "3 Somoni",
+"numeric_value": 3,
+"currency": {
+"id": 186,
+"name": "Somoni",
+"full_name": "Somoni (2000-date)"
+}
+},
+"composition": {
+"text": "Bimetallic: copper-nickel centre in brass ring"
+},
+"weight": 6.3,
+"size": 25.5,
+"size2": null,
+"thickness": null,
+"shape": "Round",
+"technique": {
+"text": "Milled"
+},
+"orientation": null,
+"series": null,
+"commemorated_topic": "80th Anniversary of Dushanbe City",
+"url": "https://en.numista.com/11736",
+"obverse": {
+"picture": "https://en.numista.com/catalogue/photos/tadjikistan/242-original.jpg",
+"picture_copyright": "Coins-SPB",
+"picture_copyright_url": "http://www.coins-spb.ru/",
+"picture_license_name": null,
+"picture_license_url": null,
+"description": "National Coat of Arms of Tajikistan, denomination below, date bottom",
+"lettering": "★ ҶУМҲУРИИ ТОҶИКИСТОН ★\r\n2004\r\n3\r\nСОМОНӢ\r\nСПМД"
+},
+"reverse": {
+"picture": "https://en.numista.com/catalogue/photos/tadjikistan/243-original.jpg",
+"picture_copyright": "Coins-SPB",
+"picture_copyright_url": "http://www.coins-spb.ru/",
+"picture_license_name": null,
+"picture_license_url": null,
+"description": "Monument of Amir or King Ismail Samani in Dushanbe",
+"lettering": "ПОЙТАҲТИ ТОҶИКИСТОН ш.ДУШАНБЕ\r\n★ 1924-2004 ★"
+},
+"issues": []
+},
+"106571": {
+"title": "3 Somoni (Dushanbe City)",
+"type": "Non-circulating coins",
+"min_year": 2004,
+"max_year": 2004,
+"value": {
+"text": "3 Somoni",
+"numeric_value": 3,
+"currency": {
+"id": 186,
+"name": "Somoni",
+"full_name": "Somoni (2000-date)"
+}
+},
+"composition": {
+"text": "Silver (.925)"
+},
+"weight": 6.98,
+"size": 25.5,
+"size2": null,
+"thickness": null,
+"shape": "Round",
+"technique": {
+"text": "Milled"
+},
+"orientation": null,
+"series": null,
+"commemorated_topic": "80th Anniversary of Dushanbe City",
+"url": "https://en.numista.com/106571",
+"obverse": {
+"picture": "https://en.numista.com/catalogue/photos/tadjikistan/293-original.jpg",
+"picture_copyright": "Jacques BLARD",
+"picture_copyright_url": null,
+"picture_license_name": "CC BY-NC-SA",
+"picture_license_url": "https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en",
+"description": "National Coat of Arms of Tajikistan, denomination below, date bottom",
+"lettering": "★ ҶУМҲУРИИ ТОҶИКИСТОН ★\r\n2004\r\n3\r\nСОМОНӢ"
+},
+"reverse": {
+"picture": "https://en.numista.com/catalogue/photos/tadjikistan/294-original.jpg",
+"picture_copyright": "Jacques BLARD",
+"picture_copyright_url": null,
+"picture_license_name": "CC BY-NC-SA",
+"picture_license_url": "https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en",
+"description": "Monument of King Ismail Samani in Dushanbe",
+"lettering": "ПОЙТАҲТИ ТОҶИКИСТОН ш.ДУШАНБЕ\r\n★ 1924-2004 ★"
+},
+"issues": []
+},
+"11737": {
+"title": "5 Somoni (Constitution)",
+"type": "Circulating commemorative coins",
+"min_year": 2004,
+"max_year": 2004,
+"value": {
+"text": "5 Somoni",
+"numeric_value": 5,
+"currency": {
+"id": 186,
+"name": "Somoni",
+"full_name": "Somoni (2000-date)"
+}
+},
+"composition": {
+"text": "Bimetallic: copper-nickel centre in brass ring"
+},
+"weight": 6.95,
+"size": 26.5,
+"size2": null,
+"thickness": null,
+"shape": "Round",
+"technique": {
+"text": "Milled"
+},
+"orientation": null,
+"series": null,
+"commemorated_topic": "10th Anniversary - Constitution",
+"url": "https://en.numista.com/11737",
+"obverse": {
+"picture": "https://en.numista.com/catalogue/photos/tadjikistan/64baaa9eb06de9.96774466-original.jpg",
+"picture_copyright": "aslankz",
+"picture_copyright_url": null,
+"picture_license_name": "CC BY-NC",
+"picture_license_url": "https://creativecommons.org/licenses/by-nc/4.0/deed.en",
+"description": "National Coat of Arms of Tajikistan, denomination below, date bottom",
+"lettering": "• ҶУМҲУРИИ ТОҶИКИСТОН •\r\n5\r\nСОМОНӢ\r\n2004"
+},
+"reverse": {
+"picture": "https://en.numista.com/catalogue/photos/tadjikistan/64baaa9f67bea5.11391694-original.jpg",
+"picture_copyright": "aslankz",
+"picture_copyright_url": null,
+"picture_license_name": "CC BY-NC",
+"picture_license_url": "https://creativecommons.org/licenses/by-nc/4.0/deed.en",
+"description": "National Flag of Tajikistan and the Constitution of Tajikistan",
+"lettering": "• КОНСТИТУТСИЯИ ҶУМҲУРИИ ТОҶИКИСТОНА • •••\r\nХ СОЛ"
+},
+"issues": []
+},
+"106572": {
+"title": "5 Somoni (Constitution)",
+"type": "Non-circulating coins",
+"min_year": 2004,
+"max_year": 2004,
+"value": {
+"text": "5 Somoni",
+"numeric_value": 5,
+"currency": {
+"id": 186,
+"name": "Somoni",
+"full_name": "Somoni (2000-date)"
+}
+},
+"composition": {
+"text": "Silver (.925)"
+},
+"weight": 8.6,
+"size": 26.5,
+"size2": null,
+"thickness": null,
+"shape": "Round",
+"technique": {
+"text": "Milled"
+},
+"orientation": null,
+"series": null,
+"commemorated_topic": "10th Anniversary - Constitution",
+"url": "https://en.numista.com/106572",
+"obverse": {
+"picture": "https://en.numista.com/catalogue/photos/tadjikistan/240-original.jpg",
+"picture_copyright": "Kamolov2",
+"picture_copyright_url": null,
+"picture_license_name": null,
+"picture_license_url": null,
+"description": "National Coat of Arms of Tajikistan, denomination below, date bottom",
+"lettering": "• ҶУМҲУРИИ ТОҶИКИСТОН •\r\n5\r\nСОМОНӢ\r\n2004\r\nСПМД"
+},
+"reverse": {
+"picture": "https://en.numista.com/catalogue/photos/tadjikistan/241-original.jpg",
+"picture_copyright": "Kamolov2",
+"picture_copyright_url": null,
+"picture_license_name": null,
+"picture_license_url": null,
+"description": "National Flag of Tajikistan and the Constitution of Tajikistan",
+"lettering": "• КОНСТИТУТСИЯИ ҶУМҲУРИИ ТОҶИКИСТОН • •••\r\nХ СОЛ"
+},
+"issues": []
+},
+"17500": {
+"title": "1 Somoni (Archer)",
+"type": "Circulating commemorative coins",
+"min_year": 2006,
+"max_year": 2006,
+"value": {
+"text": "1 Somoni",
+"numeric_value": 1,
+"currency": {
+"id": 186,
+"name": "Somoni",
+"full_name": "Somoni (2000-date)"
+}
+},
+"composition": {
+"text": "Nickel brass"
+},
+"weight": 5.21,
+"size": 24,
+"size2": null,
+"thickness": null,
+"shape": "Round",
+"technique": {
+"text": "Milled"
+},
+"orientation": "medal",
+"series": null,
+"commemorated_topic": "Year of Aryan Civilization Series - Archer",
+"url": "https://en.numista.com/17500",
+"obverse": {
+"picture": "https://en.numista.com/catalogue/photos/tadjikistan/62979eab37c195.19411558-original.jpg",
+"picture_copyright": "Ponpandi Perumal",
+"picture_copyright_url": null,
+"picture_license_name": "CC BY-NC-SA",
+"picture_license_url": "https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en",
+"description": "National Coat of Arms of Tajikistan, date below, date bottom",
+"lettering": "• ҶУМҲУРИИ ТОҶИКИСТОН •\r\nЯК СОМОНӢ\r\n1\r\n2006\r\nСПМД"
+},
+"reverse": {
+"picture": "https://en.numista.com/catalogue/photos/tadjikistan/62979eac5afe91.89413692-original.jpg",
+"picture_copyright": "Ponpandi Perumal",
+"picture_copyright_url": null,
+"picture_license_name": "CC BY-NC-SA",
+"picture_license_url": "https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en",
+"description": "Ancient chariot archer, date below",
+"lettering": "• СОЛИ ТАМАДДУНИ ОРИЁӢ •\r\n2006\r\nСАҲНАИ ШИКОР (АСРИ V ПЕШ АЗ МИЛОД)"
+},
+"issues": []
+},
+"8846": {
+"title": "1 Somoni (Aryens)",
+"type": "Circulating commemorative coins",
+"min_year": 2006,
+"max_year": 2006,
+"value": {
+"text": "1 Somoni",
+"numeric_value": 1,
+"currency": {
+"id": 186,
+"name": "Somoni",
+"full_name": "Somoni (2000-date)"
+}
+},
+"composition": {
+"text": "Nickel brass"
+},
+"weight": 5.21,
+"size": 24,
+"size2": null,
+"thickness": null,
+"shape": "Round",
+"technique": {
+"text": "Milled"
+},
+"orientation": null,
+"series": null,
+"commemorated_topic": "Year of Aryan Civilization Series - Aryens",
+"url": "https://en.numista.com/8846",
+"obverse": {
+"picture": "https://en.numista.com/catalogue/photos/tadjikistan/6297a01a030e58.35574294-original.jpg",
+"picture_copyright": "Ponpandi Perumal",
+"picture_copyright_url": null,
+"picture_license_name": "CC BY-NC-SA",
+"picture_license_url": "https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en",
+"description": "National Coat of Arms of Tajikistan, date below",
+"lettering": "• ҶУМҲУРИИ ТОҶИКИСТОН •\r\nЯК СОМОНӢ\r\n1\r\n2006\r\nСПМД"
+},
+"reverse": {
+"picture": "https://en.numista.com/catalogue/photos/tadjikistan/6297a01af395a8.47040014-original.jpg",
+"picture_copyright": "Ponpandi Perumal",
+"picture_copyright_url": null,
+"picture_license_name": "CC BY-NC-SA",
+"picture_license_url": "https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en",
+"description": "Two busts of ancient Eastern Iranian people facing left, date below",
+"lettering": "СОЛИ ТАМАДДУНИ ОРИЁӢ\r\nДЕВОРНИГОРАИ ТОҶИКОНИ БОСТОН\r\n·2006·"
+},
+"issues": []
+},
+"30413": {
+"title": "1 Somoni (Aryens)",
+"type": "Non-circulating coins",
+"min_year": 2006,
+"max_year": 2006,
+"value": {
+"text": "1 Somoni",
+"numeric_value": 1,
+"currency": {
+"id": 186,
+"name": "Somoni",
+"full_name": "Somoni (2000-date)"
+}
+},
+"composition": {
+"text": "Silver (.925)"
+},
+"weight": 20,
+"size": 35,
+"size2": null,
+"thickness": null,
+"shape": "Round",
+"technique": {
+"text": "Milled"
+},
+"orientation": "medal",
+"series": null,
+"commemorated_topic": "Year of Aryan Civilization Series - Aryens",
+"url": "https://en.numista.com/30413",
+"obverse": {
+"picture": "https://en.numista.com/catalogue/photos/tadjikistan/77-original.jpg",
+"picture_copyright": "spica",
+"picture_copyright_url": null,
+"picture_license_name": null,
+"picture_license_url": null,
+"description": "National Coat of Arms of Tajikistan, denomination below, date bottom",
+"lettering": "• ҶУМҲУРИИ ТОҶИКИСТОН •\r\nЯК СОМОНӢ\r\n1 Ag 925\r\n2006"
+},
+"reverse": {
+"picture": "https://en.numista.com/catalogue/photos/tadjikistan/78-original.jpg",
+"picture_copyright": "spica",
+"picture_copyright_url": null,
+"picture_license_name": null,
+"picture_license_url": null,
+"description": "Two busts of ancient Eastern Iranian people facing left, date below",
+"lettering": "СОЛИ ТАМАДДУНИ ОРИЁӢ\r\nДЕВОРНИГОРАИ ТОҶИКОНИ БОСТОН\r\n·2006·"
+},
+"issues": []
+},
+"30412": {
+"title": "1 Somoni (Archer)",
+"type": "Non-circulating coins",
+"min_year": 2006,
+"max_year": 2006,
+"value": {
+"text": "1 Somoni",
+"numeric_value": 1,
+"currency": {
+"id": 186,
+"name": "Somoni",
+"full_name": "Somoni (2000-date)"
+}
+},
+"composition": {
+"text": "Silver (.925)"
+},
+"weight": 20,
+"size": 35,
+"size2": null,
+"thickness": null,
+"shape": "Round",
+"technique": {
+"text": "Milled"
+},
+"orientation": "medal",
+"series": null,
+"commemorated_topic": "Year of Aryan Civilization Series - Archer",
+"url": "https://en.numista.com/30412",
+"obverse": {
+"picture": "https://en.numista.com/catalogue/photos/tadjikistan/75-original.jpg",
+"picture_copyright": "spica",
+"picture_copyright_url": null,
+"picture_license_name": null,
+"picture_license_url": null,
+"description": "National Coat of Arms of Tajikistan, denomination below, date bottom",
+"lettering": "• ҶУМҲУРИИ ТОҶИКИСТОН •\r\nЯК СОМОНӢ\r\n1 Ag 925\r\n2006"
+},
+"reverse": {
+"picture": "https://en.numista.com/catalogue/photos/tadjikistan/76-original.jpg",
+"picture_copyright": "spica",
+"picture_copyright_url": null,
+"picture_license_name": null,
+"picture_license_url": null,
+"description": "Ancient archer in war chariot",
+"lettering": "• СОЛИ ТАМАДДУНИ ОРИЁӢ •\r\nСАҲНАИ ШИКОР (АСРИ V ПЕШ АЗ МИЛОД)\r\n2006"
+},
+"issues": []
+},
+"15171": {
+"title": "3 Somoni (Anniversary of Kulob)",
+"type": "Circulating commemorative coins",
+"min_year": 2006,
+"max_year": 2006,
+"value": {
+"text": "3 Somoni",
+"numeric_value": 3,
+"currency": {
+"id": 186,
+"name": "Somoni",
+"full_name": "Somoni (2000-date)"
+}
+},
+"composition": {
+"text": "Bimetallic: copper-nickel centre in brass ring"
+},
+"weight": 6.3,
+"size": 25.5,
+"size2": null,
+"thickness": 1.5,
+"shape": "Round",
+"technique": {
+"text": "Milled"
+},
+"orientation": "medal",
+"series": null,
+"commemorated_topic": "2700th Anniversary of Kulob",
+"url": "https://en.numista.com/15171",
+"obverse": {
+"picture": "https://en.numista.com/catalogue/photos/tadjikistan/222-original.jpg",
+"picture_copyright": "Coins-SPB",
+"picture_copyright_url": "http://www.coins-spb.ru/",
+"picture_license_name": null,
+"picture_license_url": null,
+"description": "National Coat of Arms of Tajikistan, denomination below, date bottom",
+"lettering": "• ҶУМҲУРИИ ТОҶИКИСТОН •\r\n2006\r\n3\r\nСОМОНӢ\r\nСПМД"
+},
+"reverse": {
+"picture": "https://en.numista.com/catalogue/photos/tadjikistan/223-original.jpg",
+"picture_copyright": "Coins-SPB",
+"picture_copyright_url": "http://www.coins-spb.ru/",
+"picture_license_name": null,
+"picture_license_url": null,
+"description": "Coat of Arms of Kulob",
+"lettering": "• 2700 СОЛАГИИ ш. КӮЛОБ •"
+},
+"issues": []
+},
+"30406": {
+"title": "3 Somoni (Anniversary of Kulob)",
+"type": "Non-circulating coins",
+"min_year": 2006,
+"max_year": 2006,
+"value": {
+"text": "3 Somoni",
+"numeric_value": 3,
+"currency": {
+"id": 186,
+"name": "Somoni",
+"full_name": "Somoni (2000-date)"
+}
+},
+"composition": {
+"text": "Silver (.925)"
+},
+"weight": 26,
+"size": 39,
+"size2": null,
+"thickness": null,
+"shape": "Round",
+"technique": {
+"text": "Milled"
+},
+"orientation": "medal",
+"series": null,
+"commemorated_topic": "2700th Anniversary of Kulob",
+"url": "https://en.numista.com/30406",
+"obverse": {
+"picture": "https://en.numista.com/catalogue/photos/tadjikistan/81-original.jpg",
+"picture_copyright": "spica",
+"picture_copyright_url": null,
+"picture_license_name": null,
+"picture_license_url": null,
+"description": "National Coat of Arms of Tajikistan, denomination below, date bottom",
+"lettering": "• ҶУМҲУРИИ ТОҶИКИСТОН •\r\n3 Ag 925\r\nСОМОНӢ\r\n2006"
+},
+"reverse": {
+"picture": "https://en.numista.com/catalogue/photos/tadjikistan/82-original.jpg",
+"picture_copyright": "spica",
+"picture_copyright_url": null,
+"picture_license_name": null,
+"picture_license_url": null,
+"description": "Coat of Arms of Kulob",
+"lettering": "• СОЛАГИИ ш.КӮЛОБ • YEARS OF KULOB •\r\n2700"
+},
+"issues": []
+},
+"15172": {
+"title": "5 Somoni (Independence)",
+"type": "Circulating commemorative coins",
+"min_year": 2006,
+"max_year": 2006,
+"value": {
+"text": "5 Somoni",
+"numeric_value": 5,
+"currency": {
+"id": 186,
+"name": "Somoni",
+"full_name": "Somoni (2000-date)"
+}
+},
+"composition": {
+"text": "Bimetallic: copper-nickel centre in brass ring"
+},
+"weight": 7,
+"size": 26.5,
+"size2": null,
+"thickness": null,
+"shape": "Round",
+"technique": {
+"text": "Milled"
+},
+"orientation": null,
+"series": null,
+"commemorated_topic": "15th Anniversary of Independence",
+"url": "https://en.numista.com/15172",
+"obverse": {
+"picture": "https://en.numista.com/catalogue/photos/tadjikistan/220-original.jpg",
+"picture_copyright": "Coins-SPB",
+"picture_copyright_url": "http://www.coins-spb.ru/",
+"picture_license_name": null,
+"picture_license_url": null,
+"description": "National Coat of Arms of Tajikistan, denomination below, date bottom",
+"lettering": "• ҶУМҲУРИИ ТОҶИКИСТОН •\r\n5\r\nСОМОНӢ\r\nСПМД\r\n2006"
+},
+"reverse": {
+"picture": "https://en.numista.com/catalogue/photos/tadjikistan/221-original.jpg",
+"picture_copyright": "Coins-SPB",
+"picture_copyright_url": "http://www.coins-spb.ru/",
+"picture_license_name": null,
+"picture_license_url": null,
+"description": "Government building of Tajikistan with the national flag and map of Tajikistan above",
+"lettering": "ИСТИҚЛОЛИЯТИ ТОҶИКИСТОН\r\nXV-СОЛ\r\n1991-2006"
+},
+"issues": []
+},
+"30415": {
+"title": "5 Somoni (Independence)",
+"type": "Non-circulating coins",
+"min_year": 2006,
+"max_year": 2006,
+"value": {
+"text": "5 Somoni",
+"numeric_value": 5,
+"currency": {
+"id": 186,
+"name": "Somoni",
+"full_name": "Somoni (2000-date)"
+}
+},
+"composition": {
+"text": "Silver (.925)"
+},
+"weight": 34,
+"size": 42,
+"size2": null,
+"thickness": null,
+"shape": "Round",
+"technique": {
+"text": "Milled"
+},
+"orientation": "medal",
+"series": null,
+"commemorated_topic": "15th Anniversary of Independence",
+"url": "https://en.numista.com/30415",
+"obverse": {
+"picture": "https://en.numista.com/catalogue/photos/tadjikistan/83-original.jpg",
+"picture_copyright": "spica",
+"picture_copyright_url": null,
+"picture_license_name": null,
+"picture_license_url": null,
+"description": "National Coat of Arms of Tajikistan, denomination below, date bottom",
+"lettering": "• ҶУМҲУРИИ ТОҶИКИСТОН •\r\n5 Ag 925\r\nСОМОНӢ\r\n2006"
+},
+"reverse": {
+"picture": "https://en.numista.com/catalogue/photos/tadjikistan/84-original.jpg",
+"picture_copyright": "spica",
+"picture_copyright_url": null,
+"picture_license_name": null,
+"picture_license_url": null,
+"description": "Government building of Tajikistan with the national flag and map of Tajikistan above",
+"lettering": "ИСТИҚЛОЛИЯТИ ТОҶИКИСТОН\r\nXV-СОЛ\r\n1991-2006"
+},
+"issues": []
+},
+"100869": {
+"title": "50 Somoni (Parliament)",
+"type": "Non-circulating coins",
+"min_year": 2006,
+"max_year": 2006,
+"value": {
+"text": "50 Somoni",
+"numeric_value": 50,
+"currency": {
+"id": 186,
+"name": "Somoni",
+"full_name": "Somoni (2000-date)"
+}
+},
+"composition": {
+"text": "Gold (.900)"
+},
+"weight": 10,
+"size": 24,
+"size2": null,
+"thickness": null,
+"shape": "Round",
+"technique": {
+"text": "Milled"
+},
+"orientation": null,
+"series": null,
+"commemorated_topic": "Parliament",
+"url": "https://en.numista.com/100869",
+"obverse": {
+"picture": null,
+"picture_copyright": null,
+"picture_copyright_url": null,
+"picture_license_name": null,
+"picture_license_url": null,
+"description": "National Coat of arms, denomination below",
+"lettering": "• ҶУМҲУРИИ ТОҶИКИСТОН •\r\nAu 900\r\nПАНҶОҲ СОМОНӢ"
+},
+"reverse": {
+"picture": null,
+"picture_copyright": null,
+"picture_copyright_url": null,
+"picture_license_name": null,
+"picture_license_url": null,
+"description": "Parliament building with national flag waving, map f Tajikistan above, date below",
+"lettering": "• ИСТИҚЛОЛИЯТИ ТОҶИКИСТОН •\r\nINDEPENDENCE OF TAJIKISTAN\r\nⅩⅤ СОЛ\r\nYEARS\r\n1991-2006\r\n2006"
+},
+"issues": []
+},
+"100870": {
+"title": "100 Somoni (Parliament)",
+"type": "Non-circulating coins",
+"min_year": 2006,
+"max_year": 2006,
+"value": {
+"text": "100 Somoni",
+"numeric_value": 100,
+"currency": {
+"id": 186,
+"name": "Somoni",
+"full_name": "Somoni (2000-date)"
+}
+},
+"composition": {
+"text": "Gold (.900)"
+},
+"weight": 15,
+"size": 28,
+"size2": null,
+"thickness": null,
+"shape": "Round",
+"technique": {
+"text": "Milled"
+},
+"orientation": null,
+"series": null,
+"commemorated_topic": "Parliament",
+"url": "https://en.numista.com/100870",
+"obverse": {
+"picture": "https://en.numista.com/catalogue/photos/tadjikistan/66361b0c2470c7.64833423-original.jpg",
+"picture_copyright": "ViFi",
+"picture_copyright_url": null,
+"picture_license_name": "CC BY-SA",
+"picture_license_url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+"description": "National Coat of arms, denomination below",
+"lettering": "• ҶУМҲУРИИ ТОҶИКИСТОН •\r\nAu 900\r\nСАД СОМОНӢ"
+},
+"reverse": {
+"picture": "https://en.numista.com/catalogue/photos/tadjikistan/66361b0cd62472.81644137-original.jpg",
+"picture_copyright": "ViFi",
+"picture_copyright_url": null,
+"picture_license_name": "CC BY-SA",
+"picture_license_url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+"description": "Parliament building with national flag waving, map f Tajikistan above, date below",
+"lettering": "• ИСТИҚЛОЛИЯТИ ТОҶИКИСТОН •\r\nINDEPENDENCE OF TAJIKISTAN\r\nⅩⅤ СОЛ\r\nYEARS\r\n1991-2006\r\n2006"
+},
+"issues": []
+},
+"100871": {
+"title": "200 Somoni (Parliament)",
+"type": "Non-circulating coins",
+"min_year": 2006,
+"max_year": 2006,
+"value": {
+"text": "200 Somoni",
+"numeric_value": 200,
+"currency": {
+"id": 186,
+"name": "Somoni",
+"full_name": "Somoni (2000-date)"
+}
+},
+"composition": {
+"text": "Gold (.900)"
+},
+"weight": 25,
+"size": 32,
+"size2": null,
+"thickness": null,
+"shape": "Round",
+"technique": {
+"text": "Milled"
+},
+"orientation": null,
+"series": null,
+"commemorated_topic": "Parliament",
+"url": "https://en.numista.com/100871",
+"obverse": {
+"picture": null,
+"picture_copyright": null,
+"picture_copyright_url": null,
+"picture_license_name": null,
+"picture_license_url": null,
+"description": "Parliament building with national flag waving, map f Tajikistan above, date below",
+"lettering": "• ИСТИҚЛОЛИЯТИ ТОҶИКИСТОН •\r\nINDEPENDENCE OF TAJIKISTAN\r\nⅩⅤ СОЛ\r\nYEARS\r\n1991-2006\r\n2006"
+},
+"reverse": {
+"picture": null,
+"picture_copyright": null,
+"picture_copyright_url": null,
+"picture_license_name": null,
+"picture_license_url": null,
+"description": "National Coat of arms, denomination below",
+"lettering": "• ҶУМҲУРИИ ТОҶИКИСТОН •\r\nAu 900\r\nДУСАД СОМОНӢ"
+},
+"issues": []
+},
+"8847": {
+"title": "1 Somoni (Jaloliddini Rumi)",
+"type": "Circulating commemorative coins",
+"min_year": 2007,
+"max_year": 2007,
+"value": {
+"text": "1 Somoni",
+"numeric_value": 1,
+"currency": {
+"id": 186,
+"name": "Somoni",
+"full_name": "Somoni (2000-date)"
+}
+},
+"composition": {
+"text": "Nickel brass"
+},
+"weight": 5.24,
+"size": 23.92,
+"size2": null,
+"thickness": null,
+"shape": "Round",
+"technique": {
+"text": "Milled"
+},
+"orientation": "medal",
+"series": null,
+"commemorated_topic": "800th Anniversary Birth of Jaloliddini Rumi",
+"url": "https://en.numista.com/8847",
+"obverse": {
+"picture": "https://en.numista.com/catalogue/photos/tadjikistan/246-original.jpg",
+"picture_copyright": "Coins-SPB",
+"picture_copyright_url": "http://www.coins-spb.ru/",
+"picture_license_name": null,
+"picture_license_url": null,
+"description": "National Coat of Arms of Tajikistan, denomination below, date bottom",
+"lettering": "★ ҶУМҲУРИИ ТОҶИКИСТОН ★\r\n1\r\n2007\r\nЯК СОМОНӢ"
+},
+"reverse": {
+"picture": "https://en.numista.com/catalogue/photos/tadjikistan/247-original.jpg",
+"picture_copyright": "Coins-SPB",
+"picture_copyright_url": "http://www.coins-spb.ru/",
+"picture_license_name": null,
+"picture_license_url": null,
+"description": "Jaloliddini Rumi",
+"lettering": "ШОИР ВА МУГАФАККИРИ БУЗУРТ МАВЛОНО ҶАЛОЛИДДИНИ РУМӢ\r\n800 СОЛ\r\n★1207-1273★"
+},
+"issues": []
+},
+"30417": {
+"title": "1 Somoni (Jaloliddini Rumi)",
+"type": "Non-circulating coins",
+"min_year": 2007,
+"max_year": 2007,
+"value": {
+"text": "1 Somoni",
+"numeric_value": 1,
+"currency": {
+"id": 186,
+"name": "Somoni",
+"full_name": "Somoni (2000-date)"
+}
+},
+"composition": {
+"text": "Silver (.925)"
+},
+"weight": 20,
+"size": 35,
+"size2": null,
+"thickness": null,
+"shape": "Round",
+"technique": {
+"text": "Milled"
+},
+"orientation": "medal",
+"series": null,
+"commemorated_topic": "800th Anniversary Birth of Jaloliddini Rumi",
+"url": "https://en.numista.com/30417",
+"obverse": {
+"picture": "https://en.numista.com/catalogue/photos/tadjikistan/79-original.jpg",
+"picture_copyright": "spica",
+"picture_copyright_url": null,
+"picture_license_name": null,
+"picture_license_url": null,
+"description": "National arms above value",
+"lettering": "* ҶУМҲУРИИ ТОҶИКИСТОН *\r\nЯК СОМОНӢ\r\n1 Ag 925\r\n2007"
+},
+"reverse": {
+"picture": "https://en.numista.com/catalogue/photos/tadjikistan/80-original.jpg",
+"picture_copyright": "spica",
+"picture_copyright_url": null,
+"picture_license_name": null,
+"picture_license_url": null,
+"description": "Jaloliddini Rumi",
+"lettering": "ШОИР ВА МУГАФАККИРИ БУЗУРТ МАВЛОНО ҶАЛОЛИДДИНИ РУМӢ\r\n800 СОЛ\r\n*1207-1273*"
+},
+"issues": []
+},
+"22206": {
+"title": "5 Somoni (Rudaki 1150th Birthday)",
+"type": "Circulating commemorative coins",
+"min_year": 2008,
+"max_year": 2008,
+"value": {
+"text": "5 Somoni",
+"numeric_value": 5,
+"currency": {
+"id": 186,
+"name": "Somoni",
+"full_name": "Somoni (2000-date)"
+}
+},
+"composition": {
+"text": "Bimetallic: copper-nickel centre in brass ring"
+},
+"weight": 7.5,
+"size": 26.5,
+"size2": null,
+"thickness": null,
+"shape": "Round",
+"technique": {
+"text": "Milled"
+},
+"orientation": null,
+"series": null,
+"commemorated_topic": "1150th Anniversary founding of Persian (Tajik) literature by Abuabdullo Rudaki",
+"url": "https://en.numista.com/22206",
+"obverse": {
+"picture": "https://en.numista.com/catalogue/photos/tadjikistan/275-original.jpg",
+"picture_copyright": "Coins-SPB",
+"picture_copyright_url": "http://www.coins-spb.ru/",
+"picture_license_name": null,
+"picture_license_url": null,
+"description": "National Coat of Arms of Tajikistan, denomination below, date bottom",
+"lettering": "• ҶУМҲУРИИ ТОҶИКИСТОН •\r\n5\r\nСПМД\r\n2008\r\nПАНҶ СОМОНӢ"
+},
+"reverse": {
+"picture": "https://en.numista.com/catalogue/photos/tadjikistan/276-original.jpg",
+"picture_copyright": "Coins-SPB",
+"picture_copyright_url": "http://www.coins-spb.ru/",
+"picture_license_name": null,
+"picture_license_url": null,
+"description": "Rudaki facing left, scroll and feather pen",
+"lettering": "★ САРДАФТАРИ АДАБИЁТИ ТОҶИК АБӮ АБДУЛЛОҲИ РӮДАКӢ\r\n1150 СОЛ"
+},
+"issues": []
+},
+"30419": {
+"title": "5 Somoni (Abuabdullo Rudaki)",
+"type": "Non-circulating coins",
+"min_year": 2008,
+"max_year": 2008,
+"value": {
+"text": "5 Somoni",
+"numeric_value": 5,
+"currency": {
+"id": 186,
+"name": "Somoni",
+"full_name": "Somoni (2000-date)"
+}
+},
+"composition": {
+"text": "Silver (.925)"
+},
+"weight": 34,
+"size": 42,
+"size2": null,
+"thickness": null,
+"shape": "Round",
+"technique": {
+"text": "Milled"
+},
+"orientation": "medal",
+"series": null,
+"commemorated_topic": "1150th Anniversary founding of Persian (Tajik) literature by Abuabdullo Rudaki",
+"url": "https://en.numista.com/30419",
+"obverse": {
+"picture": "https://en.numista.com/catalogue/photos/tadjikistan/85-original.jpg",
+"picture_copyright": "spica",
+"picture_copyright_url": null,
+"picture_license_name": null,
+"picture_license_url": null,
+"description": "National Coat of Arms of Tajikistan, denomination below, date bottom",
+"lettering": "• ҶУМҲУРИИ ТОҶИКИСТОН •\r\n5 Ag 925\r\n2008\r\nПАНҶ СОМОНӢ"
+},
+"reverse": {
+"picture": "https://en.numista.com/catalogue/photos/tadjikistan/86-original.jpg",
+"picture_copyright": "spica",
+"picture_copyright_url": null,
+"picture_license_name": null,
+"picture_license_url": null,
+"description": "Rudaki facing left, scroll and feather pen",
+"lettering": "*САРДАФТАРИ АДАБИЁТИ ТОҶИК АБӮ АБДУЛЛОҲИ РӮДАКӢ \r\n1150 СОЛ"
+},
+"issues": []
+},
+"30420": {
+"title": "5 Somoni (Eurasec Anniversary)",
+"type": "Non-circulating coins",
+"min_year": 2010,
+"max_year": 2010,
+"value": {
+"text": "5 Somoni",
+"numeric_value": 5,
+"currency": {
+"id": 186,
+"name": "Somoni",
+"full_name": "Somoni (2000-date)"
+}
+},
+"composition": {
+"text": "Silver (.925)"
+},
+"weight": 31.1,
+"size": 38.61,
+"size2": null,
+"thickness": null,
+"shape": "Round",
+"technique": {
+"text": "Milled, Coloured"
+},
+"orientation": "medal",
+"series": null,
+"commemorated_topic": "10th Anniversary of EurAsEC",
+"url": "https://en.numista.com/30420",
+"obverse": {
+"picture": "https://en.numista.com/catalogue/photos/tadjikistan/87-original.jpg",
+"picture_copyright": "spica",
+"picture_copyright_url": null,
+"picture_license_name": null,
+"picture_license_url": null,
+"description": "National Coat of Arms of Tajikistan, date below, denomination above",
+"lettering": "• Ag 925 • ПАНҶ СОМОНӢ • 31.1 •\r\n2010\r\n• БОНКИ МИЛЛИИ ТОҶКИСТОН •"
+},
+"reverse": {
+"picture": "https://en.numista.com/catalogue/photos/tadjikistan/88-original.jpg",
+"picture_copyright": "spica",
+"picture_copyright_url": null,
+"picture_license_name": null,
+"picture_license_url": null,
+"description": "The monument of Ismail Somonii in Dushanbe. The emblem of the Eurasian Economic Community",
+"lettering": "ЕврАзЭС\r\nДУШАНБЕ"
+},
+"issues": []
+},
+"481884": {
+"title": "10 Somoni (Independence)",
+"type": "Non-circulating coins",
+"min_year": 2011,
+"max_year": 2011,
+"value": {
+"text": "10 Somoni",
+"numeric_value": 10,
+"currency": {
+"id": 186,
+"name": "Somoni",
+"full_name": "Somoni (2000-date)"
+}
+},
+"composition": {
+"text": "Silver (.925)"
+},
+"weight": 15,
+"size": null,
+"size2": null,
+"thickness": null,
+"shape": "Round",
+"technique": {
+"text": "Milled"
+},
+"orientation": null,
+"series": null,
+"commemorated_topic": "20th anniversary of independence",
+"url": "https://en.numista.com/481884",
+"obverse": {
+"picture": "https://en.numista.com/catalogue/photos/tadjikistan/692448c2144516.19519243-original.jpg",
+"picture_copyright": "Coinsberg",
+"picture_copyright_url": "https://www.coinsberg.com/",
+"picture_license_name": null,
+"picture_license_url": null,
+"description": null,
+"lettering": "15,0 g\r\nAg925\r\n1991-2011"
+},
+"reverse": {
+"picture": "https://en.numista.com/catalogue/photos/tadjikistan/692448c2d55872.34743907-original.jpg",
+"picture_copyright": "Coinsberg",
+"picture_copyright_url": "https://www.coinsberg.com/",
+"picture_license_name": null,
+"picture_license_url": null,
+"description": null,
+"lettering": "1207\r\n1273"
+},
+"issues": []
+},
+"481885": {
+"title": "20 Somoni (Independence)",
+"type": "Non-circulating coins",
+"min_year": 2011,
+"max_year": 2011,
+"value": {
+"text": "20 Somoni",
+"numeric_value": 20,
+"currency": {
+"id": 186,
+"name": "Somoni",
+"full_name": "Somoni (2000-date)"
+}
+},
+"composition": {
+"text": "Silver (.925)"
+},
+"weight": 20,
+"size": null,
+"size2": null,
+"thickness": null,
+"shape": "Round",
+"technique": {
+"text": "Milled"
+},
+"orientation": null,
+"series": null,
+"commemorated_topic": "20th anniversary of independence",
+"url": "https://en.numista.com/481885",
+"obverse": {
+"picture": "https://en.numista.com/catalogue/photos/tadjikistan/69243e706d4b05.74334886-original.jpg",
+"picture_copyright": "Coinsberg",
+"picture_copyright_url": "https://www.coinsberg.com/",
+"picture_license_name": null,
+"picture_license_url": null,
+"description": null,
+"lettering": "20,0 g\r\nAg925\r\n1991-2011"
+},
+"reverse": {
+"picture": "https://en.numista.com/catalogue/photos/tadjikistan/69243e70d50928.10815117-original.jpg",
+"picture_copyright": "Coinsberg",
+"picture_copyright_url": "https://www.coinsberg.com/",
+"picture_license_name": null,
+"picture_license_url": null,
+"description": null,
+"lettering": "980\r\n1037"
+},
+"issues": []
+},
+"30459": {
+"title": "50 Somoni (Independence)",
+"type": "Non-circulating coins",
+"min_year": 2011,
+"max_year": 2011,
+"value": {
+"text": "50 Somoni",
+"numeric_value": 50,
+"currency": {
+"id": 186,
+"name": "Somoni",
+"full_name": "Somoni (2000-date)"
+}
+},
+"composition": {
+"text": "Silver (.925)"
+},
+"weight": 28.28,
+"size": 38.61,
+"size2": null,
+"thickness": null,
+"shape": "Round",
+"technique": {
+"text": "Milled, Coloured"
+},
+"orientation": "medal",
+"series": null,
+"commemorated_topic": "20th Anniversary of Independence",
+"url": "https://en.numista.com/30459",
+"obverse": {
+"picture": "https://en.numista.com/catalogue/photos/tadjikistan/113-original.jpg",
+"picture_copyright": "spica",
+"picture_copyright_url": null,
+"picture_license_name": null,
+"picture_license_url": null,
+"description": "Colourised National Coat of Arms above the flag of Tajikistan, date below, denomination bottom",
+"lettering": "☆ ҶУМҲУРИИ ТОҶИКИСТОН ☆\r\n2011\r\n50\r\nСОМОНӢ"
+},
+"reverse": {
+"picture": "https://en.numista.com/catalogue/photos/tadjikistan/114-original.jpg",
+"picture_copyright": "spica",
+"picture_copyright_url": null,
+"picture_license_name": null,
+"picture_license_url": null,
+"description": "Government building in Dushanbe",
+"lettering": "ИСТИКЛОЛИЯТИ ТОҶИКИСТОН\r\nYEARS XX СОЛ\r\n1991 – 2011\r\nINDEPENDENCE OF TAJIKISTAN"
+},
+"issues": []
+},
+"481886": {
+"title": "50 Somoni (Independence)",
+"type": "Non-circulating coins",
+"min_year": 2011,
+"max_year": 2011,
+"value": {
+"text": "50 Somoni",
+"numeric_value": 50,
+"currency": {
+"id": 186,
+"name": "Somoni",
+"full_name": "Somoni (2000-date)"
+}
+},
+"composition": {
+"text": "Silver (.925)"
+},
+"weight": 25,
+"size": null,
+"size2": null,
+"thickness": null,
+"shape": "Round",
+"technique": {
+"text": "Milled"
+},
+"orientation": null,
+"series": null,
+"commemorated_topic": "20th anniversary of independence",
+"url": "https://en.numista.com/481886",
+"obverse": {
+"picture": "https://en.numista.com/catalogue/photos/tadjikistan/69243ee0a839a2.54237494-original.jpg",
+"picture_copyright": "Coinsberg",
+"picture_copyright_url": "https://www.coinsberg.com/",
+"picture_license_name": null,
+"picture_license_url": null,
+"description": null,
+"lettering": "20,0 g\r\nAg925\r\n1991-2011"
+},
+"reverse": {
+"picture": "https://en.numista.com/catalogue/photos/tadjikistan/69243ee14e8017.71096244-original.jpg",
+"picture_copyright": "Coinsberg",
+"picture_copyright_url": "https://www.coinsberg.com/",
+"picture_license_name": null,
+"picture_license_url": null,
+"description": null,
+"lettering": "849\r\n907"
+},
+"issues": []
+},
+"30421": {
+"title": "100 Somoni (CIS Anniversary)",
+"type": "Non-circulating coins",
+"min_year": 2011,
+"max_year": 2011,
+"value": {
+"text": "100 Somoni",
+"numeric_value": 100,
+"currency": {
+"id": 186,
+"name": "Somoni",
+"full_name": "Somoni (2000-date)"
+}
+},
+"composition": {
+"text": "Silver (.925)"
+},
+"weight": 31.1,
+"size": 38.61,
+"size2": null,
+"thickness": null,
+"shape": "Round",
+"technique": {
+"text": "Milled"
+},
+"orientation": "medal",
+"series": null,
+"commemorated_topic": "20th Anniversary of CEI",
+"url": "https://en.numista.com/30421",
+"obverse": {
+"picture": "https://en.numista.com/catalogue/photos/tadjikistan/89-original.jpg",
+"picture_copyright": "spica",
+"picture_copyright_url": null,
+"picture_license_name": null,
+"picture_license_url": null,
+"description": "National Coat of Arms above flag and map, denomination below",
+"lettering": "☆ ҶУМҲУРИИ ТОҶИКИСТОН ☆ РЕСПУБЛИКА ТАДЖИКИСТАН\r\n100 СОМОНӢ"
+},
+"reverse": {
+"picture": "https://en.numista.com/catalogue/photos/tadjikistan/90-original.jpg",
+"picture_copyright": "spica",
+"picture_copyright_url": null,
+"picture_license_name": null,
+"picture_license_url": null,
+"description": "Emblem of the Commonwealth of Independent States",
+"lettering": "ИТТИҲОДИ ДАВЛАТҲОИ МУСТАҚИЛ\r\nСОЛ XX ЛЕТ\r\n1991 2011\r\nСОДРУЖЕСТВО НЕЗАВИСИМЫХ ГОСУДАРСТВ"
+},
+"issues": []
+},
+"69726": {
+"title": "100 Somoni (Sarazm)",
+"type": "Non-circulating coins",
+"min_year": 2013,
+"max_year": 2013,
+"value": {
+"text": "100 Somoni",
+"numeric_value": 100,
+"currency": {
+"id": 186,
+"name": "Somoni",
+"full_name": "Somoni (2000-date)"
+}
+},
+"composition": {
+"text": "Silver (.925)"
+},
+"weight": 31.1,
+"size": 38.61,
+"size2": null,
+"thickness": null,
+"shape": "Round",
+"technique": {
+"text": "Coloured, Milled"
+},
+"orientation": "medal",
+"series": null,
+"commemorated_topic": "5500th Anniversary of Sarazm",
+"url": "https://en.numista.com/69726",
+"obverse": {
+"picture": "https://en.numista.com/catalogue/photos/tadjikistan/179-original.jpg",
+"picture_copyright": "spica",
+"picture_copyright_url": null,
+"picture_license_name": null,
+"picture_license_url": null,
+"description": "Colourised National Coat of Arms of Tajikistan, denomination below",
+"lettering": "ҶУМҲУРИИ ТОҶИКИСТОН\r\nREPUBLIC OF TAJIKISTAN\r\n2013\r\nAg 925 31,1\r\n100 СОМОНӢ"
+},
+"reverse": {
+"picture": "https://en.numista.com/catalogue/photos/tadjikistan/180-original.jpg",
+"picture_copyright": "spica",
+"picture_copyright_url": null,
+"picture_license_name": null,
+"picture_license_url": null,
+"description": "Settlement character in the form of a flower with 12 petals, date above",
+"lettering": "САРАЗМ\r\n2013\r\nSARAZM\r\nСОЛ 5500 YEARS"
+},
+"issues": []
+},
+"65131": {
+"title": "50 Somoni (Biathlon)",
+"type": "Non-circulating coins",
+"min_year": 2014,
+"max_year": 2014,
+"value": {
+"text": "50 Somoni",
+"numeric_value": 50,
+"currency": {
+"id": 186,
+"name": "Somoni",
+"full_name": "Somoni (2000-date)"
+}
+},
+"composition": {
+"text": "Silver (.925)"
+},
+"weight": 31.1,
+"size": 38.61,
+"size2": null,
+"thickness": null,
+"shape": "Round",
+"technique": {
+"text": "Coloured, Milled"
+},
+"orientation": "medal",
+"series": null,
+"commemorated_topic": "2014 Winter Olympics, Sochi",
+"url": "https://en.numista.com/65131",
+"obverse": {
+"picture": "https://en.numista.com/catalogue/photos/tadjikistan/191-original.jpg",
+"picture_copyright": "spica",
+"picture_copyright_url": null,
+"picture_license_name": null,
+"picture_license_url": null,
+"description": "Colourised National Coat of Arms of Tajikistan, denomination below",
+"lettering": "ҶУМҲУРИИ ТОҶИКИСТОН\r\nAg 925 31,1\r\nREPUBLIC OF TAJIKISTAN\r\n50 СОМОНӢ"
+},
+"reverse": {
+"picture": "https://en.numista.com/catalogue/photos/tadjikistan/171-original.jpg",
+"picture_copyright": "spica",
+"picture_copyright_url": null,
+"picture_license_name": null,
+"picture_license_url": null,
+"description": "Biathlete skiing and shooting",
+"lettering": "БОЗИҲОИ ОЛИМПӢ OLYMPIC GAMES\r\nAg 925\r\n2014"
+},
+"issues": []
+},
+"65129": {
+"title": "50 Somoni (Ski Jumping)",
+"type": "Non-circulating coins",
+"min_year": 2014,
+"max_year": 2014,
+"value": {
+"text": "50 Somoni",
+"numeric_value": 50,
+"currency": {
+"id": 186,
+"name": "Somoni",
+"full_name": "Somoni (2000-date)"
+}
+},
+"composition": {
+"text": "Silver (.925)"
+},
+"weight": 31.1,
+"size": 38.61,
+"size2": null,
+"thickness": null,
+"shape": "Round",
+"technique": {
+"text": "Coloured, Milled"
+},
+"orientation": "medal",
+"series": null,
+"commemorated_topic": "2014 Winter Olympics, Sochi",
+"url": "https://en.numista.com/65129",
+"obverse": {
+"picture": "https://en.numista.com/catalogue/photos/tadjikistan/192-original.jpg",
+"picture_copyright": "spica",
+"picture_copyright_url": null,
+"picture_license_name": null,
+"picture_license_url": null,
+"description": "Colourised National Coat of Arms of Tajikistan, denomination below",
+"lettering": "ҶУМҲУРИИ ТОҶИКИСТОН\r\nAg 925  31,1\r\nREPUBLIC OF TAJIKISTAN\r\n50 СОМОНӢ"
+},
+"reverse": {
+"picture": "https://en.numista.com/catalogue/photos/tadjikistan/193-original.jpg",
+"picture_copyright": "spica",
+"picture_copyright_url": null,
+"picture_license_name": null,
+"picture_license_url": null,
+"description": "Ski Jumping, date below",
+"lettering": "БОЗИҲОИ ОЛИМПӢ OLYMPIC GAMES\r\nAg 925\r\n2014"
+},
+"issues": []
+},
+"65130": {
+"title": "50 Somoni (Slalom)",
+"type": "Non-circulating coins",
+"min_year": 2014,
+"max_year": 2014,
+"value": {
+"text": "50 Somoni",
+"numeric_value": 50,
+"currency": {
+"id": 186,
+"name": "Somoni",
+"full_name": "Somoni (2000-date)"
+}
+},
+"composition": {
+"text": "Silver (.925)"
+},
+"weight": 31.1,
+"size": 38.61,
+"size2": null,
+"thickness": null,
+"shape": "Round",
+"technique": {
+"text": "Milled, Coloured"
+},
+"orientation": "medal",
+"series": null,
+"commemorated_topic": "2014 Winter Olympic Games, Sochi",
+"url": "https://en.numista.com/65130",
+"obverse": {
+"picture": "https://en.numista.com/catalogue/photos/tadjikistan/175-original.jpg",
+"picture_copyright": "spica",
+"picture_copyright_url": null,
+"picture_license_name": null,
+"picture_license_url": null,
+"description": "Colourised National Coat of Arms of Tajikistan, denomination below",
+"lettering": "ҶУМҲУРИИ ТОҶИКИСТОН\r\nAg 925  31,1\r\nREPUBLIC OF TAJIKISTAN\r\n50 СОМОНӢ"
+},
+"reverse": {
+"picture": "https://en.numista.com/catalogue/photos/tadjikistan/176-original.jpg",
+"picture_copyright": "spica",
+"picture_copyright_url": null,
+"picture_license_name": null,
+"picture_license_url": null,
+"description": "Slalom, date right",
+"lettering": "БОЗИҲОИ ОЛИМПӢ 2014 OLYMPIC GAMES\r\nAg 925"
+},
+"issues": []
+},
+"124344": {
+"title": "500 Somoni (Ali Hamadoni)",
+"type": "Non-circulating coins",
+"min_year": 2014,
+"max_year": 2014,
+"value": {
+"text": "500 Somoni",
+"numeric_value": 500,
+"currency": {
+"id": 186,
+"name": "Somoni",
+"full_name": "Somoni (2000-date)"
+}
+},
+"composition": {
+"text": "Silver (.925)"
+},
+"weight": 31.1,
+"size": 38.61,
+"size2": null,
+"thickness": null,
+"shape": "Round",
+"technique": {
+"text": "Coloured, Milled"
+},
+"orientation": "medal",
+"series": null,
+"commemorated_topic": "700th Anniversary of Ali Hamadoni",
+"url": "https://en.numista.com/124344",
+"obverse": {
+"picture": "https://en.numista.com/catalogue/photos/tadjikistan/631daeb5c036a8.26021554-original.jpg",
+"picture_copyright": "Coinsberg",
+"picture_copyright_url": "https://www.coinsberg.com/",
+"picture_license_name": null,
+"picture_license_url": null,
+"description": "Colourised National Coat of Arms of Tajikistan, denomination below, date bottom",
+"lettering": "ҶУМҲУРИИ ТОҶИКИСТОН\r\nAg 925\r\n31,1\r\nREPUBLIC OF TAJIKISTAN\r\n500\r\nСОМОНӢ\r\n2014"
+},
+"reverse": {
+"picture": "https://en.numista.com/catalogue/photos/tadjikistan/631daeb6245178.61520243-original.jpg",
+"picture_copyright": "Coinsberg",
+"picture_copyright_url": "https://www.coinsberg.com/",
+"picture_license_name": null,
+"picture_license_url": null,
+"description": "Portrait of Ali Hamadoni",
+"lettering": "АЛӢ ҲАМАДОНӢ • ALI HAMADONI\r\n1314 1384\r\n700"
+},
+"issues": []
+},
+"69729": {
+"title": "500 Somoni (National Library)",
+"type": "Non-circulating coins",
+"min_year": 2014,
+"max_year": 2014,
+"value": {
+"text": "500 Somoni",
+"numeric_value": 500,
+"currency": {
+"id": 186,
+"name": "Somoni",
+"full_name": "Somoni (2000-date)"
+}
+},
+"composition": {
+"text": "Silver (.925)"
+},
+"weight": 31.1,
+"size": 38.61,
+"size2": null,
+"thickness": null,
+"shape": "Round",
+"technique": {
+"text": "Milled, Coloured"
+},
+"orientation": "medal",
+"series": null,
+"commemorated_topic": "90th Anniversary of Dushanbe",
+"url": "https://en.numista.com/69729",
+"obverse": {
+"picture": "https://en.numista.com/catalogue/photos/tadjikistan/181-original.jpg",
+"picture_copyright": "spica",
+"picture_copyright_url": null,
+"picture_license_name": null,
+"picture_license_url": null,
+"description": "Colourised National Coat of Arms of Tajikistan, denomination below, date bottom",
+"lettering": "ҶУМҲУРИИ ТОҶИКИСТОН\r\nREPUBLIC OF TAJIKISTAN\r\nAg 925 31,1\r\n500 СОМОНӢ \r\n2014"
+},
+"reverse": {
+"picture": "https://en.numista.com/catalogue/photos/tadjikistan/182-original.jpg",
+"picture_copyright": "spica",
+"picture_copyright_url": null,
+"picture_license_name": null,
+"picture_license_url": null,
+"description": "National Library of Tajikistan",
+"lettering": "• ПОЙТАХТИ ҶУМҲУРИИ ТОҶИКИСТОН ШАҲРИ ДУШАНБЕ • DUSHANBE IS THE CAPITAL OF THE REPUBLIC OF TAJIKISTAN\r\n1924-2014\r\n90"
+},
+"issues": []
+},
+"69730": {
+"title": "500 Somoni (National Museum)",
+"type": "Non-circulating coins",
+"min_year": 2014,
+"max_year": 2014,
+"value": {
+"text": "500 Somoni",
+"numeric_value": 500,
+"currency": {
+"id": 186,
+"name": "Somoni",
+"full_name": "Somoni (2000-date)"
+}
+},
+"composition": {
+"text": "Silver (.925)"
+},
+"weight": 31.1,
+"size": 38.61,
+"size2": null,
+"thickness": null,
+"shape": "Round",
+"technique": {
+"text": "Coloured, Milled"
+},
+"orientation": "medal",
+"series": null,
+"commemorated_topic": "90th Anniversary of Dushanbe",
+"url": "https://en.numista.com/69730",
+"obverse": {
+"picture": "https://en.numista.com/catalogue/photos/tadjikistan/185-original.jpg",
+"picture_copyright": "spica",
+"picture_copyright_url": null,
+"picture_license_name": null,
+"picture_license_url": null,
+"description": "Colourised National Coat of Arms of Tajikistan, denomination below, date bottom",
+"lettering": "ҶУМҲУРИИ ТОҶИКИСТОН\r\nREPUBLIC OF TAJIKISTAN\r\nAg 925\r\n31,1\r\n500 СОМОНӢ\r\n2014"
+},
+"reverse": {
+"picture": "https://en.numista.com/catalogue/photos/tadjikistan/186-original.jpg",
+"picture_copyright": "spica",
+"picture_copyright_url": null,
+"picture_license_name": null,
+"picture_license_url": null,
+"description": "The National Museum in Dushanbe",
+"lettering": "• ПОЙТАХТИ ҶУМҲУРИИ ТОҶИКИСТОН ШАҲРИ ДУШАНБЕ • DUSHANBE IS THE CAPITAL OF THE REPUBLIC OF TAJIKISTAN 1924-2014\r\n90"
+},
+"issues": []
+},
+"69728": {
+"title": "500 Somoni (Opera)",
+"type": "Non-circulating coins",
+"min_year": 2014,
+"max_year": 2014,
+"value": {
+"text": "500 Somoni",
+"numeric_value": 500,
+"currency": {
+"id": 186,
+"name": "Somoni",
+"full_name": "Somoni (2000-date)"
+}
+},
+"composition": {
+"text": "Silver (.925)"
+},
+"weight": 31.1,
+"size": 38.61,
+"size2": null,
+"thickness": null,
+"shape": "Round",
+"technique": {
+"text": "Coloured, Milled"
+},
+"orientation": "medal",
+"series": null,
+"commemorated_topic": "90th Anniversary of Dushanbe",
+"url": "https://en.numista.com/69728",
+"obverse": {
+"picture": "https://en.numista.com/catalogue/photos/tadjikistan/204-original.jpg",
+"picture_copyright": "spica",
+"picture_copyright_url": null,
+"picture_license_name": null,
+"picture_license_url": null,
+"description": "Colourised National Coat of Arms of Tajikistan, denomination below, date bottom",
+"lettering": "ҶУМҲУРИИ ТОҶИКИСТОН\r\nREPUBLIC OF TAJIKISTAN\r\nAg 925 31,1\r\n500 СОМОНӢ\r\n2014"
+},
+"reverse": {
+"picture": "https://en.numista.com/catalogue/photos/tadjikistan/205-original.jpg",
+"picture_copyright": "spica",
+"picture_copyright_url": null,
+"picture_license_name": null,
+"picture_license_url": null,
+"description": "The Opera and Ballet Theatre in Dushanbe",
+"lettering": "• ПОЙТАХТИ ҶУМҲУРИИ ТОҶИКИСТОН ШАҲРИ ДУШАНБЕ • DUSHANBE IS THE CAPITAL OF THE REPUBLIC OF TAJIKISTAN\r\n1924-2014\r\n90"
+},
+"issues": []
+},
+"481881": {
+"title": "500 Somoni (Constitution)",
+"type": "Non-circulating coins",
+"min_year": 2014,
+"max_year": 2014,
+"value": {
+"text": "500 Somoni",
+"numeric_value": 500,
+"currency": {
+"id": 186,
+"name": "Somoni",
+"full_name": "Somoni (2000-date)"
+}
+},
+"composition": {
+"text": "Silver (.925)"
+},
+"weight": 31.1,
+"size": 38.61,
+"size2": null,
+"thickness": null,
+"shape": "Round",
+"technique": {
+"text": "Coloured, Milled"
+},
+"orientation": null,
+"series": null,
+"commemorated_topic": "20th anniversary of the constition",
+"url": "https://en.numista.com/481881",
+"obverse": {
+"picture": "https://en.numista.com/catalogue/photos/tadjikistan/692438bc507590.49937116-original.jpg",
+"picture_copyright": "Coinsberg",
+"picture_copyright_url": "https://www.coinsberg.com/",
+"picture_license_name": null,
+"picture_license_url": null,
+"description": null,
+"lettering": "Ag 925\r\n31,1\r\nREPUBLIC OF TAJIKISTAN"
+},
+"reverse": {
+"picture": "https://en.numista.com/catalogue/photos/tadjikistan/692438bcabf9e0.61377936-original.jpg",
+"picture_copyright": "Coinsberg",
+"picture_copyright_url": "https://www.coinsberg.com/",
+"picture_license_name": null,
+"picture_license_url": null,
+"description": null,
+"lettering": "THE CONSTITION OF THE REPUBLIC OF TAJIKISTAN"
+},
+"issues": []
+},
+"481883": {
+"title": "500 Somoni (Abdurahman Jami)",
+"type": "Non-circulating coins",
+"min_year": 2014,
+"max_year": 2014,
+"value": {
+"text": "500 Somoni",
+"numeric_value": 500,
+"currency": {
+"id": 186,
+"name": "Somoni",
+"full_name": "Somoni (2000-date)"
+}
+},
+"composition": {
+"text": "Silver (.925)"
+},
+"weight": 31.1,
+"size": 38.61,
+"size2": null,
+"thickness": null,
+"shape": "Round",
+"technique": {
+"text": "Coloured, Milled"
+},
+"orientation": "medal",
+"series": null,
+"commemorated_topic": "600th Anniversary of Abdurahman Jami",
+"url": "https://en.numista.com/481883",
+"obverse": {
+"picture": "https://en.numista.com/catalogue/photos/tadjikistan/69243f75897ce8.59881492-original.jpg",
+"picture_copyright": "Coinsberg",
+"picture_copyright_url": "https://www.coinsberg.com/",
+"picture_license_name": null,
+"picture_license_url": null,
+"description": "Colourised National Coat of Arms of Tajikistan, denomination below, date bottom",
+"lettering": "ҶУМҲУРИИ ТОҶИКИСТОН\r\nAg 925\r\n31,1\r\nREPUBLIC OF TAJIKISTAN\r\n500\r\nСОМОНӢ\r\n2014"
+},
+"reverse": {
+"picture": "https://en.numista.com/catalogue/photos/tadjikistan/69243f768eaae6.72781209-original.jpg",
+"picture_copyright": "Coinsberg",
+"picture_copyright_url": "https://www.coinsberg.com/",
+"picture_license_name": null,
+"picture_license_url": null,
+"description": "Portrait of Abdurahman Jami",
+"lettering": "ABDURAHMAN JAMI\r\n1414 1492\r\n600"
+},
+"issues": []
+},
+"69727": {
+"title": "100 Somoni (Hisor)",
+"type": "Non-circulating coins",
+"min_year": 2015,
+"max_year": 2015,
+"value": {
+"text": "100 Somoni",
+"numeric_value": 100,
+"currency": {
+"id": 186,
+"name": "Somoni",
+"full_name": "Somoni (2000-date)"
+}
+},
+"composition": {
+"text": "Silver (.925)"
+},
+"weight": 31.1,
+"size": 38.61,
+"size2": null,
+"thickness": null,
+"shape": "Round",
+"technique": {
+"text": "Coloured, Milled"
+},
+"orientation": "medal",
+"series": null,
+"commemorated_topic": "300th Anniversary of Hisor",
+"url": "https://en.numista.com/69727",
+"obverse": {
+"picture": "https://en.numista.com/catalogue/photos/tadjikistan/177-original.jpg",
+"picture_copyright": "spica",
+"picture_copyright_url": null,
+"picture_license_name": null,
+"picture_license_url": null,
+"description": "Colourised National Coat of Arms of Tajikistan, denomination below",
+"lettering": "ҶУМҲУРИИ ТОҶИКИСТОН\r\nREPUBLIC OF TAJIKISTAN\r\nAg 925  31,1\r\n100 СОМОНӢ"
+},
+"reverse": {
+"picture": "https://en.numista.com/catalogue/photos/tadjikistan/178-original.jpg",
+"picture_copyright": "spica",
+"picture_copyright_url": null,
+"picture_license_name": null,
+"picture_license_url": null,
+"description": "Hisor fortress gates and the national ornament.",
+"lettering": "★ ҲИСОР 2015 HISOR ★ СОЛ 3000 YEARS"
+},
+"issues": []
+},
+"191954": {
+"title": "100 Somoni (Rogun Dam)",
+"type": "Non-circulating coins",
+"min_year": 2018,
+"max_year": 2018,
+"value": {
+"text": "100 Somoni",
+"numeric_value": 100,
+"currency": {
+"id": 186,
+"name": "Somoni",
+"full_name": "Somoni (2000-date)"
+}
+},
+"composition": {
+"text": "Silver (.925)"
+},
+"weight": 31.1,
+"size": 38.61,
+"size2": null,
+"thickness": null,
+"shape": "Round",
+"technique": {
+"text": "Milled, Coloured"
+},
+"orientation": "medal",
+"series": "Rogun Hydropower Plant",
+"commemorated_topic": "Opening of the Rogun Hydropower Project",
+"url": "https://en.numista.com/191954",
+"obverse": {
+"picture": "https://en.numista.com/catalogue/photos/tadjikistan/5e1620b7d8fce1.46563490-original.jpg",
+"picture_copyright": "egoncontirossini@hotmail.com",
+"picture_copyright_url": null,
+"picture_license_name": null,
+"picture_license_url": null,
+"description": "National Coat of Arms of Tajikistan, denomination below",
+"lettering": "• ҶУМҲУРИИ ТОҶИКИСТОН • \r\nREPUBLIC OF TAJIKISTAN\r\n100 СОМОНӢ\r\nAg925 31,1g"
+},
+"reverse": {
+"picture": "https://en.numista.com/catalogue/photos/tadjikistan/5e1620b85f3f63.95243913-original.jpg",
+"picture_copyright": "Egon Conti Rossini",
+"picture_copyright_url": null,
+"picture_license_name": null,
+"picture_license_url": null,
+"description": "Rogun Dam on the Vakhsh River in southern Tajikistan, date below",
+"lettering": "• ОҒОЗИ КОРИ НБО-и РОҒУН • LAUNCH OF ROGUN HPP • \r\n16.11.2018"
+},
+"issues": []
+},
+"481889": {
+"title": "100 Somoni (Rogun Dam)",
+"type": "Non-circulating coins",
+"min_year": 2018,
+"max_year": 2018,
+"value": {
+"text": "100 Somoni",
+"numeric_value": 100,
+"currency": {
+"id": 186,
+"name": "Somoni",
+"full_name": "Somoni (2000-date)"
+}
+},
+"composition": {
+"text": "Silver (.925)"
+},
+"weight": 31.1,
+"size": 38.61,
+"size2": null,
+"thickness": null,
+"shape": "Round",
+"technique": {
+"text": "Coloured, Milled"
+},
+"orientation": "medal",
+"series": "Rogun Hydropower Plant",
+"commemorated_topic": "Opening of the Rogun Hydropower Project",
+"url": "https://en.numista.com/481889",
+"obverse": {
+"picture": "https://en.numista.com/catalogue/photos/tadjikistan/6925342f578066.33343472-original.jpg",
+"picture_copyright": "Coinsberg",
+"picture_copyright_url": "https://www.coinsberg.com/",
+"picture_license_name": null,
+"picture_license_url": null,
+"description": "National Coat of Arms of Tajikistan, denomination below",
+"lettering": "• ҶУМҲУРИИ ТОҶИКИСТОН • \r\nREPUBLIC OF TAJIKISTAN\r\n100 СОМОНӢ\r\nAg925 31,1g"
+},
+"reverse": {
+"picture": "https://en.numista.com/catalogue/photos/tadjikistan/692534302a4580.03346087-original.jpg",
+"picture_copyright": "Coinsberg",
+"picture_copyright_url": "https://www.coinsberg.com/",
+"picture_license_name": null,
+"picture_license_url": null,
+"description": null,
+"lettering": "• ОҒОЗИ КОРИ НБО-и РОҒУН • LAUNCH OF ROGUN HPP • \r\n16.11.2018"
+},
+"issues": []
+},
+"481887": {
+"title": "100 Somoni (Rogun Dam)",
+"type": "Non-circulating coins",
+"min_year": 2018,
+"max_year": 2018,
+"value": {
+"text": "100 Somoni",
+"numeric_value": 100,
+"currency": {
+"id": 186,
+"name": "Somoni",
+"full_name": "Somoni (2000-date)"
+}
+},
+"composition": {
+"text": "Silver (.925)"
+},
+"weight": 31.1,
+"size": 38.61,
+"size2": null,
+"thickness": null,
+"shape": "Round",
+"technique": {
+"text": "Coloured, Milled"
+},
+"orientation": "medal",
+"series": "Rogun Hydropower Plant",
+"commemorated_topic": "Opening of the Rogun Hydropower Project",
+"url": "https://en.numista.com/481887",
+"obverse": {
+"picture": "https://en.numista.com/catalogue/photos/tadjikistan/69253409d99cd4.16270672-original.jpg",
+"picture_copyright": "Coinsberg",
+"picture_copyright_url": "https://www.coinsberg.com/",
+"picture_license_name": null,
+"picture_license_url": null,
+"description": "National Coat of Arms of Tajikistan, denomination below",
+"lettering": "• ҶУМҲУРИИ ТОҶИКИСТОН • \r\nREPUBLIC OF TAJIKISTAN\r\n100 СОМОНӢ\r\nAg925 31,1g"
+},
+"reverse": {
+"picture": "https://en.numista.com/catalogue/photos/tadjikistan/6925340a9622a9.09300287-original.jpg",
+"picture_copyright": "Coinsberg",
+"picture_copyright_url": "https://www.coinsberg.com/",
+"picture_license_name": null,
+"picture_license_url": null,
+"description": null,
+"lettering": "• ОҒОЗИ КОРИ НБО-и РОҒУН • LAUNCH OF ROGUN HPP • \r\n16.11.2018"
+},
+"issues": []
+},
+"481891": {
+"title": "10 Somoni (Independence)",
+"type": "Non-circulating coins",
+"min_year": 2021,
+"max_year": 2021,
+"value": {
+"text": "10 Somoni",
+"numeric_value": 10,
+"currency": {
+"id": 186,
+"name": "Somoni",
+"full_name": "Somoni (2000-date)"
+}
+},
+"composition": {
+"text": "Silver (.925)"
+},
+"weight": 10,
+"size": 30,
+"size2": null,
+"thickness": null,
+"shape": "Round",
+"technique": {
+"text": "Coloured, Milled"
+},
+"orientation": "medal",
+"series": null,
+"commemorated_topic": "30th anniversary of independence",
+"url": "https://en.numista.com/481891",
+"obverse": {
+"picture": "https://en.numista.com/catalogue/photos/tadjikistan/69253452f22821.80553587-original.jpg",
+"picture_copyright": "Coinsberg",
+"picture_copyright_url": "https://www.coinsberg.com/",
+"picture_license_name": null,
+"picture_license_url": null,
+"description": null,
+"lettering": "Ag 925 10 g\r\nREPUBLIC OF TAJIKISTAN"
+},
+"reverse": {
+"picture": "https://en.numista.com/catalogue/photos/tadjikistan/69253453f2a8a0.00455701-original.jpg",
+"picture_copyright": "Coinsberg",
+"picture_copyright_url": "https://www.coinsberg.com/",
+"picture_license_name": null,
+"picture_license_url": null,
+"description": null,
+"lettering": "1991 2021\r\n30\r\nSTATE INDEPENDENCE OF THE REPUBLIC OF TAJIKISTAN"
+},
+"issues": []
+},
+"481729": {
+"title": "10 Somoni (Shanghai Pact)",
+"type": "Non-circulating coins",
+"min_year": 2021,
+"max_year": 2021,
+"value": {
+"text": "10 Somoni",
+"numeric_value": 10,
+"currency": {
+"id": 186,
+"name": "Somoni",
+"full_name": "Somoni (2000-date)"
+}
+},
+"composition": {
+"text": "Silver (.925)"
+},
+"weight": 10,
+"size": 30,
+"size2": null,
+"thickness": null,
+"shape": "Round",
+"technique": {
+"text": "Coloured, Milled"
+},
+"orientation": null,
+"series": "Shanghai Pact",
+"commemorated_topic": "20th anniversary of the Shanghai Pact",
+"url": "https://en.numista.com/481729",
+"obverse": {
+"picture": "https://en.numista.com/catalogue/photos/tadjikistan/6923f88eb200d9.11022315-original.jpg",
+"picture_copyright": "Coinsberg",
+"picture_copyright_url": "https://www.coinsberg.com/",
+"picture_license_name": null,
+"picture_license_url": null,
+"description": "Coat of arms and value at centre, with country name in Tajik above and in English below",
+"lettering": "Ag 925 10 g\r\nREPUBLIC OF TAJIKISTAN"
+},
+"reverse": {
+"picture": "https://en.numista.com/catalogue/photos/tadjikistan/6923f8902af385.34086130-original.jpg",
+"picture_copyright": "Coinsberg",
+"picture_copyright_url": "https://www.coinsberg.com/",
+"picture_license_name": null,
+"picture_license_url": null,
+"description": "Shanghai Cooperation Organization logo at centre with flags of member states (India, Kazakhstan, People's Republic of China, Pakistan, Russia, Tajikistan, and Uzbekistan) above",
+"lettering": null
+},
+"issues": []
+},
+"481733": {
+"title": "20 Somoni (Shanghai Pact)",
+"type": "Non-circulating coins",
+"min_year": 2021,
+"max_year": 2021,
+"value": {
+"text": "20 Somoni",
+"numeric_value": 20,
+"currency": {
+"id": 186,
+"name": "Somoni",
+"full_name": "Somoni (2000-date)"
+}
+},
+"composition": {
+"text": "Silver (.925)"
+},
+"weight": 20,
+"size": 33,
+"size2": null,
+"thickness": null,
+"shape": "Round",
+"technique": {
+"text": "Coloured, Milled"
+},
+"orientation": "medal",
+"series": "Shanghai Pact",
+"commemorated_topic": "20th anniversary of the Shanghai Pact",
+"url": "https://en.numista.com/481733",
+"obverse": {
+"picture": "https://en.numista.com/catalogue/photos/tadjikistan/6923f8b27ba508.08505518-original.jpg",
+"picture_copyright": "Coinsberg",
+"picture_copyright_url": "https://www.coinsberg.com/",
+"picture_license_name": null,
+"picture_license_url": null,
+"description": "Coat of arms and value at centre, with country name in Tajik above and in English below",
+"lettering": "Ag 925 20 g\r\nREPUBLIC OF TAJIKISTAN"
+},
+"reverse": {
+"picture": "https://en.numista.com/catalogue/photos/tadjikistan/6923f8b3025371.96895518-original.jpg",
+"picture_copyright": "Coinsberg",
+"picture_copyright_url": "https://www.coinsberg.com/",
+"picture_license_name": null,
+"picture_license_url": null,
+"description": "Shanghai Cooperation Organization logo at centre with flags of member states (India, Kazakhstan, People's Republic of China, Pakistan, Russia, Tajikistan, and Uzbekistan) above",
+"lettering": null
+},
+"issues": []
+},
+"481892": {
+"title": "20 Somoni (Independence)",
+"type": "Non-circulating coins",
+"min_year": 2021,
+"max_year": 2021,
+"value": {
+"text": "20 Somoni",
+"numeric_value": 20,
+"currency": {
+"id": 186,
+"name": "Somoni",
+"full_name": "Somoni (2000-date)"
+}
+},
+"composition": {
+"text": "Silver (.925)"
+},
+"weight": 20,
+"size": 33,
+"size2": null,
+"thickness": null,
+"shape": "Round",
+"technique": {
+"text": "Coloured, Milled"
+},
+"orientation": "medal",
+"series": null,
+"commemorated_topic": "30th anniversary of independence",
+"url": "https://en.numista.com/481892",
+"obverse": {
+"picture": "https://en.numista.com/catalogue/photos/tadjikistan/6925347667f536.08174964-original.jpg",
+"picture_copyright": "Coinsberg",
+"picture_copyright_url": "https://www.coinsberg.com/",
+"picture_license_name": null,
+"picture_license_url": null,
+"description": null,
+"lettering": "Ag 925 20 g\r\nREPUBLIC OF TAJIKISTAN"
+},
+"reverse": {
+"picture": "https://en.numista.com/catalogue/photos/tadjikistan/692534772fbb47.59064653-original.jpg",
+"picture_copyright": "Coinsberg",
+"picture_copyright_url": "https://www.coinsberg.com/",
+"picture_license_name": null,
+"picture_license_url": null,
+"description": null,
+"lettering": "1991 2021\r\n30\r\nSTATE INDEPENDENCE OF THE REPUBLIC OF TAJIKISTAN"
+},
+"issues": []
+},
+"481893": {
+"title": "50 Somoni (Independence)",
+"type": "Non-circulating coins",
+"min_year": 2021,
+"max_year": 2021,
+"value": {
+"text": "50 Somoni",
+"numeric_value": 50,
+"currency": {
+"id": 186,
+"name": "Somoni",
+"full_name": "Somoni (2000-date)"
+}
+},
+"composition": {
+"text": "Silver (.925)"
+},
+"weight": 25,
+"size": 38.61,
+"size2": null,
+"thickness": null,
+"shape": "Round",
+"technique": {
+"text": "Coloured, Milled"
+},
+"orientation": "medal",
+"series": null,
+"commemorated_topic": "30th anniversary of independence",
+"url": "https://en.numista.com/481893",
+"obverse": {
+"picture": "https://en.numista.com/catalogue/photos/tadjikistan/6925349be08089.78763644-original.jpg",
+"picture_copyright": "Coinsberg",
+"picture_copyright_url": "https://www.coinsberg.com/",
+"picture_license_name": null,
+"picture_license_url": null,
+"description": null,
+"lettering": "Ag 925 25 g\r\nREPUBLIC OF TAJIKISTAN"
+},
+"reverse": {
+"picture": "https://en.numista.com/catalogue/photos/tadjikistan/6925349c9db114.70269512-original.jpg",
+"picture_copyright": "Coinsberg",
+"picture_copyright_url": "https://www.coinsberg.com/",
+"picture_license_name": null,
+"picture_license_url": null,
+"description": null,
+"lettering": "1991 2021\r\n30\r\nSTATE INDEPENDENCE OF THE REPUBLIC OF TAJIKISTAN"
+},
+"issues": []
+},
+"481894": {
+"title": "100 Somoni (Independence)",
+"type": "Non-circulating coins",
+"min_year": 2021,
+"max_year": 2021,
+"value": {
+"text": "100 Somoni",
+"numeric_value": 100,
+"currency": {
+"id": 186,
+"name": "Somoni",
+"full_name": "Somoni (2000-date)"
+}
+},
+"composition": {
+"text": "Silver (.925)"
+},
+"weight": 30,
+"size": 38.61,
+"size2": null,
+"thickness": null,
+"shape": "Round",
+"technique": {
+"text": "Coloured, Milled"
+},
+"orientation": "medal",
+"series": null,
+"commemorated_topic": "30th anniversary of independence",
+"url": "https://en.numista.com/481894",
+"obverse": {
+"picture": "https://en.numista.com/catalogue/photos/tadjikistan/6925504c60e5a7.44543730-original.jpg",
+"picture_copyright": "Coinsberg",
+"picture_copyright_url": "https://www.coinsberg.com/",
+"picture_license_name": null,
+"picture_license_url": null,
+"description": null,
+"lettering": "Ag 925 30 g\r\nREPUBLIC OF TAJIKISTAN"
+},
+"reverse": {
+"picture": "https://en.numista.com/catalogue/photos/tadjikistan/6925504d13b562.11071883-original.jpg",
+"picture_copyright": "Coinsberg",
+"picture_copyright_url": "https://www.coinsberg.com/",
+"picture_license_name": null,
+"picture_license_url": null,
+"description": null,
+"lettering": "1991 2021\r\n30\r\nSTATE INDEPENDENCE OF THE REPUBLIC OF TAJIKISTAN"
+},
+"issues": []
+},
+"481725": {
+"title": "100 Somoni (Aquila Chrysaetos)",
+"type": "Non-circulating coins",
+"min_year": 2021,
+"max_year": 2021,
+"value": {
+"text": "100 Somoni",
+"numeric_value": 100,
+"currency": {
+"id": 186,
+"name": "Somoni",
+"full_name": "Somoni (2000-date)"
+}
+},
+"composition": {
+"text": "Silver (.925) (with selective gilding)"
+},
+"weight": 28.28,
+"size": 41,
+"size2": null,
+"thickness": null,
+"shape": "Round",
+"technique": {
+"text": "Inlaid, Milled"
+},
+"orientation": null,
+"series": "Fauna of Tajikistan",
+"commemorated_topic": null,
+"url": "https://en.numista.com/481725",
+"obverse": {
+"picture": "https://en.numista.com/catalogue/photos/tadjikistan/69233a8c10e798.64483557-original.jpg",
+"picture_copyright": "Coinsberg",
+"picture_copyright_url": "https://www.coinsberg.com/",
+"picture_license_name": null,
+"picture_license_url": null,
+"description": null,
+"lettering": "Ag 925 28.28 g\r\n2021"
+},
+"reverse": {
+"picture": "https://en.numista.com/catalogue/photos/tadjikistan/69233a8ca2e561.65286046-original.jpg",
+"picture_copyright": "Coinsberg",
+"picture_copyright_url": "https://www.coinsberg.com/",
+"picture_license_name": null,
+"picture_license_url": null,
+"description": null,
+"lettering": "(Aquila chrysaetos)"
+},
+"issues": []
+},
+"481723": {
+"title": "100 Somoni (Cervus Elaphus Bactrianus)",
+"type": "Non-circulating coins",
+"min_year": 2021,
+"max_year": 2021,
+"value": {
+"text": "100 Somoni",
+"numeric_value": 100,
+"currency": {
+"id": 186,
+"name": "Somoni",
+"full_name": "Somoni (2000-date)"
+}
+},
+"composition": {
+"text": "Silver (.925) (with selective gilding)"
+},
+"weight": 28.28,
+"size": 41,
+"size2": null,
+"thickness": null,
+"shape": "Round",
+"technique": {
+"text": "Inlaid, Milled"
+},
+"orientation": null,
+"series": "Fauna of Tajikistan",
+"commemorated_topic": null,
+"url": "https://en.numista.com/481723",
+"obverse": {
+"picture": "https://en.numista.com/catalogue/photos/tadjikistan/69233a4823cf07.78781749-original.jpg",
+"picture_copyright": "Coinsberg",
+"picture_copyright_url": "https://www.coinsberg.com/",
+"picture_license_name": null,
+"picture_license_url": null,
+"description": null,
+"lettering": "Ag 925 28.28 g\r\n2021"
+},
+"reverse": {
+"picture": "https://en.numista.com/catalogue/photos/tadjikistan/69233a48a905a9.48699622-original.jpg",
+"picture_copyright": "Coinsberg",
+"picture_copyright_url": "https://www.coinsberg.com/",
+"picture_license_name": null,
+"picture_license_url": null,
+"description": null,
+"lettering": "(Cervus elaphus bactrianus)"
+},
+"issues": []
+},
+"481724": {
+"title": "100 Somoni (Otis Tarda Tarda)",
+"type": "Non-circulating coins",
+"min_year": 2021,
+"max_year": 2021,
+"value": {
+"text": "100 Somoni",
+"numeric_value": 100,
+"currency": {
+"id": 186,
+"name": "Somoni",
+"full_name": "Somoni (2000-date)"
+}
+},
+"composition": {
+"text": "Silver (.925) (with selective gilding)"
+},
+"weight": 28.28,
+"size": 41,
+"size2": null,
+"thickness": null,
+"shape": "Round",
+"technique": {
+"text": "Inlaid, Milled"
+},
+"orientation": null,
+"series": "Fauna of Tajikistan",
+"commemorated_topic": null,
+"url": "https://en.numista.com/481724",
+"obverse": {
+"picture": "https://en.numista.com/catalogue/photos/tadjikistan/69233a69d029c8.09039656-original.jpg",
+"picture_copyright": "Coinsberg",
+"picture_copyright_url": "https://www.coinsberg.com/",
+"picture_license_name": null,
+"picture_license_url": null,
+"description": null,
+"lettering": "Ag 925 28.28 g\r\n2021"
+},
+"reverse": {
+"picture": "https://en.numista.com/catalogue/photos/tadjikistan/69233a6ada9de2.25413166-original.jpg",
+"picture_copyright": "Coinsberg",
+"picture_copyright_url": "https://www.coinsberg.com/",
+"picture_license_name": null,
+"picture_license_url": null,
+"description": null,
+"lettering": "(Otis tarda tarda)"
+},
+"issues": []
+},
+"481721": {
+"title": "100 Somoni (Pseudoscaphirhynchus)",
+"type": "Non-circulating coins",
+"min_year": 2021,
+"max_year": 2021,
+"value": {
+"text": "100 Somoni",
+"numeric_value": 100,
+"currency": {
+"id": 186,
+"name": "Somoni",
+"full_name": "Somoni (2000-date)"
+}
+},
+"composition": {
+"text": "Silver (.925) (with selective gilding)"
+},
+"weight": 28.28,
+"size": 41,
+"size2": null,
+"thickness": null,
+"shape": "Round",
+"technique": {
+"text": "Inlaid, Milled"
+},
+"orientation": null,
+"series": "Fauna of Tajikistan",
+"commemorated_topic": null,
+"url": "https://en.numista.com/481721",
+"obverse": {
+"picture": "https://en.numista.com/catalogue/photos/tadjikistan/692294e37c2a64.20297563-original.jpg",
+"picture_copyright": "Coinsberg",
+"picture_copyright_url": "https://www.coinsberg.com/",
+"picture_license_name": null,
+"picture_license_url": null,
+"description": null,
+"lettering": "Ag 925 28.28 g\r\n2021"
+},
+"reverse": {
+"picture": "https://en.numista.com/catalogue/photos/tadjikistan/692294e3e965b1.38732513-original.jpg",
+"picture_copyright": "Coinsberg",
+"picture_copyright_url": "https://www.coinsberg.com/",
+"picture_license_name": null,
+"picture_license_url": null,
+"description": null,
+"lettering": "(Pseudoscaphirhynchus)"
+},
+"issues": []
+},
+"481720": {
+"title": "100 Somoni (Ovis Ammon Polii)",
+"type": "Non-circulating coins",
+"min_year": 2021,
+"max_year": 2021,
+"value": {
+"text": "100 Somoni",
+"numeric_value": 100,
+"currency": {
+"id": 186,
+"name": "Somoni",
+"full_name": "Somoni (2000-date)"
+}
+},
+"composition": {
+"text": "Silver (.925) (with selective gilding)"
+},
+"weight": 28.28,
+"size": 41,
+"size2": null,
+"thickness": null,
+"shape": "Round",
+"technique": {
+"text": "Milled"
+},
+"orientation": null,
+"series": "Fauna of Tajikistan",
+"commemorated_topic": null,
+"url": "https://en.numista.com/481720",
+"obverse": {
+"picture": "https://en.numista.com/catalogue/photos/tadjikistan/692294be86f123.95758330-original.jpg",
+"picture_copyright": "Coinsberg",
+"picture_copyright_url": "https://www.coinsberg.com/",
+"picture_license_name": null,
+"picture_license_url": null,
+"description": null,
+"lettering": "Ag 925 28.28 g\r\n2021"
+},
+"reverse": {
+"picture": "https://en.numista.com/catalogue/photos/tadjikistan/692294bee91d54.20333964-original.jpg",
+"picture_copyright": "Coinsberg",
+"picture_copyright_url": "https://www.coinsberg.com/",
+"picture_license_name": null,
+"picture_license_url": null,
+"description": null,
+"lettering": "(Ovis ammon polii)"
+},
+"issues": []
+},
+"481722": {
+"title": "100 Somoni (Panthera Uncia)",
+"type": "Non-circulating coins",
+"min_year": 2021,
+"max_year": 2021,
+"value": {
+"text": "100 Somoni",
+"numeric_value": 100,
+"currency": {
+"id": 186,
+"name": "Somoni",
+"full_name": "Somoni (2000-date)"
+}
+},
+"composition": {
+"text": "Silver (.925) (with selective gilding)"
+},
+"weight": 28.28,
+"size": 41,
+"size2": null,
+"thickness": null,
+"shape": "Round",
+"technique": {
+"text": "Inlaid, Milled"
+},
+"orientation": null,
+"series": "Fauna of Tajikistan",
+"commemorated_topic": null,
+"url": "https://en.numista.com/481722",
+"obverse": {
+"picture": "https://en.numista.com/catalogue/photos/tadjikistan/69233a272e6a60.76771298-original.jpg",
+"picture_copyright": "Coinsberg",
+"picture_copyright_url": "https://www.coinsberg.com/",
+"picture_license_name": null,
+"picture_license_url": null,
+"description": null,
+"lettering": "Ag 925 28.28 g\r\n2021"
+},
+"reverse": {
+"picture": "https://en.numista.com/catalogue/photos/tadjikistan/69233a27c919c6.08404253-original.jpg",
+"picture_copyright": "Coinsberg",
+"picture_copyright_url": "https://www.coinsberg.com/",
+"picture_license_name": null,
+"picture_license_url": null,
+"description": null,
+"lettering": "(Panthera uncia)"
+},
+"issues": []
+},
+"481727": {
+"title": "100 Somoni (Alectoris Chukar)",
+"type": "Non-circulating coins",
+"min_year": 2021,
+"max_year": 2021,
+"value": {
+"text": "100 Somoni",
+"numeric_value": 100,
+"currency": {
+"id": 186,
+"name": "Somoni",
+"full_name": "Somoni (2000-date)"
+}
+},
+"composition": {
+"text": "Silver (.925) (with selective gilding)"
+},
+"weight": 28.28,
+"size": 41,
+"size2": null,
+"thickness": null,
+"shape": "Round",
+"technique": {
+"text": "Inlaid, Milled"
+},
+"orientation": null,
+"series": "Fauna of Tajikistan",
+"commemorated_topic": null,
+"url": "https://en.numista.com/481727",
+"obverse": {
+"picture": "https://en.numista.com/catalogue/photos/tadjikistan/6923f8473e5776.21443944-original.jpg",
+"picture_copyright": "Coinsberg",
+"picture_copyright_url": "https://www.coinsberg.com/",
+"picture_license_name": null,
+"picture_license_url": null,
+"description": null,
+"lettering": "Ag 925 28.28 g\r\n2021"
+},
+"reverse": {
+"picture": "https://en.numista.com/catalogue/photos/tadjikistan/6923f847d0e366.16095445-original.jpg",
+"picture_copyright": "Coinsberg",
+"picture_copyright_url": "https://www.coinsberg.com/",
+"picture_license_name": null,
+"picture_license_url": null,
+"description": null,
+"lettering": "(Alectoris chukar)"
+},
+"issues": []
+},
+"481716": {
+"title": "100 Somoni (Panthera Tigris Virgata)",
+"type": "Non-circulating coins",
+"min_year": 2021,
+"max_year": 2021,
+"value": {
+"text": "100 Somoni",
+"numeric_value": 100,
+"currency": {
+"id": 186,
+"name": "Somoni",
+"full_name": "Somoni (2000-date)"
+}
+},
+"composition": {
+"text": "Silver (.925) (with selective gilding)"
+},
+"weight": 28.28,
+"size": 41,
+"size2": null,
+"thickness": null,
+"shape": "Round",
+"technique": {
+"text": "Inlaid, Milled"
+},
+"orientation": null,
+"series": "Fauna of Tajikistan",
+"commemorated_topic": null,
+"url": "https://en.numista.com/481716",
+"obverse": {
+"picture": "https://en.numista.com/catalogue/photos/tadjikistan/6922944b80dd15.21662542-original.jpg",
+"picture_copyright": "Coinsberg",
+"picture_copyright_url": "https://www.coinsberg.com/",
+"picture_license_name": null,
+"picture_license_url": null,
+"description": null,
+"lettering": "Ag 925 28.28 g\r\n2021"
+},
+"reverse": {
+"picture": "https://en.numista.com/catalogue/photos/tadjikistan/6922944c684331.86852235-original.jpg",
+"picture_copyright": "Coinsberg",
+"picture_copyright_url": "https://www.coinsberg.com/",
+"picture_license_name": null,
+"picture_license_url": null,
+"description": null,
+"lettering": "(Panthera tigris virgata)"
+},
+"issues": []
+},
+"481726": {
+"title": "100 Somoni (Phasianus Colchicus Bianchi)",
+"type": "Non-circulating coins",
+"min_year": 2021,
+"max_year": 2021,
+"value": {
+"text": "100 Somoni",
+"numeric_value": 100,
+"currency": {
+"id": 186,
+"name": "Somoni",
+"full_name": "Somoni (2000-date)"
+}
+},
+"composition": {
+"text": "Silver (.925) (with selective gilding)"
+},
+"weight": 28.28,
+"size": 41,
+"size2": null,
+"thickness": null,
+"shape": "Round",
+"technique": {
+"text": "Inlaid, Milled"
+},
+"orientation": null,
+"series": "Fauna of Tajikistan",
+"commemorated_topic": null,
+"url": "https://en.numista.com/481726",
+"obverse": {
+"picture": "https://en.numista.com/catalogue/photos/tadjikistan/69233ac56b6815.04549586-original.jpg",
+"picture_copyright": "Coinsberg",
+"picture_copyright_url": "https://www.coinsberg.com/",
+"picture_license_name": null,
+"picture_license_url": null,
+"description": null,
+"lettering": "Ag 925 28.28 g\r\n2021"
+},
+"reverse": {
+"picture": "https://en.numista.com/catalogue/photos/tadjikistan/69233ac6bd72b9.59641483-original.jpg",
+"picture_copyright": "Coinsberg",
+"picture_copyright_url": "https://www.coinsberg.com/",
+"picture_license_name": null,
+"picture_license_url": null,
+"description": null,
+"lettering": "(Phasianus colchicus bianchi)"
+},
+"issues": []
+},
+"481736": {
+"title": "100 Somoni (Shanghai Pact)",
+"type": "Non-circulating coins",
+"min_year": 2021,
+"max_year": 2021,
+"value": {
+"text": "100 Somoni",
+"numeric_value": 100,
+"currency": {
+"id": 186,
+"name": "Somoni",
+"full_name": "Somoni (2000-date)"
+}
+},
+"composition": {
+"text": "Silver (.925)"
+},
+"weight": 30,
+"size": 38.61,
+"size2": null,
+"thickness": null,
+"shape": "Round",
+"technique": {
+"text": "Coloured, Milled"
+},
+"orientation": "medal",
+"series": "Shanghai Pact",
+"commemorated_topic": "20th anniversary of the Shanghai Pact",
+"url": "https://en.numista.com/481736",
+"obverse": {
+"picture": "https://en.numista.com/catalogue/photos/tadjikistan/6923f8fe9f2476.78167175-original.jpg",
+"picture_copyright": "Coinsberg",
+"picture_copyright_url": "https://www.coinsberg.com/",
+"picture_license_name": null,
+"picture_license_url": null,
+"description": "Coat of arms and value at centre, with country name in Tajik above and in English below",
+"lettering": "Ag 925 30 g\r\nREPUBLIC OF TAJIKISTAN"
+},
+"reverse": {
+"picture": "https://en.numista.com/catalogue/photos/tadjikistan/6923f8ff1712e7.87317692-original.jpg",
+"picture_copyright": "Coinsberg",
+"picture_copyright_url": "https://www.coinsberg.com/",
+"picture_license_name": null,
+"picture_license_url": null,
+"description": "Shanghai Cooperation Organization logo at centre with flags of member states (India, Kazakhstan, People's Republic of China, Pakistan, Russia, Tajikistan, and Uzbekistan) above",
+"lettering": null
+},
+"issues": []
+},
+"481718": {
+"title": "100 Somoni (Falco Cherrug Coatsi)",
+"type": "Non-circulating coins",
+"min_year": 2021,
+"max_year": 2021,
+"value": {
+"text": "100 Somoni",
+"numeric_value": 100,
+"currency": {
+"id": 186,
+"name": "Somoni",
+"full_name": "Somoni (2000-date)"
+}
+},
+"composition": {
+"text": "Silver (.925) (with selective gilding)"
+},
+"weight": 28.28,
+"size": 41,
+"size2": null,
+"thickness": null,
+"shape": "Round",
+"technique": {
+"text": "Inlaid, Milled"
+},
+"orientation": null,
+"series": "Fauna of Tajikistan",
+"commemorated_topic": null,
+"url": "https://en.numista.com/481718",
+"obverse": {
+"picture": "https://en.numista.com/catalogue/photos/tadjikistan/6922946f4fd4a0.76299320-original.jpg",
+"picture_copyright": "Coinsberg",
+"picture_copyright_url": "https://www.coinsberg.com/",
+"picture_license_name": null,
+"picture_license_url": null,
+"description": null,
+"lettering": "Ag 925 28.28 g\r\n2021"
+},
+"reverse": {
+"picture": "https://en.numista.com/catalogue/photos/tadjikistan/692294702579d1.61540710-original.jpg",
+"picture_copyright": "Coinsberg",
+"picture_copyright_url": "https://www.coinsberg.com/",
+"picture_license_name": null,
+"picture_license_url": null,
+"description": null,
+"lettering": "(Falco cherrug coatsi)"
+},
+"issues": []
+},
+"481728": {
+"title": "100 Somoni (Gazella Subgutturosa)",
+"type": "Non-circulating coins",
+"min_year": 2021,
+"max_year": 2021,
+"value": {
+"text": "100 Somoni",
+"numeric_value": 100,
+"currency": {
+"id": 186,
+"name": "Somoni",
+"full_name": "Somoni (2000-date)"
+}
+},
+"composition": {
+"text": "Silver (.925) (with selective gilding)"
+},
+"weight": 28.28,
+"size": 41,
+"size2": null,
+"thickness": null,
+"shape": "Round",
+"technique": {
+"text": "Inlaid, Milled"
+},
+"orientation": null,
+"series": "Fauna of Tajikistan",
+"commemorated_topic": null,
+"url": "https://en.numista.com/481728",
+"obverse": {
+"picture": "https://en.numista.com/catalogue/photos/tadjikistan/6923f86bbbe526.80031257-original.jpg",
+"picture_copyright": "Coinsberg",
+"picture_copyright_url": "https://www.coinsberg.com/",
+"picture_license_name": null,
+"picture_license_url": null,
+"description": null,
+"lettering": "Ag 925 28.28 g\r\n2021"
+},
+"reverse": {
+"picture": "https://en.numista.com/catalogue/photos/tadjikistan/6923f86c5243b3.59706258-original.jpg",
+"picture_copyright": "Coinsberg",
+"picture_copyright_url": "https://www.coinsberg.com/",
+"picture_license_name": null,
+"picture_license_url": null,
+"description": null,
+"lettering": "(Gazella subgutturosa)"
+},
+"issues": []
+},
+"481719": {
+"title": "100 Somoni (Capra Falconeri)",
+"type": "Non-circulating coins",
+"min_year": 2021,
+"max_year": 2021,
+"value": {
+"text": "100 Somoni",
+"numeric_value": 100,
+"currency": {
+"id": 186,
+"name": "Somoni",
+"full_name": "Somoni (2000-date)"
+}
+},
+"composition": {
+"text": "Silver (.925) (with selective gilding)"
+},
+"weight": 28.28,
+"size": 41,
+"size2": null,
+"thickness": null,
+"shape": "Round",
+"technique": {
+"text": "Inlaid, Milled"
+},
+"orientation": null,
+"series": "Fauna of Tajikistan",
+"commemorated_topic": null,
+"url": "https://en.numista.com/481719",
+"obverse": {
+"picture": "https://en.numista.com/catalogue/photos/tadjikistan/692294979886e1.15590351-original.jpg",
+"picture_copyright": "Coinsberg",
+"picture_copyright_url": "https://www.coinsberg.com/",
+"picture_license_name": null,
+"picture_license_url": null,
+"description": null,
+"lettering": "Ag 925 28.28 g\r\n2021"
+},
+"reverse": {
+"picture": "https://en.numista.com/catalogue/photos/tadjikistan/6922949854ed06.49345163-original.jpg",
+"picture_copyright": "Coinsberg",
+"picture_copyright_url": "https://www.coinsberg.com/",
+"picture_license_name": null,
+"picture_license_url": null,
+"description": null,
+"lettering": "(Capra falconeri)"
+},
+"issues": []
+},
+"481735": {
+"title": "200 Somoni (Shanghai Pact)",
+"type": "Non-circulating coins",
+"min_year": 2021,
+"max_year": 2021,
+"value": {
+"text": "200 Somoni",
+"numeric_value": 200,
+"currency": {
+"id": 186,
+"name": "Somoni",
+"full_name": "Somoni (2000-date)"
+}
+},
+"composition": {
+"text": "Silver (.925)"
+},
+"weight": 40,
+"size": 50,
+"size2": null,
+"thickness": null,
+"shape": "Round",
+"technique": {
+"text": "Coloured, Milled"
+},
+"orientation": "medal",
+"series": "Shanghai Pact",
+"commemorated_topic": "20th anniversary of the Shanghai Pact",
+"url": "https://en.numista.com/481735",
+"obverse": {
+"picture": "https://en.numista.com/catalogue/photos/tadjikistan/6923f8d9c3bd01.00506372-original.jpg",
+"picture_copyright": "Coinsberg",
+"picture_copyright_url": "https://www.coinsberg.com/",
+"picture_license_name": null,
+"picture_license_url": null,
+"description": "Coat of arms and value at centre, with country name in Tajik above and in English below",
+"lettering": "Ag 925 40 g\r\nREPUBLIC OF TAJIKISTAN"
+},
+"reverse": {
+"picture": "https://en.numista.com/catalogue/photos/tadjikistan/6923f8dab3c959.93752418-original.jpg",
+"picture_copyright": "Coinsberg",
+"picture_copyright_url": "https://www.coinsberg.com/",
+"picture_license_name": null,
+"picture_license_url": null,
+"description": "Shanghai Cooperation Organization logo at centre with flags of member states (India, Kazakhstan, People's Republic of China, Pakistan, Russia, Tajikistan, and Uzbekistan) above",
+"lettering": null
+},
+"issues": []
+},
+"481895": {
+"title": "200 Somoni (Independence)",
+"type": "Non-circulating coins",
+"min_year": 2021,
+"max_year": 2021,
+"value": {
+"text": "200 Somoni",
+"numeric_value": 200,
+"currency": {
+"id": 186,
+"name": "Somoni",
+"full_name": "Somoni (2000-date)"
+}
+},
+"composition": {
+"text": "Silver (.925)"
+},
+"weight": 40,
+"size": 30,
+"size2": null,
+"thickness": null,
+"shape": "Round",
+"technique": {
+"text": "Coloured, Milled"
+},
+"orientation": "medal",
+"series": null,
+"commemorated_topic": "30th anniversary of independence",
+"url": "https://en.numista.com/481895",
+"obverse": {
+"picture": "https://en.numista.com/catalogue/photos/tadjikistan/6925506db9dee5.95711631-original.jpg",
+"picture_copyright": "Coinsberg",
+"picture_copyright_url": "https://www.coinsberg.com/",
+"picture_license_name": null,
+"picture_license_url": null,
+"description": null,
+"lettering": "Ag 925 40 g\r\nREPUBLIC OF TAJIKISTAN"
+},
+"reverse": {
+"picture": "https://en.numista.com/catalogue/photos/tadjikistan/6925506e91f0b3.96546673-original.jpg",
+"picture_copyright": "Coinsberg",
+"picture_copyright_url": "https://www.coinsberg.com/",
+"picture_license_name": null,
+"picture_license_url": null,
+"description": null,
+"lettering": "1991 2021\r\n30\r\nSTATE INDEPENDENCE OF THE REPUBLIC OF TAJIKISTAN"
+},
+"issues": []
+},
+"481737": {
+"title": "500 Somoni (Shanghai Pact)",
+"type": "Non-circulating coins",
+"min_year": 2021,
+"max_year": 2021,
+"value": {
+"text": "500 Somoni",
+"numeric_value": 500,
+"currency": {
+"id": 186,
+"name": "Somoni",
+"full_name": "Somoni (2000-date)"
+}
+},
+"composition": {
+"text": "Silver (.925)"
+},
+"weight": 50,
+"size": 50,
+"size2": null,
+"thickness": null,
+"shape": "Round",
+"technique": {
+"text": "Coloured, Milled"
+},
+"orientation": "medal",
+"series": "Shanghai Pact",
+"commemorated_topic": "20th anniversary of the Shanghai Pact",
+"url": "https://en.numista.com/481737",
+"obverse": {
+"picture": "https://en.numista.com/catalogue/photos/tadjikistan/69243899b56645.50684204-original.jpg",
+"picture_copyright": "Coinsberg",
+"picture_copyright_url": "https://www.coinsberg.com/",
+"picture_license_name": null,
+"picture_license_url": null,
+"description": "Coat of arms and value at centre, with country name in Tajik above and in English below",
+"lettering": "Ag 925 50 g\r\nREPUBLIC OF TAJIKISTAN"
+},
+"reverse": {
+"picture": "https://en.numista.com/catalogue/photos/tadjikistan/6924389a85bc98.71364918-original.jpg",
+"picture_copyright": "Coinsberg",
+"picture_copyright_url": "https://www.coinsberg.com/",
+"picture_license_name": null,
+"picture_license_url": null,
+"description": "Shanghai Cooperation Organization logo at centre with flags of member states (India, Kazakhstan, People's Republic of China, Pakistan, Russia, Tajikistan, and Uzbekistan) above",
+"lettering": null
+},
+"issues": []
+},
+"481896": {
+"title": "500 Somoni (Independence)",
+"type": "Non-circulating coins",
+"min_year": 2021,
+"max_year": 2021,
+"value": {
+"text": "500 Somoni",
+"numeric_value": 500,
+"currency": {
+"id": 186,
+"name": "Somoni",
+"full_name": "Somoni (2000-date)"
+}
+},
+"composition": {
+"text": "Silver (.925)"
+},
+"weight": 50,
+"size": 50,
+"size2": null,
+"thickness": null,
+"shape": "Round",
+"technique": {
+"text": "Coloured, Milled"
+},
+"orientation": "medal",
+"series": null,
+"commemorated_topic": "30th anniversary of independence",
+"url": "https://en.numista.com/481896",
+"obverse": {
+"picture": "https://en.numista.com/catalogue/photos/tadjikistan/69255090348f68.76758975-original.jpg",
+"picture_copyright": "Coinsberg",
+"picture_copyright_url": "https://www.coinsberg.com/",
+"picture_license_name": null,
+"picture_license_url": null,
+"description": null,
+"lettering": "Ag 925 50 g\r\nREPUBLIC OF TAJIKISTAN"
+},
+"reverse": {
+"picture": "https://en.numista.com/catalogue/photos/tadjikistan/69255090eb3081.86779054-original.jpg",
+"picture_copyright": "Coinsberg",
+"picture_copyright_url": "https://www.coinsberg.com/",
+"picture_license_name": null,
+"picture_license_url": null,
+"description": null,
+"lettering": "1991 2021\r\n30\r\nSTATE INDEPENDENCE OF THE REPUBLIC OF TAJIKISTAN"
+},
+"issues": []
+}
+}
 }

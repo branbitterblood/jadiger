@@ -498,5 +498,1574 @@
 },
 "pages": 2,
 "total": 55,
-"details": {}
+"details": {
+"63730": {
+"title": "10 Soʻm",
+"type": "Non-circulating coins",
+"min_year": 1994,
+"max_year": 1994,
+"value": {
+"text": "10 Soʻm",
+"numeric_value": 10,
+"currency": {
+"id": 188,
+"name": "Second soʻm",
+"full_name": "Second soʻm (1994-date)"
+}
+},
+"composition": {
+"text": "Silver (.999)"
+},
+"weight": 31.1,
+"size": 38,
+"size2": null,
+"thickness": null,
+"shape": "Round",
+"technique": {
+"text": "Milled"
+},
+"orientation": "medal",
+"series": null,
+"commemorated_topic": "3rd Anniversary of Independency",
+"url": "https://en.numista.com/63730",
+"obverse": {
+"picture": null,
+"picture_copyright": null,
+"picture_copyright_url": null,
+"picture_license_name": null,
+"picture_license_url": null,
+"description": "Coat of Arms above date, denomination below",
+"lettering": "ÖZBEKISTON MUSTAQILLIGINIÑ 3 YILLIGI\r\n1994"
+},
+"reverse": {
+"picture": null,
+"picture_copyright": null,
+"picture_copyright_url": null,
+"picture_license_name": null,
+"picture_license_url": null,
+"description": "Tamerlane Statue in Tashkent, value below",
+"lettering": "TOŞKENT\r\n10 SÖM\r\nAMIR TEMUR HAYKALI"
+},
+"issues": []
+},
+"3097": {
+"title": "25 Soʻm (Jaloliddin Manguberdi)",
+"type": "Circulating commemorative coins",
+"min_year": 1999,
+"max_year": 1999,
+"value": {
+"text": "25 Soʻm",
+"numeric_value": 25,
+"currency": {
+"id": 188,
+"name": "Second soʻm",
+"full_name": "Second soʻm (1994-date)"
+}
+},
+"composition": {
+"text": "Copper-nickel clad steel"
+},
+"weight": 5.9,
+"size": 27,
+"size2": null,
+"thickness": 1.7,
+"shape": "Round",
+"technique": {
+"text": "Milled"
+},
+"orientation": "medal",
+"series": null,
+"commemorated_topic": "800th Anniversary of Birth of Jaloliddin Manguberdi",
+"url": "https://en.numista.com/3097",
+"obverse": {
+"picture": "https://en.numista.com/catalogue/photos/ouzbekistan/67b761da752125.82623531-original.jpg",
+"picture_copyright": "ngdawa",
+"picture_copyright_url": null,
+"picture_license_name": "CC BY-NC-SA",
+"picture_license_url": "https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en",
+"description": "National Coat of Arms, date below",
+"lettering": "OʻZBEKISTON RESPUBLIKASI\r\n∙ 1999 ∙"
+},
+"reverse": {
+"picture": "https://en.numista.com/catalogue/photos/ouzbekistan/67b761dad19722.47856371-original.jpg",
+"picture_copyright": "ngdawa",
+"picture_copyright_url": null,
+"picture_license_name": "CC BY-NC-SA",
+"picture_license_url": "https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en",
+"description": "Jaloliddin Manguberdi, denomination right",
+"lettering": "JALOLIDDIN MANGUBERDI 800 yil\r\n25\r\nSOʻM"
+},
+"issues": []
+},
+"379075": {
+"title": "100 Soʻm (Ulugʻbek)",
+"type": "Non-circulating coins",
+"min_year": 1999,
+"max_year": 1999,
+"value": {
+"text": "100 Soʻm",
+"numeric_value": 100,
+"currency": {
+"id": 188,
+"name": "Second soʻm",
+"full_name": "Second soʻm (1994-date)"
+}
+},
+"composition": {
+"text": "Silver (.9999)"
+},
+"weight": 31.1,
+"size": 38,
+"size2": null,
+"thickness": 3.1,
+"shape": "Round",
+"technique": {
+"text": "Milled"
+},
+"orientation": "medal",
+"series": null,
+"commemorated_topic": null,
+"url": "https://en.numista.com/379075",
+"obverse": {
+"picture": "https://en.numista.com/catalogue/photos/ouzbekistan/65f1786c10cab6.89042283-original.jpg",
+"picture_copyright": "Coinsberg",
+"picture_copyright_url": "https://www.coinsberg.com/",
+"picture_license_name": null,
+"picture_license_url": null,
+"description": "National Coat of Arms, denomination below",
+"lettering": "O‘ZBEKISTON RESPUBLIKASI\r\n\r\n100\r\nSOʻM\r\nAg 999,9 31,1 gr. 1999 yil"
+},
+"reverse": {
+"picture": "https://en.numista.com/catalogue/photos/ouzbekistan/65f1786c71f969.41479534-original.jpg",
+"picture_copyright": "Coinsberg",
+"picture_copyright_url": "https://www.coinsberg.com/",
+"picture_license_name": null,
+"picture_license_url": null,
+"description": "Portrait of Mirzo Ulugʻbek",
+"lettering": "BUYUK SIYMOLAR\r\n\r\n1394 • MIRZO ULUG‘BEK • 1449"
+},
+"issues": []
+},
+"5885": {
+"title": "50 Soʻm (Independence)",
+"type": "Circulating commemorative coins",
+"min_year": 2001,
+"max_year": 2001,
+"value": {
+"text": "50 Soʻm",
+"numeric_value": 50,
+"currency": {
+"id": 188,
+"name": "Second soʻm",
+"full_name": "Second soʻm (1994-date)"
+}
+},
+"composition": {
+"text": "Copper-nickel clad steel"
+},
+"weight": 8,
+"size": 26.2,
+"size2": null,
+"thickness": 2,
+"shape": "Round",
+"technique": {
+"text": "Milled"
+},
+"orientation": "medal",
+"series": null,
+"commemorated_topic": "10th Anniversary of Independence",
+"url": "https://en.numista.com/5885",
+"obverse": {
+"picture": "https://en.numista.com/catalogue/photos/ouzbekistan/139-original.jpg",
+"picture_copyright": "Cyrillius",
+"picture_copyright_url": null,
+"picture_license_name": null,
+"picture_license_url": null,
+"description": "National Coat of Arms, date below",
+"lettering": "OʻZBEKISTON MARKAZIY BANKI\r\n2001"
+},
+"reverse": {
+"picture": "https://en.numista.com/catalogue/photos/ouzbekistan/140-original.jpg",
+"picture_copyright": "Cyrillius",
+"picture_copyright_url": null,
+"picture_license_name": null,
+"picture_license_url": null,
+"description": "Map of Uzbekistan, denomination above",
+"lettering": "OʻZBEKISTON RESPUBLIKASI MUSTAQILLIGINING\r\n50\r\nSOʻM\r\n·10 YILLIGI· (10th Anniversary)"
+},
+"issues": []
+},
+"77676": {
+"title": "50 Soʻm (Independence; light type)",
+"type": "Circulating commemorative coins",
+"min_year": 2001,
+"max_year": 2001,
+"value": {
+"text": "50 Soʻm",
+"numeric_value": 50,
+"currency": {
+"id": 188,
+"name": "Second soʻm",
+"full_name": "Second soʻm (1994-date)"
+}
+},
+"composition": {
+"text": "Copper-nickel clad steel"
+},
+"weight": 6,
+"size": 26.2,
+"size2": null,
+"thickness": 1.4,
+"shape": "Round",
+"technique": {
+"text": "Milled"
+},
+"orientation": "medal",
+"series": null,
+"commemorated_topic": "10th Anniversary of Independence",
+"url": "https://en.numista.com/77676",
+"obverse": {
+"picture": "https://en.numista.com/catalogue/photos/ouzbekistan/121-original.jpg",
+"picture_copyright": "bofried",
+"picture_copyright_url": null,
+"picture_license_name": null,
+"picture_license_url": null,
+"description": "National Coat of Arms, date below",
+"lettering": "OʻZBEKISTON MARKAZIY BANKI\r\n2001"
+},
+"reverse": {
+"picture": "https://en.numista.com/catalogue/photos/ouzbekistan/122-original.jpg",
+"picture_copyright": "bofried",
+"picture_copyright_url": null,
+"picture_license_name": null,
+"picture_license_url": null,
+"description": "Map of Uzbekistan, denomination above",
+"lettering": "OʻZBEKISTON RESPUBLIKASI MUSTAQILLIGINING\r\n50\r\nSOʻM\r\n·10 YILLIGI· (10th Anniversary)"
+},
+"issues": []
+},
+"100291": {
+"title": "100 Soʻm (Alisher Novoiy)",
+"type": "Non-circulating coins",
+"min_year": 2001,
+"max_year": 2001,
+"value": {
+"text": "100 Soʻm",
+"numeric_value": 100,
+"currency": {
+"id": 188,
+"name": "Second soʻm",
+"full_name": "Second soʻm (1994-date)"
+}
+},
+"composition": {
+"text": "Silver (.9999)"
+},
+"weight": 31.1,
+"size": 38.61,
+"size2": null,
+"thickness": null,
+"shape": "Round",
+"technique": {
+"text": "Milled"
+},
+"orientation": null,
+"series": null,
+"commemorated_topic": "Alisher Novoiy, 500th Anniversary of Death",
+"url": "https://en.numista.com/100291",
+"obverse": {
+"picture": "https://en.numista.com/catalogue/photos/ouzbekistan/65f54e828044b8.21728068-original.jpg",
+"picture_copyright": "Coinsberg",
+"picture_copyright_url": "https://www.coinsberg.com/",
+"picture_license_name": null,
+"picture_license_url": null,
+"description": "National arms",
+"lettering": "OZBEKISTON MARKAZIY BANKI\r\nAg 999,9 2001 31,1 gr"
+},
+"reverse": {
+"picture": "https://en.numista.com/catalogue/photos/ouzbekistan/65f54e83250f56.68271040-original.jpg",
+"picture_copyright": "Coinsberg",
+"picture_copyright_url": "https://www.coinsberg.com/",
+"picture_license_name": null,
+"picture_license_url": null,
+"description": "Alisher Navoiy",
+"lettering": "OZBEKISTON MUSTAQILLIGINING 10 YILLIGI\r\n100\r\nSO'M"
+},
+"issues": []
+},
+"100292": {
+"title": "100 Soʻm (Parliament)",
+"type": "Non-circulating coins",
+"min_year": 2001,
+"max_year": 2001,
+"value": {
+"text": "100 Soʻm",
+"numeric_value": 100,
+"currency": {
+"id": 188,
+"name": "Second soʻm",
+"full_name": "Second soʻm (1994-date)"
+}
+},
+"composition": {
+"text": "Silver (.999)"
+},
+"weight": 31.1,
+"size": null,
+"size2": null,
+"thickness": null,
+"shape": "Round",
+"technique": {
+"text": "Milled"
+},
+"orientation": null,
+"series": null,
+"commemorated_topic": "10th Anniversary of Uzbekistan's Independence",
+"url": "https://en.numista.com/100292",
+"obverse": {
+"picture": null,
+"picture_copyright": null,
+"picture_copyright_url": null,
+"picture_license_name": null,
+"picture_license_url": null,
+"description": "National arms, date below",
+"lettering": "• OʻZBEKISTON MARKAZIY BANKI •\r\n2001"
+},
+"reverse": {
+"picture": null,
+"picture_copyright": null,
+"picture_copyright_url": null,
+"picture_license_name": null,
+"picture_license_url": null,
+"description": "Parliament building in Toskent, denomination below",
+"lettering": "OʻZBEKISTON MUSTAQILLIGINING 10 YIL\r\n100 SOʻM"
+},
+"issues": []
+},
+"100293": {
+"title": "100 Soʻm (Amir-Timur Museum)",
+"type": "Non-circulating coins",
+"min_year": 2001,
+"max_year": 2001,
+"value": {
+"text": "100 Soʻm",
+"numeric_value": 100,
+"currency": {
+"id": 188,
+"name": "Second soʻm",
+"full_name": "Second soʻm (1994-date)"
+}
+},
+"composition": {
+"text": "Silver (.9999)"
+},
+"weight": 31.1,
+"size": null,
+"size2": null,
+"thickness": null,
+"shape": "Round",
+"technique": {
+"text": "Milled"
+},
+"orientation": null,
+"series": null,
+"commemorated_topic": "Amir-Timur Museum",
+"url": "https://en.numista.com/100293",
+"obverse": {
+"picture": "https://en.numista.com/catalogue/photos/ouzbekistan/65fa842ac724f1.61053435-original.jpg",
+"picture_copyright": "Coinsberg",
+"picture_copyright_url": "https://www.coinsberg.com/",
+"picture_license_name": null,
+"picture_license_url": null,
+"description": "National arms",
+"lettering": "OZBEKISTON MARKAZIY BANKI\r\nAg 999,9 2001 31,1 gr"
+},
+"reverse": {
+"picture": "https://en.numista.com/catalogue/photos/ouzbekistan/65fa842b5cd875.75592560-original.jpg",
+"picture_copyright": "Coinsberg",
+"picture_copyright_url": "https://www.coinsberg.com/",
+"picture_license_name": null,
+"picture_license_url": null,
+"description": "Amir-Timur Museum",
+"lettering": "OZBEKISTON MUSTAQILLIGINING 10 YILLIGI\r\n100\r\nSO'M"
+},
+"issues": []
+},
+"100294": {
+"title": "100 Soʻm (Toskent town hall)",
+"type": "Non-circulating coins",
+"min_year": 2001,
+"max_year": 2001,
+"value": {
+"text": "100 Soʻm",
+"numeric_value": 100,
+"currency": {
+"id": 188,
+"name": "Second soʻm",
+"full_name": "Second soʻm (1994-date)"
+}
+},
+"composition": {
+"text": "Silver (.9999)"
+},
+"weight": 31.1,
+"size": null,
+"size2": null,
+"thickness": null,
+"shape": "Round",
+"technique": {
+"text": "Milled"
+},
+"orientation": null,
+"series": null,
+"commemorated_topic": "Toskent town hall",
+"url": "https://en.numista.com/100294",
+"obverse": {
+"picture": "https://en.numista.com/catalogue/photos/ouzbekistan/65f5312a9da791.45521206-original.jpg",
+"picture_copyright": "Coinsberg",
+"picture_copyright_url": "https://www.coinsberg.com/",
+"picture_license_name": null,
+"picture_license_url": null,
+"description": "National arms",
+"lettering": "OZBEKISTON MARKAZIY BANKI\r\nAg 999,9 2001 31,1 gr"
+},
+"reverse": {
+"picture": "https://en.numista.com/catalogue/photos/ouzbekistan/65f5312b417710.86370075-original.jpg",
+"picture_copyright": "Coinsberg",
+"picture_copyright_url": "https://www.coinsberg.com/",
+"picture_license_name": null,
+"picture_license_url": null,
+"description": "Toskent town hall",
+"lettering": "OZBEKISTON MUSTAQILLIGINING 10 YILLIGI\r\n100\r\nSO'M"
+},
+"issues": []
+},
+"100295": {
+"title": "100 Soʻm (World)",
+"type": "Non-circulating coins",
+"min_year": 2001,
+"max_year": 2001,
+"value": {
+"text": "100 Soʻm",
+"numeric_value": 100,
+"currency": {
+"id": 188,
+"name": "Second soʻm",
+"full_name": "Second soʻm (1994-date)"
+}
+},
+"composition": {
+"text": "Silver (.9999)"
+},
+"weight": 31.1,
+"size": null,
+"size2": null,
+"thickness": null,
+"shape": "Round",
+"technique": {
+"text": "Milled"
+},
+"orientation": null,
+"series": null,
+"commemorated_topic": "World",
+"url": "https://en.numista.com/100295",
+"obverse": {
+"picture": "https://en.numista.com/catalogue/photos/ouzbekistan/657ab291095de4.90493441-original.jpg",
+"picture_copyright": "Coinsberg",
+"picture_copyright_url": "https://www.coinsberg.com/",
+"picture_license_name": null,
+"picture_license_url": null,
+"description": "National arms",
+"lettering": "OZBEKISTON MARKAZIY BANKI\r\nAg 999,9 2001 31,1 gr"
+},
+"reverse": {
+"picture": "https://en.numista.com/catalogue/photos/ouzbekistan/657ab29178d168.63855925-original.jpg",
+"picture_copyright": "Coinsberg",
+"picture_copyright_url": "https://www.coinsberg.com/",
+"picture_license_name": null,
+"picture_license_url": null,
+"description": "World",
+"lettering": "OZBEKISTON MUSTAQILLIGINING 10 YILLIGI\r\n100\r\nSO'M"
+},
+"issues": []
+},
+"100296": {
+"title": "100 Soʻm (Football player)",
+"type": "Non-circulating coins",
+"min_year": 2001,
+"max_year": 2001,
+"value": {
+"text": "100 Soʻm",
+"numeric_value": 100,
+"currency": {
+"id": 188,
+"name": "Second soʻm",
+"full_name": "Second soʻm (1994-date)"
+}
+},
+"composition": {
+"text": "Silver (.999)"
+},
+"weight": 31.1,
+"size": null,
+"size2": null,
+"thickness": null,
+"shape": "Round",
+"technique": {
+"text": "Milled"
+},
+"orientation": null,
+"series": null,
+"commemorated_topic": "Football player",
+"url": "https://en.numista.com/100296",
+"obverse": {
+"picture": "https://en.numista.com/catalogue/photos/ouzbekistan/5ee928d87d79f8.55204308-original.jpg",
+"picture_copyright": null,
+"picture_copyright_url": null,
+"picture_license_name": null,
+"picture_license_url": null,
+"description": "National arms",
+"lettering": "OʻZBEKISTON MARKAZIY BANKI\r\nAg 999,9   31,1 gr\r\n2001"
+},
+"reverse": {
+"picture": "https://en.numista.com/catalogue/photos/ouzbekistan/5ee928d8c3a073.72358987-original.jpg",
+"picture_copyright": null,
+"picture_copyright_url": null,
+"picture_license_name": null,
+"picture_license_url": null,
+"description": "Football player and stadium",
+"lettering": "OʻZBEKISTON MUSTAQILLIGINING 10 YILLIGI\r\n100\r\nSOʻM"
+},
+"issues": []
+},
+"100297": {
+"title": "100 Soʻm (Track runner)",
+"type": "Non-circulating coins",
+"min_year": 2001,
+"max_year": 2001,
+"value": {
+"text": "100 Soʻm",
+"numeric_value": 100,
+"currency": {
+"id": 188,
+"name": "Second soʻm",
+"full_name": "Second soʻm (1994-date)"
+}
+},
+"composition": {
+"text": "Silver (.999)"
+},
+"weight": 31.1,
+"size": null,
+"size2": null,
+"thickness": null,
+"shape": "Round",
+"technique": {
+"text": "Milled"
+},
+"orientation": null,
+"series": null,
+"commemorated_topic": "Track runner",
+"url": "https://en.numista.com/100297",
+"obverse": {
+"picture": "https://en.numista.com/catalogue/photos/ouzbekistan/5ee929559723c6.91163401-original.jpg",
+"picture_copyright": "Egon Conti Rossini",
+"picture_copyright_url": null,
+"picture_license_name": null,
+"picture_license_url": null,
+"description": "National arms",
+"lettering": "O'ZBEKISTON MARKAZIY BANKI\r\nAg 999,9 31,1 gr\r\n2001"
+},
+"reverse": {
+"picture": "https://en.numista.com/catalogue/photos/ouzbekistan/5ee92956025fb5.07645469-original.jpg",
+"picture_copyright": "egoncontirossini@hotmail.com",
+"picture_copyright_url": null,
+"picture_license_name": null,
+"picture_license_url": null,
+"description": "Track runner",
+"lettering": "O'ZBEKISTON MUSTAQILLIGINING 10 YILLIGI\r\n100\r\nSO'M"
+},
+"issues": []
+},
+"100298": {
+"title": "100 Soʻm (Judo expert)",
+"type": "Non-circulating coins",
+"min_year": 2001,
+"max_year": 2001,
+"value": {
+"text": "100 Soʻm",
+"numeric_value": 100,
+"currency": {
+"id": 188,
+"name": "Second soʻm",
+"full_name": "Second soʻm (1994-date)"
+}
+},
+"composition": {
+"text": "Silver (.999)"
+},
+"weight": 31.1,
+"size": null,
+"size2": null,
+"thickness": null,
+"shape": "Round",
+"technique": {
+"text": "Milled"
+},
+"orientation": null,
+"series": null,
+"commemorated_topic": "Judo expert",
+"url": "https://en.numista.com/100298",
+"obverse": {
+"picture": "https://en.numista.com/catalogue/photos/ouzbekistan/5ee929ca4b4e16.02572979-original.jpg",
+"picture_copyright": "Egon Conti Rossini",
+"picture_copyright_url": null,
+"picture_license_name": null,
+"picture_license_url": null,
+"description": "National arms",
+"lettering": "O'ZBEKISTON MARKAZIY BANKI\r\nAg 999,9 31,1 gr\r\n2001"
+},
+"reverse": {
+"picture": "https://en.numista.com/catalogue/photos/ouzbekistan/5ee929ca8cd883.30015826-original.jpg",
+"picture_copyright": "egoncontirossini@hotmail.com",
+"picture_copyright_url": null,
+"picture_license_name": null,
+"picture_license_url": null,
+"description": "Judo expert",
+"lettering": "O'ZBEKISTON MUSTAQILLIGINING 10 YILLIGI\r\n100\r\nSO'M"
+},
+"issues": []
+},
+"100301": {
+"title": "100 Soʻm (Tennis player)",
+"type": "Non-circulating coins",
+"min_year": 2001,
+"max_year": 2001,
+"value": {
+"text": "100 Soʻm",
+"numeric_value": 100,
+"currency": {
+"id": 188,
+"name": "Second soʻm",
+"full_name": "Second soʻm (1994-date)"
+}
+},
+"composition": {
+"text": "Silver (.999)"
+},
+"weight": 31.1,
+"size": null,
+"size2": null,
+"thickness": null,
+"shape": "Round",
+"technique": {
+"text": "Milled"
+},
+"orientation": null,
+"series": null,
+"commemorated_topic": "10th Anniversary of Independence of Uzbekistan",
+"url": "https://en.numista.com/100301",
+"obverse": {
+"picture": "https://en.numista.com/catalogue/photos/ouzbekistan/5ee92a6085a057.37576464-original.jpg",
+"picture_copyright": "ecr64",
+"picture_copyright_url": null,
+"picture_license_name": null,
+"picture_license_url": null,
+"description": "National Coat of Arms, date below",
+"lettering": "OʻZBEKISTAN MARKAZIY BANKI\r\nAg 999,9\r\n31,1 gr\r\n2001"
+},
+"reverse": {
+"picture": "https://en.numista.com/catalogue/photos/ouzbekistan/5ee92a6210a5e3.69451316-original.jpg",
+"picture_copyright": "ecr64",
+"picture_copyright_url": null,
+"picture_license_name": null,
+"picture_license_url": null,
+"description": "Tennis player",
+"lettering": "OʻZBEKISTAN MUSTAQILLIGINING 10 YILLIGI"
+},
+"issues": []
+},
+"100299": {
+"title": "100 Soʻm (Lenk monument in Timur)",
+"type": "Non-circulating coins",
+"min_year": 2001,
+"max_year": 2001,
+"value": {
+"text": "100 Soʻm",
+"numeric_value": 100,
+"currency": {
+"id": 188,
+"name": "Second soʻm",
+"full_name": "Second soʻm (1994-date)"
+}
+},
+"composition": {
+"text": "Silver (.999)"
+},
+"weight": 31.1,
+"size": null,
+"size2": null,
+"thickness": null,
+"shape": "Round",
+"technique": {
+"text": "Milled"
+},
+"orientation": null,
+"series": null,
+"commemorated_topic": "Lenk monument in Timur",
+"url": "https://en.numista.com/100299",
+"obverse": {
+"picture": "https://en.numista.com/catalogue/photos/ouzbekistan/209-original.jpg",
+"picture_copyright": null,
+"picture_copyright_url": null,
+"picture_license_name": null,
+"picture_license_url": null,
+"description": "Lenk monument in Timur",
+"lettering": "O'ZBEKISTON MARKAZIY BANKI\r\nAg 999,9 31,1 gr\r\n2001"
+},
+"reverse": {
+"picture": "https://en.numista.com/catalogue/photos/ouzbekistan/208-original.jpg",
+"picture_copyright": null,
+"picture_copyright_url": null,
+"picture_license_name": null,
+"picture_license_url": null,
+"description": "National arms",
+"lettering": "O'ZBEKISTON MUSTAQILLIGINING 10 YILLIGI\r\n100\r\nSO'M"
+},
+"issues": []
+},
+"100302": {
+"title": "100 Soʻm (Aliser Navoi monument)",
+"type": "Non-circulating coins",
+"min_year": 2001,
+"max_year": 2001,
+"value": {
+"text": "100 Soʻm",
+"numeric_value": 100,
+"currency": {
+"id": 188,
+"name": "Second soʻm",
+"full_name": "Second soʻm (1994-date)"
+}
+},
+"composition": {
+"text": "Silver (.999)"
+},
+"weight": 31.1,
+"size": null,
+"size2": null,
+"thickness": null,
+"shape": "Round",
+"technique": {
+"text": "Milled"
+},
+"orientation": null,
+"series": null,
+"commemorated_topic": "Aliser Navoi monument",
+"url": "https://en.numista.com/100302",
+"obverse": {
+"picture": "https://en.numista.com/catalogue/photos/ouzbekistan/5ee92ad27d4920.63699624-original.jpg",
+"picture_copyright": "Egon Conti Rossini",
+"picture_copyright_url": null,
+"picture_license_name": null,
+"picture_license_url": null,
+"description": "National arms",
+"lettering": "O'ZBEKISTON MARKAZIY BANKI\r\nAg 999,9 31,1 gr\r\n2001"
+},
+"reverse": {
+"picture": "https://en.numista.com/catalogue/photos/ouzbekistan/5ee92ad2bc5136.54869038-original.jpg",
+"picture_copyright": "egoncontirossini@hotmail.com",
+"picture_copyright_url": null,
+"picture_license_name": null,
+"picture_license_url": null,
+"description": "Aliser Navoi monument",
+"lettering": "O'ZBEKISTON MUSTAQILLIGINING 10 YILLIGI\r\n100\r\nSO'M"
+},
+"issues": []
+},
+"100300": {
+"title": "100 Soʻm (Registan in Samarkand)",
+"type": "Non-circulating coins",
+"min_year": 2001,
+"max_year": 2001,
+"value": {
+"text": "100 Soʻm",
+"numeric_value": 100,
+"currency": {
+"id": 188,
+"name": "Second soʻm",
+"full_name": "Second soʻm (1994-date)"
+}
+},
+"composition": {
+"text": "Silver (.9999)"
+},
+"weight": 31.1,
+"size": 38,
+"size2": null,
+"thickness": null,
+"shape": "Round",
+"technique": {
+"text": "Milled"
+},
+"orientation": "medal",
+"series": null,
+"commemorated_topic": "Registan in Samarkand",
+"url": "https://en.numista.com/100300",
+"obverse": {
+"picture": "https://en.numista.com/catalogue/photos/ouzbekistan/6964b90f764ff8.07013393-original.jpg",
+"picture_copyright": "jdnz",
+"picture_copyright_url": null,
+"picture_license_name": "CC BY-SA",
+"picture_license_url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+"description": "National arms",
+"lettering": "OʻZBEKISTON MARKAZIY BANKI\r\nAg 999,9 2001 31,1 gr"
+},
+"reverse": {
+"picture": "https://en.numista.com/catalogue/photos/ouzbekistan/6964b90f9f6fa9.37398492-original.jpg",
+"picture_copyright": "jdnz",
+"picture_copyright_url": null,
+"picture_license_name": "CC BY-SA",
+"picture_license_url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+"description": "Registan in Samarkand",
+"lettering": "OʻZBEKISTON MUSTAQILLIGINING 10 YILLIGI\r\n100\r\nSOʻM"
+},
+"issues": []
+},
+"100303": {
+"title": "100 Soʻm (Bell tower in Toskent)",
+"type": "Non-circulating coins",
+"min_year": 2001,
+"max_year": 2001,
+"value": {
+"text": "100 Soʻm",
+"numeric_value": 100,
+"currency": {
+"id": 188,
+"name": "Second soʻm",
+"full_name": "Second soʻm (1994-date)"
+}
+},
+"composition": {
+"text": "Silver (.999)"
+},
+"weight": 31.1,
+"size": null,
+"size2": null,
+"thickness": null,
+"shape": "Round",
+"technique": {
+"text": "Milled"
+},
+"orientation": null,
+"series": null,
+"commemorated_topic": "10th Anniversary of Independence of Uzbekistan",
+"url": "https://en.numista.com/100303",
+"obverse": {
+"picture": "https://en.numista.com/catalogue/photos/ouzbekistan/5ee92b3fa88d28.89069756-original.jpg",
+"picture_copyright": "ecr64",
+"picture_copyright_url": null,
+"picture_license_name": null,
+"picture_license_url": null,
+"description": "National Coat of Arms, date below",
+"lettering": "OʻZBEKISTAN MARKAZIY BANKI\r\nAg 999,9\r\n31,1 gr\r\n2001"
+},
+"reverse": {
+"picture": "https://en.numista.com/catalogue/photos/ouzbekistan/5ee92b3fe3f222.54496074-original.jpg",
+"picture_copyright": "ecr64",
+"picture_copyright_url": null,
+"picture_license_name": null,
+"picture_license_url": null,
+"description": "Bell tower in Toskent",
+"lettering": "OʻZBEKISTAN MUSTAQILLIGINING 10 YILLIGI"
+},
+"issues": []
+},
+"3901": {
+"title": "50 Soʻm (Shahrisabz)",
+"type": "Circulating commemorative coins",
+"min_year": 2002,
+"max_year": 2002,
+"value": {
+"text": "50 Soʻm",
+"numeric_value": 50,
+"currency": {
+"id": 188,
+"name": "Second soʻm",
+"full_name": "Second soʻm (1994-date)"
+}
+},
+"composition": {
+"text": "Nickel clad steel"
+},
+"weight": 8,
+"size": 26.4,
+"size2": null,
+"thickness": 2.3,
+"shape": "Round",
+"technique": {
+"text": "Milled"
+},
+"orientation": "medal",
+"series": null,
+"commemorated_topic": "2700th Anniversary of Shahrisabz Town",
+"url": "https://en.numista.com/3901",
+"obverse": {
+"picture": "https://en.numista.com/catalogue/photos/ouzbekistan/167-original.jpg",
+"picture_copyright": "Cyrillius",
+"picture_copyright_url": null,
+"picture_license_name": null,
+"picture_license_url": null,
+"description": "National Coat of Arms, date below",
+"lettering": "• OʻZBEKISTON MARKAZIY BANKI •\r\n2002"
+},
+"reverse": {
+"picture": "https://en.numista.com/catalogue/photos/ouzbekistan/168-original.jpg",
+"picture_copyright": "Cyrillius",
+"picture_copyright_url": null,
+"picture_license_name": null,
+"picture_license_url": null,
+"description": "Tamerlane statue Shahrisabzum in front of Oak House Saro image, denomination below",
+"lettering": "SHAHRISABZ SHAHRINING 2700 YILLIGI\r\n50\r\nSOʻM"
+},
+"issues": []
+},
+"5884": {
+"title": "100 Soʻm (Anniversary of State Currency)",
+"type": "Circulating commemorative coins",
+"min_year": 2004,
+"max_year": 2004,
+"value": {
+"text": "100 Soʻm",
+"numeric_value": 100,
+"currency": {
+"id": 188,
+"name": "Second soʻm",
+"full_name": "Second soʻm (1994-date)"
+}
+},
+"composition": {
+"text": "Copper-nickel clad steel"
+},
+"weight": 7.92,
+"size": 27,
+"size2": null,
+"thickness": 1.8,
+"shape": "Round",
+"technique": {
+"text": "Milled"
+},
+"orientation": "medal",
+"series": null,
+"commemorated_topic": "10th Anniversary State Currency",
+"url": "https://en.numista.com/5884",
+"obverse": {
+"picture": "https://en.numista.com/catalogue/photos/ouzbekistan/5f5a0ad1f15265.07335711-original.jpg",
+"picture_copyright": "tolnomur",
+"picture_copyright_url": null,
+"picture_license_name": "CC BY-NC-SA",
+"picture_license_url": "https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en",
+"description": "National Coat of Arms, date below",
+"lettering": "OʻZBEKISTON MARKAZIY BANKI\r\n·2004·"
+},
+"reverse": {
+"picture": "https://en.numista.com/catalogue/photos/ouzbekistan/5f5a0ad2a4fee4.19802220-original.jpg",
+"picture_copyright": "tolnomur",
+"picture_copyright_url": null,
+"picture_license_name": "CC BY-NC-SA",
+"picture_license_url": "https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en",
+"description": "Sun with rays shines over map of Uzbekistan, denomination right",
+"lettering": "• OʻZBEKISTON MILLIY VALYUTASIGA •\r\n10 YIL\r\n100\r\nSOʻM"
+},
+"issues": []
+},
+"10745": {
+"title": "100 Soʻm (Arch of Independence)",
+"type": "Circulating commemorative coins",
+"min_year": 2009,
+"max_year": 2009,
+"value": {
+"text": "100 Soʻm",
+"numeric_value": 100,
+"currency": {
+"id": 188,
+"name": "Second soʻm",
+"full_name": "Second soʻm (1994-date)"
+}
+},
+"composition": {
+"text": "Copper-nickel clad steel"
+},
+"weight": 7.92,
+"size": 27,
+"size2": null,
+"thickness": 1.8,
+"shape": "Round",
+"technique": {
+"text": "Milled"
+},
+"orientation": "medal",
+"series": null,
+"commemorated_topic": "2200th Anniversary of Tashkent Series - Arch of Independence",
+"url": "https://en.numista.com/10745",
+"obverse": {
+"picture": "https://en.numista.com/catalogue/photos/ouzbekistan/169-original.jpg",
+"picture_copyright": "Cyrillius",
+"picture_copyright_url": null,
+"picture_license_name": null,
+"picture_license_url": null,
+"description": "National Coat of Arms, date below",
+"lettering": "• OʻZBEKISTON MARKAZIY BANKI •\r\n2009"
+},
+"reverse": {
+"picture": "https://en.numista.com/catalogue/photos/ouzbekistan/170-original.jpg",
+"picture_copyright": "Cyrillius",
+"picture_copyright_url": null,
+"picture_license_name": null,
+"picture_license_url": null,
+"description": "Arch of Independence, denomination above",
+"lettering": "TOSHKENT SHAHRINING 2200 YILLIGI\r\n100\r\nSOʻM"
+},
+"issues": []
+},
+"10746": {
+"title": "100 Soʻm (Independence and Goodness Monument)",
+"type": "Circulating commemorative coins",
+"min_year": 2009,
+"max_year": 2009,
+"value": {
+"text": "100 Soʻm",
+"numeric_value": 100,
+"currency": {
+"id": 188,
+"name": "Second soʻm",
+"full_name": "Second soʻm (1994-date)"
+}
+},
+"composition": {
+"text": "Copper-nickel clad steel"
+},
+"weight": 8.1,
+"size": 27,
+"size2": null,
+"thickness": 1.8,
+"shape": "Round",
+"technique": {
+"text": "Milled"
+},
+"orientation": "medal",
+"series": null,
+"commemorated_topic": "2200th Anniversary of Tashkent Series - Independence and Goodness Monument",
+"url": "https://en.numista.com/10746",
+"obverse": {
+"picture": "https://en.numista.com/catalogue/photos/ouzbekistan/176-original.jpg",
+"picture_copyright": "Coins-SPB",
+"picture_copyright_url": "http://www.coins-spb.ru/",
+"picture_license_name": null,
+"picture_license_url": null,
+"description": "National Coat of Arms, date below",
+"lettering": "OʻZBEKISTON MARKAZIY BANKI\r\n• 2009 •"
+},
+"reverse": {
+"picture": "https://en.numista.com/catalogue/photos/ouzbekistan/177-original.jpg",
+"picture_copyright": "Coins-SPB",
+"picture_copyright_url": "http://www.coins-spb.ru/",
+"picture_license_name": null,
+"picture_license_url": null,
+"description": "Independence and Goodness Monument, denomination left",
+"lettering": "TOSHKENT SHAHRINING 2200 YILLIGI\r\n100\r\nSOʻM"
+},
+"issues": []
+},
+"191148": {
+"title": "1000 Soʻm (Tashkent)",
+"type": "Non-circulating coins",
+"min_year": 2009,
+"max_year": 2009,
+"value": {
+"text": "1000 Soʻm",
+"numeric_value": 1000,
+"currency": {
+"id": 188,
+"name": "Second soʻm",
+"full_name": "Second soʻm (1994-date)"
+}
+},
+"composition": {
+"text": "Silver (.9999)"
+},
+"weight": 31.1,
+"size": 38,
+"size2": null,
+"thickness": null,
+"shape": "Round",
+"technique": {
+"text": "Milled"
+},
+"orientation": "medal",
+"series": null,
+"commemorated_topic": "Tashkent",
+"url": "https://en.numista.com/191148",
+"obverse": {
+"picture": "https://en.numista.com/catalogue/photos/ouzbekistan/229-original.jpg",
+"picture_copyright": "egoncontirossini@hotmail.com",
+"picture_copyright_url": null,
+"picture_license_name": null,
+"picture_license_url": null,
+"description": "National Coat of Arms, date below, fineness and weight left, date right",
+"lettering": "OʻZBEKISTON RESPUBLIKASI\r\n1000\r\nSOʻM\r\nAg 999.9  31.1 gr.\r\n2009 yil"
+},
+"reverse": {
+"picture": "https://en.numista.com/catalogue/photos/ouzbekistan/230-original.jpg",
+"picture_copyright": "Egon Conti Rossini",
+"picture_copyright_url": null,
+"picture_license_name": null,
+"picture_license_url": null,
+"description": "Monument of The Happy Mother in Toshkent",
+"lettering": "TOSHKENT SHAHRINING\r\n2200 YILLIGI"
+},
+"issues": []
+},
+"272121": {
+"title": "1000 Soʻm (Tashkent)",
+"type": "Non-circulating coins",
+"min_year": 2009,
+"max_year": 2009,
+"value": {
+"text": "1000 Soʻm",
+"numeric_value": 1000,
+"currency": {
+"id": 188,
+"name": "Second soʻm",
+"full_name": "Second soʻm (1994-date)"
+}
+},
+"composition": {
+"text": "Gold (.9999)"
+},
+"weight": 31.1,
+"size": 38,
+"size2": null,
+"thickness": null,
+"shape": "Round",
+"technique": {
+"text": "Milled"
+},
+"orientation": "medal",
+"series": null,
+"commemorated_topic": "The 2200th Anniversary of Tashkent city",
+"url": "https://en.numista.com/272121",
+"obverse": {
+"picture": "https://en.numista.com/catalogue/photos/ouzbekistan/69a707f03dadf0.03407234-original.jpg",
+"picture_copyright": "WAG Online Auktions",
+"picture_copyright_url": "http://www.wago-auktionen.de",
+"picture_license_name": null,
+"picture_license_url": null,
+"description": "National Coat of Arms, date below, fineness and weight left, date right",
+"lettering": "OʻZBEKISTON RESPUBLIKASI\r\n1000\r\nSOʻM\r\nAu 99.99  31.1 gr.\r\n2009 yil"
+},
+"reverse": {
+"picture": "https://en.numista.com/catalogue/photos/ouzbekistan/69a707f0c442c1.14847264-original.jpg",
+"picture_copyright": "WAG Online Auktions",
+"picture_copyright_url": "http://www.wago-auktionen.de",
+"picture_license_name": null,
+"picture_license_url": null,
+"description": "Monument of The Happy Mother in Toshkent",
+"lettering": "TOSHKENT SHAHRINING\r\n2200 YILLIGI"
+},
+"issues": []
+},
+"26626": {
+"title": "500 Soʻm (Independence)",
+"type": "Circulating commemorative coins",
+"min_year": 2011,
+"max_year": 2011,
+"value": {
+"text": "500 Soʻm",
+"numeric_value": 500,
+"currency": {
+"id": 188,
+"name": "Second soʻm",
+"full_name": "Second soʻm (1994-date)"
+}
+},
+"composition": {
+"text": "Nickel plated steel"
+},
+"weight": 6,
+"size": 25,
+"size2": null,
+"thickness": 1.6,
+"shape": "Round",
+"technique": {
+"text": "Milled"
+},
+"orientation": "medal",
+"series": null,
+"commemorated_topic": "20th Anniversary of Uzbekistan's Independence",
+"url": "https://en.numista.com/26626",
+"obverse": {
+"picture": "https://en.numista.com/catalogue/photos/ouzbekistan/171-original.jpg",
+"picture_copyright": "Cyrillius",
+"picture_copyright_url": null,
+"picture_license_name": null,
+"picture_license_url": null,
+"description": "National Coat of Arms, date below",
+"lettering": "• OʻZBEKISTON MARKAZIY BANKI •\r\n2011"
+},
+"reverse": {
+"picture": "https://en.numista.com/catalogue/photos/ouzbekistan/172-original.jpg",
+"picture_copyright": "Cyrillius",
+"picture_copyright_url": null,
+"picture_license_name": null,
+"picture_license_url": null,
+"description": "Tashkent - Palace of international symposiums, denomination below",
+"lettering": "• OʻZBEKISTON MUSTAQILLIGIGA 20 YIL\r\n500 SOʻM"
+},
+"issues": []
+},
+"353212": {
+"title": "100 000 Soʻm (Navruz)",
+"type": "Non-circulating coins",
+"min_year": 2022,
+"max_year": 2022,
+"value": {
+"text": "100 000 Soʻm",
+"numeric_value": 100000,
+"currency": {
+"id": 188,
+"name": "Second soʻm",
+"full_name": "Second soʻm (1994-date)"
+}
+},
+"composition": {
+"text": "Gold (.9999)"
+},
+"weight": 15,
+"size": 25,
+"size2": null,
+"thickness": null,
+"shape": "Round",
+"technique": {
+"text": "Milled"
+},
+"orientation": null,
+"series": null,
+"commemorated_topic": null,
+"url": "https://en.numista.com/353212",
+"obverse": {
+"picture": "https://en.numista.com/catalogue/photos/ouzbekistan/63d14e88801e49.21219595-original.jpg",
+"picture_copyright": "mariodalma",
+"picture_copyright_url": null,
+"picture_license_name": null,
+"picture_license_url": null,
+"description": "National Emblem of the Republic of Uzbekistan",
+"lettering": "OʻZBEKISTON RESPUBLIKASI MARKAZIY BANKI\r\n\r\n100000\r\nSOʻM\r\nAu 999,9 2022 YIL 15 gr"
+},
+"reverse": {
+"picture": "https://en.numista.com/catalogue/photos/ouzbekistan/63d14e87767a54.92278757-original.jpg",
+"picture_copyright": "mariodalma",
+"picture_copyright_url": null,
+"picture_license_name": null,
+"picture_license_url": null,
+"description": "The center of the coin depicts the sun and the moon, representing the spring equinox that occurs on the day of Navruz. The sun and moon are surrounded by the branches and petals of a flowering almond tree, one of the heralds of spring.\r\nOn the outer circumference of the coin there is a two-line poem by the great poet and thinker Alisher Navi",
+"lettering": "HAR TUNING QADR OʻLUBON,\r\nHAR KUNING BOʻLSIN NAVROʻZ!"
+},
+"issues": []
+},
+"380237": {
+"title": "50 000 Soʻm (Jaloliddin Manguberdi)",
+"type": "Non-circulating coins",
+"min_year": 2023,
+"max_year": 2023,
+"value": {
+"text": "50 000 Soʻm",
+"numeric_value": 50000,
+"currency": {
+"id": 188,
+"name": "Second soʻm",
+"full_name": "Second soʻm (1994-date)"
+}
+},
+"composition": {
+"text": "Silver (.9999)"
+},
+"weight": 31.1,
+"size": 38,
+"size2": null,
+"thickness": 3.2,
+"shape": "Round",
+"technique": {
+"text": "Milled"
+},
+"orientation": "coin",
+"series": null,
+"commemorated_topic": "825th Anniversary of Jalaliddin Manguberdi",
+"url": "https://en.numista.com/380237",
+"obverse": {
+"picture": "https://en.numista.com/catalogue/photos/ouzbekistan/692440291aaf44.35032339-original.jpg",
+"picture_copyright": "Raghavendra11",
+"picture_copyright_url": null,
+"picture_license_name": null,
+"picture_license_url": null,
+"description": "National arms",
+"lettering": "OʻZBEKISTON RESPUBLIKASI MARKAZIY BANKI\r\n50000 SOʻM\r\nAg 999,9 and 31,1 gr\r\n2023 YIL"
+},
+"reverse": {
+"picture": "https://en.numista.com/catalogue/photos/ouzbekistan/6924402a553152.63457564-original.jpg",
+"picture_copyright": "Raghavendra11",
+"picture_copyright_url": null,
+"picture_license_name": null,
+"picture_license_url": null,
+"description": "A portrait of Jaloliddin Manguberdi (1198–1231), the last ruler of the Khwarazmian Empire, depicted as a warrior on a galloping horse with a raised sword.",
+"lettering": "JALOLIDDIN MANGUBERDI\r\n1198 – 1231\r\nTAVALLUDINING 825 YILLIGI"
+},
+"issues": []
+},
+"593492": {
+"title": "100 000 Som (FIFA World Cup 2026)",
+"type": "Non-circulating coins",
+"min_year": 2026,
+"max_year": 2026,
+"value": {
+"text": "100 000 Soʻm",
+"numeric_value": 100000,
+"currency": {
+"id": 188,
+"name": "Second soʻm",
+"full_name": "Second soʻm (1994-date)"
+}
+},
+"composition": {
+"text": "Gold (.9999)"
+},
+"weight": 31.1,
+"size": null,
+"size2": null,
+"thickness": null,
+"shape": "Round",
+"technique": {
+"text": "Milled"
+},
+"orientation": null,
+"series": null,
+"commemorated_topic": "Participation of the national football team of Uzbekistan in the \"World Cup-2026\"",
+"url": "https://en.numista.com/593492",
+"obverse": {
+"picture": "https://en.numista.com/catalogue/photos/ouzbekistan/6a59f1e56f0859.98569204-original.jpg",
+"picture_copyright": "The Central Bank of Uzbekistan",
+"picture_copyright_url": null,
+"picture_license_name": null,
+"picture_license_url": null,
+"description": "A simplified drawing of a classic football.",
+"lettering": "🏵 O'ZBEKISTON RESPUBLIKASI MARKAZIY BANKI 🏵\r\nTARIXIY ZAFAR\r\nO'ZBEKISTON FUTBOLI\r\nJAHON\r\nCHEMPIONATIDA\r\n2026\r\nAu 999.9 31.1 gramm\r\n100 000 S'om"
+},
+"reverse": {
+"picture": "https://en.numista.com/catalogue/photos/ouzbekistan/6a59f1e64c93f6.76047190-original.jpg",
+"picture_copyright": "The Central Bank of Uzbekistan",
+"picture_copyright_url": null,
+"picture_license_name": null,
+"picture_license_url": null,
+"description": "National team's symbol, the \"white wolf,\" formed by merging the silhouettes of 26 football players.",
+"lettering": null
+},
+"issues": []
+},
+"602652": {
+"title": "100 000 Som (Independence Monument)",
+"type": "Non-circulating coins",
+"min_year": 2026,
+"max_year": 2026,
+"value": {
+"text": "100 000 Soʻm",
+"numeric_value": 100000,
+"currency": {
+"id": 188,
+"name": "Second soʻm",
+"full_name": "Second soʻm (1994-date)"
+}
+},
+"composition": {
+"text": "Silver (.9999)"
+},
+"weight": 31.1,
+"size": 38,
+"size2": null,
+"thickness": null,
+"shape": "Round",
+"technique": {
+"text": "Coloured, Milled"
+},
+"orientation": "coin",
+"series": "35th Anniversary",
+"commemorated_topic": "35th Anniversary of Independence",
+"url": "https://en.numista.com/602652",
+"obverse": {
+"picture": "https://en.numista.com/catalogue/photos/ouzbekistan/6aa3cd107bab44.19353058-original.jpg",
+"picture_copyright": null,
+"picture_copyright_url": null,
+"picture_license_name": "CC BY-NC-SA",
+"picture_license_url": "https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en",
+"description": "The Independence Monument as a symbol of the freedom of the Uzbek people, national pride and sovereign statehood. Rays of sunlight emerging from behind the monument represent the opportunities created by independence and a bright future.",
+"lettering": "100 000 SO'M\r\n1991 2006\r\nMustaqillik\r\nmonumenti"
+},
+"reverse": {
+"picture": "https://en.numista.com/catalogue/photos/ouzbekistan/6aa3cd11572d98.45087065-original.jpg",
+"picture_copyright": null,
+"picture_copyright_url": null,
+"picture_license_name": "CC BY-NC-SA",
+"picture_license_url": "https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en",
+"description": "Colored National flag of the Republic of Uzbekistan and the date of its adoption — 18 November 1991. This artistic composition highlights the prominent role of state symbols in the life of the country.",
+"lettering": "1991-yil 18-noyabr\r\nDavlat bayrog'i\r\nAg 999.9  31.1 gr"
+},
+"issues": []
+},
+"602647": {
+"title": "100 000 Som (35th Anniversary of Independence)",
+"type": "Non-circulating coins",
+"min_year": 2026,
+"max_year": 2026,
+"value": {
+"text": "100 000 Soʻm",
+"numeric_value": 100000,
+"currency": {
+"id": 188,
+"name": "Second soʻm",
+"full_name": "Second soʻm (1994-date)"
+}
+},
+"composition": {
+"text": "Silver (.9999)"
+},
+"weight": 31.1,
+"size": 38,
+"size2": null,
+"thickness": null,
+"shape": "Round",
+"technique": {
+"text": "Milled"
+},
+"orientation": "three",
+"series": "35th Anniversary",
+"commemorated_topic": "35th Anniversary of Independence",
+"url": "https://en.numista.com/602647",
+"obverse": {
+"picture": "https://en.numista.com/catalogue/photos/ouzbekistan/6aa3ca424d9e85.37788110-original.jpg",
+"picture_copyright": null,
+"picture_copyright_url": null,
+"picture_license_name": "CC BY-NC-SA",
+"picture_license_url": "https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en",
+"description": "The numeral \"35\".",
+"lettering": "100 000 SO'M\r\n1991 2006"
+},
+"reverse": {
+"picture": "https://en.numista.com/catalogue/photos/ouzbekistan/6aa3ca42d18ae0.24281108-original.jpg",
+"picture_copyright": null,
+"picture_copyright_url": null,
+"picture_license_name": "CC BY-NC-SA",
+"picture_license_url": "https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en",
+"description": "Phrase from the national Anthem \"Olamni mahliyo aylagan diyor!\" and the date the anthem adopted companion-ed with four traditional skullcaps.",
+"lettering": "OLAMNI MAHLIYO AYLGAN DIYOR!\r\nDavlat madhiyasi 1992-yil 10-dekabr\r\nAg 999.9  31.1 gr"
+},
+"issues": []
+},
+"602656": {
+"title": "100 000 Som (Center of Islamic Civilization)",
+"type": "Non-circulating coins",
+"min_year": 2026,
+"max_year": 2026,
+"value": {
+"text": "100 000 Soʻm",
+"numeric_value": 100000,
+"currency": {
+"id": 188,
+"name": "Second soʻm",
+"full_name": "Second soʻm (1994-date)"
+}
+},
+"composition": {
+"text": "Silver (.9999)"
+},
+"weight": 31.1,
+"size": 38,
+"size2": null,
+"thickness": null,
+"shape": "Round",
+"technique": {
+"text": "Coloured, Milled"
+},
+"orientation": "coin",
+"series": "35th Anniversary",
+"commemorated_topic": "35th Anniversary of Independence",
+"url": "https://en.numista.com/602656",
+"obverse": {
+"picture": "https://en.numista.com/catalogue/photos/ouzbekistan/6aa3cca9416fc7.67700288-original.jpg",
+"picture_copyright": null,
+"picture_copyright_url": null,
+"picture_license_name": "CC BY-NC-SA",
+"picture_license_url": "https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en",
+"description": "The Center of Islamic Civilization in Tashkent, an architectural image symbolizing the country’s contribution to the development of global scholarship, spirituality and Islamic civilization.",
+"lettering": "100 000 SO'M\r\nIslom\r\nsivilizatsiyasi\r\n1991 markazi 2006"
+},
+"reverse": {
+"picture": "https://en.numista.com/catalogue/photos/ouzbekistan/6aa3ccaa29a855.96843867-original.jpg",
+"picture_copyright": null,
+"picture_copyright_url": null,
+"picture_license_name": "CC BY-NC-SA",
+"picture_license_url": "https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en",
+"description": "Partially colored National Emblem of the Republic of Uzbekistan and the date of its adoption — 2 July 1992. The composition embodies the principles of state sovereignty, national unity and statehood.",
+"lettering": "1992-yil 2-iyul\r\nDavlat gerbi\r\nAg 999.9  31.1 gr"
+},
+"issues": []
+},
+"593486": {
+"title": "100 000 Som (FIFA World Cup 2026)",
+"type": "Non-circulating coins",
+"min_year": 2026,
+"max_year": 2026,
+"value": {
+"text": "100 000 Soʻm",
+"numeric_value": 100000,
+"currency": {
+"id": 188,
+"name": "Second soʻm",
+"full_name": "Second soʻm (1994-date)"
+}
+},
+"composition": {
+"text": "Silver (.9999)"
+},
+"weight": 31.1,
+"size": null,
+"size2": null,
+"thickness": null,
+"shape": "Round",
+"technique": {
+"text": "Milled"
+},
+"orientation": null,
+"series": null,
+"commemorated_topic": "Participation of the national football team of Uzbekistan in the \"World Cup-2026\"",
+"url": "https://en.numista.com/593486",
+"obverse": {
+"picture": "https://en.numista.com/catalogue/photos/ouzbekistan/6a59d977a75992.02943516-original.jpg",
+"picture_copyright": "The Central Bank of Uzbekistan",
+"picture_copyright_url": null,
+"picture_license_name": null,
+"picture_license_url": null,
+"description": "A simplified drawing of a classic football.",
+"lettering": "🏵 O'ZBEKISTON RESPUBLIKASI MARKAZIY BANKI 🏵\r\nTARIXIY ZAFAR\r\nO'ZBEKISTON FUTBOLI\r\nJAHON\r\nCHEMPIONATIDA\r\n2026\r\nAu 999.9 31.1 gramm\r\n100 000 S'om"
+},
+"reverse": {
+"picture": "https://en.numista.com/catalogue/photos/ouzbekistan/6a59d978480fe3.59532139-original.jpg",
+"picture_copyright": "The Central Bank of Uzbekistan",
+"picture_copyright_url": null,
+"picture_license_name": null,
+"picture_license_url": null,
+"description": "National team's symbol, the \"white wolf,\" formed by merging the silhouettes of 26 football players.",
+"lettering": null
+},
+"issues": []
+}
+}
 }
