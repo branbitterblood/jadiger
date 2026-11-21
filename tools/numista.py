@@ -21,6 +21,11 @@ DAILY = int(os.environ.get('NUMISTA_DAILY', '120'))
 REFRESH_DAYS = 60
 CUR = {'kz': 'KZT', 'uz': 'UZS', 'kg': 'KGS', 'tj': 'TJS', 'tm': 'TMT', 'mn': 'MNT', 'su': 'KZT', 'ru': 'RUB'}
 ISSUER_HINT = {'kz': 'kazakhstan', 'uz': 'uzbekistan', 'kg': 'kyrgyzstan', 'tj': 'tajikistan', 'tm': 'turkmenistan', 'mn': 'mongolia', 'su': 'soviet union', 'ru': 'russia'}
+# точные имена эмитентов, чтобы «Russia» не совпала с «Russian Empire», а СССР — с республиками
+ISSUER_NAME = {'su': ('soviet union', 'ussr', 'union of soviet socialist republics'), 'ru': ('russia', 'russian federation')}
+ISSUER_CODE = {'su': 'urss', 'ru': 'russie'}
+# символ металла для формата «Ag 925», как у остальных монет каталога
+ELEM = {'серебро': ('Ag', 'silver'), 'золото': ('Au', 'gold'), 'платина': ('Pt', 'platinum'), 'палладий': ('Pd', 'palladium')}
 LOG = []
 
 
@@ -62,14 +67,19 @@ def main():
 
     try:
         # коды эмитентов Numista (один запрос, кешируется)
-        if not st['issuers']:
+        if any(cc not in st['issuers'] for cc in ISSUER_HINT):   # новая страна в каталоге — узнаём её код
             iss = get('/issuers') or {}
             for it in iss.get('issuers', []):
                 if it.get('level', 1) != 1: continue
+                name = it.get('name', '').lower().strip()
                 for cc, hint in ISSUER_HINT.items():
-                    if it.get('code') == hint or (cc not in st['issuers'] and hint in (it.get('code', '') + ' ' + it.get('name', '').lower())):
+                    if cc in st['issuers']: continue
+                    if cc in ISSUER_NAME:
+                        if it.get('code') == ISSUER_CODE[cc] or name in ISSUER_NAME[cc]: st['issuers'][cc] = it['code']
+                    elif it.get('code') == hint or hint in (it.get('code', '') + ' ' + name):
                         st['issuers'][cc] = it['code']
             log('эмитенты:', st['issuers'])
+        out.setdefault('specs', {})
         # очередь: сначала без цены НБ, затем остальные; новые сопоставления, затем устаревшие цены
         def retry(m):  # несопоставленные монеты пробуем снова раз в 90 дней — каталог Numista пополняется
             return not m or m.get('status') != 'none' or (dt.date.today() - dt.date.fromisoformat(m.get('upd', '2000-01-01'))).days >= 90
@@ -84,6 +94,9 @@ def main():
                 m = match(c, st['issuers'][c['cc']], get); m['upd'] = today; st['map'][cid] = m
                 log('сопоставление', cid, c['en'], '→', m)
                 if m['status'] != 'ok': continue
+            if not c['w'] and cid not in out['specs']:   # в каталоге нет веса и диаметра — берём из описания типа
+                sp = specs(get(f"/types/{m['type']}") or {}, c['metal'])
+                if sp: out['specs'][cid] = sp; log('характеристики', cid, c['en'], sp)
             if not m.get('issue'):
                 iss = get(f"/types/{m['type']}/issues") or []
                 cand = [i for i in iss if str(i.get('gregorian_year') or i.get('year')) == c['year']] or (iss if len(iss) == 1 else [])
@@ -102,6 +115,21 @@ def main():
     n_ok = sum(1 for v in st['map'].values() if v.get('status') == 'ok')
     log(f"итого: сопоставлено {n_ok}, с ценами {sum(1 for v in out['coins'].values() if v['g'])}, запросов за {month}: {st['usage'].get(month, 0)}")
     with open(os.path.join(ROOT, 'tools', 'last_numista.log'), 'w') as f: f.write('\n'.join(LOG[-300:]) + '\n')
+
+
+def specs(t, metal):
+    """Вес, диаметр и проба из описания типа Numista: {'w': 15.55, 'd': 33, 'm': 'Ag 925'}."""
+    sp = {}
+    try:
+        if float(t.get('weight') or 0) > 0: sp['w'] = round(float(t['weight']), 2)
+        if float(t.get('size') or 0) > 0: sp['d'] = round(float(t['size']), 1)
+    except (TypeError, ValueError): pass
+    comp = ((t.get('composition') or {}).get('text') or '').lower()
+    el = ELEM.get((metal or '').strip().lower())
+    f = re.findall(r'(?<![\d.])0?\.(\d{3,4})\b', comp)
+    if el and el[1] in comp and len(set(f)) == 1 and not re.search(r'\b(and|with|\+|bimetal)', comp):
+        sp['m'] = el[0] + ' ' + (f[0][:3] + ',' + f[0][3:] if len(f[0]) == 4 else f[0])
+    return sp
 
 
 def norm(s):
