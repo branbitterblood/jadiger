@@ -1,5 +1,5 @@
 // Казахская версия: /kk, /kk/<cc>/<slug>, /kk/u/<handle> — та же SPA, язык определяется по адресу
-import { coinPage, altLinks, setLang } from '../_lib/coinpage.js';
+import { coinPage, altLinks, setLang, stripHomeOg, homeImg } from '../_lib/coinpage.js';
 import { userPage } from '../_lib/userpage.js';
 
 const SITE = 'https://jadiger.com';
@@ -14,15 +14,20 @@ export async function onRequestGet(ctx) {
     if (r.ok) return r;
   }
   const res = await ctx.env.ASSETS.fetch(new URL('/', ctx.request.url));
-  let html = setLang(await res.text(), 'kk');
+  let html = stripHomeOg(setLang(await res.text(), 'kk'));
   const title = 'Jadiger — Орталық Азияның коллекциялық монеталары 3D форматта';
-  const desc = 'Қазақстан, Өзбекстан, Қырғызстан, Тәжікстан және Түрікменстанның естелік және инвестициялық монеталарының 3D каталогы: сипаттамалары, таралымы, ұлттық банктердің бағалары және жеке коллекция есебі.';
+  const desc = 'Қазақстан, Өзбекстан, Қырғызстан, Тәжікстан, Түрікменстан, Моңғолия, КСРО және Ресейдің естелік және инвестициялық монеталарының 3D каталогы: сипаттамалары, таралымы, орталық банктердің бағалары және жеке коллекция есебі.';
   html = html.replace(/<meta name="description"[^>]*>\n?/, '').replace(/<title>[^<]*<\/title>/, `<title>${title}</title>
 <meta name="description" content="${desc}">
 <link rel="canonical" href="${SITE}/kk/">
 ${altLinks('/')}
 <meta property="og:title" content="${title}">
 <meta property="og:description" content="${desc}">
-<meta property="og:url" content="${SITE}/kk/">`);
+<meta property="og:url" content="${SITE}/kk/">
+<meta property="og:type" content="website">
+<meta property="og:image" content="${homeImg('kk')}">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">`);
   return new Response(html, { status: parts.length && parts[0] !== 'index.html' ? 404 : 200, headers: { 'content-type': 'text/html; charset=utf-8', 'cache-control': 'public, max-age=300' } });
 }

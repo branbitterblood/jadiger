@@ -41,6 +41,9 @@ export function setLang(html, lang) {
     .replace(/<!--i18n:(\w+)-->/, (m, v) => `<script src="/i18n/${lang}.js?v=${v}"></script>`);
 }
 export const PFX = { ru: '', en: '/en', kk: '/kk' };
+// превью главной (og:image с логотипом) убираем там, где страница ставит свои теги
+export const stripHomeOg = html => html.replace(/<!--og-home-->[\s\S]*?<!--\/og-home-->\n?/, '');
+export const homeImg = lang => `${SITE}/og/home-${lang === 'en' || lang === 'kk' ? lang : 'ru'}.jpg`;
 const TXT = {
   ru: { cat: 'Памятные монеты', sides: 'аверс и реверс', all: 'Весь каталог монет' },
   en: { cat: 'Commemorative coins', sides: 'obverse and reverse', all: 'Full coin catalog' },
@@ -53,14 +56,14 @@ export async function coinPage(ctx, cc, lang = 'ru', slugIn) {
   const key = cc + '/' + slug;
   const c = ({ en: COINS_EN, kk: COINS_KK }[lang] || COINS)[key] || await autoCoin(env, request, cc, slug);
   const res = await env.ASSETS.fetch(new URL('/', request.url));
-  let html = setLang(await res.text(), lang);
+  let html = stripHomeOg(setLang(await res.text(), lang));
   if (!c) {
     html = html.replace('<head>', '<head>\n<meta name="robots" content="noindex">');
     return new Response(html, { status: 404, headers: { 'content-type': 'text/html; charset=utf-8' } });
   }
   const [id, title, desc, specs, hasPhoto] = c;
   const url = `${SITE}${PFX[lang] || ''}/${key}`;
-  const img = hasPhoto ? `${SITE}/og/${id}.jpg` : `${SITE}/icon-512.png`;
+  const img = hasPhoto ? `${SITE}/og/${id}.jpg` : homeImg(lang);
   const ld = { '@context': 'https://schema.org', '@type': 'Product', name: title, description: desc, url,
     ...(hasPhoto ? { image: img } : {}), category: X.cat };
   const meta = `<title>${esc(title)} · Jadiger</title>
@@ -72,7 +75,9 @@ ${altLinks('/' + key)}
 <meta property="og:title" content="${esc(title)}">
 <meta property="og:description" content="${esc(desc)}">
 <meta property="og:image" content="${img}">
-${hasPhoto ? '<meta property="og:image:width" content="1200">\n<meta property="og:image:height" content="630">\n<meta name="twitter:card" content="summary_large_image">' : '<meta name="twitter:card" content="summary">'}
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
 <script type="application/ld+json">${JSON.stringify(ld).replace(/</g, '\\u003c')}</script>`;
   html = html.replace(/<meta name="description"[^>]*>\n?/, '').replace(/<title>[^<]*<\/title>/, meta);
   // текст для поисковиков и браузеров без JS

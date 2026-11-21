@@ -198,8 +198,11 @@ def build_images(cid, design, emblem):
             json.dump([data_url(x, size, q) for x in tex], open(os.path.join(PUB, 'auto', kind, f'{cid}.json'), 'w'))
         og = Image.new('RGB', (1200, 630), (14, 17, 22))
         for k, x in enumerate((tex[1], tex[0])):
-            y = x.copy(); y.thumbnail((540, 540), Image.LANCZOS)
-            og.paste(y, (330 + k * 540 - y.width // 2, 315 - y.height // 2), y)
+            y = x.copy(); y.thumbnail((500, 500), Image.LANCZOS)
+            og.paste(y, (340 + k * 520 - y.width // 2, 290 - y.height // 2), y)
+        try:   # знак шаңырақ и адрес сайта внизу, как у остальных превью
+            bd = Image.open(os.path.join(ROOT, 'tools', 'og_badge.png')).convert('RGBA'); og.paste(bd, ((1200 - bd.width) // 2, 630 - 26 - bd.height), bd)
+        except Exception: pass
         og.save(os.path.join(PUB, 'og', f'{cid}.jpg'), quality=68, optimize=True, progressive=True)
     return shape
 

@@ -3,7 +3,7 @@ import { COINS } from './coins.js';
 import { publicCollection } from './profiles.js';
 import { COINS_EN } from './coins_en.js';
 import { COINS_KK } from './coins_kk.js';
-import { altLinks, setLang, PFX } from './coinpage.js';
+import { altLinks, setLang, PFX, stripHomeOg, homeImg } from './coinpage.js';
 
 const SITE = 'https://jadiger.com';
 const esc = s => String(s ?? '').replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
@@ -14,7 +14,7 @@ const plural = (n, a, b, c) => { const m = n % 10, h = n % 100; return m === 1 &
 export async function userPage(ctx, lang, handle) {
   const { request, env } = ctx, en = lang === 'en', kk = lang === 'kk', P = PFX[lang] || '';
   const res = await env.ASSETS.fetch(new URL('/', request.url));
-  let html = setLang(await res.text(), lang);
+  let html = stripHomeOg(setLang(await res.text(), lang));
   let pc = null;
   try { pc = await publicCollection(env.DB, handle); } catch (e) {}
   if (!pc) {
@@ -35,7 +35,7 @@ export async function userPage(ctx, lang, handle) {
       (ids.length ? '. Including ' + ids.slice(0, 3).map(id => '“' + B[id].title + '”').join(', ') : '') + '. View every coin in 3D.'
     : `Коллекция памятных монет на Jadiger: ${n} ${plural(n, 'монета', 'монеты', 'монет')}` + (w ? `, ещё ${w} в вишлисте` : '') +
     (ids.length ? '. Среди них: ' + ids.slice(0, 3).map(id => '«' + B[id].title + '»').join(', ') : '') + '. Смотрите каждую монету в 3D.';
-  const img = cover != null ? `${SITE}/og/${cover}.jpg` : `${SITE}/icon-512.png`;
+  const img = cover != null ? `${SITE}/og/${cover}.jpg` : homeImg(lang);
   const meta = `<title>${esc(title)} · Jadiger</title>
 <meta name="description" content="${esc(desc)}">
 <link rel="canonical" href="${url}">
@@ -45,7 +45,9 @@ ${altLinks('/u/' + pc.handle)}
 <meta property="og:title" content="${esc(title)}">
 <meta property="og:description" content="${esc(desc)}">
 <meta property="og:image" content="${img}">
-${cover != null ? '<meta property="og:image:width" content="1200">\n<meta property="og:image:height" content="630">\n<meta name="twitter:card" content="summary_large_image">' : '<meta name="twitter:card" content="summary">'}`;
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">`;
   html = html.replace(/<meta name="description"[^>]*>\n?/, '').replace(/<title>[^<]*<\/title>/, meta);
   const seo = `<noscript><article style="max-width:760px;margin:24px auto;padding:0 24px">
 <h1>${esc(title)}</h1><p>${esc(desc)}</p>
