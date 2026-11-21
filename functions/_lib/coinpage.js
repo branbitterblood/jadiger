@@ -2,6 +2,7 @@
 // характеристик в HTML — для поисковиков и превью ссылок в мессенджерах. Скрипт сам откроет монету по адресу.
 import { COINS } from './coins.js';
 import { COINS_EN } from './coins_en.js';
+import { COINS_KK } from './coins_kk.js';
 
 const SITE = 'https://jadiger.com';
 const esc = s => String(s ?? '').replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
@@ -29,17 +30,23 @@ async function autoCoin(env, request, cc, slug) {
   } catch (e) { return null; }
 }
 
-// общий кусок <head> для двух языков: canonical + hreflang
-export const altLinks = (path) => `<link rel="alternate" hreflang="ru" href="${SITE}${path}">\n<link rel="alternate" hreflang="en" href="${SITE}/en${path}">\n<link rel="alternate" hreflang="x-default" href="${SITE}${path}">`;
+// общий кусок <head> для трёх языков: canonical + hreflang
+export const altLinks = (path) => `<link rel="alternate" hreflang="ru" href="${SITE}${path}">\n<link rel="alternate" hreflang="kk" href="${SITE}/kk${path}">\n<link rel="alternate" hreflang="en" href="${SITE}/en${path}">\n<link rel="alternate" hreflang="x-default" href="${SITE}${path}">`;
 export function setLang(html, lang) {
-  return lang === 'en' ? html.replace('<html lang="ru">', '<html lang="en">') : html;
+  return lang === 'ru' ? html : html.replace('<html lang="ru">', `<html lang="${lang}">`);
 }
+export const PFX = { ru: '', en: '/en', kk: '/kk' };
+const TXT = {
+  ru: { cat: 'Памятные монеты', sides: 'аверс и реверс', all: 'Весь каталог монет' },
+  en: { cat: 'Commemorative coins', sides: 'obverse and reverse', all: 'Full coin catalog' },
+  kk: { cat: 'Естелік монеталар', sides: 'аверсі мен реверсі', all: 'Монеталардың толық каталогы' },
+};
 
 export async function coinPage(ctx, cc, lang = 'ru', slugIn) {
   const { request, env, params } = ctx;
-  const en = lang === 'en', slug = String(slugIn ?? params.slug ?? '').toLowerCase();
+  const X = TXT[lang] || TXT.ru, slug = String(slugIn ?? params.slug ?? '').toLowerCase();
   const key = cc + '/' + slug;
-  const c = (en ? COINS_EN[key] : COINS[key]) || await autoCoin(env, request, cc, slug);
+  const c = ({ en: COINS_EN, kk: COINS_KK }[lang] || COINS)[key] || await autoCoin(env, request, cc, slug);
   const res = await env.ASSETS.fetch(new URL('/', request.url));
   let html = setLang(await res.text(), lang);
   if (!c) {
@@ -47,10 +54,10 @@ export async function coinPage(ctx, cc, lang = 'ru', slugIn) {
     return new Response(html, { status: 404, headers: { 'content-type': 'text/html; charset=utf-8' } });
   }
   const [id, title, desc, specs, hasPhoto] = c;
-  const url = `${SITE}${en ? '/en' : ''}/${key}`;
+  const url = `${SITE}${PFX[lang] || ''}/${key}`;
   const img = hasPhoto ? `${SITE}/og/${id}.jpg` : `${SITE}/icon-512.png`;
   const ld = { '@context': 'https://schema.org', '@type': 'Product', name: title, description: desc, url,
-    ...(hasPhoto ? { image: img } : {}), category: en ? 'Commemorative coins' : 'Памятные монеты' };
+    ...(hasPhoto ? { image: img } : {}), category: X.cat };
   const meta = `<title>${esc(title)} · Jadiger</title>
 <meta name="description" content="${esc(desc)}">
 <link rel="canonical" href="${url}">
@@ -67,8 +74,8 @@ ${hasPhoto ? '<meta property="og:image:width" content="1200">\n<meta property="o
   const seo = `<noscript><article style="max-width:760px;margin:24px auto;padding:0 24px">
 <h1>${esc(title)}</h1><p>${esc(desc)}</p>
 <table>${specs.map(r => `<tr><td>${esc(r[0])}</td><td>${esc(r[1])}</td></tr>`).join('')}</table>
-${hasPhoto ? `<img src="/og/${id}.jpg" alt="${esc(title)} — ${en ? 'obverse and reverse' : 'аверс и реверс'}" width="600" height="315">` : ''}
-<p><a href="${en ? '/en/' : '/'}">${en ? 'Full coin catalog' : 'Весь каталог монет'}</a></p></article></noscript>`;
+${hasPhoto ? `<img src="/og/${id}.jpg" alt="${esc(title)} — ${X.sides}" width="600" height="315">` : ''}
+<p><a href="${(PFX[lang] || '') + '/'}">${X.all}</a></p></article></noscript>`;
   html = html.replace('<body>', '<body>\n' + seo);
   return new Response(html, { headers: { 'content-type': 'text/html; charset=utf-8', 'cache-control': 'public, max-age=300' } });
 }
