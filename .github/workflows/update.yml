@@ -1,4 +1,4 @@
-# Ежедневная проверка новых выпусков Нацбанков (Казахстан, Узбекистан, Кыргызстан).
+# Ежедневная проверка новых выпусков Нацбанков (Казахстан, Узбекистан, Кыргызстан) и рыночных цен Numista.
 # Если найдены новые монеты или изменились цены — коммит в main, Cloudflare Pages сам опубликует сайт.
 name: Обновление каталога
 on:
@@ -19,11 +19,15 @@ jobs:
       - run: pip install requests beautifulsoup4 pillow numpy scipy opencv-python-headless
       - id: run
         run: python tools/update.py
+      - name: Рыночные цены (Numista)
+        env:
+          NUMISTA_API_KEY: ${{ secrets.NUMISTA_API_KEY }}
+        run: python tools/numista.py || echo "Numista: ошибка, каталог обновлён без рыночных цен"
       - name: Коммит изменений
         run: |
           git config user.name "jadiger-bot"
           git config user.email "jadiger-bot@users.noreply.github.com"
-          git add public/auto public/og public/sitemap.xml tools/last_update.log
+          git add public/auto public/og public/sitemap.xml tools/last_update.log tools/numista_state.json tools/last_numista.log 2>/dev/null || git add public/auto public/og public/sitemap.xml tools/last_update.log
           if git diff --cached --quiet; then echo "Изменений нет"; exit 0; fi
           git commit -m "Каталог: новые выпуски ($(date -u +%F))" -m "$(cat tools/last_update.log)"
           git push
