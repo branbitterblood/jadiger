@@ -77,7 +77,7 @@ def main():
             m = out['coins'].get(str(c['id']))
             return not m or (dt.date.today() - dt.date.fromisoformat(m['upd'])).days >= REFRESH_DAYS
         queue = sorted([c for c in coins if c['cc'] in st['issuers'] and retry(st['map'].get(str(c['id']))) and stale(c)],
-                       key=lambda c: (c['nb'], str(c['id']) in st['map'], -int(c['year'] or 0)))
+                       key=lambda c: (c['nb'], str(c['id']) in st['map'], int(c['year'] or 0)))
         for c in queue:
             cid = str(c['id']); m = st['map'].get(cid)
             if not m or m.get('status') == 'none':
