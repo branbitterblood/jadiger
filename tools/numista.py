@@ -8,7 +8,7 @@
 Сначала обрабатываем монеты без цены Нацбанка (старые и распроданные) — для них оценка нужнее всего.
 Состояние сопоставления: tools/numista_state.json (коммитится вместе с данными).
 """
-import json, os, re, sys, time, datetime as dt
+import json, os, re, sys, time, unicodedata, datetime as dt
 import requests
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -104,19 +104,29 @@ def main():
     with open(os.path.join(ROOT, 'tools', 'last_numista.log'), 'w') as f: f.write('\n'.join(LOG[-300:]) + '\n')
 
 
-def norm(s): return re.sub(r'[^a-z0-9а-яёәіңғүұқөһ]+', ' ', (s or '').lower()).strip()
+def norm(s):
+    # казахская латиница (ARǴYMAQ, QAZAQ KÚRESI) -> без диакритики, как в названиях Numista (Argymaq, Kuresi)
+    s = unicodedata.normalize('NFKD', (s or '').lower()); s = ''.join(ch for ch in s if not unicodedata.combining(ch))
+    return re.sub(r'[^a-z0-9а-яёәіңғүұқөһ]+', ' ', s).strip()
+
+
+STOP = {'the', 'of', 'and', 'years', 'year', 'anniversary', 'th', 'tenge', 'som', 'sum', 'somoni', 'manat', 'a', 'in', 'to', 'jyl'}
 
 
 def match(c, issuer, get):
     """Ищем тип Numista: эмитент + год + вес; среди кандидатов — тот, где совпадает номинал и больше общих слов в названии."""
     year = c['year']; w = float(c['w'] or 0)
-    params = dict(issuer=issuer, date=year, count=50)
-    if w > 0: params['weight'] = f'{w - 0.3:.2f}-{w + 0.3:.2f}'
-    res = (get('/types', **params) or {}).get('types', [])
+    words = [x for x in norm(re.sub(r'\(.*?\)', ' ', c['en'])).split() if x not in STOP and not x.isdigit() and len(x) > 2]
+    base = dict(issuer=issuer, date=year, count=100)
+    if w > 0: base['weight'] = f'{w - 0.3:.2f}-{w + 0.3:.2f}'
+    res = []
+    if words:   # сначала поиск по словам названия — самый точный и дешёвый вариант
+        res = (get('/types', q=' '.join(words[:4]), **base) or {}).get('types', [])
+    if not res: res = (get('/types', **base) or {}).get('types', [])
     if not res and w > 0:
-        params.pop('weight'); res = (get('/types', **params) or {}).get('types', [])
+        base.pop('weight'); res = (get('/types', **base) or {}).get('types', [])
     nom = str(int(float(c['nom']))) if c['nom'] and float(c['nom']) > 0 else ''
-    words = set(norm(c['en']).split()) - {'the', 'of', 'and', 'years', 'year', 'anniversary', 'th', 'tenge', 'som'}
+    words = set(norm(c['en']).split()) - STOP
     best = []
     for t in res:
         title = t.get('title', ''); tn = re.sub(r'(?<=\d)[ ,.](?=\d{3}\b)', '', title)

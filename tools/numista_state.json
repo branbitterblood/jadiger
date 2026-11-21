@@ -21,16 +21,6 @@
 "upd": "2026-11-21",
 "issue": 1098625
 },
-"218": {
-"status": "none",
-"why": "неоднозначно: 1000 Tenge (Burabay) | 1000 Tenge (35 years of the CIS) | 1000 Tenge (SYǴANAQ) | 1000 Tenge (Constitution of the Republic of Kazakhstan)",
-"upd": "2026-11-21"
-},
-"224": {
-"status": "none",
-"why": "нет кандидатов (1 в поиске)",
-"upd": "2026-11-21"
-},
 "225": {
 "status": "ok",
 "type": 583926,
@@ -66,16 +56,6 @@
 "upd": "2026-11-21",
 "issue": 1123720
 },
-"621": {
-"status": "none",
-"why": "неоднозначно: 100 000 Som (FIFA World Cup 2026) | 100 000 Som (FIFA World Cup 2026) | 100 000 Som (Independence Monument) | 100 000 Som (35th Anniversary of Independence)",
-"upd": "2026-11-21"
-},
-"622": {
-"status": "none",
-"why": "неоднозначно: 100 000 Som (FIFA World Cup 2026) | 100 000 Som (FIFA World Cup 2026) | 100 000 Som (Independence Monument) | 100 000 Som (35th Anniversary of Independence)",
-"upd": "2026-11-21"
-},
 "623": {
 "status": "ok",
 "type": 602372,
@@ -89,16 +69,6 @@
 "title": "100 000 So'm (I International Forum of Islamic Civilization)",
 "upd": "2026-11-21",
 "issue": 1123202
-},
-"625": {
-"status": "none",
-"why": "неоднозначно: 100 000 Som (FIFA World Cup 2026) | 100 000 Som (Independence Monument) | 100 000 Som (35th Anniversary of Independence) | 100 000 Som (Center of Islamic Civilization)",
-"upd": "2026-11-21"
-},
-"626": {
-"status": "none",
-"why": "неоднозначно: 100 000 Som (FIFA World Cup 2026) | 100 000 Som (Independence Monument) | 100 000 Som (35th Anniversary of Independence) | 100 000 Som (Center of Islamic Civilization)",
-"upd": "2026-11-21"
 },
 "3": {
 "status": "ok",
@@ -120,11 +90,6 @@
 "title": "200 Tenge (QAZAQ KÚRESI)",
 "upd": "2026-11-21",
 "issue": 1043232
-},
-"6": {
-"status": "none",
-"why": "неоднозначно: 200 Tenge (A. Moldagulova) | 200 Tenge (E. Boketov) | 200 Tenge (QAZAQ KÚRESI)",
-"upd": "2026-11-21"
 },
 "227": {
 "status": "ok",
@@ -168,22 +133,12 @@
 "upd": "2026-11-21",
 "issue": 1014162
 },
-"236": {
-"status": "none",
-"why": "неоднозначно: 1000 Tenge (Griffin) | 1000 Tenge (WWII Victory) | 1000 Tenge (Argymaq) | 1000 Tenge (30 years of the Constitution of Kazakhstan)",
-"upd": "2026-11-21"
-},
 "237": {
 "status": "ok",
 "type": 524624,
 "title": "500 Tenge (Argymaq)",
 "upd": "2026-11-21",
 "issue": 1021586
-},
-"238": {
-"status": "none",
-"why": "неоднозначно: 200 Tenge (Argymaq) | 200 Tenge (QAZAQ KÚRESI)",
-"upd": "2026-11-21"
 },
 "239": {
 "status": "ok",
@@ -198,16 +153,6 @@
 "title": "1000 Tenge (WWII Victory)",
 "upd": "2026-11-21",
 "issue": 952559
-},
-"615": {
-"status": "none",
-"why": "нет кандидатов (0 в поиске)",
-"upd": "2026-11-21"
-},
-"616": {
-"status": "none",
-"why": "нет кандидатов (0 в поиске)",
-"upd": "2026-11-21"
 },
 "633": {
 "status": "ok",
@@ -237,22 +182,12 @@
 "upd": "2026-11-21",
 "issue": 944285
 },
-"10": {
-"status": "none",
-"why": "неоднозначно: 200 Tenge (Kemel Aqyshev) | 200 Tenge (Raqymjan Qoshqarbaev) | 200 Tenge (Qanysh Satbaev) | 200 Tenge (World Painting)",
-"upd": "2026-11-21"
-},
 "11": {
 "status": "ok",
 "type": 465084,
 "title": "200 Tenge (FC ZHENIS)",
 "upd": "2026-11-21",
 "issue": 944289
-},
-"12": {
-"status": "none",
-"why": "неоднозначно: 200 Tenge (Kemel Aqyshev) | 200 Tenge (Raqymjan Qoshqarbaev) | 200 Tenge (Qanysh Satbaev) | 200 Tenge (World Painting)",
-"upd": "2026-11-21"
 },
 "13": {
 "status": "ok",
@@ -281,11 +216,6 @@
 "title": "200 Tenge (FC ORDABASY)",
 "upd": "2026-11-21",
 "issue": 944299
-},
-"17": {
-"status": "none",
-"why": "неоднозначно: 200 Tenge (Kemel Aqyshev) | 200 Tenge (Raqymjan Qoshqarbaev) | 200 Tenge (Qanysh Satbaev) | 200 Tenge (World Painting)",
-"upd": "2026-11-21"
 },
 "18": {
 "status": "ok",
