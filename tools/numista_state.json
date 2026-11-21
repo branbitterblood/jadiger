@@ -1050,6 +1050,836 @@
 "title": "500 Tenge (Horseman)",
 "upd": "2026-11-21",
 "issue": 85322
+},
+"1087": {
+"status": "ok",
+"type": 3097,
+"title": "Jaloliddin Manguberdi"
+},
+"1088": {
+"status": "ok",
+"type": 379075,
+"title": "Mirzo Ulugbek — 600 Years"
+},
+"1089": {
+"status": "ok",
+"type": 5885,
+"title": "10 Years of Independence of Uzbekistan"
+},
+"1090": {
+"status": "ok",
+"type": 3901,
+"title": "Shahrisabz — 2700 Years"
+},
+"1091": {
+"status": "ok",
+"type": 5884,
+"title": "10 Years of the National Currency"
+},
+"1092": {
+"status": "ok",
+"type": 10745,
+"title": "Arch of Independence"
+},
+"1093": {
+"status": "ok",
+"type": 10746,
+"title": "Monument of Independence and Humanism"
+},
+"1094": {
+"status": "ok",
+"type": 26626,
+"title": "20 Years of Independence of Uzbekistan"
+},
+"1095": {
+"status": "ok",
+"type": 106571,
+"title": "80 Years of Dushanbe"
+},
+"1096": {
+"status": "ok",
+"type": 106572,
+"title": "10 Years of the Constitution of Tajikistan"
+},
+"1097": {
+"status": "ok",
+"type": 481729,
+"title": "20 Years of the Shanghai Cooperation Organisation"
+},
+"1098": {
+"status": "ok",
+"type": 481891,
+"title": "30 Years of Independence of Tajikistan"
+},
+"1099": {
+"status": "ok",
+"type": 481733,
+"title": "20 Years of the Shanghai Cooperation Organisation"
+},
+"1100": {
+"status": "ok",
+"type": 481892,
+"title": "30 Years of Independence of Tajikistan"
+},
+"1101": {
+"status": "ok",
+"type": 481893,
+"title": "30 Years of Independence of Tajikistan"
+},
+"1102": {
+"status": "ok",
+"type": 481736,
+"title": "20 Years of the Shanghai Cooperation Organisation"
+},
+"1103": {
+"status": "ok",
+"type": 481894,
+"title": "30 Years of Independence of Tajikistan"
+},
+"1104": {
+"status": "ok",
+"type": 481720,
+"title": "Marco Polo Sheep"
+},
+"1105": {
+"status": "ok",
+"type": 481718,
+"title": "Saker Falcon"
+},
+"1106": {
+"status": "ok",
+"type": 481725,
+"title": "Golden Eagle"
+},
+"1107": {
+"status": "ok",
+"type": 481723,
+"title": "Bactrian Deer"
+},
+"1108": {
+"status": "ok",
+"type": 481719,
+"title": "Markhor"
+},
+"1109": {
+"status": "ok",
+"type": 481728,
+"title": "Goitered Gazelle"
+},
+"1110": {
+"status": "ok",
+"type": 481724,
+"title": "Great Bustard"
+},
+"1111": {
+"status": "ok",
+"type": 481727,
+"title": "Chukar Partridge"
+},
+"1112": {
+"status": "ok",
+"type": 481721,
+"title": "False Shovelnose Sturgeon"
+},
+"1113": {
+"status": "ok",
+"type": 481722,
+"title": "Snow Leopard"
+},
+"1114": {
+"status": "ok",
+"type": 481716,
+"title": "Caspian Tiger"
+},
+"1115": {
+"status": "ok",
+"type": 481726,
+"title": "Pheasant"
+},
+"1116": {
+"status": "ok",
+"type": 481735,
+"title": "20 Years of the Shanghai Cooperation Organisation"
+},
+"1117": {
+"status": "ok",
+"type": 481895,
+"title": "30 Years of Independence of Tajikistan"
+},
+"1118": {
+"status": "ok",
+"type": 481737,
+"title": "20 Years of the Shanghai Cooperation Organisation"
+},
+"1119": {
+"status": "ok",
+"type": 481896,
+"title": "30 Years of Independence of Tajikistan"
+},
+"1120": {
+"status": "ok",
+"type": 100856,
+"title": "54th Birthday of the President"
+},
+"1121": {
+"status": "ok",
+"type": 100857,
+"title": "Independence of Turkmenistan"
+},
+"1122": {
+"status": "ok",
+"type": 16788,
+"title": "Goitered Gazelle"
+},
+"1123": {
+"status": "ok",
+"type": 16790,
+"title": "Caspian Snowcock"
+},
+"1124": {
+"status": "ok",
+"type": 16792,
+"title": "Onager"
+},
+"1125": {
+"status": "ok",
+"type": 16791,
+"title": "Pallas's Cat"
+},
+"1126": {
+"status": "ok",
+"type": 16789,
+"title": "Purple Swamphen"
+},
+"1127": {
+"status": "ok",
+"type": 16793,
+"title": "Turkmen Gecko"
+},
+"1128": {
+"status": "ok",
+"type": 100858,
+"title": "5 Years of Independence of Turkmenistan"
+},
+"1129": {
+"status": "ok",
+"type": 100859,
+"title": "Ashgabat Earthquake — 50 Years"
+},
+"1130": {
+"status": "ok",
+"type": 31574,
+"title": "Saker Falcon"
+},
+"1131": {
+"status": "ok",
+"type": 101224,
+"title": "Saker Falcon"
+},
+"1132": {
+"status": "ok",
+"type": 31570,
+"title": "Houbara Bustard"
+},
+"1133": {
+"status": "ok",
+"type": 101223,
+"title": "Houbara Bustard"
+},
+"1134": {
+"status": "ok",
+"type": 31571,
+"title": "Caracal"
+},
+"1135": {
+"status": "ok",
+"type": 31573,
+"title": "Cobra"
+},
+"1136": {
+"status": "ok",
+"type": 31576,
+"title": "Caspian Tiger"
+},
+"1137": {
+"status": "ok",
+"type": 31575,
+"title": "Turkmen Jerboa"
+},
+"1138": {
+"status": "ok",
+"type": 100812,
+"title": "5 Years of Neutrality of Turkmenistan"
+},
+"1139": {
+"status": "ok",
+"type": 100820,
+"title": "Dashoguz"
+},
+"1140": {
+"status": "ok",
+"type": 100816,
+"title": "Nisa Fortress"
+},
+"1141": {
+"status": "ok",
+"type": 16794,
+"title": "Astana Baba Mausoleum"
+},
+"1142": {
+"status": "ok",
+"type": 100815,
+"title": "Shirkebir Mausoleum"
+},
+"1143": {
+"status": "ok",
+"type": 100814,
+"title": "Sultan Sanjar Mausoleum"
+},
+"1144": {
+"status": "ok",
+"type": 100819,
+"title": "Akhal Mosque"
+},
+"1145": {
+"status": "ok",
+"type": 43818,
+"title": "5 Years of Neutrality of Turkmenistan"
+},
+"1146": {
+"status": "ok",
+"type": 100854,
+"title": "60th Birthday of the President · Brother Muhammetmurat"
+},
+"1147": {
+"status": "ok",
+"type": 100851,
+"title": "60th Birthday of the President · Brother Niyazmurat"
+},
+"1148": {
+"status": "ok",
+"type": 100853,
+"title": "60th Birthday of the President · Mother"
+},
+"1149": {
+"status": "ok",
+"type": 100850,
+"title": "60th Birthday of the President · Father"
+},
+"1150": {
+"status": "ok",
+"type": 100855,
+"title": "60th Birthday of the President · Niyazov Family"
+},
+"1151": {
+"status": "ok",
+"type": 100852,
+"title": "60th Birthday of the President · Young Saparmurat Niyazov"
+},
+"1152": {
+"status": "ok",
+"type": 53599,
+"title": "10 Years of Independence of Turkmenistan"
+},
+"1153": {
+"status": "ok",
+"type": 16797,
+"title": "Gara Yusup Beg"
+},
+"1154": {
+"status": "ok",
+"type": 101234,
+"title": "Emblem of Turkmenistan"
+},
+"1155": {
+"status": "ok",
+"type": 16801,
+"title": "Gorkut Ata"
+},
+"1156": {
+"status": "ok",
+"type": 101233,
+"title": "National Flag of Turkmenistan"
+},
+"1157": {
+"status": "ok",
+"type": 16800,
+"title": "Gorogly Beg"
+},
+"1158": {
+"status": "ok",
+"type": 16798,
+"title": "Keymir Kor"
+},
+"1159": {
+"status": "ok",
+"type": 16803,
+"title": "Muhammet Bayram Khan"
+},
+"1160": {
+"status": "ok",
+"type": 16802,
+"title": "Muhammet Togrul Beg"
+},
+"1161": {
+"status": "ok",
+"type": 16796,
+"title": "Oguz Khan"
+},
+"1162": {
+"status": "ok",
+"type": 16804,
+"title": "Sultan Sanjar"
+},
+"1163": {
+"status": "ok",
+"type": 16799,
+"title": "Uzun Khasan Beg"
+},
+"1164": {
+"status": "ok",
+"type": 16795,
+"title": "Ertuğrul Gazi"
+},
+"1165": {
+"status": "ok",
+"type": 101218,
+"title": "10 Years of Independence of Turkmenistan"
+},
+"1166": {
+"status": "ok",
+"type": 101236,
+"title": "Mother of the President · Gurbansoltan Eje"
+},
+"1167": {
+"status": "ok",
+"type": 101235,
+"title": "Father of the President · Atamurat Niyazov"
+},
+"1168": {
+"status": "ok",
+"type": 101238,
+"title": "Mother of the President · Gurbansoltan Eje"
+},
+"1169": {
+"status": "ok",
+"type": 101237,
+"title": "Father of the President · Atamurat Niyazov"
+},
+"1170": {
+"status": "ok",
+"type": 101080,
+"title": "Annagylych Mataji"
+},
+"1171": {
+"status": "ok",
+"type": 30405,
+"title": "Gurbandurdy Zelili"
+},
+"1172": {
+"status": "ok",
+"type": 101239,
+"title": "Flag Day and the President's Birthday"
+},
+"1173": {
+"status": "ok",
+"type": 101079,
+"title": "Mammetweli Kemine"
+},
+"1174": {
+"status": "ok",
+"type": 101078,
+"title": "Magtymguly Pyragy"
+},
+"1175": {
+"status": "ok",
+"type": 16805,
+"title": "Mollanepes"
+},
+"1176": {
+"status": "ok",
+"type": 101077,
+"title": "Seyitnazar Seydi"
+},
+"1177": {
+"status": "ok",
+"type": 101214,
+"title": "10 Years of the Turkmen Manat"
+},
+"1178": {
+"status": "ok",
+"type": 101206,
+"title": "Annagylych Mataji"
+},
+"1179": {
+"status": "ok",
+"type": 101201,
+"title": "Gurbandurdy Zelili"
+},
+"1180": {
+"status": "ok",
+"type": 101240,
+"title": "Flag Day and the President's Birthday"
+},
+"1181": {
+"status": "ok",
+"type": 101204,
+"title": "Mammetweli Kemine"
+},
+"1182": {
+"status": "ok",
+"type": 101203,
+"title": "Magtymguly Pyragy"
+},
+"1183": {
+"status": "ok",
+"type": 101205,
+"title": "Mollanepes"
+},
+"1184": {
+"status": "ok",
+"type": 101202,
+"title": "Seyitnazar Seydi"
+},
+"1185": {
+"status": "ok",
+"type": 16806,
+"title": "Ak Bugdai"
+},
+"1186": {
+"status": "ok",
+"type": 16807,
+"title": "Ak Bugdai · Octagonal"
+},
+"1187": {
+"status": "ok",
+"type": 101217,
+"title": "Ak Bugdai"
+},
+"1188": {
+"status": "ok",
+"type": 101216,
+"title": "Ak Bugdai · Octagonal"
+},
+"1189": {
+"status": "ok",
+"type": 101246,
+"title": "10 Years of Neutrality of Turkmenistan"
+},
+"1190": {
+"status": "ok",
+"type": 101243,
+"title": "14 Years of Independence of Turkmenistan"
+},
+"1191": {
+"status": "ok",
+"type": 101245,
+"title": "60 Years of Victory"
+},
+"1192": {
+"status": "ok",
+"type": 101241,
+"title": "The President's Family Tree"
+},
+"1193": {
+"status": "ok",
+"type": 101253,
+"title": "10 Years of Neutrality of Turkmenistan"
+},
+"1194": {
+"status": "ok",
+"type": 101250,
+"title": "14 Years of Independence of Turkmenistan"
+},
+"1195": {
+"status": "ok",
+"type": 101251,
+"title": "60 Years of Victory"
+},
+"1196": {
+"status": "ok",
+"type": 101252,
+"title": "The President's Family Tree"
+},
+"1197": {
+"status": "ok",
+"type": 101157,
+"title": "Amu Darya Shovelnose Sturgeon"
+},
+"1198": {
+"status": "ok",
+"type": 101156,
+"title": "Amu Darya Shovelnose Sturgeon"
+},
+"1199": {
+"status": "ok",
+"type": 101153,
+"title": "Markhor"
+},
+"1200": {
+"status": "ok",
+"type": 101152,
+"title": "Markhor"
+},
+"1201": {
+"status": "ok",
+"type": 101137,
+"title": "Gorkut Ata"
+},
+"1202": {
+"status": "ok",
+"type": 101136,
+"title": "Gorkut Ata"
+},
+"1203": {
+"status": "ok",
+"type": 101138,
+"title": "Gorogly Beg"
+},
+"1204": {
+"status": "ok",
+"type": 101139,
+"title": "Gorogly Beg"
+},
+"1205": {
+"status": "ok",
+"type": 101148,
+"title": "Great Bustard"
+},
+"1206": {
+"status": "ok",
+"type": 101149,
+"title": "Great Bustard"
+},
+"1207": {
+"status": "ok",
+"type": 101151,
+"title": "Indian Crested Porcupine"
+},
+"1208": {
+"status": "ok",
+"type": 101150,
+"title": "Indian Crested Porcupine"
+},
+"1209": {
+"status": "ok",
+"type": 101141,
+"title": "Magtymguly"
+},
+"1210": {
+"status": "ok",
+"type": 101140,
+"title": "Magtymguly"
+},
+"1211": {
+"status": "ok",
+"type": 101134,
+"title": "Oguz Khan"
+},
+"1212": {
+"status": "ok",
+"type": 101135,
+"title": "Oguz Khan"
+},
+"1213": {
+"status": "ok",
+"type": 16817,
+"title": "Ruhnama"
+},
+"1214": {
+"status": "ok",
+"type": 101212,
+"title": "Ruhnama"
+},
+"1215": {
+"status": "ok",
+"type": 16808,
+"title": "Ruhnama · \"My Dear\""
+},
+"1216": {
+"status": "ok",
+"type": 101207,
+"title": "Ruhnama · \"My Dear\""
+},
+"1217": {
+"status": "ok",
+"type": 16809,
+"title": "Ruhnama · \"My Spring Inspiration\""
+},
+"1218": {
+"status": "ok",
+"type": 101208,
+"title": "Ruhnama · \"My Spring Inspiration\""
+},
+"1219": {
+"status": "ok",
+"type": 16811,
+"title": "Ruhnama · The Second Book"
+},
+"1220": {
+"status": "ok",
+"type": 101209,
+"title": "Ruhnama · The Second Book"
+},
+"1221": {
+"status": "ok",
+"type": 16816,
+"title": "Ruhnama · Prosperity of the Turkmen People"
+},
+"1222": {
+"status": "ok",
+"type": 101211,
+"title": "Ruhnama · Prosperity of the Turkmen People"
+},
+"1223": {
+"status": "ok",
+"type": 16815,
+"title": "Ruhnama · Five Epochs of Turkmen Spiritual Development"
+},
+"1224": {
+"status": "ok",
+"type": 101210,
+"title": "Ruhnama · Five Epochs of Turkmen Spiritual Development"
+},
+"1225": {
+"status": "ok",
+"type": 101143,
+"title": "Saparmurat Türkmenbaşy"
+},
+"1226": {
+"status": "ok",
+"type": 101144,
+"title": "Saparmurat Türkmenbaşy"
+},
+"1227": {
+"status": "ok",
+"type": 101147,
+"title": "Desert Monitor"
+},
+"1228": {
+"status": "ok",
+"type": 101146,
+"title": "Desert Monitor"
+},
+"1229": {
+"status": "ok",
+"type": 101154,
+"title": "Snow Leopard"
+},
+"1230": {
+"status": "ok",
+"type": 101155,
+"title": "Snow Leopard"
+},
+"1231": {
+"status": "ok",
+"type": 16819,
+"title": "15 Years of the National Flag"
+},
+"1232": {
+"status": "ok",
+"type": 101598,
+"title": "15 Years of the National Flag"
+},
+"1233": {
+"status": "ok",
+"type": 30466,
+"title": "16 Years of Independence of Turkmenistan"
+},
+"1234": {
+"status": "ok",
+"type": 101602,
+"title": "16 Years of Independence of Turkmenistan"
+},
+"1235": {
+"status": "ok",
+"type": 30467,
+"title": "50th Birthday of President Gurbanguly Berdimuhamedow"
+},
+"1236": {
+"status": "ok",
+"type": 101600,
+"title": "50th Birthday of President Gurbanguly Berdimuhamedow"
+},
+"1237": {
+"status": "ok",
+"type": 16822,
+"title": "National Emblem of Turkmenistan"
+},
+"1238": {
+"status": "ok",
+"type": 101599,
+"title": "National Emblem of Turkmenistan"
+},
+"1239": {
+"status": "ok",
+"type": 101593,
+"title": "National Emblem of Turkmenistan · Coloured"
+},
+"1240": {
+"status": "ok",
+"type": 101594,
+"title": "National Flag of Turkmenistan · Coloured"
+},
+"1241": {
+"status": "ok",
+"type": 101604,
+"title": "UN Presidency · G. Berdimuhamedow and Ban Ki-moon"
+},
+"1242": {
+"status": "ok",
+"type": 101595,
+"title": "UN Presidency · G. Berdimuhamedow and Ban Ki-moon"
+},
+"1243": {
+"status": "ok",
+"type": 101605,
+"title": "UN Presidency · Gurbanguly Berdimuhamedow"
+},
+"1244": {
+"status": "ok",
+"type": 30464,
+"title": "UN Presidency · Gurbanguly Berdimuhamedow"
+},
+"1245": {
+"status": "ok",
+"type": 16818,
+"title": "Saparmurat Niyazov"
+},
+"1246": {
+"status": "ok",
+"type": 101597,
+"title": "Saparmurat Niyazov"
+},
+"1247": {
+"status": "ok",
+"type": 194531,
+"title": "TAPI Gas Pipeline"
+},
+"1248": {
+"status": "ok",
+"type": 194530,
+"title": "TAPI Gas Pipeline"
+},
+"1249": {
+"status": "ok",
+"type": 336629,
+"title": "25 Years of Neutrality of Turkmenistan"
+},
+"1250": {
+"status": "ok",
+"type": 336630,
+"title": "25 Years of Neutrality of Turkmenistan"
+},
+"1251": {
+"status": "ok",
+"type": 339752,
+"title": "30 Years of Independence of Turkmenistan"
+},
+"1252": {
+"status": "ok",
+"type": 339754,
+"title": "30 Years of Independence of Turkmenistan"
 }
 },
 "usage": {
