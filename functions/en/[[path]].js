@@ -5,7 +5,7 @@ import { userPage } from '../_lib/userpage.js';
 const SITE = 'https://jadiger.com';
 export async function onRequestGet(ctx) {
   const parts = [].concat(ctx.params.path || []).filter(Boolean);
-  if (parts.length === 2 && /^(kz|uz|kg|tj|tm|mn|su)$/.test(parts[0])) return coinPage(ctx, parts[0], 'en', parts[1]);
+  if (parts.length === 2 && /^(kz|uz|kg|tj|tm|mn|su|ru)$/.test(parts[0])) return coinPage(ctx, parts[0], 'en', parts[1]);
   if (parts.length === 2 && parts[0] === 'u') return userPage(ctx, 'en', parts[1]);
   if (parts.length && !(parts.length === 1 && parts[0] === 'index.html')) {
     // статические файлы (pack, og, auto…) — с корня сайта

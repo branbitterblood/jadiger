@@ -19,8 +19,8 @@ OUT_P = os.path.join(ROOT, 'public', 'auto', 'market.json')
 MONTHLY = int(os.environ.get('NUMISTA_MONTHLY', '1900'))   # запас до лимита 2000
 DAILY = int(os.environ.get('NUMISTA_DAILY', '120'))
 REFRESH_DAYS = 60
-CUR = {'kz': 'KZT', 'uz': 'UZS', 'kg': 'KGS', 'tj': 'TJS', 'tm': 'TMT', 'mn': 'MNT', 'su': 'KZT'}
-ISSUER_HINT = {'kz': 'kazakhstan', 'uz': 'uzbekistan', 'kg': 'kyrgyzstan', 'tj': 'tajikistan', 'tm': 'turkmenistan', 'mn': 'mongolia', 'su': 'soviet union'}
+CUR = {'kz': 'KZT', 'uz': 'UZS', 'kg': 'KGS', 'tj': 'TJS', 'tm': 'TMT', 'mn': 'MNT', 'su': 'KZT', 'ru': 'RUB'}
+ISSUER_HINT = {'kz': 'kazakhstan', 'uz': 'uzbekistan', 'kg': 'kyrgyzstan', 'tj': 'tajikistan', 'tm': 'turkmenistan', 'mn': 'mongolia', 'su': 'soviet union', 'ru': 'russia'}
 LOG = []
 
 
