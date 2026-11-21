@@ -1608,8 +1608,23 @@ function roundRectFlat(flat, ar) {
     for (let i = 0; i <= N; i++) { const a = (a0 + 90 * i / N) * Math.PI / 180; P.push(cx + Math.cos(a) * r / sx, cy + Math.sin(a) * r / sy); }
   return P;
 }
+function roundCorners(flat, ar, frac = .12, N = 6) {
+  const sx = Math.max(ar, 1), sy = Math.max(1 / ar, 1), P = [];
+  for (let k = 0; k < flat.length; k += 2) P.push([flat[k] * sx, flat[k + 1] * sy]);
+  const n = P.length, out = [];
+  for (let i = 0; i < n; i++) {
+    const a = P[(i - 1 + n) % n], b = P[i], c = P[(i + 1) % n];
+    const la = Math.hypot(b[0] - a[0], b[1] - a[1]) || 1, lc = Math.hypot(c[0] - b[0], c[1] - b[1]) || 1, d = Math.min(la, lc) * frac;
+    const p0 = [b[0] + (a[0] - b[0]) * d / la, b[1] + (a[1] - b[1]) * d / la], p2 = [b[0] + (c[0] - b[0]) * d / lc, b[1] + (c[1] - b[1]) * d / lc];
+    for (let j = 0; j <= N; j++) { const t = j / N, u = 1 - t; out.push((u * u * p0[0] + 2 * u * t * b[0] + t * t * p2[0]) / sx, (u * u * p0[1] + 2 * u * t * b[1] + t * t * p2[1]) / sy); }
+  }
+  return out;
+}
 function buildShaped(coin, sh) {
   if (!sh._sm && (sh.k === 'прямоугольная' || sh.k === 'квадратная')) { sh = Object.assign({}, sh, { f: roundRectFlat(sh.f, sh.ar), b: roundRectFlat(sh.b, sh.ar), _sm: 1 }); SHAPES[coin.id] = sh; }
+  // многоугольники с небольшим числом вершин (12-угольник, ромб): углы скругляем чуть-чуть, грани остаются прямыми;
+  // сглаживание Чайкина превращало их почти в круг
+  else if (!sh._sm && sh.f.length <= 80) { sh = Object.assign({}, sh, { f: roundCorners(sh.f, sh.ar), b: roundCorners(sh.b, sh.ar), _sm: 1 }); SHAPES[coin.id] = sh; }
   else if (!sh._sm && !/квадрат|прямоуг/.test(sh.k)) { sh = Object.assign({}, sh, { f: smoothFlat(sh.f), b: smoothFlat(sh.b), _sm: 1 }); SHAPES[coin.id] = sh; }
   // нормированная площадь контура (доля от W×H)
   let an = 0; for (let k = 0, n = sh.f.length / 2; k < n; k++) { const j = (k + 1) % n; an += sh.f[2*k] * sh.f[2*j+1] - sh.f[2*j] * sh.f[2*k+1]; } an = Math.abs(an) / 2 || .8;
