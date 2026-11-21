@@ -71,7 +71,7 @@ def main():
                         s = t.get(side) or {}
                         keep[side] = {k: s.get(k) for k in ('picture', 'picture_copyright', 'picture_copyright_url', 'picture_license_name',
                                                             'picture_license_url', 'description', 'lettering')}
-                    iss = get(f'/types/{i}/issues') or []
+                    iss = (get(f'/types/{i}/issues') or []) if os.environ.get('GAP_ISSUES') == '1' else []
                     keep['issues'] = [{k: x.get(k) for k in ('year', 'gregorian_year', 'mintage', 'comment')} for x in iss]
                     d['details'][str(i)] = keep; save(cc, d)
                 print(cc, 'подробностей:', len(d['details']))
