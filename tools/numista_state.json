@@ -776,10 +776,284 @@
 "type": 30619,
 "title": "10 Som (Republic)",
 "upd": "2026-11-21"
+},
+"206": {
+"status": "ok",
+"type": 6240,
+"title": "50 Tenge (Gabiden Mustafin)",
+"upd": "2026-11-21",
+"issue": 32499
+},
+"207": {
+"status": "ok",
+"type": 5022,
+"title": "50 Tenge (Gabit Musirepov)",
+"upd": "2026-11-21",
+"issue": 25666
+},
+"499": {
+"status": "ok",
+"type": 16687,
+"title": "500 Tenge (Bighorn Sheep)",
+"upd": "2026-11-21",
+"issue": 85350
+},
+"500": {
+"status": "none",
+"why": "неоднозначно: 500 Tenge (Dombra) | 500 Tenge (The Sign - Tanbaly) | 500 Tenge (Bighorn Sheep) | 500 Tenge (Babaja Chatuna)",
+"upd": "2026-11-21"
+},
+"501": {
+"status": "ok",
+"type": 16668,
+"title": "500 Tenge (The Sign - Tanbaly)",
+"upd": "2026-11-21",
+"issue": 85315
+},
+"502": {
+"status": "ok",
+"type": 16707,
+"title": "500 Tenge (Babaja Chatuna)",
+"upd": "2026-11-21",
+"issue": 85370
+},
+"700": {
+"status": "ok",
+"type": 34972,
+"title": "10 Som (Edelweiss)",
+"upd": "2026-11-21",
+"issue": 163176
+},
+"701": {
+"status": "ok",
+"type": 30628,
+"title": "10 Som (Arkhar Ram)",
+"upd": "2026-11-21",
+"issue": 150611
+},
+"205": {
+"status": "ok",
+"type": 6250,
+"title": "50 Tenge (Makhambet Otemisuly)",
+"upd": "2026-11-21",
+"issue": 32554
+},
+"495": {
+"status": "ok",
+"type": 16697,
+"title": "500 Tenge (Assa Tayak)",
+"upd": "2026-11-21",
+"issue": 85360
+},
+"496": {
+"status": "ok",
+"type": 16710,
+"title": "500 Tenge (Aisha Bibi)",
+"upd": "2026-11-21",
+"issue": 85373
+},
+"497": {
+"status": "ok",
+"type": 16688,
+"title": "500 Tenge (Great Bustard bird)",
+"upd": "2026-11-21",
+"issue": 85351
+},
+"498": {
+"status": "ok",
+"type": 16670,
+"title": "500 Tenge (Turk Warrior)",
+"upd": "2026-11-21",
+"issue": 85317
+},
+"698": {
+"status": "ok",
+"type": 35595,
+"title": "10 Som (Genesis of the Kyrgyz Statehood)",
+"upd": "2026-11-21",
+"issue": 164947
+},
+"699": {
+"status": "ok",
+"type": 30629,
+"title": "10 Som (National Currency)",
+"upd": "2026-11-21",
+"issue": 150612
+},
+"203": {
+"status": "ok",
+"type": 6248,
+"title": "50 Tenge (Alken Margulan)",
+"upd": "2026-11-21",
+"issue": 32552
+},
+"204": {
+"status": "none",
+"why": "неоднозначно: 50 Tenge (Abylkhan Kasteev) | 50 Tenge (Alken Margulan)",
+"upd": "2026-11-21"
+},
+"486": {
+"status": "ok",
+"type": 16698,
+"title": "500 Tenge (Zhetygen)",
+"upd": "2026-11-21",
+"issue": 85361
+},
+"487": {
+"status": "ok",
+"type": 16711,
+"title": "500 Tenge (The Rock Statues)",
+"upd": "2026-11-21",
+"issue": 85374
+},
+"488": {
+"status": "ok",
+"type": 16724,
+"title": "500 Tenge (Denga)",
+"upd": "2026-11-21",
+"issue": 85388
+},
+"489": {
+"status": "ok",
+"type": 16719,
+"title": "500 Tenge (The golden Deer)",
+"upd": "2026-11-21",
+"issue": 85383
+},
+"490": {
+"status": "ok",
+"type": 16672,
+"title": "500 Tenge (The Thinker)",
+"upd": "2026-11-21",
+"issue": 85319
+},
+"491": {
+"status": "ok",
+"type": 16701,
+"title": "100 Tenge (Olympic Games 2004)",
+"upd": "2026-11-21",
+"issue": 85364
+},
+"492": {
+"status": "ok",
+"type": 16700,
+"title": "100 Tenge (Soccer World Cup)",
+"upd": "2026-11-21",
+"issue": 85363
+},
+"493": {
+"status": "ok",
+"type": 16781,
+"title": "500 Tenge (100th Anniversary of Kazakhstan Railroads)",
+"upd": "2026-11-21",
+"issue": 85489
+},
+"494": {
+"status": "ok",
+"type": 16689,
+"title": "500 Tenge (Falco Cherrug)",
+"upd": "2026-11-21",
+"issue": 85352
+},
+"564": {
+"status": "ok",
+"type": 139041,
+"title": "100 Tenge (Ancient Turkestan)",
+"upd": "2026-11-21",
+"issue": 393031
+},
+"565": {
+"status": "ok",
+"type": 139039,
+"title": "100 Tenge (Marco Polo)",
+"upd": "2026-11-21",
+"issue": 393029
+},
+"566": {
+"status": "ok",
+"type": 55096,
+"title": "100 Tenge (King Kroisos Treasure)",
+"upd": "2026-11-21",
+"issue": 220658
+},
+"567": {
+"status": "ok",
+"type": 139037,
+"title": "100 Tenge (Gold of King Midas)",
+"upd": "2026-11-21",
+"issue": 393027
+},
+"760": {
+"status": "none",
+"why": "неоднозначно: 5 Somoni (Constitution) | 5 Somoni (Constitution)",
+"upd": "2026-11-21"
+},
+"761": {
+"status": "ok",
+"type": 11736,
+"title": "3 Somoni (Dushanbe City)",
+"upd": "2026-11-21",
+"issue": 65698
+},
+"200": {
+"status": "ok",
+"type": 12705,
+"title": "100 Tenge (United Nations)",
+"upd": "2026-11-21",
+"issue": 67425
+},
+"201": {
+"status": "ok",
+"type": 6239,
+"title": "50 Tenge (10 years Constitution)",
+"upd": "2026-11-21",
+"issue": 32497
+},
+"202": {
+"status": "ok",
+"type": 6237,
+"title": "50 Tenge (60 years WW2 Victory)",
+"upd": "2026-11-21",
+"issue": 32495
+},
+"479": {
+"status": "ok",
+"type": 16699,
+"title": "500 Tenge (Adyrna)",
+"upd": "2026-11-21",
+"issue": 85362
+},
+"480": {
+"status": "ok",
+"type": 16690,
+"title": "500 Tenge (Goitered gazelle)",
+"upd": "2026-11-21",
+"issue": 85353
+},
+"481": {
+"status": "ok",
+"type": 16712,
+"title": "500 Tenge (Zhoshi Khan)",
+"upd": "2026-11-21",
+"issue": 85375
+},
+"482": {
+"status": "ok",
+"type": 16713,
+"title": "500 Tenge (Tigerhead Sculpture)",
+"upd": "2026-11-21",
+"issue": 85376
+},
+"483": {
+"status": "ok",
+"type": 16674,
+"title": "500 Tenge (Horseman)",
+"upd": "2026-11-21",
+"issue": 85322
 }
 },
 "usage": {
-"2026-11": 360
+"2026-11": 480
 },
 "issuers": {
 "kz": "kazakhstan",

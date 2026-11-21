@@ -1,69 +1,78 @@
-эмитенты: {'kz': 'kazakhstan', 'kg': 'kirghizistan', 'mn': 'mongolie', 'tj': 'tadjikistan', 'tm': 'turkmenistan', 'uz': 'uzbekistan_section'}
-сопоставление 570 Monument to Amir Temur → {'status': 'ok', 'type': 63730, 'title': '10 Soʻm', 'upd': '2026-11-21'}
-цены 570 Monument to Amir Temur {} UZS
-сопоставление 216 50th ANNIVERSARY OF THE UNITED NATIONS → {'status': 'ok', 'type': 3107, 'title': '20 Tenge (United Nations)', 'upd': '2026-11-21'}
-цены 216 50th ANNIVERSARY OF THE UNITED NATIONS {'f': 991, 'vf': 991, 'xf': 991, 'au': 1139, 'unc': 1704} KZT
-сопоставление 512 SERIES OF COINS DEDICATED TO THE 150TH ANNIVERSARY OF ABAY KUNANBAYEV → {'status': 'none', 'why': 'неоднозначно: 100 Tenge (Abai Kunanbaev - Mother) | 100 Tenge (Abai Kunanbaev - Falconer) | 100 Tenge (Abai Kunanbaev - Love) | 100 Tenge (Abai Kunanbaev - Madrasa)', 'upd': '2026-11-21'}
-сопоставление 513 SERIES OF COINS DEDICATED TO THE 150TH ANNIVERSARY OF ABAY KUNANBAYEV → {'status': 'none', 'why': 'неоднозначно: 100 Tenge (Abai Kunanbaev - Mother) | 100 Tenge (Abai Kunanbaev - Falconer) | 100 Tenge (Abai Kunanbaev - Love) | 100 Tenge (Abai Kunanbaev - Madrasa)', 'upd': '2026-11-21'}
-сопоставление 514 SERIES OF COINS DEDICATED TO THE 150TH ANNIVERSARY OF ABAY KUNANBAYEV → {'status': 'none', 'why': 'неоднозначно: 100 Tenge (Abai Kunanbaev - Mother) | 100 Tenge (Abai Kunanbaev - Falconer) | 100 Tenge (Abai Kunanbaev - Love) | 100 Tenge (Abai Kunanbaev - Madrasa)', 'upd': '2026-11-21'}
-сопоставление 515 SERIES OF COINS DEDICATED TO THE 150TH ANNIVERSARY OF ABAY KUNANBAYEV → {'status': 'none', 'why': 'неоднозначно: 100 Tenge (Abai Kunanbaev - Mother) | 100 Tenge (Abai Kunanbaev - Falconer) | 100 Tenge (Abai Kunanbaev - Love) | 100 Tenge (Abai Kunanbaev - Madrasa)', 'upd': '2026-11-21'}
-сопоставление 516 SERIES OF COINS DEDICATED TO THE 150TH ANNIVERSARY OF ABAY KUNANBAYEV → {'status': 'none', 'why': 'неоднозначно: 100 Tenge (Abai Kunanbaev - Mother) | 100 Tenge (Abai Kunanbaev - Falconer) | 100 Tenge (Abai Kunanbaev - Love) | 100 Tenge (Abai Kunanbaev - Madrasa)', 'upd': '2026-11-21'}
-сопоставление 704 Manas → {'status': 'ok', 'type': 30620, 'title': '10 Som (Manas)', 'upd': '2026-11-21'}
-цены 704 Manas {'unc': 6831} KGS
-сопоставление 705 Manas → {'status': 'ok', 'type': 44694, 'title': '100 Som (Manas)', 'upd': '2026-11-21'}
-цены 705 Manas {} KGS
-сопоставление 215 150th ANNIVERSARY OF ZHAMBYL ZHABAYEV → {'status': 'ok', 'type': 9640, 'title': '20 Tenge (Zhambyl Zhabayev)', 'upd': '2026-11-21'}
-цены 215 150th ANNIVERSARY OF ZHAMBYL ZHABAYEV {'vf': 473, 'xf': 986, 'au': 1407, 'unc': 1927} KZT
-сопоставление 213 100th ANNIVERSARY OF MUKHTAR AUEZOV → {'status': 'none', 'why': 'неоднозначно: 20 Tenge (Muchtar Auesov) | 20 Tenge (Year of Accordance and Commemoration)', 'upd': '2026-11-21'}
-сопоставление 214 THE YEAR OF CONSENT AND MEMORY → {'status': 'none', 'why': 'неоднозначно: 20 Tenge (Muchtar Auesov) | 20 Tenge (Year of Accordance and Commemoration)', 'upd': '2026-11-21'}
-сопоставление 571 Amir Temur → {'status': 'none', 'why': 'нет кандидатов (6 в поиске)', 'upd': '2026-11-21'}
-сопоставление 211 MILLENNIUM → {'status': 'ok', 'type': 12698, 'title': '50 Tenge (Millennium)', 'upd': '2026-11-21'}
-цены 211 MILLENNIUM {'xf': 8792, 'au': 10359, 'unc': 11230} KZT
-сопоставление 212 100th ANNIVERSARY OF KANYSH SATPAYEV → {'status': 'none', 'why': 'нет кандидатов (1 в поиске)', 'upd': '2026-11-21'}
-сопоставление 511 TURN OF THE MILLENNIUM → {'status': 'ok', 'type': 138908, 'title': '100 Tenge (Abroad of The Millennium)', 'upd': '2026-11-21'}
-цены 511 TURN OF THE MILLENNIUM {} KZT
-сопоставление 208 THE 1500TH ANNIVERSARY OF TURKESTAN → {'status': 'ok', 'type': 23809, 'title': '50 Tenge (Mausoleum of Akhmet Yasawi)', 'upd': '2026-11-21'}
-цены 208 THE 1500TH ANNIVERSARY OF TURKESTAN {'unc': 12384} KZT
-сопоставление 209 100th ANNIVERSARY OF SABIT MUKANOV → {'status': 'ok', 'type': 12701, 'title': '50 Tenge (Sabit Mukanov)', 'upd': '2026-11-21'}
-цены 209 100th ANNIVERSARY OF SABIT MUKANOV {'vf': 1594, 'xf': 1594, 'au': 4172, 'unc': 6118} KZT
-сопоставление 210 55th ANNIVERSARY OF THE GREAT VICTORY → {'status': 'none', 'why': 'неоднозначно: 50 Tenge (Sabit Mukanov) | 50 Tenge (Mausoleum of Akhmet Yasawi)', 'upd': '2026-11-21'}
-сопоставление 508 THE SUN GOD. THE TAMGALYTAS → {'status': 'ok', 'type': 38607, 'title': '500 Tenge (Sun God)', 'upd': '2026-11-21'}
-цены 508 THE SUN GOD. THE TAMGALYTAS {} KZT
-сопоставление 509 THE 1500TH ANNIVERSARY OF TURKESTAN → {'status': 'ok', 'type': 16780, 'title': '100 Tenge (Turkestan)', 'upd': '2026-11-21'}
-цены 509 THE 1500TH ANNIVERSARY OF TURKESTAN {} KZT
-сопоставление 510 CHARIOT. ARPAUZEN GORGE → {'status': 'none', 'why': 'неоднозначно: 500 Tenge (Uncia Uncia) | 500 Tenge (Sun God)', 'upd': '2026-11-21'}
-сопоставление 569 THE 1500TH ANNIVERSARY OF TURKESTAN → {'status': 'ok', 'type': 139030, 'title': '500 Tenge (1500 years of Turkestan)', 'upd': '2026-11-21'}
-цены 569 THE 1500TH ANNIVERSARY OF TURKESTAN {} KZT
-сопоставление 703 Osh → {'status': 'ok', 'type': 44700, 'title': '100 Som (Osh)', 'upd': '2026-11-21'}
-цены 703 Osh {} KGS
-сопоставление 503 UMAI. MOUNTAIN ALTAI → {'status': 'ok', 'type': 16666, 'title': '500 Tenge (Umai. Mountain Altai)', 'upd': '2026-11-21'}
-цены 503 UMAI. MOUNTAIN ALTAI {} KZT
-сопоставление 504 SAIGA → {'status': 'ok', 'type': 16680, 'title': '500 Tenge (Saiga)', 'upd': '2026-11-21'}
-цены 504 SAIGA {} KZT
-сопоставление 505 NARKOBYZ → {'status': 'ok', 'type': 16695, 'title': '500 Tenge (Narkobyz)', 'upd': '2026-11-21'}
-цены 505 NARKOBYZ {'unc': 17029} KZT
-сопоставление 506 TOMIRIS → {'status': 'ok', 'type': 204936, 'title': '100 Tenge', 'upd': '2026-11-21'}
-цены 506 TOMIRIS {'unc': 3467} KZT
-сопоставление 507 UNCIA UNCIA (SNOW LEOPARD) → {'status': 'none', 'why': 'неоднозначно: 500 Tenge (Saiga) | 500 tenge (10 Years of Independence) | 500 Tenge (Umai. Mountain Altai) | 500 Tenge (Narkobyz)', 'upd': '2026-11-21'}
-сопоставление 568 GOLDEN MAN → {'status': 'ok', 'type': 139032, 'title': '1000 Tenge (Golden man)', 'upd': '2026-11-21'}
-цены 568 GOLDEN MAN {} KZT
-сопоставление 572 Tennis → {'status': 'ok', 'type': 100301, 'title': '100 Soʻm (Tennis player)', 'upd': '2026-11-21'}
-цены 572 Tennis {} UZS
-сопоставление 573 Football → {'status': 'ok', 'type': 100296, 'title': '100 Soʻm (Football player)', 'upd': '2026-11-21'}
-цены 573 Football {} UZS
-сопоставление 574 Museum of Olympic Glory → {'status': 'ok', 'type': 100293, 'title': '100 Soʻm (Amir-Timur Museum)', 'upd': '2026-11-21'}
-цены 574 Museum of Olympic Glory {} UZS
-сопоставление 575 Tashkent Kurant → {'status': 'none', 'why': 'неоднозначно: 100 Soʻm (Alisher Novoiy) | 100 Soʻm (Parliament) | 100 Soʻm (Amir-Timur Museum) | 100 Soʻm (Toskent town hall)', 'upd': '2026-11-21'}
-сопоставление 576 Building of the Oliy Majlis → {'status': 'none', 'why': 'неоднозначно: 100 Soʻm (Alisher Novoiy) | 100 Soʻm (Parliament) | 100 Soʻm (Amir-Timur Museum) | 100 Soʻm (Toskent town hall)', 'upd': '2026-11-21'}
-сопоставление 577 Registan Square → {'status': 'ok', 'type': 100300, 'title': '100 Soʻm (Registan in Samarkand)', 'upd': '2026-11-21'}
-цены 577 Registan Square {} UZS
-сопоставление 578 Monument to Amir Temur → {'status': 'none', 'why': 'неоднозначно: 100 Soʻm (Amir-Timur Museum) | 100 Soʻm (Lenk monument in Timur) | 100 Soʻm (Aliser Navoi monument) | 100 Soʻm (Alisher Novoiy)', 'upd': '2026-11-21'}
-сопоставление 579 Oqsaroy Residence → {'status': 'none', 'why': 'неоднозначно: 100 Soʻm (Alisher Novoiy) | 100 Soʻm (Parliament) | 100 Soʻm (Amir-Timur Museum) | 100 Soʻm (Toskent town hall)', 'upd': '2026-11-21'}
-сопоставление 580 Monument to Alisher Navoiy → {'status': 'none', 'why': 'неоднозначно: 100 Soʻm (Alisher Novoiy) | 100 Soʻm (Lenk monument in Timur) | 100 Soʻm (Aliser Navoi monument) | 100 Soʻm (Parliament)', 'upd': '2026-11-21'}
-сопоставление 581 State Museum of Temurids History → {'status': 'ok', 'type': 100293, 'title': '100 Soʻm (Amir-Timur Museum)', 'upd': '2026-11-21'}
-цены 581 State Museum of Temurids History {} UZS
-сопоставление 582 Monument of Independence → {'status': 'none', 'why': 'неоднозначно: 100 Soʻm (Lenk monument in Timur) | 100 Soʻm (Aliser Navoi monument) | 100 Soʻm (Alisher Novoiy) | 100 Soʻm (Parliament)', 'upd': '2026-11-21'}
-сопоставление 583 Kurash → {'status': 'none', 'why': 'неоднозначно: 100 Soʻm (Alisher Novoiy) | 100 Soʻm (Parliament) | 100 Soʻm (Amir-Timur Museum) | 100 Soʻm (Toskent town hall)', 'upd': '2026-11-21'}
-сопоставление 702 Khan-Tengri → {'status': 'ok', 'type': 30619, 'title': '10 Som (Republic)', 'upd': '2026-11-21'}
+сопоставление 206 100th ANNIVERSARY OF GABIDEN MUSTAFIN → {'status': 'ok', 'type': 6240, 'title': '50 Tenge (Gabiden Mustafin)', 'upd': '2026-11-21'}
+цены 206 100th ANNIVERSARY OF GABIDEN MUSTAFIN {'xf': 1238, 'au': 1805, 'unc': 2021} KZT
+сопоставление 207 100th ANNIVERSARY OF GABIT MUSREPOV → {'status': 'ok', 'type': 5022, 'title': '50 Tenge (Gabit Musirepov)', 'upd': '2026-11-21'}
+цены 207 100th ANNIVERSARY OF GABIT MUSREPOV {'xf': 1486, 'au': 2016, 'unc': 2477} KZT
+сопоставление 499 OVIS AMMON → {'status': 'ok', 'type': 16687, 'title': '500 Tenge (Bighorn Sheep)', 'upd': '2026-11-21'}
+цены 499 OVIS AMMON {} KZT
+сопоставление 500 DOMBYRA → {'status': 'none', 'why': 'неоднозначно: 500 Tenge (Dombra) | 500 Tenge (The Sign - Tanbaly) | 500 Tenge (Bighorn Sheep) | 500 Tenge (Babaja Chatuna)', 'upd': '2026-11-21'}
+сопоставление 501 THE SIGN.TANBALY → {'status': 'ok', 'type': 16668, 'title': '500 Tenge (The Sign - Tanbaly)', 'upd': '2026-11-21'}
+цены 501 THE SIGN.TANBALY {} KZT
+сопоставление 502 BABAJI-KHATUN MAUSOLEUM → {'status': 'ok', 'type': 16707, 'title': '500 Tenge (Babaja Chatuna)', 'upd': '2026-11-21'}
+цены 502 BABAJI-KHATUN MAUSOLEUM {'unc': 23256} KZT
+сопоставление 700 Edelweiss → {'status': 'ok', 'type': 34972, 'title': '10 Som (Edelweiss)', 'upd': '2026-11-21'}
+цены 700 Edelweiss {} KGS
+сопоставление 701 Arkhar → {'status': 'ok', 'type': 30628, 'title': '10 Som (Arkhar Ram)', 'upd': '2026-11-21'}
+цены 701 Arkhar {} KGS
+сопоставление 205 200th ANNIVERSARY OF MAKHAMBET UTEMISOV → {'status': 'ok', 'type': 6250, 'title': '50 Tenge (Makhambet Otemisuly)', 'upd': '2026-11-21'}
+цены 205 200th ANNIVERSARY OF MAKHAMBET UTEMISOV {'xf': 1998, 'au': 1998, 'unc': 1998} KZT
+сопоставление 495 ASSA TAYAK → {'status': 'ok', 'type': 16697, 'title': '500 Tenge (Assa Tayak)', 'upd': '2026-11-21'}
+цены 495 ASSA TAYAK {'unc': 19678} KZT
+сопоставление 496 MAUSOLEUM AISHA-BIBI → {'status': 'ok', 'type': 16710, 'title': '500 Tenge (Aisha Bibi)', 'upd': '2026-11-21'}
+цены 496 MAUSOLEUM AISHA-BIBI {'unc': 20649} KZT
+сопоставление 497 OTIS TARDA (GREAT BUSTARD) → {'status': 'ok', 'type': 16688, 'title': '500 Tenge (Great Bustard bird)', 'upd': '2026-11-21'}
+цены 497 OTIS TARDA (GREAT BUSTARD) {} KZT
+сопоставление 498 TURK WARRIOR. OI-JAILAU → {'status': 'ok', 'type': 16670, 'title': '500 Tenge (Turk Warrior)', 'upd': '2026-11-21'}
+цены 498 TURK WARRIOR. OI-JAILAU {} KZT
+сопоставление 698 Genesis of the Kyrgyz Statehood → {'status': 'ok', 'type': 35595, 'title': '10 Som (Genesis of the Kyrgyz Statehood)', 'upd': '2026-11-21'}
+цены 698 Genesis of the Kyrgyz Statehood {} KGS
+сопоставление 699 10th Anniversary of National Currency → {'status': 'ok', 'type': 30629, 'title': '10 Som (National Currency)', 'upd': '2026-11-21'}
+цены 699 10th Anniversary of National Currency {} KGS
+сопоставление 203 100th ANNIVERSARY OF ALKEY MARGULAN → {'status': 'ok', 'type': 6248, 'title': '50 Tenge (Alken Margulan)', 'upd': '2026-11-21'}
+цены 203 100th ANNIVERSARY OF ALKEY MARGULAN {'xf': 1805, 'au': 1805, 'unc': 1805} KZT
+сопоставление 204 100th ANNIVERSARY OF ABILKHAN KASTEYEV → {'status': 'none', 'why': 'неоднозначно: 50 Tenge (Abylkhan Kasteev) | 50 Tenge (Alken Margulan)', 'upd': '2026-11-21'}
+сопоставление 486 ZHETYGEN → {'status': 'ok', 'type': 16698, 'title': '500 Tenge (Zhetygen)', 'upd': '2026-11-21'}
+цены 486 ZHETYGEN {} KZT
+сопоставление 487 ROCK STATUES → {'status': 'ok', 'type': 16711, 'title': '500 Tenge (The Rock Statues)', 'upd': '2026-11-21'}
+цены 487 ROCK STATUES {} KZT
+сопоставление 488 DENGA → {'status': 'ok', 'type': 16724, 'title': '500 Tenge (Denga)', 'upd': '2026-11-21'}
+цены 488 DENGA {'unc': 28553} KZT
+сопоставление 489 THE GOLDEN DEER → {'status': 'ok', 'type': 16719, 'title': '500 Tenge (The golden Deer)', 'upd': '2026-11-21'}
+цены 489 THE GOLDEN DEER {} KZT
+сопоставление 490 TAMGALYTAS. THE THINKER → {'status': 'ok', 'type': 16672, 'title': '500 Tenge (The Thinker)', 'upd': '2026-11-21'}
+цены 490 TAMGALYTAS. THE THINKER {} KZT
+сопоставление 491 OLYMPIC GAMES 2004. CYCLISTS → {'status': 'ok', 'type': 16701, 'title': '100 Tenge (Olympic Games 2004)', 'upd': '2026-11-21'}
+цены 491 OLYMPIC GAMES 2004. CYCLISTS {'unc': 16766} KZT
+сопоставление 492 2006 FIFA WORLD CUP GERMANY TM → {'status': 'ok', 'type': 16700, 'title': '100 Tenge (Soccer World Cup)', 'upd': '2026-11-21'}
+цены 492 2006 FIFA WORLD CUP GERMANY TM {'unc': 22081} KZT
+сопоставление 493 100th ANNIVERSARY OF KAZAKHSTAN RAIL FACILITIES → {'status': 'ok', 'type': 16781, 'title': '500 Tenge (100th Anniversary of Kazakhstan Railroads)', 'upd': '2026-11-21'}
+цены 493 100th ANNIVERSARY OF KAZAKHSTAN RAIL FACILITIES {} KZT
+сопоставление 494 FALCO CHERRUG (SAKER FALCON) → {'status': 'ok', 'type': 16689, 'title': '500 Tenge (Falco Cherrug)', 'upd': '2026-11-21'}
+цены 494 FALCO CHERRUG (SAKER FALCON) {} KZT
+сопоставление 564 ANCIENT TURKESTAN → {'status': 'ok', 'type': 139041, 'title': '100 Tenge (Ancient Turkestan)', 'upd': '2026-11-21'}
+цены 564 ANCIENT TURKESTAN {'unc': 58252} KZT
+сопоставление 565 MARCO POLO → {'status': 'ok', 'type': 139039, 'title': '100 Tenge (Marco Polo)', 'upd': '2026-11-21'}
+цены 565 MARCO POLO {} KZT
+сопоставление 566 KING KROISOS TREASURE → {'status': 'ok', 'type': 55096, 'title': '100 Tenge (King Kroisos Treasure)', 'upd': '2026-11-21'}
+цены 566 KING KROISOS TREASURE {} KZT
+сопоставление 567 GOLD OF KING MIDAS → {'status': 'ok', 'type': 139037, 'title': '100 Tenge (Gold of King Midas)', 'upd': '2026-11-21'}
+цены 567 GOLD OF KING MIDAS {'unc': 76080} KZT
+сопоставление 760 10 Years of the Constitution of the Republic of Tajikistan → {'status': 'none', 'why': 'неоднозначно: 5 Somoni (Constitution) | 5 Somoni (Constitution)', 'upd': '2026-11-21'}
+сопоставление 761 80 Years of Dushanbe → {'status': 'ok', 'type': 11736, 'title': '3 Somoni (Dushanbe City)', 'upd': '2026-11-21'}
+цены 761 80 Years of Dushanbe {'xf': 40, 'au': 45, 'unc': 52} TJS
+сопоставление 200 60th ANNIVERSARY OF UNITED NATIONS → {'status': 'ok', 'type': 12705, 'title': '100 Tenge (United Nations)', 'upd': '2026-11-21'}
+цены 200 60th ANNIVERSARY OF UNITED NATIONS {'xf': 2094, 'au': 2094, 'unc': 2219} KZT
+сопоставление 201 10TH ANNIVERSARY OF KAZAKHSTAN CONSTITUTION → {'status': 'ok', 'type': 6239, 'title': '50 Tenge (10 years Constitution)', 'upd': '2026-11-21'}
+цены 201 10TH ANNIVERSARY OF KAZAKHSTAN CONSTITUTION {'xf': 991, 'au': 1847, 'unc': 2566} KZT
+сопоставление 202 60th ANNIVERSARY OF THE GREAT VICTORY → {'status': 'ok', 'type': 6237, 'title': '50 Tenge (60 years WW2 Victory)', 'upd': '2026-11-21'}
+цены 202 60th ANNIVERSARY OF THE GREAT VICTORY {'xf': 3309, 'au': 4157, 'unc': 4458} KZT
+сопоставление 479 ADYRNA → {'status': 'ok', 'type': 16699, 'title': '500 Tenge (Adyrna)', 'upd': '2026-11-21'}
+цены 479 ADYRNA {'unc': 26352} KZT
+сопоставление 480 GAZELLA SUBGUTTUROSA (GOITERED GAZELLE) → {'status': 'ok', 'type': 16690, 'title': '500 Tenge (Goitered gazelle)', 'upd': '2026-11-21'}
+цены 480 GAZELLA SUBGUTTUROSA (GOITERED GAZELLE) {'unc': 20073} KZT
+сопоставление 481 ZHOSHI KHAN MAUSOLEUM → {'status': 'ok', 'type': 16712, 'title': '500 Tenge (Zhoshi Khan)', 'upd': '2026-11-21'}
+цены 481 ZHOSHI KHAN MAUSOLEUM {} KZT
+сопоставление 482 THE HEAD OF TIGER → {'status': 'ok', 'type': 16713, 'title': '500 Tenge (Tigerhead Sculpture)', 'upd': '2026-11-21'}
+цены 482 THE HEAD OF TIGER {} KZT
+сопоставление 483 HORSEMAN. AIRAKTY MOUNTAIN → {'status': 'ok', 'type': 16674, 'title': '500 Tenge (Horseman)', 'upd': '2026-11-21'}
 лимит запросов на сегодня/месяц исчерпан, продолжим завтра
-итого: сопоставлено 89, с ценами 36, запросов за 2026-11: 360
+итого: сопоставлено 126, с ценами 54, запросов за 2026-11: 480
