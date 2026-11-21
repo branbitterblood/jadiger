@@ -1437,6 +1437,8 @@ Store.on(() => {
 });
 $('pubCta').href = PREFIX + '/#my';
 { const sw = $('langSw'), links = [...sw.querySelectorAll('a')];
+  // явный выбор языка запоминаем: главная «/» больше не будет переадресовывать по языку браузера
+  links.forEach(a => a.addEventListener('click', () => { document.cookie = 'jd_lang=' + a.dataset.l + '; path=/; max-age=31536000; SameSite=Lax'; }));
   const upd = () => { const p = location.pathname.replace(/^\/(en|kk)(?=\/|$)/, '') || '/';
     links.forEach(a => { const l = a.dataset.l; a.hidden = l === LANG; a.href = (l === 'ru' ? p : '/' + l + (p === '/' ? '/' : p)) + location.hash; }); };
   upd(); ['popstate', 'hashchange', 'click'].forEach(ev => window.addEventListener(ev, () => setTimeout(upd, 0))); const _ps = history.pushState, _rs = history.replaceState;
