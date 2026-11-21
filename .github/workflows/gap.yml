@@ -1,0 +1,33 @@
+# Ручной запуск: поиск монет, которых нет в каталоге (данные Numista API). Результат — tools/gap/*.json
+name: Поиск пропущенных монет
+on:
+  workflow_dispatch:
+    inputs:
+      step: { description: 'list или details', default: 'list' }
+      cc: { description: 'страны через запятую', default: 'mn,tm,uz,tj' }
+      max: { description: 'максимум запросов за запуск', default: '100' }
+permissions:
+  contents: write
+concurrency: { group: catalog-update, cancel-in-progress: false }
+jobs:
+  gap:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: '3.12' }
+      - run: pip install requests
+      - env:
+          NUMISTA_API_KEY: ${{ secrets.NUMISTA_API_KEY }}
+          GAP_STEP: ${{ inputs.step }}
+          GAP_CC: ${{ inputs.cc }}
+          GAP_MAX: ${{ inputs.max }}
+        run: python tools/numista_gap.py
+      - run: |
+          git config user.name "jadiger-bot"
+          git config user.email "jadiger-bot@users.noreply.github.com"
+          git add tools/gap tools/numista_state.json
+          if git diff --cached --quiet; then exit 0; fi
+          git commit -m "Numista: поиск пропущенных монет (${{ inputs.step }})"
+          git pull --rebase && git push
