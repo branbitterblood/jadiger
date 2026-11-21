@@ -373,8 +373,8 @@ def days_ago(n): return datetime.fromtimestamp(time.time() - n * 86400, timezone
 
 
 def write_sitemap(main_slugs, main, auto):
-    urls = [f'{SITE}/'] + [f'{SITE}/{(r[10:] or ["kz"])[0]}/{s}' for r, s in zip(main, main_slugs)]
-    urls += [f'{SITE}/{c["r"][10]}/{c["slug"]}' for c in auto['coins']]
+    paths = [f'{(r[10:] or ["kz"])[0]}/{s}' for r, s in zip(main, main_slugs)] + [f'{c["r"][10]}/{c["slug"]}' for c in auto['coins']]
+    urls = [f'{SITE}/', f'{SITE}/en/'] + [f'{SITE}/{p}' for p in paths] + [f'{SITE}/en/{p}' for p in paths]
     with open(os.path.join(PUB, 'sitemap.xml'), 'w') as f:
         f.write('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n')
         f.writelines(f'<url><loc>{u}</loc></url>\n' for u in urls); f.write('</urlset>\n')
