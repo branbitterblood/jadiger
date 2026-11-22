@@ -1031,7 +1031,7 @@ function drawFace(cv, coin, side) {
   if (p.bi) { const g2 = g.createRadialGradient(c * .75, c * .65, S * .03, c, c, R * .66); g2.addColorStop(0, p.bi[0]); g2.addColorStop(1, p.bi[1]); g.fillStyle = g2; g.beginPath(); g.arc(c, c, R * .66, 0, Math.PI * 2); g.fill(); }
   g.lineWidth = S * .03; g.strokeStyle = p.rim; g.beginPath(); g.arc(c, c, R - S * .015, 0, Math.PI * 2); g.stroke();
   if (side === 'obv') {
-    emboss(g, col => ringText(g, coin.country === 'kg' ? 'КЫРГЫЗ РЕСПУБЛИКАСЫ' : coin.country === 'uz' ? 'O‘ZBEKISTON RESPUBLIKASI' : coin.year >= 2019 ? 'QAZAQSTAN RESPÝBLIKASY' : 'ҚАЗАҚСТАН РЕСПУБЛИКАСЫ', c, c, R * .78, 0, `600 ${S * .06}px Inter`, col || ink));
+    emboss(g, col => ringText(g, coin.country === 'kg' ? 'КЫРГЫЗ РЕСПУБЛИКАСЫ' : coin.country === 'uz' ? 'O‘ZBEKISTON RESPUBLIKASI' : coin.country !== 'kz' && COUNTRIES[coin.country].ring ? COUNTRIES[coin.country].ring[0] : coin.year >= 2019 ? 'QAZAQSTAN RESPÝBLIKASY' : 'ҚАЗАҚСТАН РЕСПУБЛИКАСЫ', c, c, R * .78, 0, `600 ${S * .06}px Inter`, col || ink));
     emboss(g, col => { g.fillStyle = col || ink; g.font = `700 ${S * .26}px "Cormorant Garamond", serif`; g.textAlign = 'center'; g.textBaseline = 'middle'; g.fillText(String(coin.nom), c, c - S * .02); });
     emboss(g, col => ringText(g, String(coin.year), c, c, R * .78, 180, `600 ${S * .06}px Inter`, col || ink));
   } else {
@@ -1571,7 +1571,7 @@ renderer.setPixelRatio(Math.min(devicePixelRatio, 2)); renderer.outputColorSpace
 const scene = new THREE.Scene(); const pmrem = new THREE.PMREMGenerator(renderer);
 // карта окружения считается при первом открытии монеты, а не при загрузке страницы
 const ensureEnv = () => { if (!scene.environment) scene.environment = pmrem.fromScene(new RoomEnvironment(), 0.04).texture; };
-const camera = new THREE.PerspectiveCamera(32, 1, 0.1, 100);
+const camera = new THREE.PerspectiveCamera(32, 1, 0.1, 2000); // дальняя плоскость с запасом: крупные монеты (160 мм) иначе обрезались при повороте
 scene.add(new THREE.AmbientLight(0xffffff, 0.35));
 const key = new THREE.DirectionalLight(0xfff4e0, 2.2); scene.add(key);
 const back = new THREE.DirectionalLight(0xbfd2ff, 0.6); back.position.set(-3, -2, -4); scene.add(back);
@@ -1642,7 +1642,7 @@ function buildShaped(coin, sh) {
   if (!sh._sm && (sh.k === 'прямоугольная' || sh.k === 'квадратная')) { sh = Object.assign({}, sh, { f: roundRectFlat(sh.f, sh.ar), b: roundRectFlat(sh.b, sh.ar), _sm: 1 }); SHAPES[coin.id] = sh; }
   // многоугольники с небольшим числом вершин (12-угольник, ромб): углы скругляем чуть-чуть, грани остаются прямыми;
   // сглаживание Чайкина превращало их почти в круг
-  else if (!sh._sm && sh.f.length <= 80) { sh = Object.assign({}, sh, { f: roundCorners(sh.f, sh.ar), b: roundCorners(sh.b, sh.ar), _sm: 1 }); SHAPES[coin.id] = sh; }
+  else if (!sh._sm && sh.f.length <= 80 && sh.k !== 'фигурная') { sh = Object.assign({}, sh, { f: roundCorners(sh.f, sh.ar), b: roundCorners(sh.b, sh.ar), _sm: 1 }); SHAPES[coin.id] = sh; }
   else if (!sh._sm && !/квадрат|прямоуг/.test(sh.k)) { sh = Object.assign({}, sh, { f: smoothFlat(sh.f), b: smoothFlat(sh.b), _sm: 1 }); SHAPES[coin.id] = sh; }
   // нормированная площадь контура (доля от W×H)
   let an = 0; for (let k = 0, n = sh.f.length / 2; k < n; k++) { const j = (k + 1) % n; an += sh.f[2*k] * sh.f[2*j+1] - sh.f[2*j] * sh.f[2*k+1]; } an = Math.abs(an) / 2 || .8;
