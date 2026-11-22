@@ -51,7 +51,15 @@ def get(url, binary=False, tries=3, timeout=40):
 def read_main():
     h = open(os.path.join(PUB, 'index.html'), encoding='utf-8').read()
     grab = lambda name: json.loads(re.search(r'const ' + name + r' = (.*);(?: //[^\n]*)?\n', h).group(1))
-    return grab('RAW'), grab('SLUGS'), grab('SRC_URL')
+    src = h[h.index('const SRC_URL = '):]
+    if src.startswith('const SRC_URL = Object.fromEntries'):
+        # ссылки хранятся сжато: "~<i>хвост" = SRC_PFX[i] + хвост
+        pfx = json.loads(re.search(r'const SRC_PFX = (\[.*?\]);', h).group(1).replace("'", '"'))
+        short = json.loads(re.search(r'Object\.entries\((\{.*?\})\)\.map', src).group(1))
+        src_url = {k: (pfx[int(u[1])] + u[2:] if u.startswith('~') else u) for k, u in short.items()}
+    else:
+        src_url = grab('SRC_URL')
+    return grab('RAW'), grab('SLUGS'), src_url
 
 
 def load_auto():
