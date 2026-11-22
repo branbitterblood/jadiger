@@ -148,6 +148,7 @@ async function notify(ctx) {
   if (prevP === null || prevA === null) return json({ ok: true, init: true, priced: priced.length });   // первый запуск: только запоминаем
   const oldP = new Set(JSON.parse(prevP)), oldA = new Set(JSON.parse(prevA));
   const fresh = (auto.coins || []).filter(c => !oldA.has(autoKey(c))).map(c => c.id), onSale = priced.filter(id => !oldP.has(id)).map(Number);
+  await channelNew(env, cat, fresh.filter(id => cat[id]));
   if (!fresh.length && !onSale.length) return json({ ok: true, fresh: 0, onSale: 0 });
   const users = (await env.DB.prepare('SELECT user_id, chat_id, lang, cc, new_on, wish_on FROM tg').all()).results;
   let sent = 0;
@@ -164,6 +165,44 @@ async function notify(ctx) {
     if (d.ok) sent++; else if (d.error_code === 403) await env.DB.prepare('DELETE FROM tg WHERE chat_id = ?').bind(u.chat_id).run();   // бот заблокирован
   }
   return json({ ok: true, fresh: fresh.length, onSale: onSale.length, sent });
+}
+
+/* ---------- публичный канал: монета дня и новые выпуски ---------- */
+const FLAG = { kz: '🇰🇿', uz: '🇺🇿', kg: '🇰🇬', tj: '🇹🇯', tm: '🇹🇲', mn: '🇲🇳', su: '☭', ru: '🇷🇺', by: '🇧🇾' };
+const CNAME = { kz: 'Казахстан', uz: 'Узбекистан', kg: 'Кыргызстан', tj: 'Таджикистан', tm: 'Туркменистан', mn: 'Монголия', su: 'СССР', ru: 'Россия', by: 'Беларусь' };
+const CURRU = { kz: 'тенге', uz: 'сум', kg: 'сом', tj: 'сомони', tm: 'манат', mn: 'тугриков', su: 'руб.', ru: 'руб.', by: 'руб.' };
+const nomRu = (cc, n) => !+n ? '' : +n < 1 ? `${Math.round(+n * 100)} коп.` : `${fmtN(n)} ${CURRU[cc]}`;
+const dayKz = () => new Date(Date.now() + 5 * 3600e3).toISOString().slice(0, 10);   // сутки по Кызылорде (UTC+5)
+
+async function daily(ctx, force) {
+  const { env } = ctx; await ensure(env);
+  if (!env.TG_CHANNEL) return json({ ok: false, error: 'no_channel' }, 503);
+  const today = dayKz();
+  if (!force && await getMeta(env, 'tg_daily_day') === today) return json({ ok: true, skipped: 'already_posted', day: today });
+  const { cat } = await catalog(ctx);
+  const recent = new Set(JSON.parse(await getMeta(env, 'tg_daily_recent') || '[]'));
+  const pool = Object.keys(cat).filter(id => cat[id][8] && !recent.has(id));
+  const id = pool[Math.floor(Math.random() * pool.length)], c = cat[id];
+  const [cc, slug, ru, en, , price, nom, year, , metal, series] = c;
+  const lines = [`<b>🪙 Монета дня</b>`, '', `${FLAG[cc]} <b>${esc(ru)}</b>`];
+  if (en && en !== ru) lines.push(`<i>${esc(en)}</i>`);
+  lines.push('', [CNAME[cc], year, nomRu(cc, nom), metal].filter(Boolean).map(esc).join(' · '));
+  if (series && series !== 'Без серии') lines.push(`Серия: ${esc(series)}`);
+  if (price) lines.push(`Цена нацбанка: ${fmtN(price)} ${CUR[cc]}`);
+  const d = await api(env, 'sendPhoto', { chat_id: env.TG_CHANNEL, photo: `${SITE}/og/${id}.jpg`, caption: lines.join('\n'), parse_mode: 'HTML',
+    reply_markup: { inline_keyboard: [[{ text: 'Смотреть в 3D', url: `${SITE}/${cc}/${slug}` }, { text: 'Каталог', url: `${SITE}/` }]] } });
+  if (!d.ok) return json({ ok: false, error: d.description }, 502);
+  await setMeta(env, 'tg_daily_day', today);
+  await setMeta(env, 'tg_daily_recent', JSON.stringify([...recent, id].slice(-600)));   // не повторяем монету примерно два года
+  return json({ ok: true, day: today, id });
+}
+
+async function channelNew(env, cat, ids) {
+  if (!env.TG_CHANNEL || !ids.length) return;
+  const lines = ids.slice(0, 15).map(id => { const [cc, slug, ru, , , price, nom, year] = cat[id];
+    return `${FLAG[cc]} <a href="${SITE}/${cc}/${slug}">${esc(ru)}</a> · ${year}${nomRu(cc, nom) ? ' · ' + nomRu(cc, nom) : ''}${price ? ` · ${fmtN(price)} ${CUR[cc]}` : ''}`; });
+  if (ids.length > 15) lines.push(`…и ещё ${ids.length - 15}`);
+  await send(env, env.TG_CHANNEL, `<b>🆕 ${ids.length === 1 ? 'Новый выпуск' : 'Новые выпуски'} нацбанков</b>\n\n${lines.join('\n')}`);
 }
 
 async function setup(ctx) {
@@ -184,6 +223,7 @@ export async function tgPublic(ctx, path, m) {
   if (path === 'tg/hook' && m === 'POST') return hook(ctx);
   if (path === 'tg/notify' && m === 'POST') return notify(ctx);
   if (path === 'tg/setup' && m === 'GET') return setup(ctx);
+  if (path === 'tg/daily' && m === 'POST') return daily(ctx, false);
   return null;
 }
 

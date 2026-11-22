@@ -1,0 +1,12 @@
+# Монета дня в Telegram-канале Jadiger (публикует сайт: /api/tg/daily). Повторный запуск в тот же день ничего не публикует.
+name: Монета дня
+on:
+  schedule:
+    - cron: '7 10 * * *'   # 15:07 по Кызылорде
+  workflow_dispatch: {}
+jobs:
+  post:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - run: curl -s -X POST https://jadiger.com/api/tg/daily || true
