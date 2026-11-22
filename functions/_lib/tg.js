@@ -141,12 +141,13 @@ async function notify(ctx) {
   await setMeta(env, 'tg_notify_at', now());
   const { cat, auto } = await catalog(ctx);
   const priced = Object.keys(cat).filter(id => cat[id][5] > 0);
-  const autoIds = (auto.coins || []).map(c => c.id);
+  // новые выпуски помним по адресу (страна/slug), а не по номеру: номера сдвигаются, когда в каталог добавляется новая страна
+  const autoKey = c => (c.r[10] || 'kz') + '/' + c.slug, autoIds = (auto.coins || []).map(autoKey);
   const prevP = await getMeta(env, 'tg_priced'), prevA = await getMeta(env, 'tg_auto');
   await setMeta(env, 'tg_priced', JSON.stringify(priced)); await setMeta(env, 'tg_auto', JSON.stringify(autoIds));
   if (prevP === null || prevA === null) return json({ ok: true, init: true, priced: priced.length });   // первый запуск: только запоминаем
   const oldP = new Set(JSON.parse(prevP)), oldA = new Set(JSON.parse(prevA));
-  const fresh = autoIds.filter(id => !oldA.has(id)), onSale = priced.filter(id => !oldP.has(id)).map(Number);
+  const fresh = (auto.coins || []).filter(c => !oldA.has(autoKey(c))).map(c => c.id), onSale = priced.filter(id => !oldP.has(id)).map(Number);
   if (!fresh.length && !onSale.length) return json({ ok: true, fresh: 0, onSale: 0 });
   const users = (await env.DB.prepare('SELECT user_id, chat_id, lang, cc, new_on, wish_on FROM tg').all()).results;
   let sent = 0;
