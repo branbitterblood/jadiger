@@ -166,6 +166,7 @@ main .wrap{padding-top:18px;padding-bottom:60px}
 .acct img{width:48px;height:48px;border-radius:50%;border:1px solid var(--line)}
 .who.err small{color:#f0a070}
 button.danger{border-color:#6a3030;color:#f0a0a0}
+.tgcc{display:flex;flex-wrap:wrap;gap:6px 16px;font-size:14px}
 /* my collection */
 .kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:12px;margin-top:14px}
 .kpi{background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:14px 16px}
@@ -438,6 +439,7 @@ textarea{resize:vertical;min-height:52px}
     <div id="pProf" hidden>
       <div class="pbox" id="acct"></div>
       <div class="pbox" id="pubBox"></div>
+      <div class="pbox" id="tgBox" hidden></div>
       <div class="pbox">
         <h3>Экспорт</h3>
         <p>Таблица коллекции и вишлиста (CSV, разделитель «;»), открывается в Excel и Google Таблицах.</p>
@@ -1410,6 +1412,7 @@ function renderProfile() {
     <p>Коллекция, вишлист и фото ваших экземпляров хранятся в базе Jadiger. Фото экземпляров, цены, места покупки и заметки видны только вам; список монет можно открыть по ссылке ниже. Сейчас сохранено ${nOwn} видов монет в коллекции и ${nW} в вишлисте.</p>
     <div class="btns"><button id="bLogout">Выйти</button><button id="bDelAcc" class="danger">Удалить аккаунт и все данные</button></div>`;
   if ($('pubBox').dataset.k !== me.email) { $('pubBox').dataset.k = me.email; renderPubBox(); }
+  if ($('tgBox').dataset.k !== me.email) { $('tgBox').dataset.k = me.email; renderTgBox(); }
   $('bLogout').onclick = () => Store.signOut();
   $('bDelAcc').onclick = async () => {
     if (!confirm('Удалить аккаунт Jadiger, коллекцию, вишлист и фото? Это нельзя отменить.')) return;
@@ -1478,6 +1481,41 @@ $('pubTabs').addEventListener('click', e => { const a = e.target.closest('[data-
 $('pubShare').onclick = () => PUB.data && shareLink($('pubShare'), pubUrl(PUB.data.handle), PUB.data.title, PUB.data.title + ' — монеты в 3D на Jadiger');
 window.addEventListener('popstate', () => { const h = pubMatch(); if (h && h !== PUB.handle) enterPub(h); else if (!h && PUB.handle && !/^(?:\/(?:en|kk))?\/(kz|uz|kg|tj|tm|mn|su|ru|by)\//.test(location.pathname)) { PUB.handle = null; route(); } });
 
+/* Telegram-уведомления в профиле */
+const TGL = {
+  ru: { h: 'Уведомления в Telegram', p: 'Бот пришлёт новые выпуски нацбанков и сообщит, когда монета из вашего списка «Хочу» поступит в продажу.', con: 'Подключить Telegram', wait: 'Откройте Telegram и нажмите «Запустить» (Start) в чате с ботом. Потом вернитесь сюда.', chk: 'Я нажал — проверить',
+    ok: 'Telegram подключён', bot: 'бот', nw: 'Новые выпуски', ws: 'Монеты из «Хочу» в продаже', cc: 'Страны для новых выпусков:', save: 'Сохранить', off: 'Отключить', saved: 'Сохранено', unl: 'Telegram отключён', fail: 'Не удалось: ' },
+  kk: { h: 'Telegram-дағы хабарламалар', p: 'Бот ұлттық банктердің жаңа шығарылымдарын жібереді және «Қалаймын» тізіміңіздегі монета сатылымға шыққанда хабарлайды.', con: 'Telegram қосу', wait: 'Telegram-ды ашып, ботпен чатта «Бастау» (Start) батырмасын басыңыз. Содан кейін осында оралыңыз.', chk: 'Бастым — тексеру',
+    ok: 'Telegram қосылған', bot: 'бот', nw: 'Жаңа шығарылымдар', ws: '«Қалаймын» тізіміндегі сатылымға шыққан монеталар', cc: 'Жаңа шығарылымдар үшін елдер:', save: 'Сақтау', off: 'Өшіру', saved: 'Сақталды', unl: 'Telegram ажыратылды', fail: 'Сәтсіз: ' },
+  en: { h: 'Telegram notifications', p: 'The bot sends new central bank issues and tells you when a coin from your wishlist goes on sale.', con: 'Connect Telegram', wait: 'Open Telegram and tap “Start” in the chat with the bot, then come back here.', chk: 'Done — check',
+    ok: 'Telegram connected', bot: 'bot', nw: 'New issues', ws: 'Wishlist coins on sale', cc: 'Countries for new issues:', save: 'Save', off: 'Disconnect', saved: 'Saved', unl: 'Telegram disconnected', fail: 'Failed: ' },
+}[LANG];
+async function renderTgBox() {
+  const box = $('tgBox'); let st; try { st = await api('tg'); } catch (e) { box.hidden = true; return; }
+  if (!st || !st.on) { box.hidden = true; return; }
+  box.hidden = false; box.dataset.tr = '1';
+  if (!st.linked) {
+    box.innerHTML = `<h3>✈️ ${TGL.h}</h3><p>${TGL.p}</p><div class="btns"><button class="primary" id="tgCon">${TGL.con}</button></div><p class="hint" id="tgWait" hidden>${TGL.wait}</p><div class="btns" id="tgChkB" hidden><button id="tgChk">${TGL.chk}</button></div>`;
+    $('tgCon').onclick = async () => {
+      const w = window.open('', '_blank');
+      try { const r = await api('tg/link', { method: 'POST', body: { lang: LANG } }); if (w) w.location = r.url; else location.href = r.url; $('tgWait').hidden = $('tgChkB').hidden = false; }
+      catch (e) { if (w) w.close(); toastMsg(TGL.fail + e.message); }
+    };
+    $('tgChk').onclick = renderTgBox;
+    return;
+  }
+  const on = new Set(st.cc ? st.cc.split(',') : Object.keys(COUNTRIES));
+  box.innerHTML = `<h3>✈️ ${TGL.h}</h3><p>✓ ${TGL.ok}${st.bot ? ` · ${TGL.bot} <a href="https://t.me/${esc(st.bot)}" target="_blank" rel="noopener">@${esc(st.bot)}</a>` : ''}</p>
+    <div class="pform"><label><input type="checkbox" id="tgNew" ${st.new_on ? 'checked' : ''}> ${TGL.nw}</label>
+    <label><input type="checkbox" id="tgWish" ${st.wish_on ? 'checked' : ''}> ${TGL.ws}</label>
+    <div style="color:var(--muted);font-size:13px;margin-top:6px">${TGL.cc}</div><div class="tgcc">${Object.keys(COUNTRIES).map(cc => `<label><input type="checkbox" data-cc="${cc}" ${on.has(cc) ? 'checked' : ''}> ${COUNTRIES[cc].flag} ${esc(COUNTRIES[cc].name)}</label>`).join('')}</div>
+    <div class="btns"><button class="primary" id="tgSave">${TGL.save}</button><button class="danger" id="tgOff">${TGL.off}</button></div></div>`;
+  $('tgSave').onclick = async () => {
+    const cc = [...box.querySelectorAll('[data-cc]')].filter(x => x.checked).map(x => x.dataset.cc);
+    try { await api('tg', { method: 'PUT', body: { cc, new_on: $('tgNew').checked, wish_on: $('tgWish').checked, lang: LANG } }); toastMsg(TGL.saved); } catch (e) { toastMsg(TGL.fail + e.message); }
+  };
+  $('tgOff').onclick = async () => { try { await api('tg', { method: 'DELETE' }); toastMsg(TGL.unl); renderTgBox(); } catch (e) { toastMsg(TGL.fail + e.message); } };
+}
 /* настройки публичной ссылки в профиле */
 async function renderPubBox() {
   const box = $('pubBox'); box.innerHTML = '<h3>Публичная коллекция</h3><p>Загрузка…</p>';

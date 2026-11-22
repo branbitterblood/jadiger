@@ -3,6 +3,7 @@
 // сервер проверяет подпись по ключам Google и выдаёт свою сессию в HttpOnly-cookie.
 
 import { RESERVED, HANDLE_RE, ensureProfiles, publicCollection } from '../_lib/profiles.js';
+import { tgPublic, tgUser } from '../_lib/tg.js';
 
 const COOKIE = 'jd_sess';
 const SESSION_DAYS = 90;
@@ -179,10 +180,14 @@ export async function onRequest(ctx) {
       return json(pc, 200, { 'cache-control': 'public, max-age=60' });
     }
 
+    // Telegram: вебхук бота, рассылка после обновления каталога, установка вебхука
+    { const r = await tgPublic(ctx, path, m); if (r) return r; }
+
     const user = await currentUser(req, env);
     if (path === 'me' && m === 'GET') return json({ user: publicUser(user) || null });
     if (!user) return err(401, 'login_required', 'Войдите через Google');
     const uid = user.id;
+    { const r = await tgUser(ctx, path, m, uid); if (r) return r; }
 
     // сводка для владельца сайта (/stats.html)
     if (path === 'stats' && m === 'GET') {
