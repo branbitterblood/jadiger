@@ -5,7 +5,7 @@ import { userPage } from '../_lib/userpage.js';
 const SITE = 'https://jadiger.com';
 export async function onRequestGet(ctx) {
   const parts = [].concat(ctx.params.path || []).filter(Boolean);
-  if (parts.length === 2 && /^(kz|uz|kg|tj|tm|mn|su|ru|by)$/.test(parts[0])) return coinPage(ctx, parts[0], 'en', parts[1]);
+  if (parts.length === 2 && /^(kz|uz|kg|tj|tm|mn|su|ru|by|am)$/.test(parts[0])) return coinPage(ctx, parts[0], 'en', parts[1]);
   if (parts.length === 2 && parts[0] === 'u') return userPage(ctx, 'en', parts[1]);
   if (parts.length && !(parts.length === 1 && parts[0] === 'index.html')) {
     // статические файлы (pack, og, auto…) — с корня сайта
@@ -16,7 +16,7 @@ export async function onRequestGet(ctx) {
   const res = await ctx.env.ASSETS.fetch(new URL('/', ctx.request.url));
   let html = stripHomeOg(setLang(await res.text(), 'en'));
   const title = 'Jadiger — Collector Coins of Central Asia in 3D';
-  const desc = 'Catalog of commemorative and bullion coins of Kazakhstan, Uzbekistan, Kyrgyzstan, Tajikistan, Turkmenistan, Mongolia, the USSR, Russia and Belarus in 3D: specs, mintages, central bank prices and your personal collection tracker.';
+  const desc = 'Catalog of commemorative and bullion coins of Kazakhstan, Uzbekistan, Kyrgyzstan, Tajikistan, Turkmenistan, Mongolia, the USSR, Russia, Belarus and Armenia in 3D: specs, mintages, central bank prices and your personal collection tracker.';
   html = html.replace(/<meta name="description"[^>]*>\n?/, '').replace(/<title>[^<]*<\/title>/, `<title>${title}</title>
 <meta name="description" content="${desc}">
 <link rel="canonical" href="${SITE}/en/">
