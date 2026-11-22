@@ -167,7 +167,8 @@ async function notify(ctx) {
 
 async function setup(ctx) {
   const { env, request } = ctx; await ensure(env);
-  const host = new URL(request.url).origin;
+  // вебхук — на jadiger.pages.dev: адрес jadiger.com Telegram пока не может разрешить (Failed to resolve host)
+  const host = 'https://jadiger.pages.dev';
   const r1 = await api(env, 'setWebhook', { url: `${host}/api/tg/hook`, secret_token: await hookSecret(env), allowed_updates: ['message'], drop_pending_updates: true });
   for (const l of ['ru', 'kk', 'en']) await api(env, 'setMyCommands', { commands: T[l].cmds.map(([command, description]) => ({ command, description })), ...(l === 'ru' ? {} : { language_code: l }) });
   await api(env, 'setMyDescription', { description: 'Каталог памятных монет jadiger.com: новые выпуски нацбанков и монеты из вашего списка «Хочу». / Commemorative coin catalog: new central bank issues and your wishlist alerts.' });
