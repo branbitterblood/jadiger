@@ -4,6 +4,7 @@
 
 import { RESERVED, HANDLE_RE, ensureProfiles, publicCollection } from '../_lib/profiles.js';
 import { tgPublic, tgUser } from '../_lib/tg.js';
+import { imgRoutes } from '../_lib/img.js';
 
 const COOKIE = 'jd_sess';
 const SESSION_DAYS = 90;
@@ -182,6 +183,7 @@ export async function onRequest(ctx) {
 
     // Telegram: вебхук бота, рассылка после обновления каталога, установка вебхука
     { const r = await tgPublic(ctx, path, m); if (r) return r; }
+    { const r = await imgRoutes(ctx, path, m); if (r) return r; }   // синхронизация фото монет в R2
 
     const user = await currentUser(req, env);
     if (path === 'me' && m === 'GET') return json({ user: publicUser(user) || null });

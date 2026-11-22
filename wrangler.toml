@@ -25,3 +25,8 @@ AI_PRICE_CACHE_READ = "0.2"
 [[r2_buckets]]
 binding = "PHOTOS"
 bucket_name = "jadiger-photos"
+
+# фото монет (img.jadiger.com): заливка через /api/img/put, см. functions/_lib/img.js и tools/img_sync.py
+[[r2_buckets]]
+binding = "IMG"
+bucket_name = "jadiger-img"
