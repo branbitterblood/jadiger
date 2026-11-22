@@ -3610,10 +3610,257 @@
 "status": "ok",
 "type": 116172,
 "title": "Yuri Dolgorukiy"
+},
+"1611": {
+"status": "ok",
+"type": 14595,
+"title": "3 Roubles (Battle of Chudskoye Lake)",
+"upd": "2026-11-22",
+"issue": 72084
+},
+"1612": {
+"status": "ok",
+"type": 27791,
+"title": "3 Roubles (International Space Year)",
+"upd": "2026-11-22",
+"issue": 143760
+},
+"1613": {
+"status": "ok",
+"type": 14596,
+"title": "3 Roubles (Victory of the Democratic Forces of Russia on August 19-21, 1991)",
+"upd": "2026-11-22",
+"issue": 72085
+},
+"1614": {
+"status": "ok",
+"type": 14584,
+"title": "1 Rouble (Sovereignty and Democracy)",
+"upd": "2026-11-22",
+"issue": 213635
+},
+"1615": {
+"status": "ok",
+"type": 14585,
+"title": "1 Rouble (Naval Commander P.S. Nakhimov)",
+"upd": "2026-11-22",
+"issue": 72073
+},
+"1616": {
+"status": "ok",
+"type": 14588,
+"title": "1 Rouble (Poet Yanka Kupala)",
+"upd": "2026-11-22",
+"issue": 72077
+},
+"1617": {
+"status": "ok",
+"type": 14651,
+"title": "10 Roubles (Amur Tiger)",
+"upd": "2026-11-22",
+"issue": 72160
+},
+"1618": {
+"status": "ok",
+"type": 14649,
+"title": "10 Roubles (Red-Breasted Goose)",
+"upd": "2026-11-22",
+"issue": 72158
+},
+"1619": {
+"status": "ok",
+"type": 14650,
+"title": "10 Roubles (Central Asian Cobra)",
+"upd": "2026-11-22",
+"issue": 72159
+},
+"1620": {
+"status": "ok",
+"type": 14596,
+"title": "3 Roubles (Victory of the Democratic Forces of Russia on August 19-21, 1991)",
+"upd": "2026-11-22",
+"issue": 72085
+},
+"1621": {
+"status": "ok",
+"type": 14586,
+"title": "1 Rouble (Writer and poet Yakub Kolas)",
+"upd": "2026-11-22",
+"issue": 72074
+},
+"1622": {
+"status": "ok",
+"type": 31987,
+"title": "3 Roubles (Saint Trinity Cathedral)",
+"upd": "2026-11-22",
+"issue": 154431
+},
+"1623": {
+"status": "ok",
+"type": 51487,
+"title": "3 Roubles (Academy of Sciences)",
+"upd": "2026-11-22",
+"issue": 212745
+},
+"1624": {
+"status": "ok",
+"type": 51984,
+"title": "50 Roubles (Pashkov House)",
+"upd": "2026-11-22",
+"issue": 213686
+},
+"1625": {
+"status": "ok",
+"type": 51988,
+"title": "100 Roubles (M.V. Lomonosov)",
+"upd": "2026-11-22",
+"issue": 213690
+},
+"1626": {
+"status": "ok",
+"type": 51986,
+"title": "150 Roubles (Cesma Sea Battle)",
+"upd": "2026-11-22",
+"issue": 213688
+},
+"1627": {
+"status": "ok",
+"type": 51982,
+"title": "25 Roubles (Catherine II The Legislatress)",
+"upd": "2026-11-22",
+"issue": 213681
+},
+"1628": {
+"status": "ok",
+"type": 14589,
+"title": "1 Rouble (Mathematician N.I. Lobachevsky)",
+"upd": "2026-11-22",
+"issue": 72078
+},
+"1629": {
+"status": "ok",
+"type": 13425,
+"title": "5 Roubles (Mausoleum-Mosque of Akhmed Yasavi)",
+"upd": "2026-11-22",
+"issue": 69409
+},
+"1630": {
+"status": "ok",
+"type": 51985,
+"title": "50 Roubles (Yakutia's Voluntary Entering into Russia)",
+"upd": "2026-11-22",
+"issue": 213687
+},
+"1631": {
+"status": "ok",
+"type": 51989,
+"title": "100 Roubles (Yakutia's Voluntary Entering into Russia)",
+"upd": "2026-11-22",
+"issue": 213691
+},
+"1632": {
+"status": "ok",
+"type": 45256,
+"title": "3 Roubles (Football, 1910)",
+"upd": "2026-11-22",
+"issue": 192538
+},
+"1633": {
+"status": "ok",
+"type": 64123,
+"title": "50 Roubles (First Gold Medal)",
+"upd": "2026-11-22",
+"issue": 241163
+},
+"1634": {
+"status": "ok",
+"type": 64124,
+"title": "50 Roubles (Russia First Participation in the Olympic Games)",
+"upd": "2026-11-22",
+"issue": 241164
+},
+"1635": {
+"status": "ok",
+"type": 64125,
+"title": "10 Roubles (First IOC Congress)",
+"upd": "2026-11-22",
+"issue": 241165
+},
+"1636": {
+"status": "none",
+"why": "неоднозначно: 3 Roubles (Victory on the Volga) | 3 Roubles (Victory on the Kursk Bulge)",
+"upd": "2026-11-22"
+},
+"1637": {
+"status": "ok",
+"type": 14587,
+"title": "1 Rouble (V.I. Vernadsky)",
+"upd": "2026-11-22",
+"issue": 361069
+},
+"1638": {
+"status": "none",
+"why": "нет кандидатов (3 в поиске)",
+"upd": "2026-11-22"
+},
+"1639": {
+"status": "ok",
+"type": 64120,
+"title": "3 Roubles (Bell-Tower \"Ivan the Great\")",
+"upd": "2026-11-22",
+"issue": 241160
+},
+"1640": {
+"status": "none",
+"why": "неоднозначно: 3 Roubles (Russian Ballet) | 3 Roubles (Football, 1910) | 3 Roubles (Anna Pavlova) | 3 Roubles (Feodor Shaliapin)",
+"upd": "2026-11-22"
+},
+"1641": {
+"status": "none",
+"why": "неоднозначно: 3 Roubles (Russian Ballet) | 3 Roubles (Football, 1910) | 3 Roubles (Anna Pavlova) | 3 Roubles (Feodor Shaliapin)",
+"upd": "2026-11-22"
+},
+"1642": {
+"status": "ok",
+"type": 59468,
+"title": "25 Roubles (BOLSHOI THEATRE)",
+"upd": "2026-11-22",
+"issue": 230219
+},
+"1643": {
+"status": "none",
+"why": "неоднозначно: 10 Roubles (Russian Ballet; gold .999) | 10 Roubles (Russian Ballet; gold .900)",
+"upd": "2026-11-22"
+},
+"1644": {
+"status": "ok",
+"type": 64222,
+"title": "10 Roubles (Russian Ballet)",
+"upd": "2026-11-22",
+"issue": 241468
+},
+"1645": {
+"status": "ok",
+"type": 65657,
+"title": "25 Roubles (Russian Ballet; Gold .900)",
+"upd": "2026-11-22",
+"issue": 244279
+},
+"1646": {
+"status": "none",
+"why": "неоднозначно: 25 Roubles (Russian Ballet) | 25 Roubles (BOLSHOI THEATRE) | 25 Roubles (Russian Ballet) | 25 Roubles (M.P. Musorgsky)",
+"upd": "2026-11-22"
+},
+"1647": {
+"status": "ok",
+"type": 64111,
+"title": "50 Roubles (S.V. Rachmaninov)",
+"upd": "2026-11-22",
+"issue": 241151
 }
 },
 "usage": {
-"2026-11": 1121
+"2026-11": 1241
 },
 "issuers": {
 "kz": "kazakhstan",
@@ -3621,6 +3868,7 @@
 "mn": "mongolie",
 "tj": "tadjikistan",
 "tm": "turkmenistan",
-"uz": "uzbekistan_section"
+"uz": "uzbekistan_section",
+"ru": "russia"
 }
 }
