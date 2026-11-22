@@ -64,8 +64,11 @@ export async function coinPage(ctx, cc, lang = 'ru', slugIn) {
   const [id, title, desc, specs, hasPhoto] = c;
   const url = `${SITE}${PFX[lang] || ''}/${key}`;
   const img = hasPhoto ? `${SITE}/og/${id}.jpg` : homeImg(lang);
-  const ld = { '@context': 'https://schema.org', '@type': 'Product', name: title, description: desc, url,
-    ...(hasPhoto ? { image: img } : {}), category: X.cat };
+  // страница каталога, а не товар: без цены и отзывов разметка Product считается в Google ошибкой
+  const ld = { '@context': 'https://schema.org', '@type': 'WebPage', name: title, description: desc, url,
+    inLanguage: lang, isPartOf: { '@type': 'WebSite', name: 'Jadiger', url: SITE + '/' },
+    about: { '@type': 'Thing', name: title, description: X.cat },
+    ...(hasPhoto ? { primaryImageOfPage: { '@type': 'ImageObject', url: img, width: 1200, height: 630 } } : {}) };
   const meta = `<title>${esc(title)} · Jadiger</title>
 <meta name="description" content="${esc(desc)}">
 <link rel="canonical" href="${url}">
