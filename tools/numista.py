@@ -82,6 +82,7 @@ def main():
         out.setdefault('specs', {})
         # очередь: сначала без цены НБ, затем остальные; новые сопоставления, затем устаревшие цены
         def retry(m):  # несопоставленные монеты пробуем снова раз в 90 дней — каталог Numista пополняется
+            if m and m.get('status') == 'block': return False   # вручную отклонённое сопоставление
             return not m or m.get('status') != 'none' or (dt.date.today() - dt.date.fromisoformat(m.get('upd', '2000-01-01'))).days >= 90
         def stale(c):
             m = out['coins'].get(str(c['id']))

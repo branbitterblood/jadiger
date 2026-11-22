@@ -3821,11 +3821,9 @@
 "upd": "2026-11-22"
 },
 "1642": {
-"status": "ok",
-"type": 59468,
-"title": "25 Roubles (BOLSHOI THEATRE)",
-"upd": "2026-11-22",
-"issue": 230219
+"status": "block",
+"why": "ошибочно сопоставлена с 25 Roubles (BOLSHOI THEATRE); это 25 руб. Ag 999 из выпуска 19.04.1993",
+"upd": "2026-11-22"
 },
 "1643": {
 "status": "none",
