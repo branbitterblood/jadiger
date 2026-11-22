@@ -35,7 +35,7 @@ export async function userPage(ctx, lang, handle) {
       (ids.length ? '. Including ' + ids.slice(0, 3).map(id => '“' + B[id].title + '”').join(', ') : '') + '. View every coin in 3D.'
     : `Коллекция памятных монет на Jadiger: ${n} ${plural(n, 'монета', 'монеты', 'монет')}` + (w ? `, ещё ${w} в вишлисте` : '') +
     (ids.length ? '. Среди них: ' + ids.slice(0, 3).map(id => '«' + B[id].title + '»').join(', ') : '') + '. Смотрите каждую монету в 3D.';
-  const img = cover != null ? `${SITE}/og/${cover}.jpg` : homeImg(lang);
+  const img = cover != null ? `https://img.jadiger.com/og/${cover}.jpg` : homeImg(lang);
   const meta = `<title>${esc(title)} · Jadiger</title>
 <meta name="description" content="${esc(desc)}">
 <link rel="canonical" href="${url}">

@@ -103,7 +103,7 @@ async function randomCoin(ctx, chat_id, lang) {
   const title = lang === 'en' ? c[3] : lang === 'kk' ? c[4] : c[2];
   const link = `${SITE}${PFX[lang]}/${c[0]}/${c[1]}`;
   const btn = lang === 'en' ? 'View in 3D' : lang === 'kk' ? '3D-да көру' : 'Смотреть в 3D';
-  return api(env, 'sendPhoto', { chat_id, photo: `${SITE}/og/${id}.jpg`, caption: `<b>${esc(title)}</b>\n${c[7]}`, parse_mode: 'HTML', reply_markup: { inline_keyboard: [[{ text: btn, url: link }]] } });
+  return api(env, 'sendPhoto', { chat_id, photo: `https://img.jadiger.com/og/${id}.jpg`, caption: `<b>${esc(title)}</b>\n${c[7]}`, parse_mode: 'HTML', reply_markup: { inline_keyboard: [[{ text: btn, url: link }]] } });
 }
 
 async function hook(ctx) {
@@ -189,7 +189,7 @@ async function daily(ctx, force) {
   lines.push('', [CNAME[cc], year, nomRu(cc, nom), metal].filter(Boolean).map(esc).join(' · '));
   if (series && series !== 'Без серии') lines.push(`Серия: ${esc(series)}`);
   if (price) lines.push(`Цена нацбанка: ${fmtN(price)} ${CUR[cc]}`);
-  const d = await api(env, 'sendPhoto', { chat_id: env.TG_CHANNEL, photo: `${SITE}/og/${id}.jpg`, caption: lines.join('\n'), parse_mode: 'HTML',
+  const d = await api(env, 'sendPhoto', { chat_id: env.TG_CHANNEL, photo: `https://img.jadiger.com/og/${id}.jpg`, caption: lines.join('\n'), parse_mode: 'HTML',
     reply_markup: { inline_keyboard: [[{ text: 'Смотреть в 3D', url: `${SITE}/${cc}/${slug}` }, { text: 'Каталог', url: `${SITE}/` }]] } });
   if (!d.ok) return json({ ok: false, error: d.description }, 502);
   await setMeta(env, 'tg_daily_day', today);

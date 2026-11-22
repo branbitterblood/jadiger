@@ -6,7 +6,7 @@
   public/auto/coins.js      — window.JADIGER_AUTO = {base, coins:[...], prices:{...}, kz_seen:[...], ...}
   public/auto/t/<id>.json   — миниатюры [герб, сюжет] (data:URL webp, 200 px)
   public/auto/f/<id>.json   — текстуры для 3D [герб, сюжет] (512 px)
-  public/og/<id>.jpg        — превью ссылки 1200×630
+  img/og/<id>.jpg           — превью ссылки 1200×630 (заливается в R2: img.jadiger.com/og/<id>.jpg)
   public/sitemap.xml        — адреса страниц монет
 Сайт подключает coins.js до основного скрипта и добавляет монеты с id = N, N+1, …;
 страницы /kz|uz|kg/<slug> для них отдаёт functions/_lib/coinpage.js.
@@ -187,6 +187,17 @@ def circle01(n=128):
     return [round(float(v), 4) for k in range(n) for v in (.5 + .5 * np.cos(2 * np.pi * k / n), .5 + .5 * np.sin(2 * np.pi * k / n))]
 
 
+def img_manifest_add(rel):
+    """Файл из img/ — в манифест и его шард (по ним сайт проверяет заливку в R2)."""
+    import hashlib
+    full = os.path.join(ROOT, 'img', rel); h = hashlib.sha256(open(full, 'rb').read()).hexdigest()[:20]
+    shard = int(re.search(r'(\d+)', rel.split('/')[-1]).group(1)) // 100
+    for path in (os.path.join(ROOT, 'img', 'manifest.json'), os.path.join(ROOT, 'img', 'm', f'{shard}.json')):
+        d = json.load(open(path)) if os.path.exists(path) else {}
+        d[rel] = h; os.makedirs(os.path.dirname(path), exist_ok=True)
+        json.dump(dict(sorted(d.items())), open(path, 'w'), separators=(',', ':'))
+
+
 def build_images(cid, design, emblem):
     """design/emblem: PIL → пишет t/f паки, возвращает shape (или None для круглой)."""
     d = prepare(design); e = prepare(emblem)
@@ -211,7 +222,9 @@ def build_images(cid, design, emblem):
         try:   # знак шаңырақ и адрес сайта внизу, как у остальных превью
             bd = Image.open(os.path.join(ROOT, 'tools', 'og_badge.png')).convert('RGBA'); og.paste(bd, ((1200 - bd.width) // 2, 630 - 26 - bd.height), bd)
         except Exception: pass
-        og.save(os.path.join(PUB, 'og', f'{cid}.jpg'), quality=68, optimize=True, progressive=True)
+        os.makedirs(os.path.join(ROOT, 'img', 'og'), exist_ok=True)
+        og.save(os.path.join(ROOT, 'img', 'og', f'{cid}.jpg'), quality=68, optimize=True, progressive=True)   # → R2, img.jadiger.com
+        img_manifest_add(f'og/{cid}.jpg')
     return shape
 
 

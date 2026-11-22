@@ -64,7 +64,7 @@ export async function coinPage(ctx, cc, lang = 'ru', slugIn) {
   }
   const [id, title, desc, specs, hasPhoto] = c;
   const url = `${SITE}${PFX[lang] || ''}/${key}`;
-  const img = hasPhoto ? `${SITE}/og/${id}.jpg` : homeImg(lang);
+  const img = hasPhoto ? `https://img.jadiger.com/og/${id}.jpg` : homeImg(lang);
   // страница каталога, а не товар: без цены и отзывов разметка Product считается в Google ошибкой
   const ld = { '@context': 'https://schema.org', '@type': 'WebPage', name: title, description: desc, url,
     inLanguage: lang, isPartOf: { '@type': 'WebSite', name: 'Jadiger', url: SITE + '/' },
@@ -88,7 +88,7 @@ ${altLinks('/' + key)}
   const seo = `<noscript><article style="max-width:760px;margin:24px auto;padding:0 24px">
 <h1>${esc(title)}</h1><p>${esc(desc)}</p>
 <table>${specs.map(r => `<tr><td>${esc(r[0])}</td><td>${esc(r[1])}</td></tr>`).join('')}</table>
-${hasPhoto ? `<img src="/og/${id}.jpg" alt="${esc(title)} — ${X.sides}" width="600" height="315">` : ''}
+${hasPhoto ? `<img src="https://img.jadiger.com/og/${id}.jpg" alt="${esc(title)} — ${X.sides}" width="600" height="315">` : ''}
 <p><a href="${(PFX[lang] || '') + '/'}">${X.all}</a></p></article></noscript>`;
   html = html.replace('<body>', '<body>\n' + seo);
   return new Response(html, { headers: { 'content-type': 'text/html; charset=utf-8', 'cache-control': 'public, max-age=300' } });

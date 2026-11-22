@@ -25,6 +25,8 @@
 <link rel="alternate" hreflang="kk" href="https://jadiger.com/kk/">
 <link rel="alternate" hreflang="en" href="https://jadiger.com/en/">
 <link rel="alternate" hreflang="x-default" href="https://jadiger.com/">
+<link rel="preconnect" href="https://img.jadiger.com">
+<link rel="preconnect" href="https://img.jadiger.com" crossorigin>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
@@ -858,11 +860,12 @@ const COINS = RAW.map((r, i) => ({
 }));
 const fmt = n => Math.round(n).toLocaleString(LANG === 'en' ? 'en-US' : 'ru-RU');
 /* ===== фото: отдельные файлы /i/t (превью 200px) и /i/f (текстуры 3D 512px); [0] — аверс (герб), [1] — реверс (сюжет) ===== */
-const imgUrls = (kind, id) => ['a', 'b'].map(s => `/i/${kind}/${id}${s}.webp?v=${PACK_V[id] || ''}`);
+const IMG_BASE = 'https://img.jadiger.com';   // фото монет — в R2
+const imgUrls = (kind, id) => ['a', 'b'].map(s => `${IMG_BASE}/i/${kind}/${id}${s}.webp?v=${PACK_V[id] || ''}`);
 const autoTex = (kind, id) => fetch(`/auto/${kind}/${id}.json`).then(r => { if (!r.ok) throw new Error(r.status); return r.json(); });
 const getThumbs = id => AUTO_IDS.has(id) ? autoTex('t', id) : Promise.resolve(imgUrls('t', id));
 // текстуры 3D: ждём загрузки обоих файлов, чтобы монета собиралась сразу с фото
-const getFull = id => AUTO_IDS.has(id) ? autoTex('f', id) : Promise.all(imgUrls('f', id).map(u => new Promise((ok, no) => { const im = new Image(); im.onload = () => ok(u); im.onerror = no; im.src = u; })));
+const getFull = id => AUTO_IDS.has(id) ? autoTex('f', id) : Promise.all(imgUrls('f', id).map(u => new Promise((ok, no) => { const im = new Image(); im.crossOrigin = 'anonymous'; im.onload = () => ok(u); im.onerror = no; im.src = u; })));
 function fillImgs(id, imgs) { getThumbs(id).then(p => { if (!p) return; imgs.forEach(im => { im.src = p[+im.dataset.s]; }); }).catch(() => {}); }
 
 const esc = s => String(s ?? '').replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
