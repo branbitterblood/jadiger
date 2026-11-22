@@ -20,9 +20,11 @@ export async function imgRoutes(ctx, path, m) {
   if (path === 'img/put' && m === 'POST') {
     const sha = new URL(request.url).searchParams.get('sha') || '';
     if (!/^[0-9a-f]{40}$/.test(sha)) return json({ error: 'bad_sha' }, 400);
-    const mr = await fetch(`https://raw.githubusercontent.com/${REPO}/${sha}/img/manifest.json`, { cf: { cacheTtl: 86400 } });
+    const shard = new URL(request.url).searchParams.get('m') || '';
+    if (!/^\d{1,4}$/.test(shard)) return json({ error: 'bad_shard' }, 400);
+    const mr = await fetch(`https://raw.githubusercontent.com/${REPO}/${sha}/img/m/${shard}.json`, { cf: { cacheTtl: 86400 } });
     if (!mr.ok) return json({ error: 'no_manifest', status: mr.status }, 400);
-    const man = await mr.json();
+    const man = await mr.json();   // шард манифеста: файлы монет с id от shard*100 до shard*100+99
     const form = await request.formData();
     const done = [], bad = [], stmts = [];
     for (const [p, file] of form.entries()) {
