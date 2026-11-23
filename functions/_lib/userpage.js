@@ -1,14 +1,18 @@
 // Публичная коллекция jadiger.com/u/<handle>: та же SPA, но с заголовком, описанием и OG-превью для мессенджеров.
-import { COINS } from './coins.js';
 import { publicCollection } from './profiles.js';
-import { COINS_EN } from './coins_en.js';
-import { COINS_KK } from './coins_kk.js';
 import { altLinks, setLang, PFX, stripHomeOg, homeImg } from './coinpage.js';
 
 const SITE = 'https://jadiger.com';
 const esc = s => String(s ?? '').replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
 const BY = {};
-const byId = lang => BY[lang] || (BY[lang] = Object.fromEntries(Object.entries({ en: COINS_EN, kk: COINS_KK }[lang] || COINS).map(([k, v]) => [v[0], { path: k, title: v[1], photo: v[4] }])));
+// справочник монет из public/i/cat.json: {id: [cc, slug, ru, en, kk, цена, номинал, год, есть фото, …]}
+let CAT = null;
+const byId = async (env, request, lang) => {
+  if (BY[lang]) return BY[lang];
+  if (!CAT) CAT = await (await env.ASSETS.fetch(new URL('/i/cat.json', request.url))).json();
+  const t = lang === 'en' ? 3 : lang === 'kk' ? 4 : 2;
+  return BY[lang] = Object.fromEntries(Object.entries(CAT).map(([id, v]) => [+id, { path: `${v[0]}/${v[1]}`, title: v[t], photo: !!v[8] }]));
+};
 const plural = (n, a, b, c) => { const m = n % 10, h = n % 100; return m === 1 && h !== 11 ? a : m >= 2 && m <= 4 && (h < 12 || h > 14) ? b : c; };
 
 export async function userPage(ctx, lang, handle) {
@@ -21,7 +25,7 @@ export async function userPage(ctx, lang, handle) {
     html = html.replace('<head>', '<head>\n<meta name="robots" content="noindex">');
     return new Response(html, { status: 404, headers: { 'content-type': 'text/html; charset=utf-8' } });
   }
-  const B = byId(lang);
+  const B = await byId(env, request, lang);
   if (en) pc.title = pc.title.replace(/^Коллекция — /, 'Collection — ').replace(/^Коллекция @/, 'Collection @');
   if (kk) pc.title = pc.title.replace(/^Коллекция — /, 'Коллекция — ');
   const ids = Object.keys(pc.items).map(Number).filter(id => B[id]).sort((a, b) => b - a);

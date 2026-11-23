@@ -1,8 +1,5 @@
 // Страница монеты: та же SPA (index.html), но с заголовком, описанием, OG-тегами и текстом
 // характеристик в HTML — для поисковиков и превью ссылок в мессенджерах. Скрипт сам откроет монету по адресу.
-import { COINS } from './coins.js';
-import { COINS_EN } from './coins_en.js';
-import { COINS_KK } from './coins_kk.js';
 
 const SITE = 'https://jadiger.com';
 const esc = s => String(s ?? '').replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
@@ -55,11 +52,21 @@ const TXT = {
   kk: { cat: 'Естелік монеталар', sides: 'аверсі мен реверсі', all: 'Монеталардың толық каталогы' },
 };
 
+// данные страниц монет: public/i/cp/<lang>/<n>.json (64 части на язык, n — хэш адреса; см. cat/pages.py)
+const h64 = s => { let h = 5381; for (let i = 0; i < s.length; i++) h = ((h * 33) ^ s.charCodeAt(i)) >>> 0; return h % 64; };
+const CP = new Map();
+async function coinData(env, request, lang, key) {
+  const l = lang === 'en' || lang === 'kk' ? lang : 'ru', n = h64(key), ck = l + n;
+  if (!CP.has(ck)) {
+    try { const r = await env.ASSETS.fetch(new URL(`/i/cp/${l}/${n}.json`, request.url)); CP.set(ck, r.ok ? await r.json() : {}); } catch (e) { return null; }
+  }
+  return CP.get(ck)[key] || null;
+}
 export async function coinPage(ctx, cc, lang = 'ru', slugIn) {
   const { request, env, params } = ctx;
   const X = TXT[lang] || TXT.ru, slug = String(slugIn ?? params.slug ?? '').toLowerCase();
   const key = cc + '/' + slug;
-  const c = ({ en: COINS_EN, kk: COINS_KK }[lang] || COINS)[key] || await autoCoin(env, request, cc, slug);
+  const c = await coinData(env, request, lang, key) || await autoCoin(env, request, cc, slug);
   const res = await env.ASSETS.fetch(new URL('/', request.url));
   let html = stripHomeOg(setLang(await res.text(), lang));
   if (!c) {
