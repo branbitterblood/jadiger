@@ -9,7 +9,7 @@ const clip = (v, n) => String(v ?? '').replace(/[\u0000-\u001f\u007f]/g, ' ').tr
 const IMG = 'https://img.jadiger.com';
 const MAX_FILE = 8 * 1024 * 1024, PER_DAY = 12;
 const TYPES = { 'image/jpeg': 'jpg', 'image/png': 'png', 'image/webp': 'webp' };
-const CNAME = { kz: 'Казахстан', uz: 'Узбекистан', kg: 'Кыргызстан', tj: 'Таджикистан', tm: 'Туркменистан', mn: 'Монголия', su: 'СССР', ru: 'Россия', by: 'Беларусь', am: 'Армения', az: 'Азербайджан', ua: 'Украина', jp: 'Япония' };
+const CNAME = { kz: 'Казахстан', uz: 'Узбекистан', kg: 'Кыргызстан', tj: 'Таджикистан', tm: 'Туркменистан', mn: 'Монголия', su: 'СССР', ru: 'Россия', by: 'Беларусь', am: 'Армения', az: 'Азербайджан', ua: 'Украина', jp: 'Япония', ph: 'Филиппины' };
 const ST = { new: '🕓 новая', ok: '✅ принята', no: '❌ отклонена' };
 
 export async function ensureSug(env) {

@@ -19,11 +19,11 @@ OUT_P = os.path.join(ROOT, 'public', 'auto', 'market.json')
 MONTHLY = int(os.environ.get('NUMISTA_MONTHLY', '1900'))   # запас до лимита 2000
 DAILY = int(os.environ.get('NUMISTA_DAILY', '120'))
 REFRESH_DAYS = 60
-CUR = {'kz': 'KZT', 'uz': 'UZS', 'kg': 'KGS', 'tj': 'TJS', 'tm': 'TMT', 'mn': 'MNT', 'su': 'KZT', 'ru': 'RUB', 'by': 'BYN', 'am': 'AMD', 'az': 'AZN', 'ua': 'UAH', 'jp': 'JPY'}
-ISSUER_HINT = {'kz': 'kazakhstan', 'uz': 'uzbekistan', 'kg': 'kyrgyzstan', 'tj': 'tajikistan', 'tm': 'turkmenistan', 'mn': 'mongolia', 'su': 'soviet union', 'ru': 'russia', 'by': 'belarus', 'am': 'armenia', 'az': 'azerbaijan', 'ua': 'ukraine', 'jp': 'japan'}
+CUR = {'kz': 'KZT', 'uz': 'UZS', 'kg': 'KGS', 'tj': 'TJS', 'tm': 'TMT', 'mn': 'MNT', 'su': 'KZT', 'ru': 'RUB', 'by': 'BYN', 'am': 'AMD', 'az': 'AZN', 'ua': 'UAH', 'jp': 'JPY', 'ph': 'PHP'}
+ISSUER_HINT = {'kz': 'kazakhstan', 'uz': 'uzbekistan', 'kg': 'kyrgyzstan', 'tj': 'tajikistan', 'tm': 'turkmenistan', 'mn': 'mongolia', 'su': 'soviet union', 'ru': 'russia', 'by': 'belarus', 'am': 'armenia', 'az': 'azerbaijan', 'ua': 'ukraine', 'jp': 'japan', 'ph': 'philippines'}
 # точные имена эмитентов, чтобы «Russia» не совпала с «Russian Empire», а СССР — с республиками
-ISSUER_NAME = {'su': ('soviet union', 'ussr', 'union of soviet socialist republics'), 'ru': ('russia', 'russian federation'), 'by': ('belarus',), 'am': ('armenia',), 'az': ('azerbaijan',), 'ua': ('ukraine',), 'jp': ('japan',)}
-ISSUER_CODE = {'su': 'urss', 'ru': 'russie', 'by': 'bielorussie', 'am': 'armenie', 'az': 'azerbaidjan', 'ua': 'ukraine', 'jp': 'japon'}
+ISSUER_NAME = {'su': ('soviet union', 'ussr', 'union of soviet socialist republics'), 'ru': ('russia', 'russian federation'), 'by': ('belarus',), 'am': ('armenia',), 'az': ('azerbaijan',), 'ua': ('ukraine',), 'jp': ('japan',), 'ph': ('philippines',)}
+ISSUER_CODE = {'su': 'urss', 'ru': 'russie', 'by': 'bielorussie', 'am': 'armenie', 'az': 'azerbaidjan', 'ua': 'ukraine', 'jp': 'japon', 'ph': 'philippines'}
 # символ металла для формата «Ag 925», как у остальных монет каталога
 ELEM = {'серебро': ('Ag', 'silver'), 'золото': ('Au', 'gold'), 'платина': ('Pt', 'platinum'), 'палладий': ('Pd', 'palladium')}
 LOG = []
