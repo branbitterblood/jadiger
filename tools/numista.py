@@ -19,11 +19,11 @@ OUT_P = os.path.join(ROOT, 'public', 'auto', 'market.json')
 MONTHLY = int(os.environ.get('NUMISTA_MONTHLY', '1900'))   # запас до лимита 2000
 DAILY = int(os.environ.get('NUMISTA_DAILY', '120'))
 REFRESH_DAYS = 60
-CUR = {'kz': 'KZT', 'uz': 'UZS', 'kg': 'KGS', 'tj': 'TJS', 'tm': 'TMT', 'mn': 'MNT', 'su': 'KZT', 'ru': 'RUB', 'by': 'BYN', 'am': 'AMD'}
-ISSUER_HINT = {'kz': 'kazakhstan', 'uz': 'uzbekistan', 'kg': 'kyrgyzstan', 'tj': 'tajikistan', 'tm': 'turkmenistan', 'mn': 'mongolia', 'su': 'soviet union', 'ru': 'russia', 'by': 'belarus', 'am': 'armenia'}
+CUR = {'kz': 'KZT', 'uz': 'UZS', 'kg': 'KGS', 'tj': 'TJS', 'tm': 'TMT', 'mn': 'MNT', 'su': 'KZT', 'ru': 'RUB', 'by': 'BYN', 'am': 'AMD', 'az': 'AZN'}
+ISSUER_HINT = {'kz': 'kazakhstan', 'uz': 'uzbekistan', 'kg': 'kyrgyzstan', 'tj': 'tajikistan', 'tm': 'turkmenistan', 'mn': 'mongolia', 'su': 'soviet union', 'ru': 'russia', 'by': 'belarus', 'am': 'armenia', 'az': 'azerbaijan'}
 # точные имена эмитентов, чтобы «Russia» не совпала с «Russian Empire», а СССР — с республиками
-ISSUER_NAME = {'su': ('soviet union', 'ussr', 'union of soviet socialist republics'), 'ru': ('russia', 'russian federation'), 'by': ('belarus',), 'am': ('armenia',)}
-ISSUER_CODE = {'su': 'urss', 'ru': 'russie', 'by': 'bielorussie', 'am': 'armenie'}
+ISSUER_NAME = {'su': ('soviet union', 'ussr', 'union of soviet socialist republics'), 'ru': ('russia', 'russian federation'), 'by': ('belarus',), 'am': ('armenia',), 'az': ('azerbaijan',)}
+ISSUER_CODE = {'su': 'urss', 'ru': 'russie', 'by': 'bielorussie', 'am': 'armenie', 'az': 'azerbaidjan'}
 # символ металла для формата «Ag 925», как у остальных монет каталога
 ELEM = {'серебро': ('Ag', 'silver'), 'золото': ('Au', 'gold'), 'платина': ('Pt', 'platinum'), 'палладий': ('Pd', 'palladium')}
 LOG = []
