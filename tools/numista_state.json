@@ -3855,10 +3855,274 @@
 "title": "50 Roubles (S.V. Rachmaninov)",
 "upd": "2026-11-22",
 "issue": 241151
+},
+"1648": {
+"status": "none",
+"why": "неоднозначно: 50 Roubles (Himalayan Bear) | 50 Roubles (Turkmenian Eublefar) | 50 Roubles (Caucasian Grouse) | 50 Roubles (Black Sea Aphalina)",
+"upd": "2026-11-23"
+},
+"1649": {
+"status": "ok",
+"type": 64112,
+"title": "100 Roubles (P.I. Tchaikovsky)",
+"upd": "2026-11-23",
+"issue": 241152
+},
+"1650": {
+"status": "ok",
+"type": 64112,
+"title": "100 Roubles (P.I. Tchaikovsky)",
+"upd": "2026-11-23",
+"issue": 241152
+},
+"1651": {
+"status": "ok",
+"type": 64208,
+"title": "25 Roubles (Russian Ballet)",
+"upd": "2026-11-23",
+"issue": 241453
+},
+"1652": {
+"status": "none",
+"why": "неоднозначно: 50 Roubles (Russia First Participation in the Olympic Games) | 50 Roubles (Russian Ballet)",
+"upd": "2026-11-23"
+},
+"1653": {
+"status": "none",
+"why": "неоднозначно: 150 Roubles (Russian Ballet) | 150 Roubles (I.F. Stravinsky)",
+"upd": "2026-11-23"
+},
+"1654": {
+"status": "ok",
+"type": 64202,
+"title": "5 Roubles (Russian Ballet)",
+"upd": "2026-11-23",
+"issue": 241445
+},
+"1655": {
+"status": "none",
+"why": "неоднозначно: 5 Roubles (Architectural Monuments of Ancient Merv (Republic of Turkmenistan)) | 5 Roubles (Russian Ballet)",
+"upd": "2026-11-23"
+},
+"1656": {
+"status": "ok",
+"type": 64222,
+"title": "10 Roubles (Russian Ballet)",
+"upd": "2026-11-23",
+"issue": 241468
+},
+"1657": {
+"status": "ok",
+"type": 64222,
+"title": "10 Roubles (Russian Ballet)",
+"upd": "2026-11-23",
+"issue": 241468
+},
+"1658": {
+"status": "none",
+"why": "неоднозначно: 25 Roubles (Russian Ballet) | 25 Roubles (M.P. Musorgsky)",
+"upd": "2026-11-23"
+},
+"1659": {
+"status": "none",
+"why": "неоднозначно: 25 Roubles (Russian Ballet) | 25 Roubles (BOLSHOI THEATRE) | 25 Roubles (Russian Ballet) | 25 Roubles (M.P. Musorgsky)",
+"upd": "2026-11-23"
+},
+"1660": {
+"status": "ok",
+"type": 64100,
+"title": "3 Roubles (Map of the Voyage)",
+"upd": "2026-11-23",
+"issue": 241140
+},
+"1661": {
+"status": "ok",
+"type": 64106,
+"title": "150 Roubles (English Embankment in St. Petersburg)",
+"upd": "2026-11-23",
+"issue": 241146
+},
+"1662": {
+"status": "none",
+"why": "неоднозначно: 25 Roubles (Russian Ballet) | 25 Roubles (Nadezhda) | 25 Roubles (M.P. Musorgsky) | 25 Roubles (Neva)",
+"upd": "2026-11-23"
+},
+"1663": {
+"status": "none",
+"why": "неоднозначно: 25 Roubles (Russian Ballet) | 25 Roubles (Neva) | 25 Roubles (M.P. Musorgsky) | 25 Roubles (Nadezhda)",
+"upd": "2026-11-23"
+},
+"1664": {
+"status": "ok",
+"type": 64121,
+"title": "3 Roubles (Cathedral of Intercession on the Moat)",
+"upd": "2026-11-23",
+"issue": 241161
+},
+"1665": {
+"status": "ok",
+"type": 14597,
+"title": "3 Roubles (Victory on the Kursk Bulge)",
+"upd": "2026-11-23",
+"issue": 72086
+},
+"1666": {
+"status": "ok",
+"type": 14590,
+"title": "1 Rouble (G.R. Derzhavin)",
+"upd": "2026-11-23",
+"issue": 72079
+},
+"1667": {
+"status": "ok",
+"type": 28065,
+"title": "1 Rouble (V.V. Mayakovsky)",
+"upd": "2026-11-23",
+"issue": 144635
+},
+"1668": {
+"status": "ok",
+"type": 14591,
+"title": "1 Rouble (K.A. Timiryazev)",
+"upd": "2026-11-23",
+"issue": 72080
+},
+"1669": {
+"status": "ok",
+"type": 28067,
+"title": "1 Rouble (Amur Tiger)",
+"upd": "2026-11-23",
+"issue": 144640
+},
+"1670": {
+"status": "ok",
+"type": 28070,
+"title": "1 Rouble (Markhor)",
+"upd": "2026-11-23",
+"issue": 144643
+},
+"1671": {
+"status": "ok",
+"type": 28068,
+"title": "1 Rouble (Fish Eagle-Owl)",
+"upd": "2026-11-23",
+"issue": 144641
+},
+"1672": {
+"status": "ok",
+"type": 14648,
+"title": "50 Roubles (Himalayan Bear)",
+"upd": "2026-11-23",
+"issue": 72157
+},
+"1673": {
+"status": "ok",
+"type": 14642,
+"title": "50 Roubles (Far Eastern Stork)",
+"upd": "2026-11-23",
+"issue": 72151
+},
+"1674": {
+"status": "ok",
+"type": 7591,
+"title": "50 Roubles (Caucasian Grouse)",
+"upd": "2026-11-23",
+"issue": 39862
+},
+"1675": {
+"status": "ok",
+"type": 14641,
+"title": "50 Roubles (Turkmenian Eublefar)",
+"upd": "2026-11-23",
+"issue": 72150
+},
+"1676": {
+"status": "ok",
+"type": 14643,
+"title": "50 Roubles (Black Sea Aphalina)",
+"upd": "2026-11-23",
+"issue": 72152
+},
+"1677": {
+"status": "none",
+"why": "нет кандидатов (3 в поиске)",
+"upd": "2026-11-23"
+},
+"1678": {
+"status": "ok",
+"type": 28151,
+"title": "3 Roubles (Liberation of Kiev from Fascist Invaders)",
+"upd": "2026-11-23",
+"issue": 144853
+},
+"1679": {
+"status": "ok",
+"type": 14592,
+"title": "1 Rouble (I.S. Turgenev)",
+"upd": "2026-11-23",
+"issue": 72081
+},
+"1680": {
+"status": "ok",
+"type": 28072,
+"title": "1 Rouble (A.P. Borodin)",
+"upd": "2026-11-23",
+"issue": 144655
+},
+"1681": {
+"status": "ok",
+"type": 45822,
+"title": "3 Roubles (Brown Bear)",
+"upd": "2026-11-23",
+"issue": 193741
+},
+"1682": {
+"status": "ok",
+"type": 64115,
+"title": "25 Roubles (Brown Bear)",
+"upd": "2026-11-23",
+"issue": 241155
+},
+"1683": {
+"status": "ok",
+"type": 64117,
+"title": "50 Roubles (Brown Bear)",
+"upd": "2026-11-23",
+"issue": 241157
+},
+"1684": {
+"status": "ok",
+"type": 64118,
+"title": "100 Roubles (Brown Bear)",
+"upd": "2026-11-23",
+"issue": 241158
+},
+"1685": {
+"status": "ok",
+"type": 64119,
+"title": "200 Roubles (Brown Bear)",
+"upd": "2026-11-23",
+"issue": 241159
+},
+"1686": {
+"status": "none",
+"why": "неоднозначно: 3 Roubles (Victory on the Volga) | 3 Roubles (Russian Ballet) | 3 Roubles (Victory on the Kursk Bulge) | 3 Roubles (Liberation of Kiev from Fascist Invaders)",
+"upd": "2026-11-23"
+},
+"1687": {
+"status": "none",
+"why": "неоднозначно: 3 Roubles (Victory on the Volga) | 3 Roubles (Russian Ballet) | 3 Roubles (Victory on the Kursk Bulge) | 3 Roubles (Liberation of Kiev from Fascist Invaders)",
+"upd": "2026-11-23"
+},
+"1688": {
+"status": "ok",
+"type": 64111,
+"title": "50 Roubles (S.V. Rachmaninov)",
+"upd": "2026-11-23"
 }
 },
 "usage": {
-"2026-11": 1241
+"2026-11": 1361
 },
 "issuers": {
 "kz": "kazakhstan",
@@ -3867,6 +4131,9 @@
 "tj": "tadjikistan",
 "tm": "turkmenistan",
 "uz": "uzbekistan_section",
-"ru": "russia"
+"ru": "russia",
+"am": "armenie",
+"az": "azerbaijan",
+"by": "bielorussie"
 }
 }

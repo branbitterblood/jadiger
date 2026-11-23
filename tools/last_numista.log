@@ -1,72 +1,75 @@
-эмитенты: {'kz': 'kazakhstan', 'kg': 'kirghizistan', 'mn': 'mongolie', 'tj': 'tadjikistan', 'tm': 'turkmenistan', 'uz': 'uzbekistan_section', 'ru': 'russia'}
-сопоставление 1611 750th Anniversary of Alexander Nevsky's Victory on Lake Peipus → {'status': 'ok', 'type': 14595, 'title': '3 Roubles (Battle of Chudskoye Lake)', 'upd': '2026-11-22'}
-цены 1611 750th Anniversary of Alexander Nevsky's Victory on Lake Peipus {'xf': 342, 'au': 342, 'unc': 487} RUB
-сопоставление 1612 International Space Year → {'status': 'ok', 'type': 27791, 'title': '3 Roubles (International Space Year)', 'upd': '2026-11-22'}
-цены 1612 International Space Year {'au': 405, 'unc': 405} RUB
-сопоставление 1613 50th Anniversary of Victory: Arctic Convoys, 1941–1945 → {'status': 'ok', 'type': 14596, 'title': '3 Roubles (Victory of the Democratic Forces of Russia on August 19-21, 1991)', 'upd': '2026-11-22'}
-цены 1613 50th Anniversary of Victory: Arctic Convoys, 1941–1945 {'au': 792, 'unc': 792} RUB
-сопоставление 1614 Anniversary of Russia's State Sovereignty → {'status': 'ok', 'type': 14584, 'title': '1 Rouble (Sovereignty and Democracy)', 'upd': '2026-11-22'}
-цены 1614 Anniversary of Russia's State Sovereignty {'unc': 473} RUB
-сопоставление 1615 190th Anniversary of the Birth of P. S. Nakhimov → {'status': 'ok', 'type': 14585, 'title': '1 Rouble (Naval Commander P.S. Nakhimov)', 'upd': '2026-11-22'}
-цены 1615 190th Anniversary of the Birth of P. S. Nakhimov {'unc': 492} RUB
-сопоставление 1616 Outstanding Personalities: 110th Anniversary of the Birth of Yanka Kupala → {'status': 'ok', 'type': 14588, 'title': '1 Rouble (Poet Yanka Kupala)', 'upd': '2026-11-22'}
-цены 1616 Outstanding Personalities: 110th Anniversary of the Birth of Yanka Kupala {'unc': 725} RUB
-сопоставление 1617 Amur Tiger → {'status': 'ok', 'type': 14651, 'title': '10 Roubles (Amur Tiger)', 'upd': '2026-11-22'}
-цены 1617 Amur Tiger {'xf': 641, 'au': 641, 'unc': 891} RUB
-сопоставление 1618 Red-breasted Goose → {'status': 'ok', 'type': 14649, 'title': '10 Roubles (Red-Breasted Goose)', 'upd': '2026-11-22'}
-цены 1618 Red-breasted Goose {'vf': 590, 'xf': 590, 'au': 590, 'unc': 822} RUB
-сопоставление 1619 Central Asian Cobra → {'status': 'ok', 'type': 14650, 'title': '10 Roubles (Central Asian Cobra)', 'upd': '2026-11-22'}
-цены 1619 Central Asian Cobra {'vf': 663, 'xf': 663, 'au': 663, 'unc': 894} RUB
-сопоставление 1620 Victory of the Democratic Forces of Russia, 19–21 August 1991 → {'status': 'ok', 'type': 14596, 'title': '3 Roubles (Victory of the Democratic Forces of Russia on August 19-21, 1991)', 'upd': '2026-11-22'}
-цены 1620 Victory of the Democratic Forces of Russia, 19–21 August 1991 {'au': 792, 'unc': 792} RUB
-сопоставление 1621 Outstanding Personalities: 110th Anniversary of the Birth of Yakub Kolas → {'status': 'ok', 'type': 14586, 'title': '1 Rouble (Writer and poet Yakub Kolas)', 'upd': '2026-11-22'}
-цены 1621 Outstanding Personalities: 110th Anniversary of the Birth of Yakub Kolas {'unc': 643} RUB
-сопоставление 1622 Trinity Cathedral → {'status': 'ok', 'type': 31987, 'title': '3 Roubles (Saint Trinity Cathedral)', 'upd': '2026-11-22'}
-цены 1622 Trinity Cathedral {'unc': 4801} RUB
-сопоставление 1623 Academy of Sciences → {'status': 'ok', 'type': 51487, 'title': '3 Roubles (Academy of Sciences)', 'upd': '2026-11-22'}
-цены 1623 Academy of Sciences {'unc': 5119} RUB
-сопоставление 1624 Pashkov House → {'status': 'ok', 'type': 51984, 'title': '50 Roubles (Pashkov House)', 'upd': '2026-11-22'}
-цены 1624 Pashkov House {'unc': 73974} RUB
-сопоставление 1625 M. V. Lomonosov → {'status': 'ok', 'type': 51988, 'title': '100 Roubles (M.V. Lomonosov)', 'upd': '2026-11-22'}
-цены 1625 M. V. Lomonosov {} RUB
-сопоставление 1626 Battle of Chesma → {'status': 'ok', 'type': 51986, 'title': '150 Roubles (Cesma Sea Battle)', 'upd': '2026-11-22'}
-цены 1626 Battle of Chesma {'unc': 84851} RUB
-сопоставление 1627 Catherine II the Lawgiver → {'status': 'ok', 'type': 51982, 'title': '25 Roubles (Catherine II The Legislatress)', 'upd': '2026-11-22'}
-цены 1627 Catherine II the Lawgiver {} RUB
-сопоставление 1628 200th Anniversary of the Birth of N. I. Lobachevsky → {'status': 'ok', 'type': 14589, 'title': '1 Rouble (Mathematician N.I. Lobachevsky)', 'upd': '2026-11-22'}
-цены 1628 200th Anniversary of the Birth of N. I. Lobachevsky {'xf': 401, 'au': 401, 'unc': 903} RUB
-сопоставление 1629 Architectural Monuments: Mausoleum-Mosque of Khoja Ahmed Yasawi in Turkestan (Republic of Kazakhstan) → {'status': 'ok', 'type': 13425, 'title': '5 Roubles (Mausoleum-Mosque of Akhmed Yasavi)', 'upd': '2026-11-22'}
-цены 1629 Architectural Monuments: Mausoleum-Mosque of Khoja Ahmed Yasawi in Turkestan (Republic of Kazakhstan) {'unc': 546} RUB
-сопоставление 1630 360th Anniversary of Yakutia's Voluntary Accession to Russia → {'status': 'ok', 'type': 51985, 'title': "50 Roubles (Yakutia's Voluntary Entering into Russia)", 'upd': '2026-11-22'}
-цены 1630 360th Anniversary of Yakutia's Voluntary Accession to Russia {'unc': 89510} RUB
-сопоставление 1631 360th Anniversary of Yakutia's Voluntary Accession to Russia → {'status': 'ok', 'type': 51989, 'title': "100 Roubles (Yakutia's Voluntary Entering into Russia)", 'upd': '2026-11-22'}
-цены 1631 360th Anniversary of Yakutia's Voluntary Accession to Russia {} RUB
-сопоставление 1632 Olympic Century of Russia: Football, 1910 → {'status': 'ok', 'type': 45256, 'title': '3 Roubles (Football, 1910)', 'upd': '2026-11-22'}
-цены 1632 Olympic Century of Russia: Football, 1910 {'unc': 4219} RUB
-сопоставление 1633 Olympic Century of Russia: First Gold Medal – N. A. Panin-Kolomenkin → {'status': 'ok', 'type': 64123, 'title': '50 Roubles (First Gold Medal)', 'upd': '2026-11-22'}
-цены 1633 Olympic Century of Russia: First Gold Medal – N. A. Panin-Kolomenkin {'unc': 73053} RUB
-сопоставление 1634 Olympic Century of Russia: Russia's First Participation in the Olympic Games → {'status': 'ok', 'type': 64124, 'title': '50 Roubles (Russia First Participation in the Olympic Games)', 'upd': '2026-11-22'}
-цены 1634 Olympic Century of Russia: Russia's First Participation in the Olympic Games {} RUB
-сопоставление 1635 Olympic Century of Russia: First IOC Congress – Pierre de Coubertin, A. D. Butovsky → {'status': 'ok', 'type': 64125, 'title': '10 Roubles (First IOC Congress)', 'upd': '2026-11-22'}
-цены 1635 Olympic Century of Russia: First IOC Congress – Pierre de Coubertin, A. D. Butovsky {'unc': 57583} RUB
-сопоставление 1636 50th Anniversary of Victory: 50th Anniversary of the Victory at Stalingrad → {'status': 'none', 'why': 'неоднозначно: 3 Roubles (Victory on the Volga) | 3 Roubles (Victory on the Kursk Bulge)', 'upd': '2026-11-22'}
-сопоставление 1637 130th Anniversary of the Birth of V. I. Vernadsky → {'status': 'ok', 'type': 14587, 'title': '1 Rouble (V.I. Vernadsky)', 'upd': '2026-11-22'}
-цены 1637 130th Anniversary of the Birth of V. I. Vernadsky {} RUB
-сопоставление 1638 Trinity Lavra of St Sergius, Sergiev Posad → {'status': 'none', 'why': 'нет кандидатов (3 в поиске)', 'upd': '2026-11-22'}
-сопоставление 1639 Ivan the Great Bell Tower → {'status': 'ok', 'type': 64120, 'title': '3 Roubles (Bell-Tower "Ivan the Great")', 'upd': '2026-11-22'}
-цены 1639 Ivan the Great Bell Tower {'unc': 5916} RUB
-сопоставление 1640 1993 Issue → {'status': 'none', 'why': 'неоднозначно: 3 Roubles (Russian Ballet) | 3 Roubles (Football, 1910) | 3 Roubles (Anna Pavlova) | 3 Roubles (Feodor Shaliapin)', 'upd': '2026-11-22'}
-сопоставление 1641 1993 Issue → {'status': 'none', 'why': 'неоднозначно: 3 Roubles (Russian Ballet) | 3 Roubles (Football, 1910) | 3 Roubles (Anna Pavlova) | 3 Roubles (Feodor Shaliapin)', 'upd': '2026-11-22'}
-сопоставление 1642 1993 Issue → {'status': 'ok', 'type': 59468, 'title': '25 Roubles (BOLSHOI THEATRE)', 'upd': '2026-11-22'}
-цены 1642 1993 Issue {} RUB
-сопоставление 1643 1993 Issue → {'status': 'none', 'why': 'неоднозначно: 10 Roubles (Russian Ballet; gold .999) | 10 Roubles (Russian Ballet; gold .900)', 'upd': '2026-11-22'}
-сопоставление 1644 1993 Issue → {'status': 'ok', 'type': 64222, 'title': '10 Roubles (Russian Ballet)', 'upd': '2026-11-22'}
-характеристики 1644 1993 Issue {'w': 15.67, 'd': 30.0}
-цены 1644 1993 Issue {} RUB
-сопоставление 1645 1993 Issue → {'status': 'ok', 'type': 65657, 'title': '25 Roubles (Russian Ballet; Gold .900)', 'upd': '2026-11-22'}
-цены 1645 1993 Issue {} RUB
-сопоставление 1646 1993 Issue → {'status': 'none', 'why': 'неоднозначно: 25 Roubles (Russian Ballet) | 25 Roubles (BOLSHOI THEATRE) | 25 Roubles (Russian Ballet) | 25 Roubles (M.P. Musorgsky)', 'upd': '2026-11-22'}
-сопоставление 1647 1993 Issue → {'status': 'ok', 'type': 64111, 'title': '50 Roubles (S.V. Rachmaninov)', 'upd': '2026-11-22'}
-цены 1647 1993 Issue {'unc': 80627} RUB
+эмитенты: {'kz': 'kazakhstan', 'kg': 'kirghizistan', 'mn': 'mongolie', 'tj': 'tadjikistan', 'tm': 'turkmenistan', 'uz': 'uzbekistan_section', 'ru': 'russia', 'am': 'armenie', 'az': 'azerbaijan', 'by': 'bielorussie'}
+сопоставление 1648 1993 Issue → {'status': 'none', 'why': 'неоднозначно: 50 Roubles (Himalayan Bear) | 50 Roubles (Turkmenian Eublefar) | 50 Roubles (Caucasian Grouse) | 50 Roubles (Black Sea Aphalina)', 'upd': '2026-11-23'}
+сопоставление 1649 1993 Issue → {'status': 'ok', 'type': 64112, 'title': '100 Roubles (P.I. Tchaikovsky)', 'upd': '2026-11-23'}
+цены 1649 1993 Issue {} RUB
+сопоставление 1650 1993 Issue → {'status': 'ok', 'type': 64112, 'title': '100 Roubles (P.I. Tchaikovsky)', 'upd': '2026-11-23'}
+характеристики 1650 1993 Issue {'w': 17.45, 'd': 30.0, 'm': 'Au 900'}
+цены 1650 1993 Issue {} RUB
+сопоставление 1651 1993 Issue → {'status': 'ok', 'type': 64208, 'title': '25 Roubles (Russian Ballet)', 'upd': '2026-11-23'}
+цены 1651 1993 Issue {} RUB
+сопоставление 1652 1993 Issue → {'status': 'none', 'why': 'неоднозначно: 50 Roubles (Russia First Participation in the Olympic Games) | 50 Roubles (Russian Ballet)', 'upd': '2026-11-23'}
+сопоставление 1653 1993 Issue → {'status': 'none', 'why': 'неоднозначно: 150 Roubles (Russian Ballet) | 150 Roubles (I.F. Stravinsky)', 'upd': '2026-11-23'}
+сопоставление 1654 1993 Issue → {'status': 'ok', 'type': 64202, 'title': '5 Roubles (Russian Ballet)', 'upd': '2026-11-23'}
+цены 1654 1993 Issue {} RUB
+сопоставление 1655 1993 Issue → {'status': 'none', 'why': 'неоднозначно: 5 Roubles (Architectural Monuments of Ancient Merv (Republic of Turkmenistan)) | 5 Roubles (Russian Ballet)', 'upd': '2026-11-23'}
+сопоставление 1656 1993 Issue → {'status': 'ok', 'type': 64222, 'title': '10 Roubles (Russian Ballet)', 'upd': '2026-11-23'}
+цены 1656 1993 Issue {} RUB
+сопоставление 1657 1993 Issue → {'status': 'ok', 'type': 64222, 'title': '10 Roubles (Russian Ballet)', 'upd': '2026-11-23'}
+характеристики 1657 1993 Issue {'w': 15.67, 'd': 30.0, 'm': 'Pd 999'}
+цены 1657 1993 Issue {} RUB
+сопоставление 1658 1993 Issue → {'status': 'none', 'why': 'неоднозначно: 25 Roubles (Russian Ballet) | 25 Roubles (M.P. Musorgsky)', 'upd': '2026-11-23'}
+сопоставление 1659 1993 Issue → {'status': 'none', 'why': 'неоднозначно: 25 Roubles (Russian Ballet) | 25 Roubles (BOLSHOI THEATRE) | 25 Roubles (Russian Ballet) | 25 Roubles (M.P. Musorgsky)', 'upd': '2026-11-23'}
+сопоставление 1660 First Russian Circumnavigation: Voyage Map → {'status': 'ok', 'type': 64100, 'title': '3 Roubles (Map of the Voyage)', 'upd': '2026-11-23'}
+цены 1660 First Russian Circumnavigation: Voyage Map {'unc': 4923} RUB
+сопоставление 1661 First Russian Circumnavigation: English Embankment in Saint Petersburg → {'status': 'ok', 'type': 64106, 'title': '150 Roubles (English Embankment in St. Petersburg)', 'upd': '2026-11-23'}
+цены 1661 First Russian Circumnavigation: English Embankment in Saint Petersburg {} RUB
+сопоставление 1662 First Russian Circumnavigation: Sloop Nadezhda – I. F. Krusenstern → {'status': 'none', 'why': 'неоднозначно: 25 Roubles (Russian Ballet) | 25 Roubles (Nadezhda) | 25 Roubles (M.P. Musorgsky) | 25 Roubles (Neva)', 'upd': '2026-11-23'}
+сопоставление 1663 First Russian Circumnavigation: Sloop Neva – Yu. F. Lisyansky → {'status': 'none', 'why': 'неоднозначно: 25 Roubles (Russian Ballet) | 25 Roubles (Neva) | 25 Roubles (M.P. Musorgsky) | 25 Roubles (Nadezhda)', 'upd': '2026-11-23'}
+сопоставление 1664 Cathedral of the Intercession on the Moat (St Basil's) → {'status': 'ok', 'type': 64121, 'title': '3 Roubles (Cathedral of Intercession on the Moat)', 'upd': '2026-11-23'}
+цены 1664 Cathedral of the Intercession on the Moat (St Basil's) {'unc': 5682} RUB
+сопоставление 1665 50th Anniversary of Victory: 50th Anniversary of the Victory at the Kursk Bulge → {'status': 'ok', 'type': 14597, 'title': '3 Roubles (Victory on the Kursk Bulge)', 'upd': '2026-11-23'}
+цены 1665 50th Anniversary of Victory: 50th Anniversary of the Victory at the Kursk Bulge {'unc': 774} RUB
+сопоставление 1666 250th Anniversary of the Birth of G. R. Derzhavin → {'status': 'ok', 'type': 14590, 'title': '1 Rouble (G.R. Derzhavin)', 'upd': '2026-11-23'}
+цены 1666 250th Anniversary of the Birth of G. R. Derzhavin {'unc': 492} RUB
+сопоставление 1667 Centenary of the Birth of V. V. Mayakovsky → {'status': 'ok', 'type': 28065, 'title': '1 Rouble (V.V. Mayakovsky)', 'upd': '2026-11-23'}
+цены 1667 Centenary of the Birth of V. V. Mayakovsky {'unc': 1341} RUB
+сопоставление 1668 150th Anniversary of the Birth of K. A. Timiryazev → {'status': 'ok', 'type': 14591, 'title': '1 Rouble (K.A. Timiryazev)', 'upd': '2026-11-23'}
+цены 1668 150th Anniversary of the Birth of K. A. Timiryazev {'unc': 447} RUB
+сопоставление 1669 Amur Tiger → {'status': 'ok', 'type': 28067, 'title': '1 Rouble (Amur Tiger)', 'upd': '2026-11-23'}
+цены 1669 Amur Tiger {'unc': 3031} RUB
+сопоставление 1670 Markhor → {'status': 'ok', 'type': 28070, 'title': '1 Rouble (Markhor)', 'upd': '2026-11-23'}
+цены 1670 Markhor {'unc': 2615} RUB
+сопоставление 1671 Blakiston's Fish Owl → {'status': 'ok', 'type': 28068, 'title': '1 Rouble (Fish Eagle-Owl)', 'upd': '2026-11-23'}
+цены 1671 Blakiston's Fish Owl {'unc': 2871} RUB
+сопоставление 1672 Himalayan Bear → {'status': 'ok', 'type': 14648, 'title': '50 Roubles (Himalayan Bear)', 'upd': '2026-11-23'}
+цены 1672 Himalayan Bear {'xf': 633, 'au': 633, 'unc': 894} RUB
+сопоставление 1673 Oriental Stork → {'status': 'ok', 'type': 14642, 'title': '50 Roubles (Far Eastern Stork)', 'upd': '2026-11-23'}
+цены 1673 Oriental Stork {'vf': 626, 'xf': 872, 'au': 872, 'unc': 872} RUB
+сопоставление 1674 Caucasian Grouse → {'status': 'ok', 'type': 7591, 'title': '50 Roubles (Caucasian Grouse)', 'upd': '2026-11-23'}
+цены 1674 Caucasian Grouse {'xf': 541, 'au': 894, 'unc': 894} RUB
+сопоставление 1675 Turkmen Eublepharis → {'status': 'ok', 'type': 14641, 'title': '50 Roubles (Turkmenian Eublefar)', 'upd': '2026-11-23'}
+цены 1675 Turkmen Eublepharis {'vf': 488, 'xf': 488, 'au': 757, 'unc': 894} RUB
+сопоставление 1676 Black Sea Bottlenose Dolphin → {'status': 'ok', 'type': 14643, 'title': '50 Roubles (Black Sea Aphalina)', 'upd': '2026-11-23'}
+цены 1676 Black Sea Bottlenose Dolphin {'vf': 730, 'xf': 730, 'au': 730, 'unc': 894} RUB
+сопоставление 1677 Architectural Monuments: Architectural Monuments of Ancient Merv (Republic of Turkmenistan) → {'status': 'none', 'why': 'нет кандидатов (3 в поиске)', 'upd': '2026-11-23'}
+сопоставление 1678 50th Anniversary of Victory: 50th Anniversary of the Liberation of Kiev → {'status': 'ok', 'type': 28151, 'title': '3 Roubles (Liberation of Kiev from Fascist Invaders)', 'upd': '2026-11-23'}
+цены 1678 50th Anniversary of Victory: 50th Anniversary of the Liberation of Kiev {'unc': 447} RUB
+сопоставление 1679 175th Anniversary of the Birth of I. S. Turgenev → {'status': 'ok', 'type': 14592, 'title': '1 Rouble (I.S. Turgenev)', 'upd': '2026-11-23'}
+цены 1679 175th Anniversary of the Birth of I. S. Turgenev {'unc': 626} RUB
+сопоставление 1680 160th Anniversary of the Birth of A. P. Borodin → {'status': 'ok', 'type': 28072, 'title': '1 Rouble (A.P. Borodin)', 'upd': '2026-11-23'}
+цены 1680 160th Anniversary of the Birth of A. P. Borodin {'unc': 447} RUB
+сопоставление 1681 Brown Bear → {'status': 'ok', 'type': 45822, 'title': '3 Roubles (Brown Bear)', 'upd': '2026-11-23'}
+цены 1681 Brown Bear {'unc': 19854} RUB
+сопоставление 1682 Brown Bear → {'status': 'ok', 'type': 64115, 'title': '25 Roubles (Brown Bear)', 'upd': '2026-11-23'}
+цены 1682 Brown Bear {'unc': 54887} RUB
+сопоставление 1683 Brown Bear → {'status': 'ok', 'type': 64117, 'title': '50 Roubles (Brown Bear)', 'upd': '2026-11-23'}
+цены 1683 Brown Bear {'unc': 130301} RUB
+сопоставление 1684 Brown Bear → {'status': 'ok', 'type': 64118, 'title': '100 Roubles (Brown Bear)', 'upd': '2026-11-23'}
+цены 1684 Brown Bear {'unc': 186971} RUB
+сопоставление 1685 Brown Bear → {'status': 'ok', 'type': 64119, 'title': '200 Roubles (Brown Bear)', 'upd': '2026-11-23'}
+цены 1685 Brown Bear {'unc': 524097} RUB
+сопоставление 1686 Russia's Contribution to the Treasury of World Culture → {'status': 'none', 'why': 'неоднозначно: 3 Roubles (Victory on the Volga) | 3 Roubles (Russian Ballet) | 3 Roubles (Victory on the Kursk Bulge) | 3 Roubles (Liberation of Kiev from Fascist Invaders)', 'upd': '2026-11-23'}
+сопоставление 1687 Russia's Contribution to the Treasury of World Culture → {'status': 'none', 'why': 'неоднозначно: 3 Roubles (Victory on the Volga) | 3 Roubles (Russian Ballet) | 3 Roubles (Victory on the Kursk Bulge) | 3 Roubles (Liberation of Kiev from Fascist Invaders)', 'upd': '2026-11-23'}
+сопоставление 1688 Russia's Contribution to the Treasury of World Culture → {'status': 'ok', 'type': 64111, 'title': '50 Roubles (S.V. Rachmaninov)', 'upd': '2026-11-23'}
 лимит запросов на сегодня/месяц исчерпан, продолжим завтра
-итого: сопоставлено 669, с ценами 77, запросов за 2026-11: 1241
+итого: сопоставлено 698, с ценами 99, запросов за 2026-11: 1361
