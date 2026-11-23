@@ -5,7 +5,7 @@ import { userPage } from '../_lib/userpage.js';
 const SITE = 'https://jadiger.com';
 export async function onRequestGet(ctx) {
   const parts = [].concat(ctx.params.path || []).filter(Boolean);
-  if (parts.length === 2 && /^(kz|uz|kg|tj|tm|mn|su|ru|by|am|az|ua)$/.test(parts[0])) return coinPage(ctx, parts[0], 'kk', parts[1]);
+  if (parts.length === 2 && /^(kz|uz|kg|tj|tm|mn|su|ru|by|am|az|ua|jp)$/.test(parts[0])) return coinPage(ctx, parts[0], 'kk', parts[1]);
   if (parts.length === 2 && parts[0] === 'u') return userPage(ctx, 'kk', parts[1]);
   if (parts.length && !(parts.length === 1 && parts[0] === 'index.html')) {
     // статические файлы (pack, og, auto…) — с корня сайта
@@ -15,8 +15,8 @@ export async function onRequestGet(ctx) {
   }
   const res = await ctx.env.ASSETS.fetch(new URL('/', ctx.request.url));
   let html = stripHomeOg(setLang(await res.text(), 'kk'));
-  const title = 'Jadiger — Орталық Азияның коллекциялық монеталары 3D форматта';
-  const desc = 'Қазақстан, Өзбекстан, Қырғызстан, Тәжікстан, Түрікменстан, Моңғолия, КСРО, Ресей, Беларусь, Украина, Армения және Әзірбайжанның естелік және инвестициялық монеталарының 3D каталогы: сипаттамалары, таралымы, орталық банктердің бағалары және жеке коллекция есебі.';
+  const title = 'Jadiger — әлемнің естелік монеталары 3D форматта';
+  const desc = 'Қазақстан, Өзбекстан, Қырғызстан, Тәжікстан, Түрікменстан, Моңғолия, КСРО, Ресей, Беларусь, Украина, Армения, Әзірбайжан және Жапонияның естелік және инвестициялық монеталарының 3D каталогы: сипаттамалары, таралымы, орталық банктердің бағалары және жеке коллекция есебі.';
   html = html.replace(/<meta name="description"[^>]*>\n?/, '').replace(/<title>[^<]*<\/title>/, `<title>${title}</title>
 <meta name="description" content="${desc}">
 <link rel="canonical" href="${SITE}/kk/">

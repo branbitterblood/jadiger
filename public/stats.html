@@ -77,7 +77,7 @@ const fmt = n => (+n || 0).toLocaleString('ru-RU');
   loadSug();
 })();
 const ST = { new:'🕓 новая', ok:'✅ принята', no:'❌ отклонена' };
-const CN = { kz:'Казахстан', uz:'Узбекистан', kg:'Кыргызстан', tj:'Таджикистан', tm:'Туркменистан', mn:'Монголия', su:'СССР', ru:'Россия', by:'Беларусь', am:'Армения', az:'Азербайджан', ua:'Украина' };
+const CN = { kz:'Казахстан', uz:'Узбекистан', kg:'Кыргызстан', tj:'Таджикистан', tm:'Туркменистан', mn:'Монголия', su:'СССР', ru:'Россия', by:'Беларусь', am:'Армения', az:'Азербайджан', ua:'Украина', jp:'Япония' };
 async function loadSug() {
   const sec = document.createElement('section'); sec.innerHTML = '<h2>Предложенные монеты</h2><div id="sgList" class="msg">Загрузка…</div>'; out.appendChild(sec);
   const box = sec.querySelector('#sgList');
