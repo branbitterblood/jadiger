@@ -25,6 +25,10 @@
   .ax { display:flex; justify-content:space-between; color:var(--mut); font-size:12px; margin-top:4px }
   #tip { position:fixed; pointer-events:none; background:var(--ink); color:var(--bg); font-size:12px; padding:4px 8px; border-radius:6px; display:none; white-space:nowrap }
   table { width:100%; border-collapse:collapse; font-variant-numeric:tabular-nums; font-size:13px } th,td { padding:5px 6px; border-bottom:1px solid var(--line); text-align:right } th:first-child,td:first-child { text-align:left } th { color:var(--mut); font-weight:500 }
+  .sg { display:grid; grid-template-columns:auto auto 1fr; gap:12px; padding:12px 0; border-bottom:1px solid var(--line); align-items:start }
+  .sg img { width:110px; height:110px; object-fit:contain; background:#fff; border-radius:8px; border:1px solid var(--line) }
+  .sg .st { font-size:12px; color:var(--mut) } .sg dl { margin:0; display:grid; grid-template-columns:max-content 1fr; gap:2px 10px; font-size:13px } .sg dt { color:var(--mut) } .sg dd { margin:0 }
+  @media (max-width:600px) { .sg { grid-template-columns:1fr 1fr } .sg > div:last-child { grid-column:1 / -1 } }
   .wrap { overflow-x:auto } .msg { padding:30px; text-align:center; color:var(--mut) }
 </style>
 </head>
@@ -36,7 +40,7 @@
 </main>
 <div id="tip"></div>
 <script>
-const NAMES = { visit:'Визиты (сеансы)', open3d:'Открытия в 3D', add:'Добавления в коллекцию', wish:'В «Хочу»', share:'Поделились', photo_id:'Поиск по фото', lang_en:'Визиты EN', lang_kk:'Визиты KK', buy:'Клики «Купить»', lead:'Заявки' };
+const NAMES = { suggest:'Предложено монет', suggest_open:'Открыли «Предложить монету»', visit:'Визиты (сеансы)', open3d:'Открытия в 3D', add:'Добавления в коллекцию', wish:'В «Хочу»', share:'Поделились', photo_id:'Поиск по фото', lang_en:'Визиты EN', lang_kk:'Визиты KK', buy:'Клики «Купить»', lead:'Заявки' };
 const ORDER = Object.keys(NAMES), out = document.getElementById('out'), tip = document.getElementById('tip');
 const esc = s => String(s).replace(/[&<>"]/g, c => ({ '&':'&amp;', '<':'&lt;', '>':'&gt;', '"':'&quot;' }[c]));
 const fmt = n => (+n || 0).toLocaleString('ru-RU');
@@ -70,7 +74,30 @@ const fmt = n => (+n || 0).toLocaleString('ru-RU');
   show(used.includes('open3d') ? 'open3d' : (used[0] || 'visit'));
   ch.addEventListener('mousemove', ev => { const t = ev.target.dataset && ev.target.dataset.t; if (!t) { tip.style.display = 'none'; return; } tip.textContent = t; tip.style.display = 'block'; tip.style.left = ev.clientX + 12 + 'px'; tip.style.top = ev.clientY - 28 + 'px'; });
   ch.addEventListener('mouseleave', () => tip.style.display = 'none');
+  loadSug();
 })();
+const ST = { new:'🕓 новая', ok:'✅ принята', no:'❌ отклонена' };
+const CN = { kz:'Казахстан', uz:'Узбекистан', kg:'Кыргызстан', tj:'Таджикистан', tm:'Туркменистан', mn:'Монголия', su:'СССР', ru:'Россия', by:'Беларусь', am:'Армения', az:'Азербайджан' };
+async function loadSug() {
+  const sec = document.createElement('section'); sec.innerHTML = '<h2>Предложенные монеты</h2><div id="sgList" class="msg">Загрузка…</div>'; out.appendChild(sec);
+  const box = sec.querySelector('#sgList');
+  const r = await fetch('/api/suggest', { credentials:'same-origin' }).catch(() => null);
+  if (!r || !r.ok) { box.textContent = 'Не удалось загрузить.'; return; }
+  const { items } = await r.json();
+  if (!items.length) { box.textContent = 'Пока ни одной заявки.'; return; }
+  box.className = ''; box.innerHTML = items.map(x => {
+    const rows = [['Страна', x.cc ? CN[x.cc] || x.cc : x.country], ['Название', x.title], ['Год', x.year], ['Номинал', x.nom], ['Металл', x.metal], ['Размер / вес', x.size], ['Комментарий', x.note], ['Контакт', x.contact]]
+      .filter(v => v[1]).map(([k, v]) => '<dt>' + k + '</dt><dd>' + esc(v) + '</dd>').join('');
+    return '<div class="sg" data-id="' + x.id + '"><a href="' + x.a + '" target="_blank"><img src="' + x.a + '" alt="аверс"></a><a href="' + x.b + '" target="_blank"><img src="' + x.b + '" alt="реверс"></a><div>' +
+      '<div class="st">' + new Date(x.created * 1000).toLocaleString('ru-RU') + ' · ' + (ST[x.status] || x.status) + (x.user_id ? ' · пользователь сайта' : '') + '</div><dl>' + rows + '</dl>' +
+      '<div class="row" style="margin-top:8px"><button data-s="ok">✅ Принять</button><button data-s="no">❌ Отклонить</button><button data-s="new">Вернуть в новые</button></div></div></div>';
+  }).join('');
+  box.addEventListener('click', async e => {
+    const b = e.target.closest('button[data-s]'); if (!b) return; const id = b.closest('.sg').dataset.id;
+    const rr = await fetch('/api/suggest/' + id, { method:'POST', credentials:'same-origin', headers:{ 'content-type':'application/json' }, body: JSON.stringify({ status: b.dataset.s }) });
+    if (rr.ok) b.closest('.sg').querySelector('.st').innerHTML = b.closest('.sg').querySelector('.st').innerHTML.replace(/(🕓 новая|✅ принята|❌ отклонена)/, ST[b.dataset.s]);
+  });
+}
 </script>
 </body>
 </html>

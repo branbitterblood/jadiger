@@ -5,6 +5,7 @@
 import { RESERVED, HANDLE_RE, ensureProfiles, publicCollection } from '../_lib/profiles.js';
 import { tgPublic, tgUser } from '../_lib/tg.js';
 import { imgRoutes } from '../_lib/img.js';
+import { suggestPost, suggestAdmin } from '../_lib/suggest.js';
 
 const COOKIE = 'jd_sess';
 const SESSION_DAYS = 90;
@@ -105,7 +106,7 @@ async function ratesOn(iso, ctx, noCache) {
   return null;
 }
 
-const EVENTS = new Set(['visit', 'open3d', 'flip', 'add', 'wish', 'share', 'photo_id', 'lang_en', 'lang_kk', 'buy', 'lead']);
+const EVENTS = new Set(['suggest', 'suggest_open', 'visit', 'open3d', 'flip', 'add', 'wish', 'share', 'photo_id', 'lang_en', 'lang_kk', 'buy', 'lead']);
 /* ---------------- маршруты ---------------- */
 export async function onRequest(ctx) {
   const { request: req, env } = ctx;
@@ -186,10 +187,12 @@ export async function onRequest(ctx) {
     { const r = await imgRoutes(ctx, path, m); if (r) return r; }   // синхронизация фото монет в R2
 
     const user = await currentUser(req, env);
+    if (path === 'suggest' && m === 'POST') return suggestPost(ctx, user);   // «Предложить монету» — можно без входа
     if (path === 'me' && m === 'GET') return json({ user: publicUser(user) || null });
     if (!user) return err(401, 'login_required', 'Войдите через Google');
     const uid = user.id;
     { const r = await tgUser(ctx, path, m, uid); if (r) return r; }
+    { const r = await suggestAdmin(ctx, path, m, uid); if (r) return r; }
 
     // сводка для владельца сайта (/stats.html)
     if (path === 'stats' && m === 'GET') {

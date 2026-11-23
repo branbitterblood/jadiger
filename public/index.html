@@ -297,6 +297,26 @@ textarea{resize:vertical;min-height:52px}
 .drop input{display:none}
 .preview{display:flex;gap:16px;align-items:center;margin-top:14px}
 .preview img{width:120px;height:120px;object-fit:cover;border-radius:14px;border:1px solid var(--line)}
+/* ===== «Предложить монету» ===== */
+.sgLink{background:none;border:0;padding:0;color:var(--gold2);text-decoration:underline;cursor:pointer;font:inherit}
+.sgCta{margin:26px 0 0;text-align:center;font-size:14px;color:var(--muted)}
+.sgGuide{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:12px 0 6px}
+.sgGuide figure{margin:0;text-align:center;font-size:12px;line-height:1.35;color:var(--muted)}
+.sgGuide svg{width:100%;max-width:120px;aspect-ratio:1;display:block;margin:0 auto 4px;border-radius:12px}
+.sgGuide b{display:block;font-size:13px}.sgGuide .ok b{color:#7fd18b}.sgGuide .no b{color:#ef8b80}
+.sgTips{margin:6px 0 0 18px;padding:0;font-size:13px;line-height:1.55;color:var(--muted)}
+.sgPh{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:14px}
+.sgPh .drop{padding:14px;min-height:190px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:6px}
+.sgPh canvas{width:150px;height:150px;border-radius:12px;background:#151922}
+.sgPh .q{font-size:12px;line-height:1.4;text-align:left}.sgPh .q .w{color:#efb86b}.sgPh .q .g{color:#7fd18b}
+.sgForm{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:14px}
+.sgForm label{display:flex;flex-direction:column;gap:4px;font-size:12px;color:var(--muted)}
+.sgForm .full{grid-column:1 / -1}
+.sgForm input,.sgForm select,.sgForm textarea{font:inherit;font-size:14px;background:#0f1218;color:var(--text);border:1px solid var(--line);border-radius:10px;padding:8px 10px}
+.sgForm textarea{min-height:64px;resize:vertical}
+.sgBar{display:flex;gap:12px;align-items:center;margin-top:16px;flex-wrap:wrap}
+.sgDone{text-align:center;padding:30px 10px;font-size:15px;line-height:1.6}
+@media (max-width:640px){.sgGuide{grid-template-columns:repeat(2,1fr)}.sgPh,.sgForm{grid-template-columns:1fr}}
 .results{display:flex;flex-direction:column;gap:10px;margin-top:16px}
 .res{display:flex;gap:12px;align-items:center;background:#0f131a;border:1px solid var(--line);border-radius:14px;padding:10px}
 .res img,.res canvas{width:64px;height:64px;border-radius:50%;flex:0 0 64px}
@@ -1891,6 +1911,150 @@ $('phFile').onchange = async e => { const f = e.target.files[0]; if (!f) return;
 $('phDel').onclick = () => { showPhoto(null); photoDirty = true; flash('Нажмите «Сохранить»'); };
 
 /* ================= photo identification (Claude) ================= */
+/* ===== «Предложить монету»: форма, инструкция по съёмке и проверка фото прямо в браузере ===== */
+const SGT = {
+  ru: { h: 'Предложить монету', p: 'Нет монеты в каталоге? Пришлите два фото и что о ней известно. Мы проверим и добавим её на сайт.',
+    gh: 'Как сфотографировать, чтобы монета правильно вырезалась',
+    g: [['ok', 'Так', 'Строго сверху, монета крупно, однотонный контрастный фон'], ['no', 'Не под углом', 'Виден гурт: монета станет овалом'], ['no', 'Не в руке', 'Пальцы и пёстрый фон мешают вырезать'], ['no', 'Без бликов', 'Блик и тень «съедают» рисунок']],
+    tips: ['Положите монету на однотонный лист: золотую и медную — на белый, серебряную — на тёмный или цветной. Снимайте у окна, без прямого солнца и вспышки.', 'Держите телефон ровно над монетой, параллельно столу; монета — по центру и занимает большую часть кадра, но не касается краёв.', 'Снимите обе стороны одинаково; капсулу лучше снять, если можно.', 'Обрезать фото не нужно: монету мы вырежем сами, ниже видно, как это получится.'],
+    a: 'Аверс (сторона с гербом / номиналом)', b: 'Реверс (сторона с рисунком)', pick: '📷 Выбрать или сделать фото',
+    cc: 'Страна', other: 'Другая страна…', country: 'Какая страна', title: 'Название монеты *', year: 'Год', nom: 'Номинал', metal: 'Металл (например, Ag 925)', size: 'Диаметр / вес', note: 'Комментарий, ссылка на источник', contact: 'Email или Telegram для связи (необязательно)',
+    send: 'Отправить', sending: 'Отправляем…', need: 'Добавьте оба фото и название монеты.', fail: 'Не удалось отправить: ', many: 'Слишком много заявок с вашего адреса за сутки, попробуйте завтра.',
+    done: '<b>Спасибо! Заявка отправлена.</b><br>Мы проверим монету и добавим её в каталог.', more: 'Предложить ещё одну', close: 'Закрыть',
+    q: { ok: 'Хорошо: монета вырежется так', small: 'Монета мелко — подойдите ближе', edge: 'Монета касается края кадра', bg: 'Пёстрый или неровный фон', tilt: 'Похоже, снято под углом — держите телефон ровно над монетой', dark: 'Слишком темно', none: 'Не удалось найти монету на фото — проверьте фон' },
+    cta: 'Нет монеты в каталоге?', ctaLink: 'Предложите её', empty: 'Ничего не найдено. Нет такой монеты в каталоге?' },
+  kk: { h: 'Монета ұсыну', p: 'Каталогта монета жоқ па? Екі фото мен ол туралы белгілі мәліметтерді жіберіңіз. Тексеріп, сайтқа қосамыз.',
+    gh: 'Монета дұрыс қиылуы үшін қалай суретке түсіру керек',
+    g: [['ok', 'Осылай', 'Тура жоғарыдан, монета ірі, біркелкі контрасты фон'], ['no', 'Бұрыштан емес', 'Жиегі көрінеді: монета сопақ болып қалады'], ['no', 'Қолда емес', 'Саусақтар мен ала фон кедергі келтіреді'], ['no', 'Жылтырсыз', 'Жарқыл мен көлеңке суретті жасырады']],
+    tips: ['Монетаны біркелкі параққа қойыңыз: алтын мен мысты — аққа, күмісті — қараңғы не түсті параққа. Терезе жанында, тікелей күн мен жарқылсыз түсіріңіз.', 'Телефонды монетаның тура үстінде, үстелге параллель ұстаңыз; монета ортада, кадрдың көп бөлігін алады, бірақ шетіне тимейді.', 'Екі жағын бірдей түсіріңіз; мүмкін болса, капсуладан шығарыңыз.', 'Фотоны қиып әуре болмаңыз: монетаны өзіміз қиямыз, төменде қалай шығатыны көрінеді.'],
+    a: 'Аверс (елтаңба / номинал жағы)', b: 'Реверс (сурет жағы)', pick: '📷 Фото таңдау немесе түсіру',
+    cc: 'Ел', other: 'Басқа ел…', country: 'Қай ел', title: 'Монета атауы *', year: 'Жылы', nom: 'Номиналы', metal: 'Металы (мысалы, Ag 925)', size: 'Диаметрі / салмағы', note: 'Түсініктеме, дереккөз сілтемесі', contact: 'Байланыс үшін email немесе Telegram (міндетті емес)',
+    send: 'Жіберу', sending: 'Жіберілуде…', need: 'Екі фотоны және монета атауын қосыңыз.', fail: 'Жіберу мүмкін болмады: ', many: 'Бір тәулікте сіздің мекенжайыңыздан тым көп өтінім, ертең қайталаңыз.',
+    done: '<b>Рақмет! Өтінім жіберілді.</b><br>Монетаны тексеріп, каталогқа қосамыз.', more: 'Тағы біреуін ұсыну', close: 'Жабу',
+    q: { ok: 'Жақсы: монета осылай қиылады', small: 'Монета кішкентай — жақынырақ келіңіз', edge: 'Монета кадр шетіне тиіп тұр', bg: 'Фон ала немесе біркелкі емес', tilt: 'Бұрыштан түсірілген сияқты — телефонды монетаның тура үстінде ұстаңыз', dark: 'Тым қараңғы', none: 'Фотодан монета табылмады — фонды тексеріңіз' },
+    cta: 'Каталогта монета жоқ па?', ctaLink: 'Ұсыныңыз', empty: 'Ештеңе табылмады. Мұндай монета каталогта жоқ па?' },
+  en: { h: 'Suggest a coin', p: 'Missing a coin? Send two photos and what you know about it. We will check it and add it to the site.',
+    gh: 'How to photograph the coin so it is cut out correctly',
+    g: [['ok', 'Like this', 'Straight from above, coin large, plain contrasting background'], ['no', 'Not at an angle', 'The edge shows and the coin turns into an oval'], ['no', 'Not in hand', 'Fingers and busy backgrounds spoil the cut-out'], ['no', 'No glare', 'Glare and shadows hide the design']],
+    tips: ['Put the coin on a plain sheet: gold and copper on white, silver on dark or coloured paper. Shoot near a window, no direct sun, no flash.', 'Hold the phone level, right above the coin; the coin is centred and fills most of the frame without touching the edges.', 'Shoot both sides the same way; take it out of the capsule if you can.', 'No need to crop: we cut the coin out ourselves, the preview below shows how it will look.'],
+    a: 'Obverse (coat of arms / denomination side)', b: 'Reverse (design side)', pick: '📷 Choose or take a photo',
+    cc: 'Country', other: 'Other country…', country: 'Which country', title: 'Coin name *', year: 'Year', nom: 'Denomination', metal: 'Metal (e.g. Ag 925)', size: 'Diameter / weight', note: 'Comment, link to a source', contact: 'Email or Telegram to reach you (optional)',
+    send: 'Send', sending: 'Sending…', need: 'Add both photos and the coin name.', fail: 'Could not send: ', many: 'Too many suggestions from your address today, please try tomorrow.',
+    done: '<b>Thank you! Your suggestion has been sent.</b><br>We will check the coin and add it to the catalog.', more: 'Suggest another one', close: 'Close',
+    q: { ok: 'Good: the coin will be cut out like this', small: 'The coin is too small, move closer', edge: 'The coin touches the edge of the frame', bg: 'Busy or uneven background', tilt: 'Looks like it was shot at an angle, hold the phone right above the coin', dark: 'Too dark', none: 'Could not find the coin, check the background' },
+    cta: 'Missing a coin?', ctaLink: 'Suggest it', empty: 'Nothing found. Is this coin missing from the catalog?' },
+}[LANG];
+const sgSvg = k => {   // маленькие схемы «как снимать»
+  const bg = '<rect width="120" height="120" rx="12" fill="#e9e6df"/>';
+  if (k === 0) return `<svg viewBox="0 0 120 120">${bg}<circle cx="60" cy="60" r="40" fill="#c9cdd3" stroke="#8d939c" stroke-width="3"/><circle cx="60" cy="60" r="31" fill="none" stroke="#9aa0a8" stroke-width="1.5"/><path d="M48 66l8 8 18-22" fill="none" stroke="#2e9b4b" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/></svg>`;
+  if (k === 1) return `<svg viewBox="0 0 120 120">${bg}<ellipse cx="60" cy="68" rx="42" ry="20" fill="#8d939c"/><ellipse cx="60" cy="60" rx="42" ry="20" fill="#c9cdd3" stroke="#8d939c" stroke-width="2"/><path d="M92 22l-16 16M76 22l16 16" stroke="#d64535" stroke-width="6" stroke-linecap="round"/></svg>`;
+  if (k === 2) return `<svg viewBox="0 0 120 120"><rect width="120" height="120" rx="12" fill="#6b4f3a"/><path d="M0 30h120M0 60h120M0 90h120" stroke="#5a412f" stroke-width="10"/><circle cx="58" cy="58" r="30" fill="#c9cdd3" stroke="#8d939c" stroke-width="3"/><path d="M70 120c0-22 4-34 16-46 8-8 18-6 20 2s-6 14-10 22c-4 8-4 14-4 22z" fill="#e0b896" stroke="#b98b68" stroke-width="2"/><path d="M98 22l-16 16M82 22l16 16" stroke="#d64535" stroke-width="6" stroke-linecap="round"/></svg>`;
+  return `<svg viewBox="0 0 120 120">${bg}<ellipse cx="66" cy="66" rx="40" ry="40" fill="#b9b4aa"/><circle cx="60" cy="60" r="40" fill="#c9cdd3" stroke="#8d939c" stroke-width="3"/><ellipse cx="48" cy="44" rx="20" ry="12" fill="#fff" opacity=".95" transform="rotate(-30 48 44)"/><path d="M98 22l-16 16M82 22l16 16" stroke="#d64535" stroke-width="6" stroke-linecap="round"/></svg>`;
+};
+const sgModal = document.createElement('div'); sgModal.className = 'modal'; sgModal.id = 'sgModal'; document.body.appendChild(sgModal);
+const sgFiles = { a: null, b: null };
+function sgOpen() {
+  ev('suggest_open'); sgFiles.a = sgFiles.b = null;
+  const opts = Object.entries(COUNTRIES).map(([k, c]) => `<option value="${k}">${esc(c.name)}</option>`).join('') + `<option value="">${SGT.other}</option>`;
+  sgModal.innerHTML = `<div class="idsheet"><button class="close" data-x aria-label="${SGT.close}">✕</button>
+    <h2 class="sec" style="margin-top:0">${SGT.h}</h2><p class="note" style="margin-top:-4px">${SGT.p}</p>
+    <div class="pbox" style="margin-top:10px"><b>${SGT.gh}</b>
+      <div class="sgGuide">${SGT.g.map(([c, t, d], i) => `<figure class="${c}">${sgSvg(i)}<b>${c === 'ok' ? '✓' : '✕'} ${t}</b>${d}</figure>`).join('')}</div>
+      <ul class="sgTips">${SGT.tips.map(t => `<li>${t}</li>`).join('')}</ul></div>
+    <div class="sgPh">${['a', 'b'].map(s => `<label class="drop" data-s="${s}"><b>${s === 'a' ? SGT.a : SGT.b}</b><canvas width="300" height="300" hidden></canvas><span class="pk">${SGT.pick}</span><div class="q"></div><input type="file" accept="image/*" capture="environment"></label>`).join('')}</div>
+    <div class="sgForm">
+      <label>${SGT.cc}<select name="cc">${opts}</select></label><label class="oc" hidden>${SGT.country}<input name="country" maxlength="60"></label>
+      <label class="full">${SGT.title}<input name="title" maxlength="200" required></label>
+      <label>${SGT.year}<input name="year" maxlength="20" inputmode="numeric"></label><label>${SGT.nom}<input name="nom" maxlength="40"></label>
+      <label>${SGT.metal}<input name="metal" maxlength="60"></label><label>${SGT.size}<input name="size" maxlength="60"></label>
+      <label class="full">${SGT.note}<textarea name="note" maxlength="1000"></textarea></label>
+      <label class="full">${SGT.contact}<input name="contact" maxlength="120"></label></div>
+    <div class="sgBar"><button class="primary" data-send>${SGT.send}</button><span class="note" data-msg></span></div></div>`;
+  const cc = sgModal.querySelector('select[name=cc]'); cc.value = (typeof curCountry === 'string' && curCountry) || 'kz';
+  cc.onchange = () => { sgModal.querySelector('.oc').hidden = !!cc.value; };
+  sgModal.querySelectorAll('.drop').forEach(d => {
+    const inp = d.querySelector('input');
+    inp.onchange = () => inp.files[0] && sgPhoto(d, inp.files[0]);
+    d.addEventListener('dragover', e => { e.preventDefault(); d.classList.add('over'); });
+    d.addEventListener('dragleave', () => d.classList.remove('over'));
+    d.addEventListener('drop', e => { e.preventDefault(); d.classList.remove('over'); const f = e.dataTransfer.files[0]; if (f) sgPhoto(d, f); });
+  });
+  sgModal.querySelector('[data-send]').onclick = sgSend;
+  sgModal.classList.add('open'); document.body.style.overflow = 'hidden';
+}
+function sgClose() { sgModal.classList.remove('open'); document.body.style.overflow = modal.classList.contains('open') ? 'hidden' : ''; }
+sgModal.addEventListener('click', e => { if (e.target === sgModal || e.target.closest('[data-x]')) sgClose(); });
+async function sgPhoto(d, file) {
+  const q = d.querySelector('.q'), cv = d.querySelector('canvas'), s = d.dataset.s;
+  let bmp; try { bmp = await createImageBitmap(file, { imageOrientation: 'from-image' }); } catch (e) { q.innerHTML = `<span class="w">⚠ ${SGT.q.none}</span>`; return; }
+  // 1) копия для отправки: длинная сторона до 1600 px, JPEG
+  const k = Math.min(1, 1600 / Math.max(bmp.width, bmp.height)), W = Math.round(bmp.width * k), H = Math.round(bmp.height * k);
+  const big = document.createElement('canvas'); big.width = W; big.height = H; big.getContext('2d').drawImage(bmp, 0, 0, W, H);
+  sgFiles[s] = await new Promise(r => big.toBlob(r, 'image/jpeg', .9));
+  // 2) проверка, как монета вырежется: фон по краям кадра, монета — всё, что заметно отличается от фона
+  const k2 = 240 / Math.max(W, H), w = Math.max(1, Math.round(W * k2)), h = Math.max(1, Math.round(H * k2));
+  const sm = document.createElement('canvas'); sm.width = w; sm.height = h; const sx = sm.getContext('2d', { willReadFrequently: true }); sx.drawImage(big, 0, 0, w, h);
+  const px = sx.getImageData(0, 0, w, h).data, b = Math.max(2, Math.round(Math.min(w, h) * .04)), ring = [];
+  for (let y = 0; y < h; y++) for (let x = 0; x < w; x++) if (x < b || y < b || x >= w - b || y >= h - b) { const i = (y * w + x) * 4; ring.push([px[i], px[i + 1], px[i + 2]]); }
+  const med = [0, 1, 2].map(c => { const v = ring.map(p => p[c]).sort((m, n) => m - n); return v[v.length >> 1]; });
+  const dev = ring.reduce((a, p) => a + Math.abs(p[0] - med[0]) + Math.abs(p[1] - med[1]) + Math.abs(p[2] - med[2]), 0) / ring.length;
+  // фон = всё, что связано с краем кадра и похоже на цвет фона (заливка); монета = остальное, вместе с узором внутри
+  const fg = new Uint8Array(w * h).fill(1); let lum = 0; const near = i => Math.abs(px[i * 4] - med[0]) + Math.abs(px[i * 4 + 1] - med[1]) + Math.abs(px[i * 4 + 2] - med[2]) < 36;
+  for (let i = 0; i < w * h; i++) lum += px[i * 4] + px[i * 4 + 1] + px[i * 4 + 2];
+  const st = []; for (let x = 0; x < w; x++) st.push(x, (h - 1) * w + x); for (let y = 0; y < h; y++) st.push(y * w, y * w + w - 1);
+  while (st.length) { const i = st.pop(); if (!fg[i] || !near(i)) continue; fg[i] = 0; const x = i % w, y = (i - x) / w;
+    if (x > 0) st.push(i - 1); if (x < w - 1) st.push(i + 1); if (y > 0) st.push(i - w); if (y < h - 1) st.push(i + w); }
+  lum /= w * h * 3;
+  const rows = [], cols = [];   // строки/столбцы, где монеты заметно много (отсекаем пылинки и шум)
+  for (let y = 0; y < h; y++) { let n = 0; for (let x = 0; x < w; x++) n += fg[y * w + x]; rows.push(n > w * .03); }
+  for (let x = 0; x < w; x++) { let n = 0; for (let y = 0; y < h; y++) n += fg[y * w + x]; cols.push(n > h * .03); }
+  const y0 = rows.indexOf(true), y1 = rows.lastIndexOf(true), x0 = cols.indexOf(true), x1 = cols.lastIndexOf(true);
+  const warn = [];
+  if (lum < 55) warn.push(SGT.q.dark);
+  if (dev > 40) warn.push(SGT.q.bg);
+  cv.hidden = false; d.querySelector('.pk').hidden = true;
+  const cx = cv.getContext('2d'); cx.clearRect(0, 0, 300, 300);
+  if (y0 < 0 || x0 < 0 || (x1 - x0) < w * .15) { warn.push(SGT.q.none); cx.drawImage(big, 0, 0, 300, 300); }
+  else {
+    const bw = x1 - x0 + 1, bh = y1 - y0 + 1; let n = 0; for (let y = y0; y <= y1; y++) for (let x = x0; x <= x1; x++) n += fg[y * w + x];
+    const fill = n / (bw * bh), ar = bw / bh;
+    if (Math.max(bw, bh) < Math.min(w, h) * .4) warn.push(SGT.q.small);
+    if (x0 <= 1 || y0 <= 1 || x1 >= w - 2 || y1 >= h - 2) warn.push(SGT.q.edge);
+    if (fill > .66 && fill < .86 && Math.abs(ar - 1) > .07) warn.push(SGT.q.tilt);
+    // превью: как вырежем (круглые — кругом, остальные — по контуру прямоугольника)
+    const S = 1 / k2, round = fill > .66 && fill < .86;
+    cx.save(); cx.beginPath();
+    if (round) cx.ellipse(150, 150, 146, 146, 0, 0, Math.PI * 2); else cx.rect(4 + (ar < 1 ? 146 * (1 - ar) : 0), 4 + (ar > 1 ? 146 * (1 - 1 / ar) : 0), 292 * Math.min(1, ar), 292 * Math.min(1, 1 / ar));
+    cx.clip();
+    if (round) cx.drawImage(big, x0 * S, y0 * S, bw * S, bh * S, 4, 4, 292, 292);
+    else { const sc = 292 / Math.max(bw, bh); cx.drawImage(big, x0 * S, y0 * S, bw * S, bh * S, 150 - bw * sc / 2, 150 - bh * sc / 2, bw * sc, bh * sc); }
+    cx.restore();
+  }
+  q.innerHTML = warn.length ? warn.map(t => `<div class="w">⚠ ${t}</div>`).join('') : `<div class="g">✓ ${SGT.q.ok}</div>`;
+}
+async function sgSend() {
+  const msg = sgModal.querySelector('[data-msg]'), btn = sgModal.querySelector('[data-send]'), val = n => (sgModal.querySelector(`[name=${n}]`) || {}).value || '';
+  if (!sgFiles.a || !sgFiles.b || !val('title').trim()) { msg.textContent = SGT.need; return; }
+  const fd = new FormData();
+  ['cc', 'country', 'title', 'year', 'nom', 'metal', 'size', 'note', 'contact'].forEach(n => fd.append(n, val(n)));
+  fd.append('lang', LANG); fd.append('a', sgFiles.a, 'a.jpg'); fd.append('b', sgFiles.b, 'b.jpg');
+  btn.disabled = true; msg.textContent = SGT.sending;
+  try {
+    const r = await fetch('/api/suggest', { method: 'POST', body: fd, credentials: 'same-origin' });
+    if (r.status === 429) throw new Error(SGT.many);
+    if (!r.ok) throw new Error((await r.json().catch(() => ({}))).error || r.status);
+    ev('suggest');
+    sgModal.querySelector('.idsheet').innerHTML = `<button class="close" data-x aria-label="${SGT.close}">✕</button><div class="sgDone">${SGT.done}<div class="sgBar" style="justify-content:center"><button class="primary" data-again>${SGT.more}</button><button data-x>${SGT.close}</button></div></div>`;
+    sgModal.querySelector('[data-again]').onclick = sgOpen;
+  } catch (e) { btn.disabled = false; msg.textContent = (e.message === SGT.many ? '' : SGT.fail) + e.message; }
+}
+// ссылки «Предложить монету»: под каталогом и в пустом результате поиска
+{
+  const cta = document.createElement('p'); cta.className = 'sgCta'; cta.innerHTML = `${SGT.cta} <button class="sgLink" data-sg>${SGT.ctaLink}</button>`;
+  $('srcFoot').before(cta);
+  $('empty').innerHTML = `${SGT.empty} <button class="sgLink" data-sg>${SGT.ctaLink}</button>`;
+  document.addEventListener('click', e => { if (e.target.closest('[data-sg]')) { e.preventDefault(); sgOpen(); } });
+}
 const idModal = $('idModal'); let idBlob = null;
 function closeId() { idModal.classList.remove('open'); document.body.style.overflow = modal.classList.contains('open') ? 'hidden' : ''; }
 $('bPhotoId').onclick = () => { ev('photo_id'); idModal.classList.add('open'); document.body.style.overflow = 'hidden'; };
