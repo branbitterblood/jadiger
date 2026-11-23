@@ -17,6 +17,7 @@ const CTRY = {
   by: ['Беларусь', 'Национальный банк Республики Беларусь', 'рублей', 'Br'],
   am: ['Армения', 'Центральный банк Республики Армения', 'драмов', '֏'],
   az: ['Азербайджан', 'Центральный банк Азербайджанской Республики', 'манат', '₼'],
+  ua: ['Украина', 'Национальный банк Украины', 'гривен', '₴'],
 };
 const fmtN = n => String(Math.round(+n)).replace(/\B(?=(\d{3})+(?!\d))/g, ' ');
 // новые выпуски, добавленные автоматически: public/auto/coins.js (см. tools/update.py)
@@ -26,7 +27,8 @@ async function autoCoin(env, request, cc, slug) {
     const t = await r.text(); const A = JSON.parse(t.slice(t.indexOf('{'), t.lastIndexOf('}') + 1));
     const a = (A.coins || []).find(x => x.r[10] === cc && x.slug === slug); if (!a) return null;
     const [title, date, nomV, metal, w, d, q, mint, section, series] = a.r, [name, issuer, cur, sym] = CTRY[cc];
-    const nom = +nomV ? `${fmtN(nomV)} ${cur}` : '', year = date.slice(-4);
+    let cu = cur; if (cc === 'ua') { if (+nomV >= 100000) cu = 'карбованцев'; else { const x = Math.round(+nomV) % 100, y = x % 10; cu = x > 10 && x < 20 ? 'гривен' : y === 1 ? 'гривна' : y >= 2 && y <= 4 ? 'гривны' : 'гривен'; } }
+    const nom = +nomV ? `${fmtN(nomV)} ${cu}` : '', year = date.slice(-4);
     const specs = [['Страна', name], ['Эмитент', issuer], ['Раздел', section], ['Серия', series], [date.length === 4 ? 'Год выпуска' : 'Дата выпуска', date],
       ['Номинал', nom || '—'], ['Металл', metal], ...(w ? [['Вес', w + ' г']] : []), ...(+d ? [['Диаметр', d + ' мм']] : []), ['Качество', q || '—'], ['Тираж', mint ? fmtN(mint) + ' шт.' : '—'],
       ...(a.price ? [['Цена в магазине НБ', fmtN(a.price) + ' ' + sym]] : [])];
