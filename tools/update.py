@@ -56,7 +56,7 @@ def read_main():
         # ссылки хранятся сжато: "~<i>хвост" = SRC_PFX[i] + хвост
         pfx = json.loads(re.search(r'const SRC_PFX = (\[.*?\]);', h).group(1).replace("'", '"'))
         short = json.loads(re.search(r'Object\.entries\((\{.*?\})\)\.map', src).group(1))
-        src_url = {k: (pfx[int(u[1])] + u[2:] if u.startswith('~') else u) for k, u in short.items()}
+        src_url = {k: (pfx[int(u[1], 36)] + u[2:] if u.startswith('~') else u) for k, u in short.items()}
     else:
         src_url = grab('SRC_URL')
     return grab('RAW'), grab('SLUGS'), src_url
