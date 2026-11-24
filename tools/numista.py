@@ -19,6 +19,8 @@ OUT_P = os.path.join(ROOT, 'public', 'auto', 'market.json')
 MONTHLY = int(os.environ.get('NUMISTA_MONTHLY', '1900'))   # запас до лимита 2000
 DAILY = int(os.environ.get('NUMISTA_DAILY', '120'))
 REFRESH_DAYS = 60
+# страны, у которых пока нет ни одной оценки, — в начало очереди (ноябрь 2026: Армения, Азербайджан, Беларусь)
+PRIORITY = tuple(os.environ.get('NUMISTA_PRIORITY', 'am,az,by').split(','))
 CUR = {'kz': 'KZT', 'uz': 'UZS', 'kg': 'KGS', 'tj': 'TJS', 'tm': 'TMT', 'mn': 'MNT', 'su': 'KZT', 'ru': 'RUB', 'by': 'BYN', 'am': 'AMD', 'az': 'AZN', 'ua': 'UAH', 'jp': 'JPY', 'ph': 'PHP'}
 ISSUER_HINT = {'kz': 'kazakhstan', 'uz': 'uzbekistan', 'kg': 'kyrgyzstan', 'tj': 'tajikistan', 'tm': 'turkmenistan', 'mn': 'mongolia', 'su': 'soviet union', 'ru': 'russia', 'by': 'belarus', 'am': 'armenia', 'az': 'azerbaijan', 'ua': 'ukraine', 'jp': 'japan', 'ph': 'philippines'}
 # точные имена эмитентов, чтобы «Russia» не совпала с «Russian Empire», а СССР — с республиками
@@ -88,7 +90,7 @@ def main():
             m = out['coins'].get(str(c['id']))
             return not m or (dt.date.today() - dt.date.fromisoformat(m['upd'])).days >= REFRESH_DAYS
         queue = sorted([c for c in coins if c['cc'] in st['issuers'] and retry(st['map'].get(str(c['id']))) and stale(c)],
-                       key=lambda c: (c['nb'], str(c['id']) in st['map'], int(c['year'] or 0)))
+                       key=lambda c: (c['nb'], c['cc'] not in PRIORITY, str(c['id']) in st['map'], int(c['year'] or 0)))
         for c in queue:
             cid = str(c['id']); m = st['map'].get(cid)
             if not m or m.get('status') == 'none':
