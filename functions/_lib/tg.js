@@ -2,7 +2,7 @@
 // Токен — секрет TELEGRAM_BOT_TOKEN в настройках Cloudflare Pages (в репозитории его нет).
 import { suggestCallback } from './suggest.js';
 const SITE = 'https://jadiger.com';
-const CCS = ['kz', 'uz', 'kg', 'tj', 'tm', 'mn', 'su', 'ru', 'by', 'am', 'az', 'ua', 'jp', 'ph', 'ge'];
+const CCS = ['kz', 'uz', 'kg', 'tj', 'tm', 'mn', 'su', 'ru', 'by', 'am', 'az', 'ua', 'jp', 'ph', 'ge', 'eu', 'pl', 'tr'];
 const PFX = { ru: '', en: '/en', kk: '/kk' };
 const enc = new TextEncoder();
 const hex = buf => [...new Uint8Array(buf)].map(b => b.toString(16).padStart(2, '0')).join('');
@@ -53,7 +53,7 @@ const T = {
     cmds: [['coin', 'A random coin'], ['help', 'Help'], ['stop', 'Turn off notifications']],
   },
 };
-const CUR = { kz: '₸', uz: 'UZS', kg: 'KGS', tj: 'TJS', tm: 'TMT', mn: '₮', su: '', ru: '₽', by: 'BYN', am: 'AMD', az: 'AZN', ua: 'UAH', jp: 'JPY', ph: 'PHP', ge: 'GEL' };
+const CUR = { kz: '₸', uz: 'UZS', kg: 'KGS', tj: 'TJS', tm: 'TMT', mn: '₮', su: '', ru: '₽', by: 'BYN', am: 'AMD', az: 'AZN', ua: 'UAH', jp: 'JPY', ph: 'PHP', ge: 'GEL', eu: 'EUR', pl: 'PLN', tr: 'PRB' };
 const tx = (lang, k) => { const v = (T[lang] || T.ru)[k]; return typeof v === 'string' ? v.replaceAll('{site}', SITE) : v; };
 const langOf = l => (l === 'kk' || l === 'en' ? l : l && /^(kk|kz)/.test(l) ? 'kk' : l && !/^(ru|uk|be)/.test(l) ? 'en' : 'ru');
 
@@ -170,9 +170,9 @@ async function notify(ctx) {
 }
 
 /* ---------- публичный канал: монета дня и новые выпуски ---------- */
-const FLAG = { kz: '🇰🇿', uz: '🇺🇿', kg: '🇰🇬', tj: '🇹🇯', tm: '🇹🇲', mn: '🇲🇳', su: '☭', ru: '🇷🇺', by: '🇧🇾', am: '🇦🇲', az: '🇦🇿', ua: '🇺🇦', jp: '🇯🇵', ph: '🇵🇭', ge: '🇬🇪' };
-const CNAME = { kz: 'Казахстан', uz: 'Узбекистан', kg: 'Кыргызстан', tj: 'Таджикистан', tm: 'Туркменистан', mn: 'Монголия', su: 'СССР', ru: 'Россия', by: 'Беларусь', am: 'Армения', az: 'Азербайджан', ua: 'Украина', jp: 'Япония', ph: 'Филиппины', ge: 'Грузия' };
-const CURRU = { kz: 'тенге', uz: 'сум', kg: 'сом', tj: 'сомони', tm: 'манат', mn: 'тугриков', su: 'руб.', ru: 'руб.', by: 'руб.', am: 'драмов', az: 'манат', ua: 'гривен', jp: 'иен', ph: 'песо', ge: 'лари' };
+const FLAG = { kz: '🇰🇿', uz: '🇺🇿', kg: '🇰🇬', tj: '🇹🇯', tm: '🇹🇲', mn: '🇲🇳', su: '☭', ru: '🇷🇺', by: '🇧🇾', am: '🇦🇲', az: '🇦🇿', ua: '🇺🇦', jp: '🇯🇵', ph: '🇵🇭', ge: '🇬🇪', eu: '🇪🇺', pl: '🇵🇱', tr: '🏳️' };
+const CNAME = { kz: 'Казахстан', uz: 'Узбекистан', kg: 'Кыргызстан', tj: 'Таджикистан', tm: 'Туркменистан', mn: 'Монголия', su: 'СССР', ru: 'Россия', by: 'Беларусь', am: 'Армения', az: 'Азербайджан', ua: 'Украина', jp: 'Япония', ph: 'Филиппины', ge: 'Грузия', eu: 'Еврозона — 2 евро', pl: 'Польша', tr: 'Приднестровье' };
+const CURRU = { kz: 'тенге', uz: 'сум', kg: 'сом', tj: 'сомони', tm: 'манат', mn: 'тугриков', su: 'руб.', ru: 'руб.', by: 'руб.', am: 'драмов', az: 'манат', ua: 'гривен', jp: 'иен', ph: 'песо', ge: 'лари', eu: 'евро', pl: 'злотых', tr: 'рублей' };
 const nomRu = (cc, n) => !+n ? '' : +n < 1 ? `${Math.round(+n * 100)} коп.` : `${fmtN(n)} ${CURRU[cc]}`;
 const dayKz = () => new Date(Date.now() + 5 * 3600e3).toISOString().slice(0, 10);   // сутки по Кызылорде (UTC+5)
 
