@@ -1859,7 +1859,7 @@ function buildObject(coin, o) {
       coinGroup.add(new THREE.Mesh(patch((s, t) => { const a = c + dir * (s - .5) * Math.PI, x = Math.cos(a), y = Math.sin(a); return [[R * x, R * y, up[2] * (.5 - t) * L], [x, y, 0]]; }, w.uv, 64, 1), mats[w.t])); });
   }
   const asp = Math.min(1, (canvas.clientWidth / canvas.clientHeight) || 1);
-  baseZ = camZ = Math.max(span[1], span[0] / asp, span[2] * .8) / 2 * 4.3;
+  baseZ = camZ = Math.max(span[1], span[0] / asp, span[2] * .8) / 2 * 4.9;
 }
 function buildCoin(coin) {
   coinGroup.children.slice().forEach(ch => { dispose(ch); coinGroup.remove(ch); });
