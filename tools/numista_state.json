@@ -4119,10 +4119,269 @@
 "type": 64111,
 "title": "50 Roubles (S.V. Rachmaninov)",
 "upd": "2026-11-23"
+},
+"4494": {
+"status": "none",
+"why": "неоднозначно: 25 Dram (Battle of Sardarapad) | 25 Dram (David of Sasun) | 25 Dram (Temple of Garni) | 25 Dram (Artsakh)",
+"upd": "2026-11-25"
+},
+"4495": {
+"status": "ok",
+"type": 100216,
+"title": "25 Dram (David of Sasun)",
+"upd": "2026-11-25",
+"issue": 320735
+},
+"4496": {
+"status": "ok",
+"type": 100217,
+"title": "25 Dram (Temple of Garni)",
+"upd": "2026-11-25",
+"issue": 320736
+},
+"4497": {
+"status": "ok",
+"type": 57318,
+"title": "1000 Dram (Armenian Money)",
+"upd": "2026-11-25",
+"issue": 225459
+},
+"4498": {
+"status": "ok",
+"type": 100219,
+"title": "25 Dram (Artsakh)",
+"upd": "2026-11-25",
+"issue": 320738
+},
+"4493": {
+"status": "ok",
+"type": 114670,
+"title": "500 Dram (National Assembly Building)",
+"upd": "2026-11-25",
+"issue": 348282
+},
+"4499": {
+"status": "none",
+"why": "нет кандидатов (1 в поиске)",
+"upd": "2026-11-25"
+},
+"3612": {
+"status": "ok",
+"type": 26317,
+"title": "1 Rouble (United Nations)",
+"upd": "2026-11-25",
+"issue": 137826
+},
+"3613": {
+"status": "ok",
+"type": 40769,
+"title": "1 Rouble (United Nations)",
+"upd": "2026-11-25",
+"issue": 179488
+},
+"3614": {
+"status": "ok",
+"type": 11092,
+"title": "1 Rouble (United Nations)",
+"upd": "2026-11-25",
+"issue": 61980
+},
+"3662": {
+"status": "ok",
+"type": 128253,
+"title": "50 Roubles (Gymnast Ribbon Dancer)",
+"upd": "2026-11-25",
+"issue": 372967
+},
+"3663": {
+"status": "ok",
+"type": 128252,
+"title": "20 Roubles (Gymnast Ribbon Dancer)",
+"upd": "2026-11-25",
+"issue": 372966
+},
+"3664": {
+"status": "ok",
+"type": 21779,
+"title": "1 Rouble (Gymnast Ribbon Dancer)",
+"upd": "2026-11-25",
+"issue": 115289
+},
+"3667": {
+"status": "ok",
+"type": 128235,
+"title": "50 Roubles (Gymnast on Rings)",
+"upd": "2026-11-25",
+"issue": 372916
+},
+"3668": {
+"status": "ok",
+"type": 128226,
+"title": "20 Roubles (Gymnast on Rings)",
+"upd": "2026-11-25",
+"issue": 372907
+},
+"3669": {
+"status": "ok",
+"type": 21778,
+"title": "1 Rouble (Gymnast on Rings)",
+"upd": "2026-11-25",
+"issue": 115288
+},
+"4492": {
+"status": "ok",
+"type": 100221,
+"title": "100 Dram (Chess Olympiad)",
+"upd": "2026-11-25",
+"issue": 320740
+},
+"4500": {
+"status": "none",
+"why": "нет кандидатов (4 в поиске)",
+"upd": "2026-11-25"
+},
+"4501": {
+"status": "none",
+"why": "нет кандидатов (4 в поиске)",
+"upd": "2026-11-25"
+},
+"4502": {
+"status": "none",
+"why": "нет кандидатов (4 в поиске)",
+"upd": "2026-11-25"
+},
+"4503": {
+"status": "none",
+"why": "нет кандидатов (4 в поиске)",
+"upd": "2026-11-25"
+},
+"4504": {
+"status": "ok",
+"type": 100222,
+"title": "100 Dram (Chess Olympiad)",
+"upd": "2026-11-25",
+"issue": 320741
+},
+"4505": {
+"status": "ok",
+"type": 10312,
+"title": "100 Dram (Chess Olympiad)",
+"upd": "2026-11-25",
+"issue": 56424
+},
+"4506": {
+"status": "ok",
+"type": 100222,
+"title": "100 Dram (Chess Olympiad)",
+"upd": "2026-11-25",
+"issue": 320741
+},
+"4870": {
+"status": "ok",
+"type": 26647,
+"title": "50 Manat (Məhəmməd Füzuli)",
+"upd": "2026-11-25",
+"issue": 139360
+},
+"4871": {
+"status": "ok",
+"type": 100196,
+"title": "100 Manat (Məhəmməd Füzuli)",
+"upd": "2026-11-25",
+"issue": 320677
+},
+"3615": {
+"status": "ok",
+"type": 128166,
+"title": "20 Roubles (Banking system)",
+"upd": "2026-11-25",
+"issue": 372831
+},
+"3616": {
+"status": "ok",
+"type": 37291,
+"title": "20 Roubles (Belarus-Russia Community)",
+"upd": "2026-11-25",
+"issue": 169456
+},
+"3621": {
+"status": "ok",
+"type": 28836,
+"title": "20 Roubles (Independence Day)",
+"upd": "2026-11-25",
+"issue": 146446
+},
+"3622": {
+"status": "ok",
+"type": 21780,
+"title": "1 Rouble (Independence Day)",
+"upd": "2026-11-25",
+"issue": 115290
+},
+"3675": {
+"status": "ok",
+"type": 128174,
+"title": "50 Roubles (Ice Hockey)",
+"upd": "2026-11-25",
+"issue": 372839
+},
+"3676": {
+"status": "ok",
+"type": 128173,
+"title": "20 Roubles (Ice Hockey)",
+"upd": "2026-11-25",
+"issue": 372838
+},
+"3677": {
+"status": "ok",
+"type": 21782,
+"title": "1 Rouble (Ice Hockey)",
+"upd": "2026-11-25",
+"issue": 115292
+},
+"3678": {
+"status": "ok",
+"type": 128170,
+"title": "50 Roubles (Biathlon)",
+"upd": "2026-11-25",
+"issue": 372835
+},
+"3679": {
+"status": "ok",
+"type": 128169,
+"title": "20 Roubles (Biathlon)",
+"upd": "2026-11-25",
+"issue": 372834
+},
+"3680": {
+"status": "ok",
+"type": 21781,
+"title": "1 Rouble (Biathlon)",
+"upd": "2026-11-25",
+"issue": 115291
+},
+"4507": {
+"status": "ok",
+"type": 100223,
+"title": "100 Dram (Marshal Bagramian)",
+"upd": "2026-11-25",
+"issue": 320743
+},
+"4508": {
+"status": "ok",
+"type": 89192,
+"title": "25 000 Dram (Anahit)",
+"upd": "2026-11-25",
+"issue": 296349
+},
+"4509": {
+"status": "none",
+"why": "неоднозначно: 100 Dram (Caucasian otter) | 100 Dram (Caucasian otter; silver)",
+"upd": "2026-11-25"
 }
 },
 "usage": {
-"2026-11": 1361
+"2026-11": 1481
 },
 "issuers": {
 "kz": "kazakhstan",
@@ -4134,6 +4393,12 @@
 "ru": "russia",
 "am": "armenie",
 "az": "azerbaijan",
-"by": "bielorussie"
+"by": "bielorussie",
+"ge": "georgia_section",
+"jp": "japan_section",
+"ph": "philippines_section",
+"pl": "poland_section",
+"tr": "transnistrie",
+"ua": "ukraine_section"
 }
 }
