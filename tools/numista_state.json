@@ -4378,10 +4378,272 @@
 "status": "none",
 "why": "неоднозначно: 100 Dram (Caucasian otter) | 100 Dram (Caucasian otter; silver)",
 "upd": "2026-11-25"
+},
+"3633": {
+"status": "ok",
+"type": 128129,
+"title": "10 Roubles (Adam Mickiewicz)",
+"upd": "2026-11-26",
+"issue": 372774
+},
+"3634": {
+"status": "ok",
+"type": 42929,
+"title": "1 Rouble (Adam Mickiewicz)",
+"upd": "2026-11-26",
+"issue": 185659
+},
+"3681": {
+"status": "ok",
+"type": 128139,
+"title": "50 Roubles (Track–and–Field Athletics)",
+"upd": "2026-11-26",
+"issue": 372784
+},
+"3682": {
+"status": "ok",
+"type": 128136,
+"title": "20 Roubles (Track–and–Field Athletics)",
+"upd": "2026-11-26",
+"issue": 372781
+},
+"3683": {
+"status": "ok",
+"type": 21783,
+"title": "1 Rouble (Track–and–Field Athletics)",
+"upd": "2026-11-26",
+"issue": 115293
+},
+"3718": {
+"status": "ok",
+"type": 38605,
+"title": "20 Roubles (Polotsk)",
+"upd": "2026-11-26",
+"issue": 174120
+},
+"3719": {
+"status": "ok",
+"type": 46309,
+"title": "1 Rouble (Polotsk)",
+"upd": "2026-11-26",
+"issue": 195198
+},
+"3734": {
+"status": "ok",
+"type": 92953,
+"title": "20 Roubles (Castle of Mir)",
+"upd": "2026-11-26",
+"issue": 306425
+},
+"3735": {
+"status": "ok",
+"type": 46307,
+"title": "1 Rouble (Castle of Mir)",
+"upd": "2026-11-26",
+"issue": 195195
+},
+"4510": {
+"status": "ok",
+"type": 57319,
+"title": "5 Dram (National Currency)",
+"upd": "2026-11-26",
+"issue": 225460
+},
+"4511": {
+"status": "ok",
+"type": 114676,
+"title": "1000 Dram (Ani Church Tower)",
+"upd": "2026-11-26",
+"issue": 348288
+},
+"4512": {
+"status": "ok",
+"type": 100213,
+"title": "10 Dram (Earthquake of 1988)",
+"upd": "2026-11-26",
+"issue": 320724
+},
+"4513": {
+"status": "ok",
+"type": 100227,
+"title": "100 Dram (XVIII Olympic Winter Games)",
+"upd": "2026-11-26",
+"issue": 320747
+},
+"4514": {
+"status": "ok",
+"type": 30579,
+"title": "1000 Dram (Haghpat)",
+"upd": "2026-11-26",
+"issue": 150509
+},
+"4515": {
+"status": "none",
+"why": "неоднозначно: 100 Dram (Armenian silver seagull) | 100 Drams (Armenian silver seagull; silver proof)",
+"upd": "2026-11-26"
+},
+"4516": {
+"status": "ok",
+"type": 114685,
+"title": "10 000 Dram (Ani Church Tower)",
+"upd": "2026-11-26",
+"issue": 348297
+},
+"4517": {
+"status": "ok",
+"type": 89191,
+"title": "10 000 Dram (Etchmiadzin Church)",
+"upd": "2026-11-26",
+"issue": 296348
+},
+"4518": {
+"status": "ok",
+"type": 114675,
+"title": "1000 Dram (Etchmiadzin Church)",
+"upd": "2026-11-26",
+"issue": 348287
+},
+"4519": {
+"status": "ok",
+"type": 100228,
+"title": "100 Dram (1998 World Cup Soccer)",
+"upd": "2026-11-26",
+"issue": 320748
+},
+"3623": {
+"status": "none",
+"why": "неоднозначно: 20 Roubles (Christianity (In The Orthodox Religion)) | 20 Roubles (Christianity (In The Roman Catholic Religion)) | 20 Roubles (Financial System in Belarus) | 20 Roubles (Minsk)",
+"upd": "2026-11-26"
+},
+"3624": {
+"status": "none",
+"why": "неоднозначно: 1 Rouble (Christianity (In The Orthodox Religion)) | 1 Rouble (Christianity (In The Roman Catholic Religion)) | 1 Rouble (Minsk) | 1 Rouble (Mikhas Lynkov)",
+"upd": "2026-11-26"
+},
+"3626": {
+"status": "none",
+"why": "неоднозначно: 20 Roubles (Christianity (In The Orthodox Religion)) | 20 Roubles (Christianity (In The Roman Catholic Religion)) | 20 Roubles (Financial System in Belarus) | 20 Roubles (Minsk)",
+"upd": "2026-11-26"
+},
+"3627": {
+"status": "none",
+"why": "неоднозначно: 1 Rouble (Christianity (In The Orthodox Religion)) | 1 Rouble (Christianity (In The Roman Catholic Religion)) | 1 Rouble (Minsk) | 1 Rouble (Mikhas Lynkov)",
+"upd": "2026-11-26"
+},
+"3629": {
+"status": "ok",
+"type": 127896,
+"title": "20 Roubles (Financial System in Belarus)",
+"upd": "2026-11-26",
+"issue": 372373
+},
+"3649": {
+"status": "ok",
+"type": 127994,
+"title": "10 Roubles (Gleb Glebov)",
+"upd": "2026-11-26",
+"issue": 372517
+},
+"3650": {
+"status": "ok",
+"type": 42930,
+"title": "1 Rouble (Gleb Glebov)",
+"upd": "2026-11-26",
+"issue": 185661
+},
+"3716": {
+"status": "ok",
+"type": 127898,
+"title": "10 Roubles (Mikhas Lynkov)",
+"upd": "2026-11-26",
+"issue": 372375
+},
+"3717": {
+"status": "ok",
+"type": 46484,
+"title": "1 Rouble (Mikhas Lynkov)",
+"upd": "2026-11-26",
+"issue": 195869
+},
+"3720": {
+"status": "ok",
+"type": 127891,
+"title": "20 Roubles (Minsk)",
+"upd": "2026-11-26",
+"issue": 372368
+},
+"3721": {
+"status": "ok",
+"type": 46407,
+"title": "1 Rouble (Minsk)",
+"upd": "2026-11-26",
+"issue": 195482
+},
+"3736": {
+"status": "ok",
+"type": 128015,
+"title": "20 Roubles (The church of Sts Boris and Gleb)",
+"upd": "2026-11-26",
+"issue": 372597
+},
+"3737": {
+"status": "ok",
+"type": 49147,
+"title": "1 Rouble (The church of Sts Boris and Gleb)",
+"upd": "2026-11-26",
+"issue": 205472
+},
+"4520": {
+"status": "ok",
+"type": 114686,
+"title": "50 000 Dram (Holy Cross Church)",
+"upd": "2026-11-26",
+"issue": 348298
+},
+"4521": {
+"status": "ok",
+"type": 30580,
+"title": "5000 Dram (Holy Cross Church)",
+"upd": "2026-11-26",
+"issue": 150510
+},
+"4522": {
+"status": "ok",
+"type": 114669,
+"title": "200 Dram (Pushkin)",
+"upd": "2026-11-26",
+"issue": 348281
+},
+"4523": {
+"status": "ok",
+"type": 114677,
+"title": "5000 Dram (Tigran Petrosyan)",
+"upd": "2026-11-26",
+"issue": 348289
+},
+"4524": {
+"status": "ok",
+"type": 114679,
+"title": "5000 Dram (Pan-Armenian Congress)",
+"upd": "2026-11-26",
+"issue": 348291
+},
+"4525": {
+"status": "ok",
+"type": 114684,
+"title": "50 000 Dram (Tigran the Great)",
+"upd": "2026-11-26",
+"issue": 348296
+},
+"4526": {
+"status": "ok",
+"type": 114678,
+"title": "5000 Dram (First Pan-Armenian Games)",
+"upd": "2026-11-26"
 }
 },
 "usage": {
-"2026-11": 1481
+"2026-11": 1601
 },
 "issuers": {
 "kz": "kazakhstan",
