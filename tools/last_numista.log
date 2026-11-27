@@ -1,75 +1,72 @@
 эмитенты: {'kz': 'kazakhstan', 'kg': 'kirghizistan', 'mn': 'mongolie', 'tj': 'tadjikistan', 'tm': 'turkmenistan', 'uz': 'uzbekistan_section', 'ru': 'russia', 'am': 'armenie', 'az': 'azerbaijan', 'by': 'bielorussie', 'ge': 'georgia_section', 'jp': 'japan_section', 'ph': 'philippines_section', 'pl': 'poland_section', 'tr': 'transnistrie', 'ua': 'ukraine_section'}
-сопоставление 3633 200th Anniversary of the Birth of Adam Mickiewicz → {'status': 'ok', 'type': 128129, 'title': '10 Roubles (Adam Mickiewicz)', 'upd': '2026-11-26'}
-цены 3633 200th Anniversary of the Birth of Adam Mickiewicz {} BYN
-сопоставление 3634 200th Anniversary of the Birth of Adam Mickiewicz → {'status': 'ok', 'type': 42929, 'title': '1 Rouble (Adam Mickiewicz)', 'upd': '2026-11-26'}
-цены 3634 200th Anniversary of the Birth of Adam Mickiewicz {'unc': 869} BYN
-сопоставление 3681 Track and Field → {'status': 'ok', 'type': 128139, 'title': '50 Roubles (Track–and–Field Athletics)', 'upd': '2026-11-26'}
-цены 3681 Track and Field {} BYN
-сопоставление 3682 Track and Field → {'status': 'ok', 'type': 128136, 'title': '20 Roubles (Track–and–Field Athletics)', 'upd': '2026-11-26'}
-цены 3682 Track and Field {} BYN
-сопоставление 3683 Track and Field → {'status': 'ok', 'type': 21783, 'title': '1 Rouble (Track–and–Field Athletics)', 'upd': '2026-11-26'}
-цены 3683 Track and Field {'unc': 46} BYN
-сопоставление 3718 Polotsk → {'status': 'ok', 'type': 38605, 'title': '20 Roubles (Polotsk)', 'upd': '2026-11-26'}
-цены 3718 Polotsk {} BYN
-сопоставление 3719 Polotsk → {'status': 'ok', 'type': 46309, 'title': '1 Rouble (Polotsk)', 'upd': '2026-11-26'}
-цены 3719 Polotsk {'unc': 240} BYN
-сопоставление 3734 Mir Castle → {'status': 'ok', 'type': 92953, 'title': '20 Roubles (Castle of Mir)', 'upd': '2026-11-26'}
-цены 3734 Mir Castle {} BYN
-сопоставление 3735 Mir Castle → {'status': 'ok', 'type': 46307, 'title': '1 Rouble (Castle of Mir)', 'upd': '2026-11-26'}
-цены 3735 Mir Castle {'unc': 221} BYN
-сопоставление 4510 5 Years of National Currency → {'status': 'ok', 'type': 57319, 'title': '5 Dram (National Currency)', 'upd': '2026-11-26'}
-цены 4510 5 Years of National Currency {'unc': 32789} AMD
-сопоставление 4511 Ani → {'status': 'ok', 'type': 114676, 'title': '1000 Dram (Ani Church Tower)', 'upd': '2026-11-26'}
-цены 4511 Ani {} AMD
-сопоставление 4512 10th Commemoration of the Earthquake → {'status': 'ok', 'type': 100213, 'title': '10 Dram (Earthquake of 1988)', 'upd': '2026-11-26'}
-цены 4512 10th Commemoration of the Earthquake {} AMD
-сопоставление 4513 XVIII Olympic Winter Games → {'status': 'ok', 'type': 100227, 'title': '100 Dram (XVIII Olympic Winter Games)', 'upd': '2026-11-26'}
-цены 4513 XVIII Olympic Winter Games {} AMD
-сопоставление 4514 Haghpat → {'status': 'ok', 'type': 30579, 'title': '1000 Dram (Haghpat)', 'upd': '2026-11-26'}
-цены 4514 Haghpat {'unc': 36158} AMD
-сопоставление 4515 Armenian Gull → {'status': 'none', 'why': 'неоднозначно: 100 Dram (Armenian silver seagull) | 100 Drams (Armenian silver seagull; silver proof)', 'upd': '2026-11-26'}
-сопоставление 4516 Ani → {'status': 'ok', 'type': 114685, 'title': '10 000 Dram (Ani Church Tower)', 'upd': '2026-11-26'}
-цены 4516 Ani {} AMD
-сопоставление 4517 Holy Etchmiadzin → {'status': 'ok', 'type': 89191, 'title': '10 000 Dram (Etchmiadzin Church)', 'upd': '2026-11-26'}
-цены 4517 Holy Etchmiadzin {} AMD
-сопоставление 4518 Holy Etchmiadzin → {'status': 'ok', 'type': 114675, 'title': '1000 Dram (Etchmiadzin Church)', 'upd': '2026-11-26'}
-цены 4518 Holy Etchmiadzin {} AMD
-сопоставление 4519 1998 FIFA World Cup → {'status': 'ok', 'type': 100228, 'title': '100 Dram (1998 World Cup Soccer)', 'upd': '2026-11-26'}
-цены 4519 1998 FIFA World Cup {} AMD
-сопоставление 3623 2000 Years of Christianity. Orthodoxy → {'status': 'none', 'why': 'неоднозначно: 20 Roubles (Christianity (In The Orthodox Religion)) | 20 Roubles (Christianity (In The Roman Catholic Religion)) | 20 Roubles (Financial System in Belarus) | 20 Roubles (Minsk)', 'upd': '2026-11-26'}
-сопоставление 3624 2000 Years of Christianity. Orthodoxy → {'status': 'none', 'why': 'неоднозначно: 1 Rouble (Christianity (In The Orthodox Religion)) | 1 Rouble (Christianity (In The Roman Catholic Religion)) | 1 Rouble (Minsk) | 1 Rouble (Mikhas Lynkov)', 'upd': '2026-11-26'}
-сопоставление 3626 2000 Years of Christianity. Catholicism → {'status': 'none', 'why': 'неоднозначно: 20 Roubles (Christianity (In The Orthodox Religion)) | 20 Roubles (Christianity (In The Roman Catholic Religion)) | 20 Roubles (Financial System in Belarus) | 20 Roubles (Minsk)', 'upd': '2026-11-26'}
-сопоставление 3627 2000 Years of Christianity. Catholicism → {'status': 'none', 'why': 'неоднозначно: 1 Rouble (Christianity (In The Orthodox Religion)) | 1 Rouble (Christianity (In The Roman Catholic Religion)) | 1 Rouble (Minsk) | 1 Rouble (Mikhas Lynkov)', 'upd': '2026-11-26'}
-сопоставление 3629 80th Anniversary of the Financial System of Belarus → {'status': 'ok', 'type': 127896, 'title': '20 Roubles (Financial System in Belarus)', 'upd': '2026-11-26'}
-цены 3629 80th Anniversary of the Financial System of Belarus {} BYN
-сопоставление 3649 100th Anniversary of the Birth of G. P. Glebov → {'status': 'ok', 'type': 127994, 'title': '10 Roubles (Gleb Glebov)', 'upd': '2026-11-26'}
-цены 3649 100th Anniversary of the Birth of G. P. Glebov {} BYN
-сопоставление 3650 100th Anniversary of the Birth of G. P. Glebov → {'status': 'ok', 'type': 42930, 'title': '1 Rouble (Gleb Glebov)', 'upd': '2026-11-26'}
-цены 3650 100th Anniversary of the Birth of G. P. Glebov {} BYN
-сопоставление 3716 100th Anniversary of the Birth of Mikhas Lynkov → {'status': 'ok', 'type': 127898, 'title': '10 Roubles (Mikhas Lynkov)', 'upd': '2026-11-26'}
-цены 3716 100th Anniversary of the Birth of Mikhas Lynkov {} BYN
-сопоставление 3717 100th Anniversary of the Birth of Mikhas Lynkov → {'status': 'ok', 'type': 46484, 'title': '1 Rouble (Mikhas Lynkov)', 'upd': '2026-11-26'}
-цены 3717 100th Anniversary of the Birth of Mikhas Lynkov {} BYN
-сопоставление 3720 Minsk → {'status': 'ok', 'type': 127891, 'title': '20 Roubles (Minsk)', 'upd': '2026-11-26'}
-цены 3720 Minsk {} BYN
-сопоставление 3721 Minsk → {'status': 'ok', 'type': 46407, 'title': '1 Rouble (Minsk)', 'upd': '2026-11-26'}
-цены 3721 Minsk {'unc': 115} BYN
-сопоставление 3736 Church of Sts Boris and Gleb → {'status': 'ok', 'type': 128015, 'title': '20 Roubles (The church of Sts Boris and Gleb)', 'upd': '2026-11-26'}
-цены 3736 Church of Sts Boris and Gleb {} BYN
-сопоставление 3737 Church of Sts Boris and Gleb → {'status': 'ok', 'type': 49147, 'title': '1 Rouble (The church of Sts Boris and Gleb)', 'upd': '2026-11-26'}
-цены 3737 Church of Sts Boris and Gleb {'unc': 208} BYN
-сопоставление 4520 Aghtamar → {'status': 'ok', 'type': 114686, 'title': '50 000 Dram (Holy Cross Church)', 'upd': '2026-11-26'}
-цены 4520 Aghtamar {} AMD
-сопоставление 4521 Aghtamar → {'status': 'ok', 'type': 30580, 'title': '5000 Dram (Holy Cross Church)', 'upd': '2026-11-26'}
-цены 4521 Aghtamar {} AMD
-сопоставление 4522 200th Birth Anniversary of Alexander Pushkin → {'status': 'ok', 'type': 114669, 'title': '200 Dram (Pushkin)', 'upd': '2026-11-26'}
-цены 4522 200th Birth Anniversary of Alexander Pushkin {'unc': 37529} AMD
-сопоставление 4523 70th Birth Anniversary of Tigran Petrosian → {'status': 'ok', 'type': 114677, 'title': '5000 Dram (Tigran Petrosyan)', 'upd': '2026-11-26'}
-цены 4523 70th Birth Anniversary of Tigran Petrosian {} AMD
-сопоставление 4524 Armenia-Diaspora Forum → {'status': 'ok', 'type': 114679, 'title': '5000 Dram (Pan-Armenian Congress)', 'upd': '2026-11-26'}
-цены 4524 Armenia-Diaspora Forum {'unc': 29597} AMD
-сопоставление 4525 Tigran the Great → {'status': 'ok', 'type': 114684, 'title': '50 000 Dram (Tigran the Great)', 'upd': '2026-11-26'}
-цены 4525 Tigran the Great {} AMD
-сопоставление 4526 First Pan-Armenian Games → {'status': 'ok', 'type': 114678, 'title': '5000 Dram (First Pan-Armenian Games)', 'upd': '2026-11-26'}
+сопоставление 4527 Noah Descending from Ararat → {'status': 'ok', 'type': 89190, 'title': "100 000 Dram (Noah's descent from Mt. Ararat)", 'upd': '2026-11-27'}
+цены 4527 Noah Descending from Ararat {} AMD
+сопоставление 4868 1300 Years of the Book of Dede Korkut (gold) → {'status': 'ok', 'type': 100198, 'title': '100 Manat (Kitabi-Dədə Qorqud)', 'upd': '2026-11-27'}
+цены 4868 1300 Years of the Book of Dede Korkut (gold) {} AZN
+сопоставление 4869 1300 Years of the Book of Dede Korkut (silver) → {'status': 'ok', 'type': 30453, 'title': '50 Manat (Kitabi-Dədə Qorqud)', 'upd': '2026-11-27'}
+цены 4869 1300 Years of the Book of Dede Korkut (silver) {'unc': 229} AZN
+сопоставление 3617 2000 Olympic Games in Sydney. Discus Thrower → {'status': 'ok', 'type': 28830, 'title': '20 Roubles (Discus Thrower)', 'upd': '2026-11-27'}
+цены 3617 2000 Olympic Games in Sydney. Discus Thrower {'unc': 130} BYN
+сопоставление 3722 Vitebsk → {'status': 'ok', 'type': 127852, 'title': '20 Roubles (Vitebsk)', 'upd': '2026-11-27'}
+цены 3722 Vitebsk {} BYN
+сопоставление 3723 Vitebsk → {'status': 'ok', 'type': 46486, 'title': '1 Rouble (Vitebsk)', 'upd': '2026-11-27'}
+цены 3723 Vitebsk {} BYN
+сопоставление 3738 Synkovichy Fortress Church → {'status': 'ok', 'type': 127849, 'title': '20 Roubles (Synkovichy Fortress–Church)', 'upd': '2026-11-27'}
+цены 3738 Synkovichy Fortress Church {} BYN
+сопоставление 3739 Synkovichy Fortress Church → {'status': 'ok', 'type': 46488, 'title': '1 Rouble (Synkovichy Fortress-Church)', 'upd': '2026-11-27'}
+цены 3739 Synkovichy Fortress Church {'unc': 141} BYN
+сопоставление 4528 New Millennium → {'status': 'ok', 'type': 43751, 'title': '2000 Dram (Millennium)', 'upd': '2026-11-27'}
+цены 4528 New Millennium {'unc': 23512} AMD
+сопоставление 3618 2002 Olympic Games. Biathlon → {'status': 'ok', 'type': 28828, 'title': '20 Roubles (Biathlon)', 'upd': '2026-11-27'}
+цены 3618 2002 Olympic Games. Biathlon {'unc': 121} BYN
+сопоставление 3619 2002 Olympic Games. Freestyle → {'status': 'ok', 'type': 127844, 'title': '20 Roubles (Freestyle)', 'upd': '2026-11-27'}
+цены 3619 2002 Olympic Games. Freestyle {} BYN
+сопоставление 3620 2002 Olympic Games. Freestyle → {'status': 'none', 'why': 'неоднозначно: 1 Rouble (Belovezhskaya Pushcha. Zubr) | 1 Rouble (Euphrosyne of Polotsk) | 1 Rouble (The Tower of Kamenets)', 'upd': '2026-11-27'}
+сопоставление 3689 Belovezhskaya Pushcha. European Bison → {'status': 'ok', 'type': 76995, 'title': '20 Roubles (Belovezhskaya Pushcha. Zubr)', 'upd': '2026-11-27'}
+цены 3689 Belovezhskaya Pushcha. European Bison {'unc': 241} BYN
+сопоставление 3690 Belovezhskaya Pushcha. European Bison → {'status': 'ok', 'type': 47671, 'title': '1 Rouble (Belovezhskaya Pushcha. Zubr)', 'upd': '2026-11-27'}
+цены 3690 Belovezhskaya Pushcha. European Bison {'unc': 76} BYN
+сопоставление 3740 Kamenets Tower → {'status': 'ok', 'type': 127839, 'title': '20 Roubles (The Tower of Kamenets)', 'upd': '2026-11-27'}
+цены 3740 Kamenets Tower {} BYN
+сопоставление 3741 Kamenets Tower → {'status': 'ok', 'type': 28856, 'title': '1 Rouble (The Tower of Kamenets)', 'upd': '2026-11-27'}
+цены 3741 Kamenets Tower {} BYN
+сопоставление 3764 900th Anniversary of the Birth of Euphrosyne of Polotsk → {'status': 'ok', 'type': 127767, 'title': '20 Roubles (Euphrosyne of Polotsk)', 'upd': '2026-11-27'}
+цены 3764 900th Anniversary of the Birth of Euphrosyne of Polotsk {} BYN
+сопоставление 3765 900th Anniversary of the Birth of Euphrosyne of Polotsk → {'status': 'ok', 'type': 28799, 'title': '1 Rouble (Euphrosyne of Polotsk)', 'upd': '2026-11-27'}
+цены 3765 900th Anniversary of the Birth of Euphrosyne of Polotsk {'unc': 190} BYN
+сопоставление 4529 Garegin Nzhdeh → {'status': 'none', 'why': 'нет кандидатов (3 в поиске)', 'upd': '2026-11-27'}
+сопоставление 4530 Garegin Nzhdeh → {'status': 'none', 'why': 'нет кандидатов (3 в поиске)', 'upd': '2026-11-27'}
+сопоставление 4531 Armenia – a Member of the Council of Europe → {'status': 'none', 'why': 'нет кандидатов (3 в поиске)', 'upd': '2026-11-27'}
+сопоставление 4532 10th Anniversary of the Republic of Armenia → {'status': 'ok', 'type': 174522, 'title': '500 Dram (Armenian Statehood)', 'upd': '2026-11-27'}
+цены 4532 10th Anniversary of the Republic of Armenia {} AMD
+сопоставление 3625 2006 FIFA World Cup → {'status': 'ok', 'type': 92955, 'title': '20 Roubles (2006 FIFA World Cup)', 'upd': '2026-11-27'}
+цены 3625 2006 FIFA World Cup {} BYN
+сопоставление 3635 Belarusbank. 80th Anniversary → {'status': 'ok', 'type': 127512, 'title': '20 Roubles (Belarusbank)', 'upd': '2026-11-27'}
+цены 3635 Belarusbank. 80th Anniversary {} BYN
+сопоставление 3636 Belarusbank. 80th Anniversary → {'status': 'ok', 'type': 37674, 'title': '1 Rouble (Belarusbank)', 'upd': '2026-11-27'}
+цены 3636 Belarusbank. 80th Anniversary {} BYN
+сопоставление 3692 Berezinsky Biosphere Reserve. Beaver → {'status': 'ok', 'type': 76996, 'title': '20 Roubles (Berezinsky Biosphere Nature Reserve. Beaver)', 'upd': '2026-11-27'}
+цены 3692 Berezinsky Biosphere Reserve. Beaver {} BYN
+сопоставление 3693 Berezinsky Biosphere Reserve. Beaver → {'status': 'ok', 'type': 48473, 'title': '1 Rouble (Berezinsky Biosphere Nature Reserve. Beaver)', 'upd': '2026-11-27'}
+цены 3693 Berezinsky Biosphere Reserve. Beaver {'unc': 54} BYN
+сопоставление 3710 Brown Bear → {'status': 'ok', 'type': 76992, 'title': '20 Roubles (Brown Bear)', 'upd': '2026-11-27'}
+цены 3710 Brown Bear {} BYN
+сопоставление 3766 120th Anniversary of the Birth of Yanka Kupala → {'status': 'ok', 'type': 127648, 'title': '10 Roubles (Yanka Kupala)', 'upd': '2026-11-27'}
+цены 3766 120th Anniversary of the Birth of Yanka Kupala {} BYN
+сопоставление 3767 120th Anniversary of the Birth of Yanka Kupala → {'status': 'ok', 'type': 48477, 'title': '1 Rouble (Yanka Kupala)', 'upd': '2026-11-27'}
+цены 3767 120th Anniversary of the Birth of Yanka Kupala {} BYN
+сопоставление 3768 120th Anniversary of the Birth of Yakub Kolas → {'status': 'ok', 'type': 127652, 'title': '10 Roubles (Yakub Kolas)', 'upd': '2026-11-27'}
+цены 3768 120th Anniversary of the Birth of Yakub Kolas {} BYN
+сопоставление 3769 120th Anniversary of the Birth of Yakub Kolas → {'status': 'ok', 'type': 48478, 'title': '1 Rouble (Yakub Kolas)', 'upd': '2026-11-27'}
+цены 3769 120th Anniversary of the Birth of Yakub Kolas {} BYN
+сопоставление 3770 200th Anniversary of the Birth of Ignacy Domeyko → {'status': 'ok', 'type': 127641, 'title': '20 Roubles (Ignacy Domeiko)', 'upd': '2026-11-27'}
+цены 3770 200th Anniversary of the Birth of Ignacy Domeyko {'unc': 176} BYN
+сопоставление 3771 200th Anniversary of the Birth of Ignacy Domeyko → {'status': 'ok', 'type': 48475, 'title': '1 Rouble (Ignacy Domeiko)', 'upd': '2026-11-27'}
+цены 3771 200th Anniversary of the Birth of Ignacy Domeyko {} BYN
+сопоставление 4533 1600th Anniversary of the Armenian Alphabet → {'status': 'ok', 'type': 174622, 'title': '10 000 Dram (Armenian Alphabet)', 'upd': '2026-11-27'}
+цены 4533 1600th Anniversary of the Armenian Alphabet {} AMD
+сопоставление 3628 2004 Olympic Games. Shot Put → {'status': 'ok', 'type': 28829, 'title': '20 Roubles (2004 Olympic Games - Shot Put)', 'upd': '2026-11-27'}
+цены 3628 2004 Olympic Games. Shot Put {'unc': 133} BYN
+сопоставление 3630 Freestyle Wrestling → {'status': 'ok', 'type': 28832, 'title': '20 Roubles (Freestyle wrestling)', 'upd': '2026-11-27'}
 лимит запросов на сегодня/месяц исчерпан, продолжим завтра
-итого: сопоставлено 764, с ценами 125, запросов за 2026-11: 1601
+итого: сопоставлено 797, с ценами 136, запросов за 2026-11: 1721

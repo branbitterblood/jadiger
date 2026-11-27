@@ -4640,10 +4640,260 @@
 "type": 114678,
 "title": "5000 Dram (First Pan-Armenian Games)",
 "upd": "2026-11-26"
+},
+"4527": {
+"status": "ok",
+"type": 89190,
+"title": "100 000 Dram (Noah's descent from Mt. Ararat)",
+"upd": "2026-11-27",
+"issue": 296347
+},
+"4868": {
+"status": "ok",
+"type": 100198,
+"title": "100 Manat (Kitabi-Dədə Qorqud)",
+"upd": "2026-11-27",
+"issue": 320684
+},
+"4869": {
+"status": "ok",
+"type": 30453,
+"title": "50 Manat (Kitabi-Dədə Qorqud)",
+"upd": "2026-11-27",
+"issue": 150351
+},
+"3617": {
+"status": "ok",
+"type": 28830,
+"title": "20 Roubles (Discus Thrower)",
+"upd": "2026-11-27",
+"issue": 146440
+},
+"3722": {
+"status": "ok",
+"type": 127852,
+"title": "20 Roubles (Vitebsk)",
+"upd": "2026-11-27",
+"issue": 372319
+},
+"3723": {
+"status": "ok",
+"type": 46486,
+"title": "1 Rouble (Vitebsk)",
+"upd": "2026-11-27",
+"issue": 195871
+},
+"3738": {
+"status": "ok",
+"type": 127849,
+"title": "20 Roubles (Synkovichy Fortress–Church)",
+"upd": "2026-11-27",
+"issue": 372316
+},
+"3739": {
+"status": "ok",
+"type": 46488,
+"title": "1 Rouble (Synkovichy Fortress-Church)",
+"upd": "2026-11-27",
+"issue": 195873
+},
+"4528": {
+"status": "ok",
+"type": 43751,
+"title": "2000 Dram (Millennium)",
+"upd": "2026-11-27",
+"issue": 187745
+},
+"3618": {
+"status": "ok",
+"type": 28828,
+"title": "20 Roubles (Biathlon)",
+"upd": "2026-11-27",
+"issue": 153718
+},
+"3619": {
+"status": "ok",
+"type": 127844,
+"title": "20 Roubles (Freestyle)",
+"upd": "2026-11-27",
+"issue": 372311
+},
+"3620": {
+"status": "none",
+"why": "неоднозначно: 1 Rouble (Belovezhskaya Pushcha. Zubr) | 1 Rouble (Euphrosyne of Polotsk) | 1 Rouble (The Tower of Kamenets)",
+"upd": "2026-11-27"
+},
+"3689": {
+"status": "ok",
+"type": 76995,
+"title": "20 Roubles (Belovezhskaya Pushcha. Zubr)",
+"upd": "2026-11-27",
+"issue": 267674
+},
+"3690": {
+"status": "ok",
+"type": 47671,
+"title": "1 Rouble (Belovezhskaya Pushcha. Zubr)",
+"upd": "2026-11-27",
+"issue": 200477
+},
+"3740": {
+"status": "ok",
+"type": 127839,
+"title": "20 Roubles (The Tower of Kamenets)",
+"upd": "2026-11-27",
+"issue": 372306
+},
+"3741": {
+"status": "ok",
+"type": 28856,
+"title": "1 Rouble (The Tower of Kamenets)",
+"upd": "2026-11-27",
+"issue": 146466
+},
+"3764": {
+"status": "ok",
+"type": 127767,
+"title": "20 Roubles (Euphrosyne of Polotsk)",
+"upd": "2026-11-27",
+"issue": 372217
+},
+"3765": {
+"status": "ok",
+"type": 28799,
+"title": "1 Rouble (Euphrosyne of Polotsk)",
+"upd": "2026-11-27",
+"issue": 146403
+},
+"4529": {
+"status": "none",
+"why": "нет кандидатов (3 в поиске)",
+"upd": "2026-11-27"
+},
+"4530": {
+"status": "none",
+"why": "нет кандидатов (3 в поиске)",
+"upd": "2026-11-27"
+},
+"4531": {
+"status": "none",
+"why": "нет кандидатов (3 в поиске)",
+"upd": "2026-11-27"
+},
+"4532": {
+"status": "ok",
+"type": 174522,
+"title": "500 Dram (Armenian Statehood)",
+"upd": "2026-11-27",
+"issue": 451368
+},
+"3625": {
+"status": "ok",
+"type": 92955,
+"title": "20 Roubles (2006 FIFA World Cup)",
+"upd": "2026-11-27",
+"issue": 306427
+},
+"3635": {
+"status": "ok",
+"type": 127512,
+"title": "20 Roubles (Belarusbank)",
+"upd": "2026-11-27",
+"issue": 371925
+},
+"3636": {
+"status": "ok",
+"type": 37674,
+"title": "1 Rouble (Belarusbank)",
+"upd": "2026-11-27",
+"issue": 171143
+},
+"3692": {
+"status": "ok",
+"type": 76996,
+"title": "20 Roubles (Berezinsky Biosphere Nature Reserve. Beaver)",
+"upd": "2026-11-27",
+"issue": 267675
+},
+"3693": {
+"status": "ok",
+"type": 48473,
+"title": "1 Rouble (Berezinsky Biosphere Nature Reserve. Beaver)",
+"upd": "2026-11-27",
+"issue": 203371
+},
+"3710": {
+"status": "ok",
+"type": 76992,
+"title": "20 Roubles (Brown Bear)",
+"upd": "2026-11-27",
+"issue": 267671
+},
+"3766": {
+"status": "ok",
+"type": 127648,
+"title": "10 Roubles (Yanka Kupala)",
+"upd": "2026-11-27",
+"issue": 372080
+},
+"3767": {
+"status": "ok",
+"type": 48477,
+"title": "1 Rouble (Yanka Kupala)",
+"upd": "2026-11-27",
+"issue": 203378
+},
+"3768": {
+"status": "ok",
+"type": 127652,
+"title": "10 Roubles (Yakub Kolas)",
+"upd": "2026-11-27",
+"issue": 372085
+},
+"3769": {
+"status": "ok",
+"type": 48478,
+"title": "1 Rouble (Yakub Kolas)",
+"upd": "2026-11-27",
+"issue": 203379
+},
+"3770": {
+"status": "ok",
+"type": 127641,
+"title": "20 Roubles (Ignacy Domeiko)",
+"upd": "2026-11-27",
+"issue": 372072
+},
+"3771": {
+"status": "ok",
+"type": 48475,
+"title": "1 Rouble (Ignacy Domeiko)",
+"upd": "2026-11-27",
+"issue": 203373
+},
+"4533": {
+"status": "ok",
+"type": 174622,
+"title": "10 000 Dram (Armenian Alphabet)",
+"upd": "2026-11-27",
+"issue": 451468
+},
+"3628": {
+"status": "ok",
+"type": 28829,
+"title": "20 Roubles (2004 Olympic Games - Shot Put)",
+"upd": "2026-11-27",
+"issue": 146439
+},
+"3630": {
+"status": "ok",
+"type": 28832,
+"title": "20 Roubles (Freestyle wrestling)",
+"upd": "2026-11-27"
 }
 },
 "usage": {
-"2026-11": 1601
+"2026-11": 1721
 },
 "issuers": {
 "kz": "kazakhstan",
